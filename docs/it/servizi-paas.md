@@ -2,6 +2,7 @@
 
 Nella seguente tabella è possibile consultare i servizi afferenti alla categoria Platform as a Service (PaaS).
 
+
 | FAMIGLIA             | SOTTO-FAMIGLIA             | NOMENCLATURA SERVIZI                                        |
 | -------------------- | -------------------------- | ----------------------------------------------------------- |
 | Compute              | FAAS                       | Functions as a Service                                      |
