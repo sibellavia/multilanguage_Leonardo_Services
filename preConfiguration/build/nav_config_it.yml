@@ -1,4 +1,4 @@
 nav:
-- Sviluppatori: developers.md
-- Amministrazione: Administration.md
-- PDF: SCMP_SUM_it.pdf
+- "<span class='ms-Icon ms-Icon--SecondaryNav'></span> Shared Features": developers.md
+- "<span class='ms-Icon ms-Icon--ViewDashboard'></span> Amministrazione": Administration.md
+- "<span class='ms-Icon ms-Icon--AddToShoppingList'></span> PDF": SCMP_SUM_it.pdf

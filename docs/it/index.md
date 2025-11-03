@@ -1,29 +1,15 @@
-# Benvenuto nella Documentazione
+# Leonardo Services
 
-Questa è la pagina principale della documentazione italiana.
+Leonardo eroga diversi servizi gestiti che sono rappresentati nella seguente figura per tipologia (chiamate famiglie di servizi).
 
-## Iniziare
+![Overview Leonardo Services](images/extract/media/PSN1.png)
 
-Benvenuto nella nostra documentazione completa. Questa guida ti aiuterà a iniziare con la nostra piattaforma e a comprendere le sue funzionalità principali.
+Da un punto di vista logico-funzionale i servizi possono essere suddividisi in tre macro-categorie:
 
-## Navigazione Rapida
+- Servizi Infrastructure as a Service (IaaS)
+- Servizi Container as a Service (CaaS)
+- Servizi Platform as a Service (PaaS)
 
-- [Documentazione Sviluppatori](developers.md) - Guide tecniche e documentazione API
-- [Risorse di Supporto](--8<-- "includes/urls-ita.md") - Collegamenti per aiuto e supporto
+Le categorie di tipo IaaS e CaaS includono parte di servizi della famiglia "Compute". La categoria PaaS include i servizi di tutte le altre famiglie.
 
-## Funzionalità
-
-La nostra piattaforma offre una vasta gamma di funzionalità progettate per aiutarti a raggiungere il successo:
-
-- **Integrazione Semplice** - API e SDK semplici
-- **Architettura Scalabile** - Costruita per crescere con le tue esigenze
-- **Documentazione Completa** - Tutto quello che devi sapere
-- **Supporto 24/7** - Siamo qui per aiutarti
-
-## Novità
-
-Rimani aggiornato con le ultime funzionalità e miglioramenti della nostra piattaforma.
-
----
-
-Per maggiori informazioni, consulta la nostra [documentazione per sviluppatori](developers.md) o visita il nostro portale di supporto.
+A seguire verranno descritti le macro-categorie succitate.
