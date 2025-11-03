@@ -191,78 +191,6 @@ jobs:
           "$(pwd)/generated/pdf/SCMP_SUM_en.pdf"; \
         else echo "print_page.html EN non generato"; fi
 
-    # ----------------------------
-    # 🔹 SWAGGER + IMAGE OPTIMIZATION
-    # ----------------------------
-    - name: Login API(EDIT)
-      if: env.RUN_SWAGGER == 'true'
-      id: api_login
-      run: |
-        response=$(curl -s --location 'https://www.movincloud.com//api/iam/login' \
-        -H "Content-Type: application/json" \
-        -d '{
-              "user": "cmp_api_test",
-              "psw": "${{ secrets.PSW }}",
-              "get_routes": true,
-              "routes_for_module": "IAM/IAM_FE",
-              "app_to_use": "TUTTE",
-              "iam_fe_login": true,
-              "error_on_iam_routes": false
-            }')
-        token=$(echo "$response" | jq -r '.access_token')
-        if [ "$token" == "null" ] || [ -z "$token" ]; then
-          echo "Login fallita: token non ricevuto"
-          exit 1
-        fi
-        echo "::add-mask::$token"
-        echo "API_TOKEN=$token" >> $GITHUB_ENV
-        echo "api_token=$token" >> $GITHUB_OUTPUT
-
-    - name: Fetch authenticated Swagger specs (shared for EN/IT)
-      if: env.RUN_SWAGGER == 'true'
-      run: |
-        API_TOKEN=${{ steps.api_login.outputs.api_token }}
-        VARS=("finops" "provisioning" "rm" "abs" "rmreport" "rmcosts" "rmmonitoring" "rmsecurity" "rmservice" "siem" "txm" "tenant")
-        mkdir -p includes/swagger
-        for var in "${VARS[@]}"; do
-          echo "🔄 Fetching Swagger for API: $var"
-          HTTP_RESPONSE=$(curl --location --silent --show-error --write-out "HTTPSTATUS:%{http_code}" \
-            -H "Authorization: Bearer $API_TOKEN" \
-            -H "x-Tenant: Default" \
-            "https://www.movincloud.com/api/${var}/v3/api-docs" \
-            -o "includes/swagger/${var}.json")
-          HTTP_BODY=$(cat includes/swagger/${var}.json || echo '{}')
-          HTTP_STATUS=$(echo "$HTTP_RESPONSE" | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
-          echo "✅ Saved includes/swagger/${var}.json (HTTP $HTTP_STATUS)"
-          echo "📄 Preview: $(echo "$HTTP_BODY" | head -c 160)"
-
-          # Copy .json and create .md file for MkDocs build in docs/<lang>/swagger
-          for LANG in en it; do
-            mkdir -p docs/$LANG/swagger
-            cp includes/swagger/${var}.json docs/$LANG/swagger/${var}.json
-            echo "!!swagger ${var}.json!!" > docs/$LANG/swagger/${var}.md
-            echo "✅ Copied ${var}.json and created docs/$LANG/swagger/${var}.md"
-          done
-        done
-        echo "📁 Swagger specs centralizzati in includes/swagger e docs/<lang>/swagger"
-
-    - name: Copy all swagger artifacts into docs (EN + IT) before build
-      if: env.RUN_SWAGGER == 'true'
-      run: |
-        if [ -d includes/swagger ]; then
-          echo "➡️ Copying swagger artifacts from includes/swagger to docs/<lang>/swagger"
-          for LANG in en it; do \
-            mkdir -p docs/$LANG/swagger; \
-            # Copy everything (json, md, yaml, images, etc.)
-            cp -a includes/swagger/. docs/$LANG/swagger/ 2>/dev/null || true; \
-          done; \
-          echo "✅ Copiati tutti i file swagger in docs/<lang>/swagger"; \
-          ls -1 docs/en/swagger || true; \
-          ls -1 docs/it/swagger || true; \
-        else
-          echo "⚠️ Directory includes/swagger non presente, nulla da copiare";
-        fi
-
     - name: Update nav configs for HTML links and rebuild
       if: env.RUN_SWAGGER == 'true'
       run: |
@@ -309,20 +237,6 @@ jobs:
 
     - name: Optimize images
       run: python preConfiguration/build/image_resizier.py
-
-    - name: Copy swagger-ui.css into all API folders (EN/IT)
-      run: |
-        for LANG in en it; do
-          SWAGGER_DIR="generated/$LANG/swagger"
-          if [ -d "$SWAGGER_DIR" ]; then
-            for API in "$SWAGGER_DIR"/*; do
-              if [ -d "$API" ]; then
-                cp overrides/assets/stylesheets/swagger-ui.css "$API/"
-                echo "✅ Copied swagger-ui.css into $API"
-              fi
-            done
-          fi
-        done
 
     # ----------------------------
     # 🔹 DEPLOY PREBUILT SU GH-PAGES (Senza Mike)
