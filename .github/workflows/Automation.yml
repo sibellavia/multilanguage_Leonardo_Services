@@ -238,7 +238,7 @@ jobs:
     - name: Copy index.html to index/index.html
       run: |
         echo "🔄 Copying index.html files to index/index.html..."
-        
+
         # Copy IT index.html
         if [ -f generated/it/index.html ]; then
           mkdir -p generated/it/index
@@ -251,7 +251,7 @@ jobs:
         else
           echo "⚠️ generated/it/index.html not found"
         fi
-        
+
         # Copy EN index.html
         if [ -f generated/en/index.html ]; then
           mkdir -p generated/en/index
@@ -264,9 +264,14 @@ jobs:
         else
           echo "⚠️ generated/en/index.html not found"
         fi
-        
-        echo "✅ Index files copy completed with path fixes"    - name: Optimize images
-      run: python preConfiguration/build/image_resizier.py
+
+        echo "✅ Index files copy completed with path fixes"
+
+    - name: Resize and optimize images
+      run: |
+        echo "🔄 Resizing and optimizing images..."
+        python preConfiguration/build/image_resizier.py
+        echo "✅ Image optimization completed"
 
     # ----------------------------
     # 🔹 DEPLOY PREBUILT SU GH-PAGES (Senza Mike)
