@@ -2,7 +2,7 @@
 
 Leonardo provides a collection of managed services which are represented in the following figure by type and sub-type (technically called "Family" and "Sub-family" respectively).
 
-![Leonardo Services Overview](images/extract/media/PSN1.png)
+![Leonardo Services Overview](assets/images/extract/media/PSN1.png)
 
 From a logical-functional perspective, these services can be divided into three macro-categories:
 
