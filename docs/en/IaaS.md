@@ -2,34 +2,28 @@
 
 The following table lists the services falling under the Infrastructure as a Service (IaaS) category.
 
-| FAMILY  | SUB-FAMILY                    | LIST OF SERVICES                                                                                                    |
-| ------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Compute | Confidential - IaaS - Private | Pool Small (Confidential)<br>Pool Medium (Confidential)<br>Pool Large (Confidential)<br>Pool X-Large (Confidential) |
+| FAMILY  | LIST OF SERVICES                                                                                                    |
+| ------- | ------------------------------------------------------------------------------------------------------------------- |
+| Compute | Pool Small (Confidential)<br>Pool Medium (Confidential)<br>Pool Large (Confidential)<br>Pool X-Large (Confidential) |
 
 ## Compute Family
 
-Below are the sub-families belonging to the Compute family: 
-
-- Confidential - IaaS – Private
-
-### Confidential - IaaS - Private Sub-Family
-
-Below is the list of services within the Confidential - IaaS - Private Sub-family:
+Below is the list of services belonging to the Compute family:
 
 - Pool Small (Confidential) 
 - Pool Medium (Confidential)
 - Pool Large (Confidential)
 - Pool X-Large (Confidential)
 
-#### Pool Confidential Services
+### Pool Confidential Services
 
-**> Services Description**
+#### Services Description
 
 These services enable the provision of Private virtual computing environments (IaaS), i.e., on a pool of physical resources, dedicated and isolated for each individual customer, based on the use of bare metal computing instances.  
 Data from physical resources is encrypted and kept secure throughout all phases of use (at rest, in transit, and in use), leveraging the Confidential Computing paradigm.  
 Depending on the pool of computing resources required for each individual Administration, the most suitable service from the four available types can be selected.
 
-**> Features and Advantages**
+#### Features and Advantages
 
 Private Cloud resources are dedicated exclusively to each customer.  
 The services use secure enclaves based on Trusted Execution Environments (TEEs) based on Confidential Hardware, which offer an advanced level of security for data in use, protecting it during processing.  

@@ -1,65 +1,59 @@
-# Platform as a Service (CaaS)
+# Platform as a Service (PaaS)
 
 The following table lists the services included in the Platform as a Service (CaaS) category.
 
-| FAMILY               | SUB-FAMILY                 | LIST OF SERVICES                                            |
-| -------------------- | -------------------------- | ----------------------------------------------------------- |
-| Compute              | FAAS                       | Functions as a Service                                      |
-| Security             | IAM                        | Identity & Access Management Service                        |
-| Security             | Key Management             | Key Vault as a Service                                      |
-| Middleware           | API Platform               | PaaS API Management                                         |
-| Middleware           | APP Runtime                | Jboss as a Service                                          |
-| Middleware           | APP Runtime                | Spring boot as a Service                                    |
-| Middleware           | BPM                        | PaaS Business Process as a Service                          |
-| Middleware           | CMS                        | PaaS CMS as a Service                                       |
-| Middleware           | ETL                        | PaaS ETL - Batch / Real Time Processing - 1 worker          |
-| Infra & Ops Platform | Multicloud Management      | Multicloud Management Platform-Leonardo SCMP                |
-| Infra & Ops Platform | Multicloud Management      | Multicloud Management Platform-Morpheus                     |
-| Infra & Ops Platform | Observability-Infra        | Control Room as Service                                     |
-| Infra & Ops Platform | Observability-Infra        | IT infrastructure Service Operations (Logging & Monitoring) |
-| Infra & Ops Platform | TTM                        | PaaS Ticket Management Service                              |
-| Infra & Ops Platform | TTM                        | PaaS Ticket Management Service (ITSM)                       |
-| Infra & Ops Platform | TTM                        | PaaS Ticket Management Service (ADD-ON ITOM)                |
-| DevSecOps            | CI                         | Configuration Manager                                       |
-| DevSecOps            | CI                         | Test Automation                                             |
-| DevSecOps            | CI                         | Quality Code Analysis                                       |
-| DevSecOps            | CI/CD                      | DevSecOps As A Service By PSN                               |
-| DevSecOps            | CI/CD                      | Qualizer DevSecOps                                          |
-| Big Data             | Data Lake                  | Data Lake - 1TB                                             |
-| Big Data             | Data Lakehouse             | Data Lakehouse                                              |
-| Big Data             | Business Intelligence      | Business Intelligence                                       |
-| Big Data             | ETL                        | Batch/Real time Processing - 1 Worker                       |
-| Big Data             | Event Platform             | Event Message                                               |
-| Big Data             | Data Governance            | Data Governance                                             |
-| AI                   | AI - Audio & Conversazioni | Speech to Text                                              |
-| AI                   | AI - Image                 | OCR                                                         |
-| AI                   | AI - Text                  | AI Search - AI Search - RAG - 10 GB - 1 worker              |
-| AI                   | AI - Text                  | Text Analytics                                              |
-| AI                   | AI - Text                  | Translation                                                 |
-| AI                   | AI - Generativa            | AI SLM/LLM                                                  |
-| AI                   | AI - Tools                 | AI workflow                                                 |
-| AI                   | AI - Tools                 | Vector DB                                                   |
-| AI                   | AI - Tools                 | AI Platforrm                                                |
-| VDI                  | Virtual Desktop            | VDI                                                         |
-| VDI                  | Virtual Desktop            | VDI with GPU support                                        |
-| Collaboration        | Communication              | Instant Messaging                                           |
+| FAMILY               | LIST OF SERVICES                                            |
+| -------------------- | ----------------------------------------------------------- |
+| Compute              | Functions as a Service                                      |
+| Security             | Identity & Access Management Service                        |
+| Security             | Key Vault as a Service                                      |
+| Middleware           | PaaS API Management                                         |
+| Middleware           | Jboss as a Service                                          |
+| Middleware           | Spring boot as a Service                                    |
+| Middleware           | PaaS Business Process as a Service                          |
+| Middleware           | PaaS CMS as a Service                                       |
+| Middleware           | PaaS ETL - Batch / Real Time Processing - 1 worker          |
+| Infra & Ops Platform | Multicloud Management Platform-Leonardo SCMP                |
+| Infra & Ops Platform | Multicloud Management Platform-Morpheus                     |
+| Infra & Ops Platform | Control Room as Service                                     |
+| Infra & Ops Platform | IT infrastructure Service Operations (Logging & Monitoring) |
+| Infra & Ops Platform | PaaS Ticket Management Service                              |
+| Infra & Ops Platform | PaaS Ticket Management Service (ITSM)                       |
+| Infra & Ops Platform | PaaS Ticket Management Service (ADD-ON ITOM)                |
+| DevSecOps            | Configuration Manager                                       |
+| DevSecOps            | Test Automation                                             |
+| DevSecOps            | Quality Code Analysis                                       |
+| DevSecOps            | DevSecOps As A Service By PSN                               |
+| DevSecOps            | Qualizer DevSecOps                                          |
+| Big Data             | Data Lake - 1TB                                             |
+| Big Data             | Data Lakehouse                                              |
+| Big Data             | Business Intelligence                                       |
+| Big Data             | Batch/Real time Processing - 1 Worker                       |
+| Big Data             | Event Message                                               |
+| Big Data             | Data Governance                                             |
+| AI                   | Speech to Text                                              |
+| AI                   | OCR                                                         |
+| AI                   | AI Search - AI Search - RAG - 10 GB - 1 worker              |
+| AI                   | Text Analytics                                              |
+| AI                   | Translation                                                 |
+| AI                   | AI SLM/LLM                                                  |
+| AI                   | AI workflow                                                 |
+| AI                   | Vector DB                                                   |
+| AI                   | AI Platforrm                                                |
+| VDI                  | VDI                                                         |
+| VDI                  | VDI with GPU support                                        |
+| Collaboration        | Instant Messaging                                           |
 
 
 ## Compute Family
 
-Below are the sub-families belonging to the Compute family: 
-
-- FAAS
-
-### FAAS Sub-Family
-
-Below is the list of services within the FAAS Sub-family:
+Below is the list of services belonging to the Compute family:
 
 - Functions as a Service
 
-#### Functions as a Service
+### Functions as a Service
 
-**> Service Description**
+#### Services Description
 
 FaaS (Function as a Service) is an event-driven system design model running on stateless containers, where developers create, deploy, and execute small, independent functions to perform specific tasks without worrying about the underlying infrastructure.  
 Adopting FaaS allows for standardization of application development and execution by centralizing cross-functional capabilities such as orchestration, automatic provisioning, monitoring, integrated service management, and event-driven flow control. 
@@ -73,7 +67,7 @@ It offers tools to:
 
 The FaaS platform provisions and scales the underlying resources based on demand. It is ideal for highly dynamic scenarios with variable workloads and integrates seamlessly with microservices and event-based architectures.
 
-**> Features and Advantages**
+#### Features and Advantages
 
 The service goes beyond simply providing an execution engine; it also offers a complete ecosystem, consisting of:
 
@@ -95,15 +89,16 @@ The service offers the following advantages:
 - *Continuous innovation* → rapid experimentation with new, low-cost services.
 Competitive advantage in cost and speed compared to traditional hosting models.
 
-### IAM Sub-Family
+## Security Family
 
-Below is the list of services within the IAM Sub-family:
+Below is the list of services belonging to the Security family:
 
 - Identity & Access Management Service
+- Key Vault as a Service
 
-#### Identity & Access Management Service
+### Identity & Access Management Service
 
-**> Service Description**
+#### Services Description
 
 The Service provides an essential level of security for identity and access management, ensuring basic protection against unauthorized access.  
 It manages single sign-on access to guarantee access to all protected resources with a single authentication. It supports standard OIDC/OAUTH and SAML protocols for easy integration with applications and products.  
@@ -111,7 +106,7 @@ It enables first-level authentication with username/password and second-level au
 It manages access authorization to system-protected resources only for users with rights to use them according to the Role-based Access Control (RBAC) and Attribute-based Access Control (ABAC) paradigms. Integration with external user repositories (LDAP or Active Directory) is also available.  
 It manages the user lifecycle and related authorizations via the console.
 
-**> Features and Advantages**
+#### Features and Advantages
 
 The main features and functionalities of the service are:
 
@@ -150,21 +145,15 @@ The service offers the following advantages:
 - *Agility and Scalability* → Increased speed of onboarding new applications thanks to the use of standard protocols (OIDC, SAML, OAuth2).
 - *Maintainability and Standardization* → Use of standard protocols (OIDC, SAML, OAuth2) that eliminate proprietary implementations and facilitate interoperability.
 
-### Key Management Sub-Family
+### Key Vault as a Service
 
-Below is the list of services within the Key Management Sub-family:
-
-- Key Vault as a Service
-
-#### Key Vault as a Service
-
-**> Service Description**
+#### Services Description
 
 The service provides a secure cloud repository (Vault) for storing and managing credentials and passwords used by cloud applications without having to manually install and manage dedicated IaaS machines. 
 The service consists of a software platform that enables centralized and automated management of encryption keys, secrets, and certificates, with access controlled by identity-based authentication and authorization methods.  
 It also allows organizations to significantly simplify key lifecycle management, ensuring centralized control while leveraging the native cryptographic capabilities of KMS providers.
 
-**> Features and Advantages**
+#### Features and Advantages
 
 The main features and functionalities of the service are:
 
@@ -193,23 +182,18 @@ The service offers the following advantages:
 
 ## Middleware Family
 
-Below are the sub-families belonging to the Compute family: 
-
-- API Platform
-- APP Runtime
-- BPM
-- CMS
-- ETL
-
-### API Platform Sub-Family
-
-Below is the list of services within the API Platform Sub-family:
+Below is the list of services belonging to the Middleware family:
 
 - PaaS API Management
+- Jboss as a Service
+- Spring boot as a Service
+- PaaS Business Process as a Service
+- PaaS CMS as a Service
+- PaaS ETL - Batch / Real Time Processing - 1 worker
 
-#### PaaS API Management
+### PaaS API Management
 
-**> Service Description**
+#### Services Description
 
 It is a platform of tools and services that facilitates the management, control, monitoring, and protection of APIs (Application Programming Interfaces) without having to manually implement all the components. 
 The service typically offers:
@@ -222,7 +206,7 @@ The API manager facilitates API lifecycle management, including aspects such as 
 The API manager allows you to define and enforce policies, such as usage limits, quota management, custom authentication, data transformations, and caching. These policies allow you to control API behavior and ensure compliance with security requirements and guidelines.  
 The API Manager can integrate with other systems and tools, such as identity and access management (IAM) systems, performance monitoring systems, data analytics systems, and security gateways. This integration expands the API Manager's functionality and integrates it into the ecosystem of existing applications and services.
 
-**> Features and Advantages**
+#### Features and Advantages
 
 The main features and functionalities of the service are:
 
@@ -248,23 +232,16 @@ The service offers the following advantages:
 - *Enhanced security and compliance* → secure management of APIs and traffic between services, with authentication, authorization, and rate limiting policies, protecting the infrastructure from unauthorized access.
 - *Open ecosystem* → Facilitates partnerships and innovation thanks to an API-ready and standardized infrastructure.
 
-### APP Runtime Sub-Family
+### Jboss as a Service
 
-Below is the list of services within the APP Runtime Sub-family:
-
-- Jboss as a Service
-- Spring boot as a Service
-
-#### Jboss as a Service
-
-**> Service Description**
+#### Services Description
 
 The service is based on an open source platform for running and managing Enterprise Java applications, designed to offer reliability, scalability, and flexibility in modern environments. 
 It allows to run Java EE/Jakarta EE applications and microservices, providing a robust environment for business logic, data persistence, and transaction management.  
 It allows to manage the application lifecycle, including deployment, updates, rollbacks, and centralized configuration, ensuring secure and repeatable processes.  
 Thanks to its modular architecture, compatibility with cloud environments, and rich integration with automation and security tools, it represents a strategic solution for companies seeking efficiency, innovation, and operational control.
 
-**> Features and Advantages**
+#### Features and Advantages
 
 JBoss offers a robust, high-performance, and secure environment for developing and managing enterprise applications, providing a stable foundation for the growth and evolution of enterprise systems.  
 The main features and functionalities of the service are:
@@ -288,16 +265,16 @@ The service offers the following advantages:
 - *Faster innovation* → management tools (CLI, Web Console, REST API) and automated deployment and configuration processes reduce the operational burden on IT teams.
 - *DevOps integration* → integrated CI/CD pipelines for build and deployment.
 
-#### Spring boot as a Service
+### Spring boot as a Service
 
-**> Service Description**
+#### Services Description
 
 This service allows you to use Spring Boot, an open-source framework for Java application development, as a managed service.  
 It is designed to simplify the development of production-ready Java applications by providing a platform that eliminates much of the manual configuration required by the traditional Spring framework and reduces the need for server provisioning and dependency management.  
 With a preconfigured environment optimized for the Spring Boot framework, the service allows teams to focus on developing business features, reducing release times and costs.  
 It integrates with DevOps tools and leading cloud services, offering scalability, managed updates, and continuous monitoring.
 
-**> Features and Advantages**
+#### Features and Advantages
 
 The main features and functionalities of the service are:
 
@@ -326,21 +303,15 @@ The service offers the following advantages:
 - *Environment consistency* → Same environments for development, testing, and production.
 - *Microservices support* → Simplified management of distributed architectures.
 
-### BPM Sub-Family
+### PaaS Business Process as a Service
 
-Below is the list of services within the BPM Sub-family:
-
-- PaaS Business Process as a Service
-
-#### PaaS Business Process as a Service
-
-**> Service Description**
+#### Services Description
 
 It is a comprehensive Business Process Management (BPM) platform that helps companies model and automate complex processes, improve productivity and service quality, and ensure control, traceability, and flexibility in an integrated and scalable environment.  
 It combines workflow automation, application integration, and performance monitoring in a single solution. The goal is to improve operational efficiency, reduce execution times, and ensure process consistency across the organization.  
 It facilitates collaboration between business users and IT during the creation, management, validation, and deployment of customized process and decision automation solutions. Business users can modify business logic and business processes without requiring assistance from IT staff.
 
-**> Features and Advantages**
+#### Features and Advantages
 
 The main features and functionalities of the service are:
 
@@ -361,32 +332,209 @@ The service, based on IBM technology, is organized into the following integrated
 
 The service offers the following advantages:
 
--* Operational efficiency and cost reduction* → automation and reduction of manual and repetitive tasks, resulting in reduced personnel costs, errors, and inefficiencies
+- * Operational efficiency and cost reduction* → automation and reduction of manual and repetitive tasks, resulting in reduced personnel costs, errors, and inefficiencies.
 - *Transparency and control* → end-to-end visibility. Each process is tracked in real time. Increases accountability and control.
 - *Quality and standardization* → consistent and compliant processes. Ensures processes are always executed consistently, reducing deviations and variability.
-- *Compliance and auditability* → complete traceability for audits and regulatory compliance. Every step and decision is documented, facilitating internal controls and regulatory compliance.
-- *Monitoring and observability* → integrated dashboards and analytics
+- *Compliance and auditability* → complete traceability for audits and regulatory compliance. Every step and decision is documented, facilitating internal controls and regulatory compliance
+- *Monitoring and observability* → integrated dashboards and analytics.
 
-### CMS Sub-Family
+### PaaS CMS as a Service
 
-Below is the list of services within the CMS Sub-family:
+#### Services Description
 
-- PaaS CMS as a Service
+The service, based on Wordpress, provides comprehensive and versatile tools for creating and managing websites and blogs based on CMS (Content Management System) solutions, which are cloud-based content management systems (CMS) delivered as a service, without having to install or maintain software on your own server.  
+It offers a centralized system that allows for scalable, integrable, and multi-channel content management, with consumption-based costs and no infrastructure overhead.  
+This allows users to focus solely on content creation and management, while the platform handles hosting, maintenance, and updates.
 
-#### PaaS CMS as a Service
+#### Features and Advantages
 
-**> Service Description**
+The main features and functionalities of the service are:
 
-**> Features and Advantages**
+- *Website creation* → content publishing.
+- *Content management (CMS)* → ability to create, edit, and delete content.
+- *Intuitive user interface* → easy content access.
+- *Customization via themes and plugins* → layout management and use of plugins for customization
+- *SEO-friendly* → search engine visibility.
+- *Flexibility and scalability* → adaptability based on needs.
+- *Open Source and Community* → collaboration with the online community.
+- *Accessibility* → tools to improve readability, contrast, keyboard navigation, and compliance with accessibility standards for users with disabilities.
 
-### ETL Sub-Family
+The service offers the following advantages:
 
-Below is the list of services within the ETL Sub-family:
+- *Accelerated time to market* → rapid launch of websites and apps.
+- *Reduced operating costs* → no servers or internal maintenance. High availability and resilience.
+- *Support for omnichannel strategies* (web, mobile, e-commerce, IoT).
+- *Ability to operate in multiple markets* with multilingual websites.
+- *Simplified collaboration* for distributed teams.
+- *Continuous innovation at no additional cost* → new features released by the provider.
+- *Native integration with cloud services* (CRM, analytics, AI, CDN).
+- *Front-end/back-end separation* → freedom to use modern frameworks (React, Vue, Angular, etc.).
 
-- PaaS ETL - Batch / Real Time Processing - 1 worker
+### PaaS ETL - Batch / Real Time Processing - 1 worker
 
-#### PaaS ETL - Batch / Real Time Processing - 1 worker
+#### Services Description
 
-**> Service Description**
+It is a platform that provides a set of tools for processing, integrating, quality-checking, and preparing data from heterogeneous sources stored in the Data Lake, both in real time and in batch mode.  
+It offers a user-friendly graphical interface for designing and implementing data integration workflows using a visual approach, following the ETL (Extract – Transform – Load) approach. This reduces the complexity of data integration and allows users to focus on business logic rather than programming code.  
+It supports a wide range of data sources, including relational databases, files, web applications, cloud, web services, and more. This makes it extremely flexible for data integration in a variety of contexts.  
+It also offers data quality management tools, allowing users to clean, standardize, and enrich their data to ensure its accuracy and reliability.
 
-**> Features and Advantages**
+#### Features and Advantages
+
+The main features and functionalities of the service are:
+
+- *Heterogeneous and large-scale data processing* → It supports a large number of data sources in batch and streaming mode (for example, datasets stored on HDFS, S3, ADLS Gen2, and GCS in CSV, Parquet, Avro, and other formats, as well as RDBMS via JDBC or all popular NoSQL, Apache Kafka, and more).
+- *It is natively integrated* with the Data Lake and Batch/Real-Time Processing PaaS of the Big Data family.
+- *It allows to implement complex data pipelines* → leveraging the parallel and distributed computing capacity provided by a Spark cluster.
+- *It provides an interactive mode* to debug flows and explore data easily and intuitively.
+- *It guarantees the maximum scalability* necessary to meet the needs of organizations of any size, from small businesses to large enterprises.
+
+The main architectural components of the service are as follows:
+
+- *Visual ETL Architecture* → provides various blocks that allow you to visually design an ETL, ELT, and ELL pipeline. It allows you to read, write, and modify data from different sources, interfacing with the Data Lake and Monitoring module, and can use the Processing module for data-intensive processing.
+- *Apache Spark* → Open-source parallel processing framework that supports in-memory processing to improve the performance of applications that analyze Big Data.
+- *JupyterLab* → Interactive notebook-based development environment designed primarily for working with data, scientific calculations, and machine learning. It supports writing and executing interactive code in languages ​​such as Python, R, or Julia.
+- *NodeRed* → Visual, low-code development environment for creating applications that connect devices, web services, APIs, and systems.
+
+The service offers the following advantages:
+
+- *Support for data-driven strategies, faster and more informed decisions* → centralized data for service customization (e.g., real-time analytics for marketing, IoT, e-commerce, etc.) and ready-to-use pipelines without complex development. 
+- *Greater focus on core business* → development and IT teams do not have to worry about technical maintenance, as it is managed.
+-* Reduced operating costs and service scalability* → no infrastructure to manage; support for large data volumes (batch) or continuous flows (streaming); automation of extraction, transformation, and loading processes with real-time scheduling or triggers; same framework for historical data and real-time flows.
+- *Integration with cloud ecosystem* (data warehouse, data lake, BI, AI/ML).
+- *Guaranteed security and compliance* (encryption, access, audit logs).
+- *Integrated monitoring* → metrics, alerts, and centralized logging for ETL pipelines.
+
+## Infra & Ops Platform Family
+
+Below is the list of services belonging to the Infra & Ops Platform family:
+
+- Multicloud Management Platform - Leonardo SCMP
+- Control Room as Service
+- IT infrastructure Service Operations (Logging & Monitoring)
+
+### Multicloud Management Platform - Leonardo SCMP
+
+#### Services Description
+
+Secure Cloud Management Platform (SCMP) is a Multicloud management software platform, designed by Leonardo, for governance, lifecycle management, brokering, and resource automation in hybrid and multi-cloud environments.  
+It offers a self-service portal with a unified service catalog, governance, and customizable dashboards and reports to monitor infrastructure performance and costs.  
+The platform allows to orchestrate, monitor, and control usage, costs, and workflow performance in complex or hybrid multi-cloud environments.  
+It integrates seamlessly with leading Enterprise Cloud Service Providers, On-premise resource virtualization and edge computing systems.  
+It can also manage self-service provisioning of resources: e.g., virtual machines (VMs), storages, clusters, containers, services, complex applications (such as blueprints), or entire application stacks (IaaS, PaaS, CaaS).  
+
+#### Features and Advantages
+
+The service offers the following key features:
+
+- *High compatibility and integration* → integration with major CSPs (AWS, Azure, GCP, Oracle, etc.), virtualization and on premise vendors and systems (VMware, OpenStack, HPE, Nutanix, Hyper-V, bare metal, PXE provisioning), and container orchestration systems (Kubernetes). Integration with third-party systems (e.g., ERP) to offer process automation.
+- *High level of granularity and customization* → the platform offers various graphical views for monitoring and reporting, to meet the needs of each user and team. You can choose whether to have aggregate views and reports by system/subsystem, or by element type or individual element.
+- *Performance and cost monitoring* → through integrated, unified, and intuitive dashboards, users can monitor the current and forecasted status of systems, subsystems, and related resources in terms of resource usage and generated costs. Views can be presented in graphical form with custom tables or graphs, or through the creation of reports, which can be exported in various formats or sent to users periodically. The platform manages the monitoring of aggregate and/or resource/team/cloud costs and enables predictive cost analysis (what-if analysis) to identify waste, comply with recommendations (e.g., resizing, rightsizing), implement budget guardrails, etc.
+- *Self-Service Catalog and Item Provisioning* → authorized users can create and manage their own catalog to orchestrate and manage the various elements within it. For example, an authorized user can deploy new infrastructure resources (e.g., VMs, storage resources, network resources, etc.) to the desired CSPs, launch or modify standard or custom services, pre-configured environments, and blueprints (both proprietary and IaC).
+- *Multicloud security monitoring* → thanks to compatibility with existing security systems and appliances (e.g., SIEM, Key Vaults, Remote attestation for confidential computing, etc.), you can centrally manage your organization's security posture, detecting any vulnerabilities, discrepancies, or non-compliance on the systems or resources monitored by the platform.
+- *Data and User Security Management* → the platform does not process customer data, but only the use of CSP services and/or resources. Identity and access management (IAM) mechanisms are foreseen with the implementation of MFA and RBAC authentication logics, compliant with the principle of least privilege, to regulate access to IT resources and related information based on roles, responsibilities and authorization levels.
+
+The main components are:
+
+- Abstraction Layer (ABS) → lowest platform layer that executes operational workflows towards integrated CSPs.
+- Resource Layer/Manager (RM) → highest platform layer responsible for executing user requests. It is composed of the following modules:
+    - Costs: module responsible for managing and displaying resource costs.
+    - Security: module responsible for managing and displaying security policies and resource compliance status.
+    - Monitoring: module responsible for managing and displaying resource usage metrics.
+    - Inventory and Catalog: modules responsible for managing and displaying all allocated and available resources.
+    - Provisioning: module responsible for the automation and provisioning logic of resources and other services.
+    Tenant: Module responsible for multi-tenant service management and external operational requests
+- Persistence Layer → NoSQL database (MongoDB) used by the RM to store normalized data retrieved from the respective ABS submodules.
+- Integration and Communication Layer → facilitates and orchestrates asynchronous information communication between the ABS and RM modules of the system; allows the ABS submodules to interact with the various APIs of the respective CSPs and external systems
+- Security and Authentication Layer → access management and encryption of sensitive data from provider systems.
+
+The service offers the following advantages:
+
+- *Simplify the management of heterogeneous and complex IT infrastructures* → centralizes resource management across multiple clouds or hybrid infrastructures, simplifying visibility, management, and control of distributed resources.
+- *Scalability and flexibility* → identifies the most suitable IT services and resources at the time, continuously adapting to business needs.
+- *Cloud expense optimization* → enables constant monitoring and optimization of current and forecasted IT infrastructure expenses.
+- *Agility and speed* → on-demand resource allocation and automation of daily operations (e.g., resource management, configuration, scaling) reduces provisioning times and the workload for IT groups.
+- *Faster and more informed decisions* → guides IT development strategy with a data-driven approach.
+- *Reduced time to market* → reduces the time required to develop and deploy new applications, improving time to market and accelerating response to market needs.
+- *Improves the reliability of services and processes *→ governance, security, and compliance policies can be centrally managed, ensuring that Resources are protected and regulations are complied with.
+- *IT Operations Support* → can be integrated with IT service management (ITSM) and IT operations automation tools (such as Ansible, Chef, SaltStack), improving service quality and reducing manual errors.
+
+### Control Room as Service
+
+#### Services Description
+
+The service, developed by Leonardo, involves the adoption of a next-generation platform that aims to provide a comprehensive and innovative response to large urban centers, police forces, large utilities, and organizations that monitor and manage critical infrastructure.  
+This platform is a multi-source, multi-environment system for aggregating, analyzing, and processing data in near real time across multiple application domains.  
+It can leverage existing and installed sensor networks, such as security cameras, hydrogeological detection systems, or fire prevention systems, integrating data with open sources such as social networks, drone monitoring, and satellite data. It can also utilize artificial intelligence algorithms to produce real-time information.  
+This way, operators in the command center and in the field can make decisions quickly and effectively via Leonardo's professional communications networks (DMR, TETRA, and 5G).
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Integration with heterogeneous and multimodal sources* → the platform enables the integration, interaction, and acquisition of data from various heterogeneous and diverse sources, systems, sensors, or other existing and third-party objects (e.g., on-board cameras on air and ground vehicles, satellite images, IoT sensors, social media, applications, etc.), enabling complete and versatile situational awareness.
+- *Intelligent processing* → the system integrates various appropriate Big Data and AI algorithms to create a real-time or predictive decision support system.
+Georeferencing → The acquired information, once appropriately normalized and processed, can be displayed and localized on different levels of cartographic maps for a unified view of the situation.
+- *Simplified interaction with operators* → the information and detected events are displayed to control operators in a graphical and personalized manner (e.g., alert and notification management), enabling intuitive and simplified interaction.
+- *Coordination with Communication systems* → allows you to integrate and coordinate field resources by leveraging the radio network (RIM/DMR) or mobile networks (DMR, TETRA, and 5G).
+- *Activity tracking* → the tracking system records and archives all detected and displayed activities (maintenance, training, events).
+
+Architecturally, the platform has a microservices software architecture composed of multiple layers:
+
+- *Integration layer* → includes all sensors and subsystems that acquire information from the field and is capable of performing initial processing according to domain-specific logic.
+- *Core layer* → the core of the system, where data and events from the integration layer are collected via a microservices infrastructure and made available to the various processing engines to generate the overall situation.
+- *Presentation layer* → based on an innovative graphical interface designed to present information to the operator in a simple, comprehensive, and effective manner. The use of a GIS (Geographic Information System) allows for the georeferencing of all information and activities, including interactions with integrated subsystems.
+
+The service offers the following advantages:
+
+- *Improved risk management and business continuity* → reduced response times to incidents and crises, increased overall organizational resilience.
+- *Cost optimization* → centralizing monitoring activities reduces the need for distributed resources across the territory and improves planning and resource utilization.
+- *Improved image and reputation* → rapid and coordinated response capabilities, more transparent and timely external communication.
+- *Data-driven strategic decisions* → continuous collection of spatial data (weather, traffic, IoT sensors, social monitoring), historical and predictive analysis to support long-term investments and planning.
+- *Compliance and governance* → Compliance with regulations on safety, civil protection, the environment, or infrastructure management. Complete audit trail and traceability of decisions and interventions.
+- *Integrated and real-time monitoring* → Integration of heterogeneous sources, centralized visualization in static or dynamic maps, automatic notifications and configurable alerts for anomalies or critical events.
+- *Efficient operational coordination* → can enable multi-agency collaboration (e.g., law enforcement, civil defense, utility companies, etc.) and create standardized procedures for event management.
+- *Shorter problem resolution time *→ thanks to the details provided (tracing, distributed diagnosis, code, database, and network visibility).
+- *Automation and artificial intelligence* → automatic recognition of patterns or anomalies (e.g., through video analytics or generative AI), automatic generation of intervention or escalation plans, improving forecasting and response capabilities over time.
+- *Traceability and reporting* → complete recording of events, decisions, and actions taken.
+
+### IT infrastructure Service Operations (Logging & Monitoring)
+
+#### Services Description
+
+This is an Application Performance Monitoring (APM) service that monitors and controls infrastructure performance supporting applications (e.g., latency, errors, service availability) and workloads deployed in the PSN cloud environment.  
+It provides centralized collection and analysis across various infrastructure elements: Servers and VMs, Containers and orchestrators, Cloud providers, and Network.  
+It provides AI-based analytics to prevent and resolve issues before they impact users.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Full-stack observability* → connects detected infrastructure metrics with application metrics. For example, if an app slows down, Dynatrace shows whether the cause is a code, database, container, or network issue.
+- *AI-based analysis (Davis AI)* → the Davis AI engine automatically analyzes data, detects anomalies, and identifies the root cause, reducing noise (fewer unnecessary alerts) to only relevant events. Predictions on resource saturation and future performance (capacity planning).
+- *Real-time monitoring* → Interactive and customizable dashboards. Automatic topology mapping (service map) showing how applications and services are connected to the underlying infrastructure resources.
+- *Automation and remediation* → integration with cloud providers (AWS, Azure, GCP, OCI), orchestrators (Kubernetes, OpenShift, VMware Tanzu), DevOps tools (Jenkins, Ansible, Terraform, GitOps), and ITSM/ticketing (ServiceNow, Jira). Ability to automate corrective actions, such as scaling containers, restarting services, and applying patches.
+- *Multi-cloud and hybrid support* → supports brownfield environments (existing) without requiring code changes.
+
+The main components are:
+
+- *OneAgent* → installed software agent for automatic metric collection (CPU, RAM, I/O, network, storage), end-to-end transaction tracing between services, log and runtime event capture, process monitoring, and automatic dependency detection.
+- *ActiveGate* → manages secure communication between OneAgent and the Dynatrace platform for data compression and encryption, reducing network load in distributed environments, and integration with cloud environments (AWS, Azure, GCP) and external APIs.
+- *Dynatrace Cluster* → receives, stores, and processes data from OneAgents, applies analysis and correlation algorithms, ensures scalability, and provides APIs and integration tools (ITSM, CI/CD, DevOps tools).
+- *Davis AI* → AI engine for real-time anomaly analysis, automatic root cause analysis, capacity and performance forecasting, and reduced false positive alerts.
+- *Dynatrace Web UI / Mobile App / API* → interfaces for user interaction, providing: dashboards. Customizable; topological views (Smartscape); dynamic dependency maps between hosts, services, and applications; access via REST API and SDK for integration with DevOps pipelines, ITSM, and automation tools.
+- *Extensions and Integrations* → connect Dynatrace to third-party services and tools
+
+The service offers the following advantages:
+
+- *Reduced operating costs* → thanks to automation and the ability to prevent outages
+Improved user experience → user session monitoring, frontend/backend performance analysis, and continuous optimization.
+- *Increased productivity for development, operations, and DevOps teams* → thanks to clear insights, automatic root cause analysis, and less time spent diagnosing problems.
+- *Improved decision-making for management* → visibility into application KPIs, business metrics, and customer impact, enabling more targeted investments.
+- *Support for sustainability goals* → measurement and optimization of cloud resource usage, reducing infrastructure waste.
+- *Full-stack observability* → metrics, traces, logs, user sessions; Correlation between frontend/backend/infrastructure components.
+- *Automatic detection of dependencies and dynamic topologies* (services, hosts, containers, microservices) through automatic discovery.
+- *Shorter time to resolution* → thanks to the details provided (tracing, distributed diagnosis, code, database, network visibility).
+- *Continuous infrastructure monitoring*
+- *Built-in governance and security capabilities* → policies, vulnerability visibility, runtime monitoring, compliance.
+- *Scalability and high availability* → resilient infrastructure, automatic failovers, and multi-zone deployment in secure clouds to ensure always-on reliability.

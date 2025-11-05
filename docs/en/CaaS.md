@@ -2,25 +2,19 @@
 
 The following table lists the services included in the Container as a Service (CaaS) category.
 
-| FAMILY  | SUB-FAMILY                    | LIST OF SERVICES                                                                                                    |
-| ------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Compute | Confidential - Kubernetes - Private | Kubernetes Confidential Computing |
+| FAMILY  | LIST OF SERVICES                  |
+| ------- | --------------------------------- |
+| Compute | Kubernetes Confidential Computing |
 
 ## Compute Family
 
-Below are the sub-families belonging to the Compute family: 
-
-- Confidential - Kubernetes - Private
-
-### Confidential - Kubernetes - Private Sub-Family
-
-Below is the list of services within the Confidential - Kubernetes - Private Sub-family:
+Below is the list of services belonging to the Compute family:
 
 - Kubernetes Confidential Computing
 
-#### Kubernetes Confidential Computing Service
+### Kubernetes Confidential Computing Service
 
-**> Service Description**
+#### Services Description
 
 This service provides a platform for orchestrating private and secure containers, designed to manage containerized applications in highly regulated environments or with confidentiality requirements.  
 It offers a secure and controlled Kubernetes environment where security is a key aspect of the solution.  
@@ -28,7 +22,7 @@ The operating system on which the solution is based is hardened to minimize the 
 The solution's architectural components utilize mechanisms that ensure data security, including during communication (via encryption mechanisms applied by default to communications between platform components) and for data stored within the platform itself.
 The platform can be customized to adapt to the specific needs of each organization, ensuring integration with existing enterprise systems and applications.
 
-**> Features and Advantages**
+#### Features and Advantages
 
 Implementation requires a combination of hardware certified for Confidential Computing, a private, security-hardened Kubernetes infrastructure, and a suite of observability and governance tools to maintain complete control over the container lifecycle.
 
