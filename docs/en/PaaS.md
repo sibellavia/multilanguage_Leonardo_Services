@@ -23,7 +23,7 @@ The following table lists the services included in the Platform as a Service (Ca
 | DevSecOps            | Configuration Manager                                       |
 | DevSecOps            | Test Automation                                             |
 | DevSecOps            | Quality Code Analysis                                       |
-| DevSecOps            | DevSecOps As A Service By PSN                               |
+| DevSecOps            | DevSecOps As A Service                                      |
 | DevSecOps            | Qualizer DevSecOps                                          |
 | Big Data             | Data Lake - 1TB                                             |
 | Big Data             | Data Lakehouse                                              |
@@ -412,8 +412,11 @@ Below is the list of services belonging to the Infra & Ops Platform family:
 - Multicloud Management Platform - Leonardo SCMP
 - Control Room as Service
 - IT infrastructure Service Operations (Logging & Monitoring)
+- PaaS Ticket Management Service
+- PaaS Ticket Management Service (ITSM)
+- PaaS Ticket Management Service (ADD-ON ITOM)
 
-### Multicloud Management Platform - Leonardo SCMP
+### Multicloud Management Platform - Leonardo Secure Cloud Management Platform (SCMP)
 
 #### Services Description
 
@@ -516,7 +519,7 @@ The service offers the following main features:
 - *Automation and remediation* → integration with cloud providers (AWS, Azure, GCP, OCI), orchestrators (Kubernetes, OpenShift, VMware Tanzu), DevOps tools (Jenkins, Ansible, Terraform, GitOps), and ITSM/ticketing (ServiceNow, Jira). Ability to automate corrective actions, such as scaling containers, restarting services, and applying patches.
 - *Multi-cloud and hybrid support* → supports brownfield environments (existing) without requiring code changes.
 
-The main components are:
+The main components of the service are:
 
 - *OneAgent* → installed software agent for automatic metric collection (CPU, RAM, I/O, network, storage), end-to-end transaction tracing between services, log and runtime event capture, process monitoring, and automatic dependency detection.
 - *ActiveGate* → manages secure communication between OneAgent and the Dynatrace platform for data compression and encryption, reducing network load in distributed environments, and integration with cloud environments (AWS, Azure, GCP) and external APIs.
@@ -538,3 +541,580 @@ Improved user experience → user session monitoring, frontend/backend performan
 - *Continuous infrastructure monitoring*
 - *Built-in governance and security capabilities* → policies, vulnerability visibility, runtime monitoring, compliance.
 - *Scalability and high availability* → resilient infrastructure, automatic failovers, and multi-zone deployment in secure clouds to ensure always-on reliability.
+
+### PaaS Ticket Management Service
+
+#### Services Description
+
+The service offers tools for managing user requests, incidents, related problems, and the entire ticketing cycle.  
+Intelligent automation: integrated AI functions (classification, knowledge suggestion, sentiment, and draft generation) reduce manual workload and speed up resolution.  
+Self-service and multi-channel: users can open tickets via the portal or email and view their status. This promotes a good user experience.  
+Integration with assets, services, and configuration: It can connect to the service catalog, CMDB, and asset management, making ticketing part of a broader IT management ecosystem.
+
+#### Features and Advantages
+
+The service, based on Matrix42, features a modular architecture, with components covering the user interface, workflow/automation engine, integration with external systems, databases, and reporting. It offers the following main features:
+
+- *Incident and Service Request Management* → allows for the logging, classification, and resolution of incidents and service requests via a portal, email robot, or Service Desk agent.
+- *Self-Service Portal and Service Catalog* → the portal allows users to request services, check ticket status, view announcements, and view knowledge/FAQs.
+Workflow, Automation, and Low-Code Platform → offers a visual workflow builder (drag & drop) with no coding required to automate processes such as approvals, escalations, and ticket assignment.
+- *Integrated Artificial Intelligence* → the "AI Assist" module automatically suggests ticket category, impact, and urgency, analyzes user sentiment ("user mood"), and suggests knowledge base articles or similar tickets ("resolution helper").
+- *SLA Monitoring, Reporting, and Dashboards* → analyzes support processes, KPIs, and provides visibility into service desk performance.
+- *Customization, Roles, and Permissions* → Supports the definition of user roles, granular permissions, filters, custom views, and dedicated dashboards. agents/managers.
+
+The main components of the service are:
+
+- *UUX (Unified User Experience)*: the platform's UI component, which unifies the web interface ("low-code solution") for users, agents, and administrators.
+- SolutionBuilder: A low-code/"no-code" module for configuring/modifying layouts, views, data models, and interfaces. Allows interface and data customization without (much) code.
+-* Workflow Studio / Designer / Worker Engine*: components for defining, managing, and executing workflows and automations.
+- Database and storage: the platform uses multiple databases (e.g., "Master" database for operational data, "Data Warehouse" for analysis/reporting, "History Database" for logs and change history), typically on Microsoft SQL Server + Analysis Services + Reporting Services.
+- *Integration / API / Data providers*: the platform supports integration with Active Directory/Azure AD, external databases, REST API, SOAP, flat files, and SQL for reading/writing.
+- *Flexible deployment*: it can be delivered on-premise, in a public cloud, a private cloud, or a hybrid ("Cloud your way") to adapt to compliance, scalability, and geographic requirements.
+
+The service offers the following advantages:
+
+- *Reduced operating costs* → thanks to process automation and a reduction in manual tasks, fewer repetitive interventions and a lower cost per ticket.
+Increased support team productivity → thanks to workflow automation, the use of AI (for automatic classification, suggestions, pre-populated responses), and self-remediation, the manual burden on IT operators is reduced. The self-service portal and knowledge base enable self-resolution of many user issues.
+- *Support for business decisions* → integrated reports and dashboards provide KPIs on average response times, resolution, ticket volumes by category, and seasonal trends.
+- *Improved user experience* → users can open tickets, monitor status, and find solutions independently, reducing frustration and wait times. Furthermore, it fosters a collaborative and efficient environment between users and support teams, with agents viewing the same status in real time.
+- *Improved control and governance of IT services* → provides a comprehensive view of assets, users, and services, supporting regulatory compliance and service level agreement (SLA) monitoring in a documented and traceable manner.
+- *Native integration with the IT ecosystem* → possible integrations with SSO systems (e.g., Active Directory/Azure AD), UEM, Asset Management, Change Management, IT monitoring, HR systems, and others via API, reducing information silos and improving data quality.
+
+### PaaS Ticket Management Service (ITSM)
+
+#### Services Description
+
+The service, powered by ServiceNow, offers a suite of cloud-based capabilities for structured and automated management of IT user requests, according to ITIL (Information Technology Infrastructure Library) best practices.  
+It acts as a single point of management for requests, incidents, problems, changes, and IT resources to centralize the management of IT tickets generated by user requests and improve their experience.  
+It automates workflows, gains real-time visibility, and improves IT productivity by providing services to users through any channel using virtual agents.  
+It offers a portal for interactions with users requesting services and an interface for technical operators who receive tickets and manage them until resolution.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Incident Management* → automated workflows for recording, classifying, assigning, and resolving incidents and service interruptions
+- *Problem Management* → identifying and managing root causes. Preventing future incidents through workarounds and definitive solutions
+- *Change Management* → manage IT changes in a controlled manner with approval workflows and risk assessment
+- *Request Management / Service Catalog* → self-service portal for IT service requests (hardware, software, access). Configurable and integrated service catalog with approval workflow
+- *Knowledge Management* → centralized repository of articles, FAQs, procedures, and solutions, accessible via the user portal and Virtual Agent
+Customizable dashboards for IT teams, managers, and business.
+
+As architectural level, the ITSM service's application layer is based on a processing component distributed across three nodes.  
+The three nodes expose web services managed by a load balancer located in front of the solution. 
+The Application Nodes access a database consisting of a MariaDB database.  
+The platform will also be integrated with the customer's mail system to allow the platform to send notification emails to both requesting users and operator users by configuring an SMTP flow to the customer's mail system.  
+To meet the most stringent security requirements, data encryption is implemented using keys stored on HSM devices. This will be made possible by interfacing with the KMS module common to all PaaS services.  
+An external and cross-functional component of identity, verifies credentials and issues authentication tokens that will be validated by the services subject to interaction requests and will be used exclusively by solution administrators.
+
+The service offers the following advantages:
+
+- *Reduced operating costs* → thanks to process automation and a reduction in manual tasks, fewer repetitive interventions and a lower cost per ticket.
+Increased support team productivity → thanks to workflow automation, the use of AI (for automatic classification, suggestions, pre-populated responses), and self-remediation, the manual burden on IT operators is reduced. The self-service portal and knowledge base enable self-resolution of many user issues.
+- *Support for business decisions* → integrated reports and dashboards provide KPIs on average response times, resolution, ticket volumes by category, and seasonal trends.
+- *Improved user experience* → users can open tickets, monitor status, and find solutions independently, reducing frustration and wait times. Furthermore, it fosters a collaborative and efficient environment between users and support teams, with agents viewing the same status in real time.
+- *Improved control and governance of IT services* → provides a comprehensive view of assets, users, and services, supporting regulatory compliance and service level agreement (SLA) monitoring in a documented and traceable manner.
+- *Native integration with the IT ecosystem* → possible integrations with SSO systems (e.g., Active Directory/Azure AD), UEM, Asset Management, Change Management, IT monitoring, HR systems, and others via API, reducing information silos and improving data quality.
+
+### PaaS Ticket Management Service (ADD-ON ITOM)
+
+#### Services Description
+
+This optional module, integrated with the ITSM service, provides IT infrastructure and service performance management. It allows you to monitor, automate, and optimize IT operations (infrastructure, applications, networks, cloud services).  
+It ensures that the infrastructure delivering services is stable, scalable, and monitored to improve service continuity, end-to-end visibility, and proactive system management.  
+In conjunction with the ITSM service, it offers integrated and comprehensive IT management, from the service desk to operations and infrastructure.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Discovery* → automatic discovery of IT assets (servers, databases, applications, devices, containers, clouds). Dynamically updates the CMDB (Configuration Management Database) with relationships and dependencies.
+- *Service Mapping* → allows you to understand the impact of incidents or changes on critical applications.
+Event Management → Centralizes events from monitoring systems (e.g., Nagios, Zabbix, Splunk, Dynatrace, etc.). Uses correlation and deduplication to reduce noise and identify the root cause. Direct integration with ITSM Incident Management.
+- *Operational Intelligence (AIOps)* → machine Learning algorithms to detect anomalies, trends, and load forecasts. Helps prevent downtime and reduce MTTR (Mean Time to Repair).
+- *Cloud Management →* Provisioning and orchestration of multi-cloud resources (AWS, Azure, Google Cloud). Cost governance and compliance of cloud resources.
+- *Orchestration and Automation* → automating repetitive tasks (password reset, server restart, application provisioning). Pre-configured and low-code/no-code workflows to accelerate adoption.
+
+At the architectural level, the service's application layer is based on a processing component distributed across three nodes.  
+The three nodes expose web services managed by a load balancer located at the front of the solution.  
+The Application Nodes access a database consisting of a MariaDB database instance.  
+The platform will also be integrated with the customer's email system to allow the platform to send notification emails to both requesting and operator users by configuring an SMTP flow to the customer's email system.  
+To meet the most stringent security requirements, data encryption is implemented using keys stored on HSM devices. This will be made possible by interfacing with the KMS module common to all PaaS services.  
+Mid: server instantiated within the customer's perimeter; in the case of segregated perimeters, multiple Mid Servers can be configured (one per sub-perimeter). It is the server responsible for carrying out the discovery and acting as a 'collector' and which interfaces with the Service Now Application Servers to provide the collected/discovered information.
+
+The service offers the following advantages:
+
+- *Reduced downtime* → fewer service interruptions and greater business continuity.  
+- *Increased IT productivity* → thanks to the automation of repetitive tasks.
+- *IT cost optimization* → proactive resource management and cloud consumption control.
+- *Improved user experience* → services are always available and more reliable.
+- *More informed decisions* → dashboards and reports on performance and capacity.
+- *Compliance and risk reduction* → centralized governance and resource control.
+- *Automatic discovery* of servers, applications, and cloud resources with continuous CMDB updates.
+- *Integrate with third-party systems *(e.g., ERP, CRM, monitoring tools, etc.) via APIs and connectors.
+- *Service mapping* to visualize dependencies between IT components and application services.
+- *Cloud-native scalability* → the platform easily grows with business needs.
+- *Operational Intelligence* → use of AI and machine learning algorithms for automated and preventative detection of anomalies or failures.
+- *Integrated security and compliance*.
+- *Automation and orchestration of IT processes* (provisioning, reset, patching) with low-code/no-code workflows.
+
+##  DevSecOps Family
+
+Below is the list of services belonging to the  DevSecOps family:
+
+- Configuration Manager
+- Test Automation
+- Quality Code Analysis
+- DevSecOps As A Service
+- Qualizer DevSecOps
+
+### Configuration Manager
+
+#### Services Description
+
+The service, based on Red Hat Ansible Automation Platform, is a comprehensive automation solution for managing IT infrastructure, simplifying operations, and accelerating development and deployment processes.  
+It is a platform that acts as a powerful and flexible configuration manager, helping organizations automate repetitive or manual tasks, implement complex configurations, and orchestrate workflows centrally and securely through a declarative and automated approach, ensuring consistency and improving overall operational efficiency and compliance.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Declarative automation* → use of playbooks to clearly describe the desired state of resources. Support for role-based automation, reuse, and modular configurations.
+- *Centralized execution management* → task orchestration via Ansible Controller with scheduling, auditing, and notifications. Dashboards and reporting for real-time monitoring of automations.
+- *Integration with DevOps pipelines* → support for CI/CD tools (Jenkins, GitLab, GitHub Actions, OpenShift Pipelines). Automatic execution of playbooks in response to events or code commits. Credential and secret management. Integration with Red Hat Ansible Vault, CyberArk, HashiCorp Vault, and other secret managers.
+- *Scalability and multi-tenancy* → support for multi-organization environments with role and access segregation. Distributed execution via containerized Automation Execution Environments.
+- *Compliance and security * → full operation logging and Role-Based Access Control (RBAC)-based access control. Compliance with corporate and regulatory security standards.
+
+The service uses an agentless architecture and YAML-based playbooks to define, deploy, and maintain desired system states across various infrastructure components, including servers, networks, storage, and cloud resources. The main components of the service are:
+
+- *Automation Controller* → Web interface and REST API for centralized automation management. Orchestration engine that coordinates playbook execution.
+- *Automation Execution Environments (EE)* → standardized containers containing the Ansible runtime, modules, plugins, and specific dependencies. They enable portability and consistency of execution across different environments.
+- *Automation Hub* → private repository for distributing content collections (modules, roles, plugins). It promotes reuse and version control of Ansible content.
+- *Automation Mesh* → distributed architecture for scalable job execution on remote nodes or in the cloud. Ensures reliability and load balancing of automations
+- *Inventory and Credential Store* → defines target systems (servers, VMs, containers, network devices, cloud services). Securely manages access credentials for each target or environment.
+*APIs and Integrations* → RESTful API for integration with external monitoring, ticketing, or orchestration systems.
+
+The service offers the following advantages:
+
+- *Reduced operating costs* → automating repetitive and manual tasks reduces the time spent on system management and maintenance.
+- *Increased reliability and service quality* → standardized and automated configurations reduce inconsistencies between environments (dev, test, prod).
+- *Scalability of IT business* → the platform grows with the organization, managing hundreds or thousands of nodes without linear staff growth.
+- *Improved IT compliance and governance* → all changes are tracked and documented, ensuring transparency and compliance with regulations and corporate policies.
+- *Increased productivity and collaboration* → DevOps, IT Operations, and Security teams can work on a single shared platform, reducing organizational silos.
+- *End-to-end automation* → from operating system configuration to application deployment, patch management, and ongoing maintenance.
+- *Standardization and repeatability* → playbooks ensure consistent configurations and easy reuse of automation code.
+- *Centralized and secure management* → a single interface (Controller) for orchestrating jobs, managing inventories, credentials, and access policies (RBAC). Secure management of credentials and secrets (Vault), centralized auditing, and support for enterprise authentication (LDAP, SSO, OAuth).
+- *Distributed scalability* → job execution can be distributed across multiple nodes, improving performance and resilience.
+- *Complete visibility and traceability* → dashboards and analytical reports allow you to monitor the effectiveness of automations and resource usage.
+
+### Test Automation
+
+#### Services Description
+
+The service is designed to automate software testing activities, with the goal of improving quality, reducing release times, and increasing development process efficiency.  
+The solution uses the UiPath RPA (Robotic Process Automation) platform to automate software testing (functional, regression, API, user interface).  
+It was created to support both IT and business teams in the continuous validation of applications, digital processes, and RPA robots to increase testing efficiency and ensure software integrity.  
+It supports Agile and DevOps approaches with Continuous Testing to ensure code changes do not introduce new defects.  
+Centralized monitoring: Test results are collected and displayed in a single interface, facilitating monitoring and analysis via UiPath Test Manager and extensible with dashboards on UiPath Insights.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Test automation for applications* → test automation for web, desktop, mobile, and API applications. Support for cross-browser and cross-platform testing.
+Reuse of RPA components → automations developed in UiPath Studio can be reused as test cases. This reduces test creation time and costs.
+- *Test Manager* → centralized tool for planning, executing, and monitoring tests. Dashboard with KPIs and integrated reporting.
+- *DevOps Integration* → integration with CI/CD tools (Azure DevOps, Jenkins, GitLab, etc.). Ability to run tests in software release pipelines.
+- *Scalability* → tests can be deployed to UiPath robots in parallel, reducing execution times.
+- *Automated Continuous Testing* → "Shift-left" approach: quality is validated from the early stages of development. Ensures fewer bugs in production.
+
+The main components of the service are:
+
+- *Studio / Studio Pr*o → Development environment (IDE) for creating automated tests, similar to creating RPA workflows.
+- *Orchestrator* → for scheduling, deploying, and running tests at scale.
+- *Test Manager* → for managing requirements, organizing test suites, collecting metrics and reporting.
+- *Robotic Test Execution* → UiPath robots become "digital testers," running tests autonomously.
+- *Testing Robots* → Specialized test execution robots; support testing frameworks such as NUnit, MSTest, and Junit.
+- *Insights *→ Manages the creation of dashboards for monitoring various testing processes; allows you to calculate the return on investment of initiatives.
+
+The service offers the following advantages:
+
+- *Reduced software release times* → thanks to faster and more continuous testing cycles.
+- *Improved software quality* → fewer bugs in production and reduced maintenance costs.
+- *Reduced manual testing costs *→ less time spent on manual testing and more focus on strategic testing.
+- *High Return on Investment (ROI)* → thanks to a single automation and testing platform.
+- *IT-business alignment* → greater reliability and traceability of results.
+- *Support for Agile and DevOps CI/CD approaches* with continuous validation.
+- *Reduced risk of regressions* → more confident release of new features.
+- *Multi-level test automation* (UI, API, mobile, desktop, SAP, Salesforce).
+- *Controlled scalability* → assigned resources can be scaled horizontally or vertically to meet performance and operational needs.
+- *Multi-platform support* (Web, Mobile, Mainframe, API, Enterprise systems).
+
+### Quality Code Analysis
+
+#### Services Description
+
+The service, based on SonarQube, offers public administrations a robust static code analysis tool, supporting software quality and integration into CI/CD processes.  
+Thanks to its architecture and ability to integrate into the continuous development and analysis cycle, it enables the development of high-quality software and fully supports DevSecOps initiatives. The service also enables in-depth source code security analysis, detecting known vulnerabilities, injections, poor cryptographic practices, uncontrolled access, and potential exploits.  
+Integrating directly into CI/CD pipelines or through supported DevOps platforms, it analyzes source code against a broad set of quality rules, covering aspects such as code maintainability, software reliability, and application security.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Static code analysis* → automatically scans source code with over 5,000 predefined or customizable rules. Supports over 30 languages.
+- *Quality gates* → defines minimum quality thresholds (e.g., zero critical bugs, zero vulnerabilities, code coverage > 80%). If the code does not meet the criteria, the build is blocked, preventing the release of "dirty" software.
+- *Bug and vulnerability Detection* → highlights issues that could cause runtime errors or security risks. Integration with OWASP Top 10, CWE, and SANS security rules.
+- *Code smells & debt* → identify development practices that reduce readability or increase technical debt. Calculates an indicator of the time required to "clean up" the code.
+- *Test coverage* → measures the percentage of code covered by unit tests. Helps identify critical untested areas.
+- *DevOps integration* → can be integrated into CI/CD processes. Provides immediate feedback to developers throughout the development cycle
+- *Reporting and dashboards* → interactive dashboards with KPIs on quality, security, and maintainability. Historical trends to monitor code quality evolution over time
+- *Multi-branch & Pull request analysis* → analysis of specific branches and pull requests for immediate feedback before merging.
+
+The main components of the service are:
+
+- *SonarQube server* → core module of the service, responsible for running analyses, applying static verification rules, and centralized results management. It includes: analysis engine, quality gate engine, rule repository, user and permissions management, and RESTful APIs.
+- *Database* → stores analysis results, active rules, and project history. Supports PostgreSQL, Oracle, SQL Server, and MySQL.
+- *SonarScanner* → code analysis tool. It can be run locally by developers or integrated into CI/CD pipelines.
+- *CI/CD Integration* → plugins and APIs available for Jenkins, Azure DevOps, GitLab CI, GitHub Actions, Bamboo, and TeamCity.
+- *Security and Governance* → Authentication via LDAP, Active Directory, SAML, and OAuth. Granular roles (Admin, Project Admin, Developer, and Viewer).
+- *Web portal* → browser-accessible user interface that allows developers, QA, team leaders, and analysts to view detailed project metrics and quality indicators, consult and manage Quality Gates, and view aggregated dashboards and reports at the project portfolio level. The portal is secure, multi-user, and configurable via granular roles and permissions.
+
+The service offers the following advantages:
+
+- *Lower risk of bugs in production and reduced maintenance costs* → more reliable and stable software, cleaner and more maintainable code.
+- Compliance with security standards → regulatory and audit support.
+- *Increased customer/stakeholder trust* → software perceived as more secure and robust.
+- *Long-term Return On Investment (ROI)* → less time and resources spent on late fixes.
+- *Increased team productivity* → less rework, more focus on new features.
+- *Support for Agile and DevOps approaches* → the service enables the Clean as You Code approach and automates quality and security checks, reducing time to remediation thanks to immediate feedback to developers.
+- *Improved software quality* → through the systematic application of quality rules, the service helps improve code maintainability and readability.
+Technical debt management → estimate the time to fix issues.
+
+### DevSecOps As A Service
+
+#### Services Description
+
+The service, based on Gitlab, offers an integrated environment for the complete management of the software development lifecycle according to the DevSecOps approach and practices, providing the tools needed for collaboration, development, testing, security, and software release in a single integrated environment.  
+The service aims to support organizations in introducing application development, release, and management processes characterized by automation, security, and compliance, thus promoting the creation of reliable digital solutions aligned with required quality standards.  
+It allows you to manage projects and repositories, control source code versions, automate CI/CD pipelines, and collaborate efficiently with development teams.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Git repositories* → represent the collection point for source code. They enable versioning, change tracking, and collaboration across multiple development teams.
+- *CI/CD pipeline* → automation of build, test, and release phases. They reduce manual errors, speed delivery times, and ensure process repeatability.
+- *Security Integration (DevSecOps)* → automatic scans of code (SAST), dependencies (SCA), container images, and infrastructure configurations. Early identification of vulnerabilities and tracking of remediation directly within development workflows.
+- *Artifact and Container Management* → centralized storage of build artifacts and container images. Support for secure and controlled deployment across the various phases of the environment (development, testing, production).
+- *Monitoring and governance* → dashboards to view code quality, security, and project status. Role-based access controls and integration with identity management systems to ensure compliance and accountability.
+
+The main components of the service are:
+
+- *GitLab core platform* → this is the core of the platform and encompasses its main features: a web interface, API, database, and team collaboration tools.
+- *Git repository* → a service dedicated to managing Git repositories. It handles code versioning and timely tracking of all changes.
+- *CI/CD Engine GitLab Runner* → a service responsible for executing CI/CD jobs defined within pipelines, automating build, test, and deployment processes.
+- *Artifact registry* → a module dedicated to managing and archiving artifacts generated during CI/CD pipelines, such as packages, container images, and libraries. It ensures traceability, security, and reuse of software components.
+- *Test Management* → a component that supports the structured management of testing activities, enabling the planning, execution, and monitoring of test cases to ensure software quality throughout the development lifecycle.
+
+The service offers the following advantages:
+
+- *Reduced time to market* → thanks to automation and integrated pipelines.
+- *Reduced operating costs* → a single platform instead of multiple separate tools.
+- *Increased team productivity* → thanks to centralized collaboration. 
+- *High Return On Investment (ROI)* → reduced rework and post-release remediation.
+- *Increased stakeholder trust* → more secure code and faster releases.
+- *Native security integration* → integrated DevSecOps capabilities. Ensures compliance with corporate and regulatory policies.
+- *Integrate project management with native tools* (issue boards, milestones, etc.).
+- *Centralize source code and CI/CD pipeline management*.
+- *Foster collaboration between technical and project teams*.
+- *Increase team productivity* through process automation.
+
+### Qualizer DevSecOps
+
+#### Services Description
+
+Leonardo's Qualizer service is a platform designed to meet the needs for visibility, control, and continuous improvement of the software lifecycle throughout the development cycle, in accordance with the DevSecOps and Agile approach.  
+It offers a centralized tool for analyzing, observability, and governance of software quality.  
+The service allows you to aggregate data from various sources, security, monitoring, and testing tools, integrating them into a user dashboard (portal) that clearly and graphically displays various interactive metrics and insights.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Ingestion* → automatically collects data from the main tools used in development processes, such as code management systems, continuous integration tools, and software quality and security analysis. The collected data is processed and made available for consultation and analysis.
+- *Data processing* → processes the data collected by the ingestion module, normalizes it, and extracts key metrics. The data is structured and made highly accessible via dashboards.
+- *Project management* → this module allows you to configure and organize projects within the service. It allows organizations to specify which products, pipelines, and tools they wish to monitor and associate useful information for navigation and management with each project.
+- *Analytics engine* → the service provides summary and analytical views that aggregate the collected information and present it clearly and understandably (e.g., DevOps performance metrics; code security status; code quality; number of tests performed; percentage of tests passed).
+- *Presentation layer* → data is made available through dashboards that allow for the analysis and continuous monitoring of key metrics.
+
+The Qualizer service is cloud-native and based on a containerized microservices system. This architecture allows Qualizer to be flexible, resilient and secure, with the ability to adapt to different technological scenarios.  
+At a logical level, the architecture is divided into the following main components:
+
+- *Core modules* → each service module (e.g., ingestion, project management, data processing) is implemented as an independent microservice, orchestrated in a Kubernetes/OpenShift environment to ensure high availability and functional isolation.
+- *Database for storing collected data* → data acquired from external systems is stored in a centralized database, which is then processed and normalized to support efficient metrics processing, interactive consultation, and dashboard generation.
+- *Integration via REST API* → the service interacts with external platforms through standard APIs, enabling continuous data collection.
+- *Messaging broker* → the service uses a Kafka-based messaging system to ensure decoupling between modules, support high event loads, and facilitate horizontal scalability.
+
+The service offers the following advantages:
+
+- *Reduced time to market* → thanks to automation and integrated pipelines.
+- *Reduced operating costs* → a single platform instead of multiple separate tools.
+- *Increased team productivity* → thanks to collaboration between developers and security specialists, aligning objectives and timelines.
+- *High Return On Investment (ROI)* → reduced rework and post-release remediation.
+- *Increased stakeholder trust* → more secure code and faster releases.
+- *Centralized security management* → vulnerabilities detected by various scanning tools are collected, normalized, and tracked in a single location, facilitating the work of security teams and reducing the risk of omissions.
+- *Reduced remediation time* → thanks to immediate visibility of vulnerabilities, Qualizer accelerates the process of taking charge and resolving issues.
+-* Continuous improvement based on collected metrics* → through standardized dashboards and indicators, the service allows you to objectively measure team and project performance.
+- *Unified dashboard* for quality, security, and deployment monitoring.
+
+# Big Data Family
+
+Below is the list of services belonging to the Big Data family:
+
+- Data Lake - 1TB
+- Data Lakehouse
+- Business Intelligence
+- Batch/Real time Processing - 1 Worker
+- Event Message
+- Data Governance
+
+### Data Lake - 1TB
+
+#### Services Description
+
+It provides a ready-to-use platform developed by Leonardo that has all the features developers, data scientists, and analysts need to easily archive data of all sizes, shapes, and velocities.  
+It allows for the ingestion of a wide range of heterogeneous data sources (structured, semi-structured, and unstructured), from various internal and external sources within the organizations (relational databases, files, web applications, cloud, web services, etc.), and of various classification types.  
+It integrates with the Processing/ETL module for accessing data and metadata for the necessary processing or normalization, and with the Data Governance module for managing data access and managing data security and protection.
+
+#### Features and Advantages
+
+Data Lake is the foundation for all Big Data services; without it, other services cannot be activated.  
+It was designed based on, and with full wire-protocol compatibility with, Amazon's renowned cloud storage product (Simple Storage Service). This enables the scalability needed to manage data volumes in the petabyte range (and beyond) typical of the Big Data world, while ensuring maximum interoperability and compatibility with languages, libraries, and products compatible with the S3 protocol.  
+Data Lake's capabilities are based on a horizontally scalable infrastructure, capable of supporting heavy read and write loads, ensuring consistent performance even in scenarios characterized by large amounts of data and intensive throughput.
+
+The development technology is based on MinIO, an object storage solution fully compatible with the S3 protocol.  
+The application layer is built on distributed object storage, which in turn relies on an underlying block storage layer, which can be implemented either bare metal or using software-defined solutions.  
+The overall architecture is based on containers orchestrated by a resource manager based on an enterprise-class Kubernetes distribution.  
+Resource management and container orchestration are based on the Red Hat Openshift platform.  
+To meet the most stringent security requirements, data encryption is implemented using keys stored on HSM devices. This will be made possible by interfacing with the KMS module common to all PaaS services.
+
+The service offers the following advantages:
+
+- *Compliance and governance* → supports versioning, auditing, encryption (AES-256), and integration with identity management systems.
+- *Flexibility and scalability* → supports horizontal scalability; ideal for companies with rapidly growing data or multi-petabyte storage needs.
+- *Rapid time to market* → allows you to quickly deploy new analytical applications or data pipelines without worrying about underlying management.
+- *Simplified management* → teams don't need to worry about technical maintenance. There's no need to configure clusters, load balancers, manual replication, or complex monitoring; it offers native monitoring and alerting tools.
+- *Reduced operating costs* → the service is built with open source standards and compatible with S3, thus reducing licensing costs compared to proprietary solutions.
+- *High availability and resilience* → integrated replication and support for erasure coding ensure data resilience and business continuity.
+- *Optimized performance* → designed for high-performance object storage, with high throughput and low latency. Ideal for real-time analytics and intensive ML/AI workloads.
+- *Interoperability* → S3 API compatibility allows for easy integration of existing applications. Supports multi-protocol access.
+- *Automation and DevOps-friendly* → it enables continuous updates without downtime and simplified backup management.
+
+### Data Lakehouse
+
+#### Services Description
+
+The solution, based on Cloudera's Open Data Lakehouse, helps organizations perform rapid analytics on all data, both structured and unstructured, at scale. It eliminates silos and enables teams to collaborate on the same data using their preferred tools.  
+It allows for the ingestion of a wide range of heterogeneous data sources (structured, semi-structured, and unstructured), from various internal and external sources within the organizations (relational databases, files, web applications, cloud, web services, etc.), and of various classification types.  
+It integrates with the Processing/ETL module for accessing data and metadata for the necessary processing or normalization, and with the Data Governance module for managing data access and managing data security and protection.
+
+#### Features and Advantages
+
+It is composed of three modern data architectures:
+
+- *Open Data Lakehouse* → enables multifunctional analytics on both streaming data and data stored in a cloud-native object store across hybrid and multi-cloud environments.
+- *Unified Data Fabric* → centrally orchestrates disparate data sources intelligently and securely.
+- *Data Mesh* → helps eliminate data silos by distributing ownership to cross-functional teams while maintaining a common data infrastructure.
+
+The main components of the service are:
+
+- *Shared Data Experience (SDX)* → it combines centralized security, governance, traceability, and enterprise-grade management capabilities with shared metadata and a data catalog.
+- *Data HUB* → it allows users to deploy analytics clusters across the entire data lifecycle as elastic IaaS experiences.
+- *Data Services* → they are containerized analytical applications through which users can deploy clusters similar to those possible in Data Hub, but with the added benefit of being delivered as a Platform as a Service (PaaS) experience.
+- *Cloudera Data Warehouse (CDW)* → it uses the combination of Apache Impala and Apache Iceberg to offer broader coverage than traditional data warehouses (it stores both data and metadata in the data lake, leading to a range of benefits).
+- *Cloudera Machine Learning (CML)* → a machine learning workflow solution that supports the entire data science lifecycle, designed to use containers for efficient data engineering and machine learning tasks.
+- *Data Catalog* → it offers a centralized and scalable way to democratize data access across the entire Data Lakehouse.
+Management Console → provides a single interface to support the operation of users, environments, and analytical services that support each Data Lakehouse.
+
+The service offers the following advantages:
+
+- *Compliance and governance* → supports versioning, auditing, encryption (AES-256), and integration with identity management systems.
+- *Flexibility and scalability* → supports horizontal scalability; ideal for companies with rapidly growing data or multi-petabyte storage needs.
+- *Rapid time to market* → allows you to quickly deploy new analytical applications or data pipelines without worrying about underlying management.
+- *Simplified management* → teams don't need to worry about technical maintenance. There's no need to configure clusters, load balancers, manual replication, or complex monitoring; it offers native monitoring and alerting tools.
+- *Reduced operating costs* → the service is built with open source standards and compatible with S3, thus reducing licensing costs compared to proprietary solutions.
+- *High availability and resilience* → integrated replication and support for erasure coding ensure data resilience and business continuity.
+- *Optimized performance* → designed for high-performance object storage, with high throughput and low latency. Ideal for real-time analytics and intensive ML/AI workloads.
+- *Interoperability* → S3 API compatibility allows for easy integration of existing applications. Supports multi-protocol access.
+- *Automation and DevOps-friendly* → it enables continuous updates without downtime and simplified backup management.
+
+### Business Intelligence
+
+#### Services Description
+
+The solution offers a platform with a suite of Business Intelligence tools based on Microsoft's Power BI, enabling organizations to analyze and visualize data to gain strategic insights.  
+It transforms raw data into interactive reports and visually appealing dashboards, facilitating data-driven decision-making. Users can connect to a wide range of data sources, including SQL and NoSQL databases, files, cloud services like Azure, and many others.  
+It supports integration with other Microsoft products, such as Office 365 and SharePoint, improving collaboration and information sharing within the organization.  
+Useful for:
+- centralizing business data from heterogeneous sources (ERP, CRM, databases, Excel, cloud services).
+- analyzing and visualizing data through interactive dashboards and dynamic reports.
+- enabling data-driven decision-making at all levels of the organization.
+- automating report updates and distribution without manual intervention.
+- ensuring security and governance of analytical data in a controlled environment.
+- facilitating collaboration between analysts, managers, and end users through online sharing.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Data collection and integration* → over 500 connectors for databases (SQL, Oracle, SAP, etc.), cloud services (Azure, Salesforce, Google Analytics, etc.), and local files.
+- *Data transformation (ETL)* → allows you to extract, clean, and transform data before loading it into the analytical model.
+- *Data modeling* → creation of relational models and complex calculations using the DAX (Data Analysis Expressions) language.
+- *Analysis and visualization* → customizable charts, KPIs, maps, and visuals, with automatic data updates.
+- *Collaboration and sharing* → publishing and sharing of reports and dashboards via web or mobile app.
+- *Automation and refresh* → automatic updating of datasets, even in real time.
+- *Security and governance* → centralized management of users, roles, and access based on Azure Active Directory.
+- *AI and advanced analytics* → integrated generative AI capabilities and automatic analysis of trends or anomalies.
+- *Microsoft 365 integration* → reports can be integrated directly into enterprise collaboration apps.
+- *Cloud scalability (PaaS)* → managed and scalable infrastructure.
+
+The main components of the service are:
+
+- *Gateway* → it enables secure connections between on-premises data and Power BI cloud services. It supports integration with numerous identity providers (e.g., Azure AD) and manages connections and queries to on-premises data.
+- *Service* → it manages the creation, publishing, and sharing of reports and dashboards, data refresh, and querying data stored in the cloud.
+- *Report Server* → it offers similar functionality to Power BI Service, allowing users to publish, share, and view reports within their on-premises environment.
+- *Dataflows* → they allow you to create and manage ETL (Extract, Transform, Load) data pipelines directly within Power BI. These dataflows support the integration and transformation of data from numerous sources to create consolidated data models.
+- *Desktop* → it is the client application used for creating reports and data models. Available for Windows, it allows users to connect to numerous data sources, run queries, and create advanced visualizations.
+
+The service offers the following advantages:
+
+- *Faster and better decisions* → real-time or near-real-time access to data, intuitive visualizations, and drill-down into information, enabling more informed decisions.
+- *Increased productivity and speed of insight* → automated creation/reporting, self-service dashboards, and easy sharing enable business users to act faster.
+- *Reduced total cost of ownership (TCO) and lower costs* → managed infrastructure and reduced need for on-premise infrastructure reduce overall costs.
+- *Increased collaboration and a data-driven culture* → dashboard sharing, integration with other tools, and ease of use promote adoption among non-technical users.
+- *Access anywhere and from different devices* → availability via cloud, mobile apps, and remote access allows users to work on the move or from different locations.
+- *Extensive data integration* → support for numerous connectors to on-premise and cloud sources, enabling consolidation of disparate data.
+- *Efficient data preparation and modeling* → integrated tools enable ETL, modeling, and complex calculations.
+- *Interactive and self-service visualization* → intuitive, drag-and-drop interface and pre-built templates allow non-technical users to build reports independently.
+- *Security, governance, and compliance* → Features such as encryption and auditing support access control and compliance.
+Infrastructure scalability and flexibility.
+
+### Batch/Real time Processing - 1 Worker
+
+##### Services Description
+
+It is a platform that provides a set of tools for processing, integrating, quality-checking, and preparing data from heterogeneous sources stored in the Data Lake, both in real time and in batch mode.  
+It offers a user-friendly graphical interface for designing and implementing data integration workflows using a visual approach, following the ETL (Extract – Transform – Load) approach. This reduces the complexity of data integration and allows users to focus on business logic rather than programming code.  
+It supports a wide range of data sources, including relational databases, files, web applications, cloud, web services, and more. This makes it extremely flexible for data integration in a variety of contexts.  
+It also offers data quality management tools, allowing users to clean, standardize, and enrich their data to ensure its accuracy and reliability.
+
+#### Features and Advantages
+
+The main features and functionalities of the service are:
+
+- *Heterogeneous and large-scale data processing* → It supports a large number of data sources in batch and streaming mode (for example, datasets stored on HDFS, S3, ADLS Gen2, and GCS in CSV, Parquet, Avro, and other formats, as well as RDBMS via JDBC or all popular NoSQL, Apache Kafka, and more).
+- *It is natively integrated* with the Data Lake and Batch/Real-Time Processing PaaS of the Big Data family.
+- *It allows to implement complex data pipelines* → leveraging the parallel and distributed computing capacity provided by a Spark cluster.
+- *It provides an interactive mode* to debug flows and explore data easily and intuitively.
+- *It guarantees the maximum scalability* necessary to meet the needs of organizations of any size, from small businesses to large enterprises.
+
+The main architectural components of the service are as follows:
+
+- *Visual ETL Architecture* → provides various blocks that allow you to visually design an ETL, ELT, and ELL pipeline. It allows you to read, write, and modify data from different sources, interfacing with the Data Lake and Monitoring module, and can use the Processing module for data-intensive processing.
+- *Apache Spark* → Open-source parallel processing framework that supports in-memory processing to improve the performance of applications that analyze Big Data.
+- *JupyterLab* → Interactive notebook-based development environment designed primarily for working with data, scientific calculations, and machine learning. It supports writing and executing interactive code in languages ​​such as Python, R, or Julia.
+- *NodeRed* → Visual, low-code development environment for creating applications that connect devices, web services, APIs, and systems.
+
+The service offers the following advantages:
+
+- *Support for data-driven strategies, faster and more informed decisions* → centralized data for service customization (e.g., real-time analytics for marketing, IoT, e-commerce, etc.) and ready-to-use pipelines without complex development. 
+- *Greater focus on core business* → development and IT teams do not have to worry about technical maintenance, as it is managed.
+-* Reduced operating costs and service scalability* → no infrastructure to manage; support for large data volumes (batch) or continuous flows (streaming); automation of extraction, transformation, and loading processes with real-time scheduling or triggers; same framework for historical data and real-time flows.
+- *Integration with cloud ecosystem* (data warehouse, data lake, BI, AI/ML).
+- *Guaranteed security and compliance* (encryption, access, audit logs).
+- *Integrated monitoring* → metrics, alerts, and centralized logging for ETL pipelines.
+
+### Event Message
+
+#### Services Description
+
+It provides a platform developed by Leonardo for developing real-time applications and data pipelines and acts as a message broker, providing publish-subscribe functionality.  
+It increases the scalability and resilience of existing applications by decoupling architectural components using a reactive approach based on asynchronous interactions.  
+The platform can scale horizontally and provide ordered message delivery capabilities. Like other Big Data PaaS modules, the solution is based on containerized resources orchestrated via Kubernetes.  
+It enables near-real-time analytical processes through streaming and facilitates the implementation of IoT use cases.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- A useful tool for implementing reliable data exchanges between different components.
+- Ability to partition messaging workloads as application requirements change.
+- Real-time streaming for data processing.
+- Native support for data/message playback.
+- Integration with the Batch/Stream Processing module.
+- Web interface for monitoring: Brokers Topics/Messages, Consumers, ACLs.
+
+The main components of the service are:
+
+- *Apache Kafka-based solution* → publish-subscribe messaging platform built to manage real-time data exchange for streaming, distributed pipelining, and replay of data feeds for fast, scalable operations.
+- *Broker-based solution* that operates by maintaining data streams as records within a cluster of servers.
+- *Topic* → addressable abstraction used to show interest in a given data stream (series of records/messages).
+- *Partitions* → topics can be divided into a series of order queues called partitions. 
+- *Persistence* → server clusters that durably maintain records/messages as they are published. 
+- *Producers* → defines which topic/partition a given record/message should be published to. 
+- *Consumers* → entities that process records/messages
+
+The service offers the following advantages:
+
+- *Faster time-to-market* → New applications can be integrated rapidly via events, accelerating the development of new products and features.
+- *Greater agility* → Facilitates the creation of modular and scalable services without major changes to the existing system.
+- *Reduced risk of operational failures* → PaaS often includes SLAs, monitoring, backup, and redundancy, reducing the risk of downtime or data loss.
+- *Faster, more informed decisions* → Real-time analytics for marketing, IoT, and e-commerce.
+- *Predictable costs* → Reduces the risk of over-provisioning or unexpected maintenance costs.
+- *Scalability* → Support for large event volumes without performance degradation
+- *High availability and fault tolerance*
+- *Simplified management* → No need to manage clusters, patches, software upgrades, or complex configurations
+- *Optimized Performance and Latency* → Compression, batching, and automatic topic management improve performance
+- *Security and Compliance* → Authentication, authorization, and encryption in transit and at rest are managed by the provider.
+
+### Data Governance
+
+#### Services Description
+
+A service developed by Leonardo that provides a platform with a single, secure, and centralized point of reference for data control. Leveraging search and discovery tools and connectors to extract metadata from any data source, it simplifies data protection, analysis, and pipeline management, as well as accelerating ETL processes.  
+It allows you to automatically analyze, profile, organize, link, and enrich all metadata, implement algorithms for automatic metadata and relationship extraction, and support regulatory and data privacy compliance with intelligent data lineage tracking and compliance monitoring.  
+It simplifies data search and access and verifies its validity before sharing it with other users.  
+It enables the production of data quality data (a measure of data condition based on factors such as accuracy, completeness, consistency, and reliability).  
+It allows you to oversee data error resolution efforts and maintain compliance with internal audits and external regulations.  
+It provides immediate support for the detection and classification of personal data and other sensitive data.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Data Search & Discovery* → Automatic exploration of Data Lake datasets for (meta)data that can enrich or deepen knowledge of the information held.
+- *Data & Metadata Catalog* → Extraction of information that makes the data searchable.
+- *Data Lineage* → Tracking the entire data lifecycle, from source to destination.
+- *CL/Audit* → Allows for robust granular data access permission management and auditing of data usage (this means being able to answer the question "Who accessed what data and when?" at any time).
+
+The service use a tool of Data Hub that extends the concept of a data catalog by offering data discovery, data observability, and data governance functions.  
+It integrates natively with other architecture components, adding all the features that are particularly useful for achieving compliance objectives, such as privacy, security, and process quality management.  
+This tool allows you to verify changes made to data within the catalog over time, distinguishing the various sources that have populated the Data Lake, the type of data entered (personal data, financial data, etc.), and identifying data that is sensitive to specific laws or compliance procedures, whether internal or external to the organization.
+Data integration within DataHub occurs primarily in two ways:
+- PUSH → automatically within third-party applications such as Airflow, Apache Spark, Great Expectations, etc.
+- PULL → manually by the developer prior to loading the data into the data lake via dedicated REST APIs.
+
+The service offers the following advantages:
+
+- *Improved governance and compliance* → Complete data traceability ("data lineage") to demonstrate compliance with GDPR, ISO, or industry regulations.
+- *Increased data trust* → Certainty about the data's provenance, how it has been transformed, and how up-to-date it is. 
+- *Reduced risks and operational costs* → Fewer duplications, inconsistencies, and "orphaned" datasets. Reduced time wasted searching or validating data.
+- *Accelerating time to market* → Easily discover and reuse existing datasets, reducing reliance on technical teams.
+- *Greater focus on core business* → Teams no longer need to worry about technical maintenance.
+- *Centralized catalog and metadata* → Provides an active data catalog with technical and operational metadata. Automatically integrate with Big Data systems (Kafka, Hive, Spark, Databricks, etc.).
+- *Automated Data Lineage* → Automatically tracks end-to-end data flows from ingestion to transformations, all the way to consumption (dashboard, API, ML).
+- *Native APIs and integrations* → Exposes APIs and plugins for continuous integration with orchestration, observability, quality, and security tools.
+- *Access and Security Policy Management* → Centralizes access policies based on roles and classifications. Improves data security without fragmenting rules across services.
+- *Automation and Self-Service* → Fosters a self-service data discovery model for data engineers and data scientists.
+- *Scalability and modern architecture* → Microservices architecture and Metadata Graph.
