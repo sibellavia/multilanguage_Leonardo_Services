@@ -5,6 +5,7 @@ The following table lists the services included in the Container as a Service (C
 | FAMILY  | LIST OF SERVICES                  |
 | ------- | --------------------------------- |
 | Compute | Kubernetes Confidential Computing |
+<figcaption>List of families and related CaaS services</figcaption>
 
 ## Compute Family
 

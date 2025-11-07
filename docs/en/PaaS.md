@@ -1,49 +1,59 @@
 # Platform as a Service (PaaS)
 
-The following table lists the services included in the Platform as a Service (CaaS) category.
+The following table lists the services included in the Platform as a Service (PaaS) category.
 
-| FAMILY               | LIST OF SERVICES                                            |
-| -------------------- | ----------------------------------------------------------- |
-| Compute              | Functions as a Service                                      |
-| Security             | Identity & Access Management Service                        |
-| Security             | Key Vault as a Service                                      |
-| Middleware           | PaaS API Management                                         |
-| Middleware           | Jboss as a Service                                          |
-| Middleware           | Spring boot as a Service                                    |
-| Middleware           | PaaS Business Process as a Service                          |
-| Middleware           | PaaS CMS as a Service                                       |
-| Middleware           | PaaS ETL - Batch / Real Time Processing - 1 worker          |
-| Infra & Ops Platform | Multicloud Management Platform-Leonardo SCMP                |
-| Infra & Ops Platform | Multicloud Management Platform-Morpheus                     |
-| Infra & Ops Platform | Control Room as Service                                     |
-| Infra & Ops Platform | IT infrastructure Service Operations (Logging & Monitoring) |
-| Infra & Ops Platform | PaaS Ticket Management Service                              |
-| Infra & Ops Platform | PaaS Ticket Management Service (ITSM)                       |
-| Infra & Ops Platform | PaaS Ticket Management Service (ADD-ON ITOM)                |
-| DevSecOps            | Configuration Manager                                       |
-| DevSecOps            | Test Automation                                             |
-| DevSecOps            | Quality Code Analysis                                       |
-| DevSecOps            | DevSecOps As A Service                                      |
-| DevSecOps            | Qualizer DevSecOps                                          |
-| Big Data             | Data Lake - 1TB                                             |
-| Big Data             | Data Lakehouse                                              |
-| Big Data             | Business Intelligence                                       |
-| Big Data             | Batch/Real time Processing - 1 Worker                       |
-| Big Data             | Event Message                                               |
-| Big Data             | Data Governance                                             |
-| AI                   | Speech to Text                                              |
-| AI                   | OCR                                                         |
-| AI                   | AI Search - AI Search - RAG - 10 GB - 1 worker              |
-| AI                   | Text Analytics                                              |
-| AI                   | Translation                                                 |
-| AI                   | AI SLM/LLM                                                  |
-| AI                   | AI workflow                                                 |
-| AI                   | Vector DB                                                   |
-| AI                   | AI Platforrm                                                |
-| VDI                  | VDI                                                         |
-| VDI                  | VDI with GPU support                                        |
-| Collaboration        | Instant Messaging                                           |
-
+| FAMILY                               | LIST OF SERVICES                                            |
+| ------------------------------------ | ----------------------------------------------------------- |
+| Compute                              | Functions as a Service                                      |
+| Security                             | Identity & Access Management Service                        |
+| Security                             | Key Vault as a Service                                      |
+| Security                             | SIEM As A Service                                           |
+| Middleware                           | PaaS API Management                                         |
+| Middleware                           | Jboss as a Service                                          |
+| Middleware                           | Spring boot as a Service                                    |
+| Middleware                           | PaaS Business Process as a Service                          |
+| Middleware                           | PaaS CMS as a Service                                       |
+| Middleware                           | PaaS ETL - Batch / Real Time Processing - 1 worker          |
+| Infra & Ops Platform                 | Multicloud Management Platform-Leonardo SCMP                |
+| Infra & Ops Platform                 | Multicloud Management Platform-Morpheus                     |
+| Infra & Ops Platform                 | Control Room as Service                                     |
+| Infra & Ops Platform                 | IT infrastructure Service Operations (Logging & Monitoring) |
+| Infra & Ops Platform                 | PaaS Ticket Management Service                              |
+| Infra & Ops Platform                 | PaaS Ticket Management Service (ITSM)                       |
+| Infra & Ops Platform                 | PaaS Ticket Management Service (ADD-ON ITOM)                |
+| DevSecOps                            | Configuration Manager                                       |
+| DevSecOps                            | Test Automation                                             |
+| DevSecOps                            | Quality Code Analysis                                       |
+| DevSecOps                            | DevSecOps As A Service By PSN                               |
+| DevSecOps                            | Qualizer DevSecOps                                          |
+| Big Data                             | Data Lake - 1TB                                             |
+| Big Data                             | Data Lakehouse                                              |
+| Big Data                             | Business Intelligence                                       |
+| Big Data                             | Batch/Real time Processing - 1 Worker                       |
+| Big Data                             | Event Message                                               |
+| Big Data                             | Data Governance                                             |
+| Artificial Intelligence (AI)         | Speech to Text                                              |
+| Artificial Intelligence (AI)         | AI Audio & Video Analytics                                  |
+| Artificial Intelligence (AI)         | Optical Character Recognition (OCR)                                                         |
+| Artificial Intelligence (AI)         | Text Analytics                                              |
+| Artificial Intelligence (AI)         | Text Translation                                            |
+| Artificial Intelligence (AI)         | AI Search - RAG                                             |
+| Artificial Intelligence (AI)         | AI Platform                                                |
+| Artificial Intelligence (AI)         | Semantic Knowledge Search                                   |
+| Artificial Intelligence (AI)         | AI SLM/LLM                                                  |
+| Artificial Intelligence (AI)         | AI workflow                                                 |
+| Artificial Intelligence (AI)         | Vector DB                                                   |
+| Virtual Desktop Infrastructure (VDI) | VDI                                                         |
+| Virtual Desktop Infrastructure (VDI) | VDI with GPU support                                        |
+| Collaboration                        | Instant Messaging                                           |
+| Database                             | PaaS MongoDB                                                |
+| Database                             | PaaS Redis                                                  |
+| Database                             | PaaS Graph DB                                               |
+| Network                              | PaaS CDN (Content Delivery Network)                         |
+| Network                              | PaaS Domain Name System (DNS)                               |
+| Network                              | PaaS WAF (Web Application Firewall)                         |
+| Network                              | PaaS Gateway VPN                                            |
+<figcaption>List of families and related PaaS services</figcaption>
 
 ## Compute Family
 
@@ -868,7 +878,7 @@ The service offers the following advantages:
 -* Continuous improvement based on collected metrics* → through standardized dashboards and indicators, the service allows you to objectively measure team and project performance.
 - *Unified dashboard* for quality, security, and deployment monitoring.
 
-# Big Data Family
+## Big Data Family
 
 Below is the list of services belonging to the Big Data family:
 
@@ -1118,3 +1128,293 @@ The service offers the following advantages:
 - *Access and Security Policy Management* → Centralizes access policies based on roles and classifications. Improves data security without fragmenting rules across services.
 - *Automation and Self-Service* → Fosters a self-service data discovery model for data engineers and data scientists.
 - *Scalability and modern architecture* → Microservices architecture and Metadata Graph.
+
+## Artificial Intelligence (AI) Family
+
+Below is the list of services belonging to the Artificial Intelligence (AI) family:
+
+- Speech to Text
+- AI Audio & Video Analytics
+- OCR
+- Text Analytics
+- Text Translation
+- AI Search - RAG
+- AI Platform
+- Semantic Knowledge Search
+- AI SLM/LLM
+- AI workflow
+- Vector DB
+
+### Speech to Text
+
+#### Services Description
+
+This service provides an advanced speech-to-text model for transcribing audio files into text, trained on a vast dataset of audio and text in various languages ​​using neural AI (deep learning) models specialized in automatic speech recognition (ASR).  
+The service is optimized for English transcription, but can also recognize and transcribe speech in other languages, still returning the text in English. Furthermore, it can automatically identify the spoken language and supports automatic speech translation.  
+It is useful for automatically transcribing conversations, interviews, meetings, call centers, podcasts, or videos; supporting chatbots and voice assistants, translating voice into text understandable by NLP or AI systems; indexing and analyzing audio content (semantic search, sentiment analysis, data mining); and digitizing voice archives and official minutes, ensuring accuracy and traceability.
+
+#### Features and Advantages
+
+This is a whisper-based service that provides an API layer and an SDK for integration with existing applications. All tasks are represented as a sequence of tokens that the model predicts, unifying and optimizing the speech processing pipeline.
+
+The service offers the following main features:
+
+- *Automatic Speech Recognition (ASR)* → converts speech to text in real time or from audio files (WAV, MP3, MP4, FLAC, etc.). Multilingual support.
+*Advanced Neural Accuracy* → uses sequence-to-sequence Transformer models, trained for a wide range of speech processing tasks, such as multilingual speech recognition, speech translation, and language identification.
+- *Multilingual Recognition and Machine Translation*
+- *Real-time Transcription (Streaming)*
+*Batch Processing*
+- *Temporal Segmentation* → returns start/end timestamps to synchronize text and audio (useful for subtitles or editing).
+- *Text Cleanup and Normalization* → automatically corrects punctuation, capitalization, and formatting.
+- *Accent and Ambient Noise Support* → is robust against background noise, poor microphones, and natural (non-studio) speech.
+
+The main components of the service are:
+
+- *Whisper engine (ASR Core)* → transformer neural model trained on millions of hours of audio-text data.
+- *Language detection module* → automatically identifies the language of the speech.
+- *Post-processing & text normalization* → corrects the transcription, inserts punctuation, and adds consistent formatting.
+- *Optional translation layer* → uses a Neural Machine Translation (NMT) model to translate the transcription into another language. 
+- *Storage and logging* → stores results, metadata, and logs for auditing and analysis. 
+- *Integration layer (API / SDK)* → interface for external apps, dashboards, or AI pipelines.
+
+The service offers the following advantages:
+
+- *Reduced operating costs* → automate the transcription of audio, meetings, interviews, and minutes without requiring dedicated staff.
+- *Increased staff productivity* → automatic transcription saves hours of work.
+- *Accelerated document processes* → minutes, interviews, meetings, or consultations can be transcribed and distributed in real time, improving administrative efficiency.
+- *Accessibility and inclusion* → generate subtitles and text from audio/video content, improving accessibility for people with hearing impairments and multilingual communication.
+- *Data-driven decisions (Voice Analytics)* → voice transcriptions become analyzeable text data, supporting data-driven decisions.
+- *Improved customer experience* → chatbots, contact centers, and digital assistants become more effective by recognizing voice and responding naturally.
+- *High linguistic accuracy* → the service, based on Transformer architecture, guarantees more precise transcriptions even in the presence of accents, noise, or natural speech.
+- *Structured and interoperable output* → output in standard formats (JSON, TXT, SRT, VTT, DOCX) easily integrated with databases or document workflows.
+- *Model updates* → managed and ongoing model updates, improving accuracy and reducing errors over time.
+- *High performance and low latency* → processing in milliseconds for live streams, seconds for large files.
+- *Multimodal AI support *→ can be combined with Text Analytics, Translation, and Text-to-Speech services to create complete speech pipelines (e.g., transcription + translation + synthesis).
+- *Service scalability* → allows you to simultaneously manage thousands of speech streams by providing and managing the necessary infrastructure.
+
+### AI Audio & Video Analytics
+
+#### Services Description
+
+The *AI Audio Analytics PaaS* provides a ready-to-use platform that, thanks to AI-based algorithms on audio sources, allows the identification of unique features from audio streams using preloaded AI models. These features allow the identification of a person's voice, noises, and possible anomalies in the monitored environment.  
+
+The *AI Video Analytics PaaS* is a ready-to-use platform with pre-trained algorithms that leverage computer vision techniques, capable of processing and understanding visual information present in two-dimensional images or video sequences.
+
+#### Features and Advantages
+
+The *AI ​​Audio Analytics platform* can work with signals produced in the field from various audio sources, overcoming the "curse of dimensionality" problem caused by the high-dimensionality of the phenomenon through the use of unsupervised and supervised approaches. These approaches dynamically identify an optimal set of features to identify similarities between signals for the same event/process and differences between signals for different events/processes. The output of these processes can then be treated as characteristics in statistical detection methods, but they rely heavily on the analyst's understanding of a possible link between the signal and the process/event being detected.  
+The AI ​​Audio Analytics solution is primarily composed of the following tools:
+- *Swagger UI* → a collection of HTML, CSS, and JavaScript assets automatically generated from the documentation, which must comply with the OpenAPI standard.
+- *ML models* → algorithms for extracting information from audio sources for:
+    - Speaker identification: an ML model capable of identifying the speaker using voice characteristics.
+    - Audio anomaly insight: an ML model capable of detecting sound anomalies in production or cyclical systems.
+    - Environment classification: an ML model capable of identifying and classifying audio tracks.
+- *FastAPI framework* → a modern, fast (high-performance) web framework for building APIs with Python.
+
+The *AI ​​Video Analytics* platform includes subsystems: preprocessing, image analysis, and image interpretation. The service can perform video analysis while optimizing computation time through the use of single-pass convoluted networks, which analyze all parts of the image in parallel and simultaneously, eliminating the need for sliding windows.  
+The AI ​​Video Analytics solution is primarily composed of the following tools:
+- *ML models* → algorithms for extracting information from video sources.
+    - Object detector: recognizes and locates people and objects within a given frame by extracting metadata containing classification and spatial location
+    - Spacial counter: an extension of the Object Detector model, it can also process a single-shot counting for each object class for each frame
+    - Object counter: capable of both locating people and objects and obtaining a count of the detected objects.
+
+The service offers the following advantages:
+
+- *Improved security and compliance* → automatic detection of anomalous behavior, intrusions, or risky situations. Support for compliance policies and audits based on video/audio evidence.
+- *Improved customer experience* → analysis of tone of voice, emotions, and wait times for improved quality of service and customer interactions.
+- *Reduced operating costs* → automated continuous monitoring of environments, processes, and media flows, resulting in optimized human resources and response times.
+- *Data-driven decisions* → media content becomes a source of structured and analyzable data for visual and audio insights that can be integrated into Business Intelligence systems.
+- *Innovation and new business models* → enable new services such as retail analytics, behavioral marketing, intelligent security, and event monitoring for competitive advantage and market differentiation.
+- *Scalability and simplified management* → management of resources, workloads, and updates.
+- *Integrated advanced analytics* → ready-to-use features, e.g. Facial recognition, object detection, speech-to-text, voice sentiment, anomaly detection.
+- *Real-time and batch processing* → analysis of live streams or recorded media archives, thanks to the integration of Processing PaaS.
+- *Multi-format and multi-source support* → compatibility with various formats (MP4, AVI, WAV, RTSP, etc.) and heterogeneous devices (cameras, microphones, sensors).
+- *Integrated security and privacy* → stream encryption, access control.
+- *Operational monitoring and insights*.
+
+### Optical Character Recognition (OCR)
+
+#### Services Description
+
+The services offer innovative computer vision capabilities, enabling the transformation of visual content containing text into processable digital content.  
+It is useful for analyzing images, reading text, and detecting faces with predefined image tagging, text extraction with Optical Character Recognition (OCR), and responsible facial recognition.  
+The OCR component (reading printed or handwritten text) is integrated as a REST API or client library that allows you to send images/documents and obtain text extraction from them.  
+It is useful in multiple scenarios: automatic text extraction from images and vice versa, document processing (e.g., scanning PDFs, form images, extracting written or printed text), and process automation (e.g., data acquisition from forms, invoices, intelligent archiving, full-text search in image content).  
+The service can be offered using two technologies:
+- Basic with Google Tesseract OCR.
+- Standard with Microsoft AI Azure Vision.
+
+#### Features and Advantages
+
+The main features of the Google Tesseract OCR-based service are:
+
+- *Text recognition* → recognizes printed or written text in over 100 languages
+- *Multi-language models *→ can process mixed languages ​​(e.g., English + numbers + symbols)
+- *Multiple image input* → supports PNG, JPEG, TIFF, BMP, PDF (via external libraries such as pdfimages).
+- *Page layout analysis* → recognizes text blocks, columns, paragraphs, direction, and orientation.
+Multiple output formats.
+- *Model training & fine-tuning* → ability to train models on specific fonts or languages ​​(with dedicated datasets).
+- *Image enhancement* → supports skew correction, binarization, thresholding, and deskewing.
+
+The main components of the Google Tesseract OCR-based service are:
+
+- *API Layer* → Exposes REST endpoints for loading images or URLs.
+- *Compute Layer* → Runs the Tesseract engine in scalable containers.
+- *Storage Layer* → Stores image input and text output.
+- *Processing Layer* → OCR engine and image management.
+- *API Layer* → Exposes REST endpoints for loading images or URLs.
+- *Monitoring & Logging* → Performance monitoring and call logging.
+- *Security Layer* → API and data protection.
+
+The main features of the Azure Vision AI-based service are:
+
+- *Printed and handwritten text extraction* → text is returned in blocks/lines/words with spatial coordinates and confidence scores.
+- *Multilingual and mixed script support* → supports numerous international languages ​​and scripts. It can recognize mixed modalities (printed text + handwritten text) in a single image.
+-* Different input modalities and APIs* → Input single images (JPEG, PNG, BMP) or documents (PDF, TIFF) up to specific limits. Local execution possible via Docker containers.
+
+The main components of the Azure Vision AI-based service are:
+
+- *Client Layer* → It can be a web app, a microservice, or an automated workflow. It sends images via HTTP POST API or via SDK.
+- *API Gateway and Identity Management*.
+- *AI Vision Service* → The heart of the system, hosting AI vision models for text recognition; the "Read" OCR engine is optimized for complex documents.
+- *Storage and Temporary Pipeline* → During processing, images are temporarily stored. The results are then returned as JSON output or saved to defined resources (e.g., Data Lake, DB, or Cognitive Search).
+- *Integration and Automation* → The results can be sent or processed for document workflows, full-text indexing and search, data analysis and Big Data, archiving, notifications, or vertical applications.
+
+The service offers the following advantages:
+
+- *Lower document management costs* → fewer staff dedicated to data entry and fewer errors that generate correction costs or disputes.
+- *Paperless transformation* → enables the complete digitalization of archives and paper flows, reducing paper consumption and physical space.
+- *Faster and more traceable workflows* → Scanned documents become immediately accessible data and can be integrated into management systems.
+- *Traceability and compliant archiving* → Facilitates compliant digital archiving, improving compliance management (GDPR, electronic preservation).
+- *Extensive support* → Native support for dozens of languages ​​and formats (e.g., PDF, JPEG, PNG, TIFF, scanned documents).
+- *Standard formats* → The extracted text is immediately usable in management or analytics systems.
+- *Real-time and batch processing* → Analysis of live streaming or recorded multimedia archives, thanks to the integration of Processing PaaS.
+- *Managed maintenance and updates* → the infrastructure, security, and updates of AI models are managed.
+
+### Text Analytics
+
+#### Services Description
+
+
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+
+The main components of the service are:
+
+
+The service offers the following advantages:
+
+### Text Translation
+
+#### Services Description
+
+
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+
+The main components of the service are:
+
+
+The service offers the following advantages:
+
+### AI Search - RAG
+
+#### Services Description
+
+
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+
+The main components of the service are:
+
+
+The service offers the following advantages:
+
+### AI Platform
+
+#### Services Description
+
+
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+
+The main components of the service are:
+
+
+The service offers the following advantages:
+
+### Semantic Knowledge Search
+
+#### Services Description
+
+
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+
+The main components of the service are:
+
+
+The service offers the following advantages:
+
+### AI SLM/LLM
+
+#### Services Description
+
+
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+
+The main components of the service are:
+
+
+The service offers the following advantages:
+
+### AI workflow
+
+#### Services Description
+
+
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+
+The main components of the service are:
+
+
+The service offers the following advantages:
+
+### Vector DB
+
+#### Services Description
+
+
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+
+The main components of the service are:
+
+
+The service offers the following advantages:

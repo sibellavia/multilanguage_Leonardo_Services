@@ -5,6 +5,7 @@ The following table lists the services falling under the Infrastructure as a Ser
 | FAMILY  | LIST OF SERVICES                                                                                                    |
 | ------- | ------------------------------------------------------------------------------------------------------------------- |
 | Compute | Pool Small (Confidential)<br>Pool Medium (Confidential)<br>Pool Large (Confidential)<br>Pool X-Large (Confidential) |
+<figcaption>List of families and related IaaS services</figcaption>
 
 ## Compute Family
 
