@@ -7,38 +7,35 @@ The following table lists the services included in the Platform as a Service (Pa
 | Compute                              | Functions as a Service                                      |
 | Security                             | Identity & Access Management Service                        |
 | Security                             | Key Vault as a Service                                      |
-| Security                             | SIEM As A Service                                           |
-| Middleware                           | PaaS API Management                                         |
+| Security                             | SIEM as a Service                                           |
+| Middleware                           | API Management                                              |
 | Middleware                           | Jboss as a Service                                          |
 | Middleware                           | Spring boot as a Service                                    |
-| Middleware                           | PaaS Business Process as a Service                          |
-| Middleware                           | PaaS CMS as a Service                                       |
-| Middleware                           | PaaS ETL - Batch / Real Time Processing - 1 worker          |
+| Middleware                           | Business Process as a Service                               |
+| Middleware                           | Content Management Systems (CMS) as a Service               |
+| Middleware                           | PaaS ETL - Batch / Real Time Processing                     |
 | Infra & Ops Platform                 | Multicloud Management Platform-Leonardo SCMP                |
-| Infra & Ops Platform                 | Multicloud Management Platform-Morpheus                     |
-| Infra & Ops Platform                 | Control Room as Service                                     |
+| Infra & Ops Platform                 | Control Room as a Service                                   |
 | Infra & Ops Platform                 | IT infrastructure Service Operations (Logging & Monitoring) |
 | Infra & Ops Platform                 | PaaS Ticket Management Service                              |
-| Infra & Ops Platform                 | PaaS Ticket Management Service (ITSM)                       |
-| Infra & Ops Platform                 | PaaS Ticket Management Service (ADD-ON ITOM)                |
 | DevSecOps                            | Configuration Manager                                       |
 | DevSecOps                            | Test Automation                                             |
 | DevSecOps                            | Quality Code Analysis                                       |
-| DevSecOps                            | DevSecOps As A Service By PSN                               |
+| DevSecOps                            | DevSecOps As A Service                                      |
 | DevSecOps                            | Qualizer DevSecOps                                          |
-| Big Data                             | Data Lake - 1TB                                             |
+| Big Data                             | Data Lake                                                   |
 | Big Data                             | Data Lakehouse                                              |
 | Big Data                             | Business Intelligence                                       |
-| Big Data                             | Batch/Real time Processing - 1 Worker                       |
+| Big Data                             | Batch/Real time Processing                                  |
 | Big Data                             | Event Message                                               |
 | Big Data                             | Data Governance                                             |
 | Artificial Intelligence (AI)         | Speech to Text                                              |
 | Artificial Intelligence (AI)         | AI Audio & Video Analytics                                  |
-| Artificial Intelligence (AI)         | Optical Character Recognition (OCR)                                                         |
+| Artificial Intelligence (AI)         | Optical Character Recognition (OCR)                         |
 | Artificial Intelligence (AI)         | Text Analytics                                              |
 | Artificial Intelligence (AI)         | Text Translation                                            |
 | Artificial Intelligence (AI)         | AI Search - RAG                                             |
-| Artificial Intelligence (AI)         | AI Platform                                                |
+| Artificial Intelligence (AI)         | AI Platform                                                 |
 | Artificial Intelligence (AI)         | Semantic Knowledge Search                                   |
 | Artificial Intelligence (AI)         | AI SLM/LLM                                                  |
 | Artificial Intelligence (AI)         | AI workflow                                                 |
@@ -62,6 +59,8 @@ Below is the list of services belonging to the Compute family:
 - Functions as a Service
 
 ### Functions as a Service
+
+![Functions as a Service](assets/images/extract/media/FaaS.png)
 
 #### Services Description
 
@@ -107,6 +106,8 @@ Below is the list of services belonging to the Security family:
 - Key Vault as a Service
 
 ### Identity & Access Management Service
+
+![Identity & Access Management Service](assets/images/extract/media/IaM.png)
 
 #### Services Description
 
@@ -157,6 +158,8 @@ The service offers the following advantages:
 
 ### Key Vault as a Service
 
+![Key Vault as a Service](assets/images/extract/media/KeyVault.png)
+
 #### Services Description
 
 The service provides a secure cloud repository (Vault) for storing and managing credentials and passwords used by cloud applications without having to manually install and manage dedicated IaaS machines. 
@@ -203,6 +206,8 @@ Below is the list of services belonging to the Middleware family:
 
 ### PaaS API Management
 
+![PaaS API Management](assets/images/extract/media/API.png)
+
 #### Services Description
 
 It is a platform of tools and services that facilitates the management, control, monitoring, and protection of APIs (Application Programming Interfaces) without having to manually implement all the components. 
@@ -244,6 +249,8 @@ The service offers the following advantages:
 
 ### Jboss as a Service
 
+![Jboss As A Service](assets/images/extract/media/JBoss.png)
+
 #### Services Description
 
 The service is based on an open source platform for running and managing Enterprise Java applications, designed to offer reliability, scalability, and flexibility in modern environments. 
@@ -276,6 +283,8 @@ The service offers the following advantages:
 - *DevOps integration* → integrated CI/CD pipelines for build and deployment.
 
 ### Spring boot as a Service
+
+![Spring boot as a Service](assets/images/extract/media/Spring.png)
 
 #### Services Description
 
@@ -313,7 +322,9 @@ The service offers the following advantages:
 - *Environment consistency* → Same environments for development, testing, and production.
 - *Microservices support* → Simplified management of distributed architectures.
 
-### PaaS Business Process as a Service
+### Business Process as a Service
+
+![Business Process as a Service](assets/images/extract/media/BPM.png)
 
 #### Services Description
 
@@ -348,11 +359,13 @@ The service offers the following advantages:
 - *Compliance and auditability* → complete traceability for audits and regulatory compliance. Every step and decision is documented, facilitating internal controls and regulatory compliance
 - *Monitoring and observability* → integrated dashboards and analytics.
 
-### PaaS CMS as a Service
+### Content Management Systems (CMS) as a Service
+
+![Content Management Systems (CMS) as a Service](assets/images/extract/media/CMS.png)
 
 #### Services Description
 
-The service, based on Wordpress, provides comprehensive and versatile tools for creating and managing websites and blogs based on CMS (Content Management System) solutions, which are cloud-based content management systems (CMS) delivered as a service, without having to install or maintain software on your own server.  
+The service, based on Wordpress, provides comprehensive and versatile tools for creating and managing websites and blogs based on CMS (Content Management System) solutions, which are cloud-based Content Management Systems (CMS) delivered as a service, without having to install or maintain software on your own server.  
 It offers a centralized system that allows for scalable, integrable, and multi-channel content management, with consumption-based costs and no infrastructure overhead.  
 This allows users to focus solely on content creation and management, while the platform handles hosting, maintenance, and updates.
 
@@ -380,7 +393,9 @@ The service offers the following advantages:
 - *Native integration with cloud services* (CRM, analytics, AI, CDN).
 - *Front-end/back-end separation* → freedom to use modern frameworks (React, Vue, Angular, etc.).
 
-### PaaS ETL - Batch / Real Time Processing - 1 worker
+### PaaS ETL - Batch / Real Time Processing
+
+![PaaS ETL - Batch / Real Time Processing](assets/images/extract/media/ETL.png)
 
 #### Services Description
 
@@ -428,6 +443,8 @@ Below is the list of services belonging to the Infra & Ops Platform family:
 
 ### Multicloud Management Platform - Leonardo Secure Cloud Management Platform (SCMP)
 
+![Multicloud Management Platform - Leonardo Secure Cloud Management Platform (SCMP)](assets/images/extract/media/SCMP.png)
+
 #### Services Description
 
 Secure Cloud Management Platform (SCMP) is a Multicloud management software platform, designed by Leonardo, for governance, lifecycle management, brokering, and resource automation in hybrid and multi-cloud environments.  
@@ -474,6 +491,8 @@ The service offers the following advantages:
 
 ### Control Room as Service
 
+![Control Room as Service](assets/images/extract/media/X2030.png)
+
 #### Services Description
 
 The service, developed by Leonardo, involves the adoption of a next-generation platform that aims to provide a comprehensive and innovative response to large urban centers, police forces, large utilities, and organizations that monitor and manage critical infrastructure.  
@@ -512,6 +531,8 @@ The service offers the following advantages:
 - *Traceability and reporting* → complete recording of events, decisions, and actions taken.
 
 ### IT infrastructure Service Operations (Logging & Monitoring)
+
+![IT infrastructure Service Operations (Logging & Monitoring)](assets/images/extract/media/ITSO.png)
 
 #### Services Description
 
@@ -554,6 +575,8 @@ Improved user experience → user session monitoring, frontend/backend performan
 
 ### PaaS Ticket Management Service
 
+![Ticket Management Service](assets/images/extract/media/Ticket.png)
+
 #### Services Description
 
 The service offers tools for managing user requests, incidents, related problems, and the entire ticketing cycle.  
@@ -590,84 +613,6 @@ Increased support team productivity → thanks to workflow automation, the use o
 - *Improved control and governance of IT services* → provides a comprehensive view of assets, users, and services, supporting regulatory compliance and service level agreement (SLA) monitoring in a documented and traceable manner.
 - *Native integration with the IT ecosystem* → possible integrations with SSO systems (e.g., Active Directory/Azure AD), UEM, Asset Management, Change Management, IT monitoring, HR systems, and others via API, reducing information silos and improving data quality.
 
-### PaaS Ticket Management Service (ITSM)
-
-#### Services Description
-
-The service, powered by ServiceNow, offers a suite of cloud-based capabilities for structured and automated management of IT user requests, according to ITIL (Information Technology Infrastructure Library) best practices.  
-It acts as a single point of management for requests, incidents, problems, changes, and IT resources to centralize the management of IT tickets generated by user requests and improve their experience.  
-It automates workflows, gains real-time visibility, and improves IT productivity by providing services to users through any channel using virtual agents.  
-It offers a portal for interactions with users requesting services and an interface for technical operators who receive tickets and manage them until resolution.
-
-#### Features and Advantages
-
-The service offers the following main features:
-
-- *Incident Management* → automated workflows for recording, classifying, assigning, and resolving incidents and service interruptions
-- *Problem Management* → identifying and managing root causes. Preventing future incidents through workarounds and definitive solutions
-- *Change Management* → manage IT changes in a controlled manner with approval workflows and risk assessment
-- *Request Management / Service Catalog* → self-service portal for IT service requests (hardware, software, access). Configurable and integrated service catalog with approval workflow
-- *Knowledge Management* → centralized repository of articles, FAQs, procedures, and solutions, accessible via the user portal and Virtual Agent
-Customizable dashboards for IT teams, managers, and business.
-
-As architectural level, the ITSM service's application layer is based on a processing component distributed across three nodes.  
-The three nodes expose web services managed by a load balancer located in front of the solution. 
-The Application Nodes access a database consisting of a MariaDB database.  
-The platform will also be integrated with the customer's mail system to allow the platform to send notification emails to both requesting users and operator users by configuring an SMTP flow to the customer's mail system.  
-To meet the most stringent security requirements, data encryption is implemented using keys stored on HSM devices. This will be made possible by interfacing with the KMS module common to all PaaS services.  
-An external and cross-functional component of identity, verifies credentials and issues authentication tokens that will be validated by the services subject to interaction requests and will be used exclusively by solution administrators.
-
-The service offers the following advantages:
-
-- *Reduced operating costs* → thanks to process automation and a reduction in manual tasks, fewer repetitive interventions and a lower cost per ticket.
-Increased support team productivity → thanks to workflow automation, the use of AI (for automatic classification, suggestions, pre-populated responses), and self-remediation, the manual burden on IT operators is reduced. The self-service portal and knowledge base enable self-resolution of many user issues.
-- *Support for business decisions* → integrated reports and dashboards provide KPIs on average response times, resolution, ticket volumes by category, and seasonal trends.
-- *Improved user experience* → users can open tickets, monitor status, and find solutions independently, reducing frustration and wait times. Furthermore, it fosters a collaborative and efficient environment between users and support teams, with agents viewing the same status in real time.
-- *Improved control and governance of IT services* → provides a comprehensive view of assets, users, and services, supporting regulatory compliance and service level agreement (SLA) monitoring in a documented and traceable manner.
-- *Native integration with the IT ecosystem* → possible integrations with SSO systems (e.g., Active Directory/Azure AD), UEM, Asset Management, Change Management, IT monitoring, HR systems, and others via API, reducing information silos and improving data quality.
-
-### PaaS Ticket Management Service (ADD-ON ITOM)
-
-#### Services Description
-
-This optional module, integrated with the ITSM service, provides IT infrastructure and service performance management. It allows you to monitor, automate, and optimize IT operations (infrastructure, applications, networks, cloud services).  
-It ensures that the infrastructure delivering services is stable, scalable, and monitored to improve service continuity, end-to-end visibility, and proactive system management.  
-In conjunction with the ITSM service, it offers integrated and comprehensive IT management, from the service desk to operations and infrastructure.
-
-#### Features and Advantages
-
-The service offers the following main features:
-
-- *Discovery* → automatic discovery of IT assets (servers, databases, applications, devices, containers, clouds). Dynamically updates the CMDB (Configuration Management Database) with relationships and dependencies.
-- *Service Mapping* → allows you to understand the impact of incidents or changes on critical applications.
-Event Management → Centralizes events from monitoring systems (e.g., Nagios, Zabbix, Splunk, Dynatrace, etc.). Uses correlation and deduplication to reduce noise and identify the root cause. Direct integration with ITSM Incident Management.
-- *Operational Intelligence (AIOps)* → machine Learning algorithms to detect anomalies, trends, and load forecasts. Helps prevent downtime and reduce MTTR (Mean Time to Repair).
-- *Cloud Management →* Provisioning and orchestration of multi-cloud resources (AWS, Azure, Google Cloud). Cost governance and compliance of cloud resources.
-- *Orchestration and Automation* → automating repetitive tasks (password reset, server restart, application provisioning). Pre-configured and low-code/no-code workflows to accelerate adoption.
-
-At the architectural level, the service's application layer is based on a processing component distributed across three nodes.  
-The three nodes expose web services managed by a load balancer located at the front of the solution.  
-The Application Nodes access a database consisting of a MariaDB database instance.  
-The platform will also be integrated with the customer's email system to allow the platform to send notification emails to both requesting and operator users by configuring an SMTP flow to the customer's email system.  
-To meet the most stringent security requirements, data encryption is implemented using keys stored on HSM devices. This will be made possible by interfacing with the KMS module common to all PaaS services.  
-Mid: server instantiated within the customer's perimeter; in the case of segregated perimeters, multiple Mid Servers can be configured (one per sub-perimeter). It is the server responsible for carrying out the discovery and acting as a 'collector' and which interfaces with the Service Now Application Servers to provide the collected/discovered information.
-
-The service offers the following advantages:
-
-- *Reduced downtime* → fewer service interruptions and greater business continuity.  
-- *Increased IT productivity* → thanks to the automation of repetitive tasks.
-- *IT cost optimization* → proactive resource management and cloud consumption control.
-- *Improved user experience* → services are always available and more reliable.
-- *More informed decisions* → dashboards and reports on performance and capacity.
-- *Compliance and risk reduction* → centralized governance and resource control.
-- *Automatic discovery* of servers, applications, and cloud resources with continuous CMDB updates.
-- *Integrate with third-party systems *(e.g., ERP, CRM, monitoring tools, etc.) via APIs and connectors.
-- *Service mapping* to visualize dependencies between IT components and application services.
-- *Cloud-native scalability* → the platform easily grows with business needs.
-- *Operational Intelligence* → use of AI and machine learning algorithms for automated and preventative detection of anomalies or failures.
-- *Integrated security and compliance*.
-- *Automation and orchestration of IT processes* (provisioning, reset, patching) with low-code/no-code workflows.
-
 ##  DevSecOps Family
 
 Below is the list of services belonging to the  DevSecOps family:
@@ -679,6 +624,8 @@ Below is the list of services belonging to the  DevSecOps family:
 - Qualizer DevSecOps
 
 ### Configuration Manager
+
+![Configuration Manager Service)](assets/images/extract/media/Config.png)
 
 #### Services Description
 
@@ -718,6 +665,8 @@ The service offers the following advantages:
 - *Complete visibility and traceability* → dashboards and analytical reports allow you to monitor the effectiveness of automations and resource usage.
 
 ### Test Automation
+
+![Test Automation Service)](assets/images/extract/media/Test.png)
 
 #### Services Description
 
@@ -762,6 +711,8 @@ The service offers the following advantages:
 
 ### Quality Code Analysis
 
+![Quality Code Analysis Service)](assets/images/extract/media/Quality.png)
+
 #### Services Description
 
 The service, based on SonarQube, offers public administrations a robust static code analysis tool, supporting software quality and integration into CI/CD processes.  
@@ -803,6 +754,8 @@ Technical debt management → estimate the time to fix issues.
 
 ### DevSecOps As A Service
 
+![DevSecOps As A Service)](assets/images/extract/media/DevSecOps.png)
+
 #### Services Description
 
 The service, based on Gitlab, offers an integrated environment for the complete management of the software development lifecycle according to the DevSecOps approach and practices, providing the tools needed for collaboration, development, testing, security, and software release in a single integrated environment.  
@@ -841,6 +794,8 @@ The service offers the following advantages:
 - *Increase team productivity* through process automation.
 
 ### Qualizer DevSecOps
+
+![DevSecOps As A Service)](assets/images/extract/media/Qualizer.png)
 
 #### Services Description
 
@@ -891,6 +846,8 @@ Below is the list of services belonging to the Big Data family:
 
 ### Data Lake - 1TB
 
+![Data Lake Service)](assets/images/extract/media/DataLakeLDO.png)
+
 #### Services Description
 
 It provides a ready-to-use platform developed by Leonardo that has all the features developers, data scientists, and analysts need to easily archive data of all sizes, shapes, and velocities.  
@@ -922,6 +879,8 @@ The service offers the following advantages:
 - *Automation and DevOps-friendly* → it enables continuous updates without downtime and simplified backup management.
 
 ### Data Lakehouse
+
+![Data Lake Service)](assets/images/extract/media/DataLakehouse.png)
 
 #### Services Description
 
@@ -960,6 +919,8 @@ The service offers the following advantages:
 - *Automation and DevOps-friendly* → it enables continuous updates without downtime and simplified backup management.
 
 ### Business Intelligence
+
+![Data Lakehouse Service)](assets/images/extract/media/BI.png)
 
 #### Services Description
 
@@ -1012,6 +973,8 @@ Infrastructure scalability and flexibility.
 
 ### Batch/Real time Processing - 1 Worker
 
+![Batch/Real time Processing Service)](assets/images/extract/media/Processing.png)
+
 ##### Services Description
 
 It is a platform that provides a set of tools for processing, integrating, quality-checking, and preparing data from heterogeneous sources stored in the Data Lake, both in real time and in batch mode.  
@@ -1046,6 +1009,8 @@ The service offers the following advantages:
 - *Integrated monitoring* → metrics, alerts, and centralized logging for ETL pipelines.
 
 ### Event Message
+
+![Event Message Service)](assets/images/extract/media/Event.png)
 
 #### Services Description
 
@@ -1089,6 +1054,8 @@ The service offers the following advantages:
 - *Security and Compliance* → Authentication, authorization, and encryption in transit and at rest are managed by the provider.
 
 ### Data Governance
+
+![Data Governance Service)](assets/images/extract/media/Governance.png)
 
 #### Services Description
 
@@ -1147,6 +1114,8 @@ Below is the list of services belonging to the Artificial Intelligence (AI) fami
 
 ### Speech to Text
 
+![Speech to Text Service)](assets/images/extract/media/STT.png)
+
 #### Services Description
 
 This service provides an advanced speech-to-text model for transcribing audio files into text, trained on a vast dataset of audio and text in various languages ​​using neural AI (deep learning) models specialized in automatic speech recognition (ASR).  
@@ -1189,10 +1158,12 @@ The service offers the following advantages:
 - *Structured and interoperable output* → output in standard formats (JSON, TXT, SRT, VTT, DOCX) easily integrated with databases or document workflows.
 - *Model updates* → managed and ongoing model updates, improving accuracy and reducing errors over time.
 - *High performance and low latency* → processing in milliseconds for live streams, seconds for large files.
-- *Multimodal AI support *→ can be combined with Text Analytics, Translation, and Text-to-Speech services to create complete speech pipelines (e.g., transcription + translation + synthesis).
+- *Multimodal AI support* → can be combined with Text Analytics, Translation, and Text-to-Speech services to create complete speech pipelines (e.g., transcription + translation + synthesis).
 - *Service scalability* → allows you to simultaneously manage thousands of speech streams by providing and managing the necessary infrastructure.
 
 ### AI Audio & Video Analytics
+
+![AI Audio & Video Analytics Service)](assets/images/extract/media/AudioVideo.png)
 
 #### Services Description
 
@@ -1235,6 +1206,8 @@ The service offers the following advantages:
 - *Operational monitoring and insights*.
 
 ### Optical Character Recognition (OCR)
+
+![Optical Character Recognition (OCR) Service)](assets/images/extract/media/OCR.png)
 
 #### Services Description
 
@@ -1295,6 +1268,8 @@ The service offers the following advantages:
 
 ### Text Analytics
 
+![Text Analytics Service)](assets/images/extract/media/Text.png)
+
 #### Services Description
 
 The Text Analytics PaaS solution,  developed by Leonardo, provides a ready-to-use NLP (Natural Language Processing) platform capable of extracting structured and interpretable information from unstructured texts, enabling quantitative and qualitative analyses that would be time-consuming and difficult to perform manually.  
@@ -1339,6 +1314,8 @@ The service offers the following advantages:
 
 ### Text Translation
 
+![Text Analytics Service)](assets/images/extract/media/Translation.png)
+
 #### Services Description
 
 Multilingual translation service using AI-based machine translation (NMT) technologies to enable rapid and accurate translation of text from the source language to the target language in real time.  
@@ -1378,6 +1355,8 @@ The service offers the following advantages:
 
 ### AI Search - RAG
 
+![AI Search - RAG Service)](assets/images/extract/media/AIsearch.png)
+
 #### Services Description
 
 AI Search-RAG is a system developed by Leonardo for automatically generating answers to user-generated questions using context and information from reliable data sources.
@@ -1416,7 +1395,7 @@ The service offers the following advantages:
 - *Improved customer/employee experience* → relevant, clear, personalized answers.
 - *Increased competitiveness* → leverages proprietary knowledge, not just public knowledge.
 - *Risk mitigation* → reduces errors and hallucinations, increasing the relevance of output to user questions.
-- *Upgradability without retraining *→ simply update the database/document repository, not the LLM.
+- *Upgradability without retraining* → simply update the database/document repository, not the LLM.
 - *Hybrid vector search* → combines semantic search with traditional text search.
 - *Model efficiency* → LLM-based host model oversees activities and decisions and supervises other, simpler agents (LLM).
 - *Traceability and transparency* → sources cited to support the answer can be displayed.
@@ -1424,81 +1403,336 @@ The service offers the following advantages:
 
 ### AI Platform
 
+![AI Platform Service)](assets/images/extract/media/AIplatform.png)
+
 #### Services Description
 
-
+The AI ​​Platform PaaS service developed by Leonardo uses AI technologies (machine learning and deep learning) to provide domain experts (data scientists, data analysts, and AI engineers) with a collaborative platform to create, track, use, and monitor ML models simply and intuitively, yet reliably and efficiently.  
+The service provides a ready-to-use platform capable of easily managing the entire lifecycle of ML models. The solution is certified, managed, and maintained by the provider.  
+The platform can be enhanced using, in addition to the Data Lake service, other technologies made available by the Big Data PaaS.  
+The services are designed to ensure digital sovereignty through deployment on secure national infrastructure, with a particular focus on latency and optimization of computational resources.
 
 #### Features and Advantages
 
-The service offers the following main features:
+The platform is capable of managing the lifecycle of ML models through the following phases:
 
+- *Data processing* → which will be optimized if the Big Data PaaS Data Governance and Processing Engine services are activated for the extraction, transformation, and loading of datasets into the AI ​​Platform.
+- *Model training and evaluation process* → through a JupyterLab on the AI ​​platform.
+-* Model tracking and saving process*. 
+- *Model management process* → through the model registry provided by the MLOps tool.
+- *Model serving process* → for the creation of Docker images ready for deployment on any target system. These can be tested directly on the platform through the swagger describing the inference service.
 
-The main components of the service are:
+The solution is primarily composed of the following custom tools:
 
+- *JupyterLab* → allows the creation and sharing of web scripts in JSON format using a Notebook, which follow a schema and an ordered list of input/output cells. The created Jupyter documents can be exported as HTML, PDF, Markdown, or Python documents.
+- *Mlflow* → allows for the lifecycle management of ML models. It simplifies the complex procedures for implementing machine learning. Consisting of:
+
+    - MLflow Tracking: records and tracks metrics and artifacts (models plus their dependencies) of the training process.
+    - MLflow Model Registry: stores models in a centralized registry to collaboratively manage the entire model lifecycle.
+    - DBMS Metadata: stores all metadata in a relational database to track all development flows of a given ML model.
+    - Object Storage: stores all developed models and their dependencies to facilitate the subsequent model serving process in production.
+
+- *Model Serving* → facilitates the deployment of ML models at scale in production environments through the creation of Docker images.
 
 The service offers the following advantages:
+
+- *Reduced initial and operational costs* → there is no need to invest in hardware infrastructure (GPU, cluster, server, storage, etc.), thus reducing maintenance, upgrade, and security costs.
+- *Scalability* → the service can scale compute and storage resources based on model complexity or data volume.
+- *Faster time to market* → models can be developed, tested, and deployed much faster thanks to pre-built tools and pipelines.
+- *Focus on business value* → domain experts can focus on model research and development, increasing team productivity and efficiency.
+- *Easy integration with other services* → trained models can be quickly integrated with other services (API management, Business Intelligence, Data Lake, etc.) to create complete AI-driven solutions.
+- *Automated model lifecycle management* → native MLOps support for model versioning, performance monitoring, and automatic retraining.
+- *Managed and optimized environment* → the execution environment is preconfigured with ML libraries, with security updates and patches managed by the provider.
+- *Integrated monitoring and logging* → training metrics, logs, and results are tracked to easily diagnose convergence or overfitting issues.
+- *Simplified deployment* → creating Docker images for model inference allows for simplified deployment to any target system.
 
 ### Semantic Knowledge Search
 
+![Semantic Knowledge Search Service)](assets/images/extract/media/Semantic.png)
+
 #### Services Description
 
-
+A service developed by Leonardo that provides a ready-to-use platform that makes information contained within the information assets easily accessible, using a semantic search engine capable of interpreting natural language queries in different languages.  
+It considers the search context, word variations, and synonyms to find relevant results from a semantic database for a given domain based on a user's natural language query.  
+The service allows for the management of content in various formats (Word documents, PDFs, PowerPoint presentations, emails, images, etc.) through an upload service capable of inferring and processing the document type.  
+The tool is able to filter and select the most relevant information for the user through the use of an NLP (Natural Language Processing) model, also allowing complete navigation of the indexed document. The services are designed to ensure digital sovereignty through deployment on a secure national infrastructure, with a particular focus on latency and optimization of computational resources.  
+It allows users to enter feedback on individual results returned by the search engine, in order to take into account domain knowledge to better refine the results provided by the system.
 
 #### Features and Advantages
 
-The service offers the following main features:
+The platform bases its semantic search methodology on a database of carefully selected internal information sources, as well as on feedback from system users.  
+This way, the results produced will prove significantly more effective, as the output of an IT tool will be combined with the assessments of domain experts.  
+The platform will allow users to:
 
+- Submit natural language queries in different languages.
+- Reduce information search times, which will no longer be based on manual consultation of documentation, but will instead benefit from the efficiency of AI
+- Optimize the tool and share the experiences of individual operators through the feedback system.
 
 The main components of the service are:
 
+- *Client App* → user-friendly frontend through which users can interact to submit questions in different languages, find documents relevant to the question, narrow the search field through relevant metadata, submit feedback, and index their documents by uploading one or more files.
+- *FastAPI Framework* → modern, fast (high-performance) web framework for creating APIs with Python, based on the OpenAPI and JSON Schema standards.
+- *Bidirectional Encoder Representations from Transformers* → pre-trained deep learning models that provide a foundation upon which to build custom versions to address a wide range of tasks. Examples include sentiment analysis, named entity recognition, text engagement (i.e., next sentence prediction), semantic role labeling, text classification, and coreference resolution.
+- *Apache Tika* → Software for data extraction, language identification, and content analysis. It can find and extract text and metadata from over a thousand file formats.
+- *OpenSearch* → A distributed search engine that provides extremely fast full-text search capabilities and high-performance indexing of all data types. Interaction with the search engine occurs via REST API technology.
 
 The service offers the following advantages:
+
+- *Faster and more informed decisions* → teams have easier access to corporate knowledge, reducing analysis and decision-making time.
+- *Better use of information assets* → implicit or distributed knowledge within corporate silos (documents, emails, databases, CRM, etc.) is made searchable and semantically linked, reducing the loss of know-how or information dispersion.
+- *Reduced operating costs* → PaaS eliminates the need to manage proprietary infrastructure for indexing, NLP, and data linking.
+- *Innovation and competitive advantag*e → differentiate products and services with a more intelligent user experience.
+- Accelerated time to market → PaaS services are ready to use and easily integrated via API, allowing for the rapid development of new knowledge-driven applications.
+- *Simplified scalability and management* → manage provisioning, updates, load balancing, and fault tolerance.
+- *Access to advanced AI/NLP technologies* → semantic engines based on embeddings, ontologies, graph search, and machine learning without having to implement them internally. - Continuous updates with the latest developments.
+- *Multi-source integration* → Semantic Knowledge Search PaaS allows you to connect structured and unstructured data from multiple sources and supports standard connectors (REST API).
+- *Managed security and compliance* → authentication, authorization, and encryption are integrated into the service.
 
 ### AI SLM/LLM
 
+![AI SLM/LLM Services)](assets/images/extract/media/LLM.png)
+
 #### Services Description
 
+These are Generative AI PaaS developed by Leonardo that provide optimized linguistic inference capabilities. They use predefined linguistic models to understand and generate natural text.  
+They allow the use of two types of linguistic models:
 
+- *Small Language Model (SLM)*: small-scale linguistic models that are lighter, more efficient, and specialized in specific domains, offering fast and precise solutions for everyday linguistic needs.
+- *Large Language Model (LLM)*: linguistic models with numerous parameters for extremely high linguistic comprehension and generation capabilities, ideal for complex interactions, virtual assistants, semantic search, and automation.
+SLMs are suitable for performing specific, less complex applications and tasks (e.g., text autocompletion, short sentence translation, and text classification), where an LLM would be too computationally expensive.
 
 #### Features and Advantages
 
 The service offers the following main features:
 
+- *Tenant isolation* → each customer will have a dedicated Tenant on the PSN infrastructure with complete isolation of data, configurations, and uploaded models.
+- *Resource allocation* → each customer will be assigned dedicated infrastructure resources (CPU, GPU, RAM, Storage) to their Tenant, sized appropriately.
+- *Auto-scaling* → tenant resources can scale to respond to load variations.
+- *Cloud-native deployment* → the service will be deployed in the customer's tenant in cloud-native mode on the OpenShift platform, ensuring portability, resilience, and standardization of operating procedures.
+- *Centralized observability* → provides centralized platform monitoring services with log collection, metrics, and alerting for complete observability, audit trails, and advanced troubleshooting.
+- *PaaS integration* → uses PSN PaaS components for storage, networking, security, and identity management, ensuring compliance with project requirements and leveraging the economies of scale of shared infrastructure.
 
-The main components of the service are:
+Both services feature a modular architecture designed to ensure scalability, flow segregation, and ease of integration into public administration processes.
 
+- *API Layer* → provides access to SLM/LLM services through two main methods: REST API calls for integration with existing systems, or through a Web UI for direct, user-friendly interaction.
+- *Inference layer* → this is the heart of the service, where SLM/LLM models reside and execute. It consists of:
+- *Inference engine* → runs language models optimized for latency and GPU/CPU resource consumption.
+- *Model pool management* → maintains a set of validated and pre-configured models, selectable by the customer. Only one model is active per tenant at any time.
+- *Platform layer* → provides cross-functional support services and includes: Resource Management & Scaling: Dynamic allocation of computational resources (CPU, GPU, RAM, storage), load-based auto-scaling, and service lifecycle management.
 
 The service offers the following advantages:
+
+- *Technological accessibility* → access to no-code Generative AI technology solutions.
+- *Reduced operating costs* → no upfront investment in hardware infrastructure or proprietary models.
+- *Faster time to market* → easier models to integrate into business solutions.
+- *Operational efficiency* → automate repetitive tasks, reducing processing times and improving service quality.
+- *Flexible adoption* → choose between SLM (small, specialized models) or LLM (generalist models with broader knowledge capabilities) depending on the use case.
+- *Risk mitigation* → leverage pre-trained and validated models without the need for specialized ML skills.
+- *Easy integration with existing systems* → orchestrate complex processes through microservices and integrated ML pipelines.
+- *Performance optimization* → PaaS allows you to combine both advantages: use SLM for simple, targeted tasks, while LLM is used only for tasks that require broader, more generalized linguistic understanding.
+- *Fast and simplified model testing* → ready-to-use models thanks to the playground functionality available directly in the interface.
+-* Rapid prototyping and DevOps AI* → ready-to-use environment for developing, testing, and deploying applications through standard interfaces.
+- *Multi-model and hybrid AI* → ability to combine open source and proprietary models in the same ecosystem.
 
 ### AI workflow
 
+![AI workflow Service)](assets/images/extract/media/AIworkflow.png)
+
 #### Services Description
 
-
+A service that allows users to create, orchestrate, automate, and deploy visual workflows for data manipulation, analysis, and modeling, without writing code.  
+It allows users to add and customize workflow nodes to meet their specific needs. It also supports distributed workflow execution, making it suitable for compute-intensive scenarios.  
+Specifically, it allows users to: design AI workflows without writing complex code; run and scale analytics or machine learning processes in the cloud; integrate models, APIs, and heterogeneous data; and automate end-to-end analysis or decision-making pipelines.
 
 #### Features and Advantages
 
 The service offers the following main features:
 
+- *Multiple connectors* → connect to databases, files, REST APIs, cloud storage, web services, IoT systems.
+- *Data cleansing and transformation* → drag-and-drop functions to normalize, filter, aggregate, and enrich data.
+- *Integrated ML models* → preconfigured nodes for regression, classification, clustering, NLP, and anomaly detection algorithms.
+- *Automated execution* → scheduling, event-based triggers, conditional flows, and parallelized jobs.
+- *MLOps & Deployment* → publish AI models as REST APIs or containers (Docker/Kubernetes).
+- *Collaboration & Governance* → user management, permissions, version control, auditing, and rollback workflows.
 
 The main components of the service are:
 
+- *Analytics platform (Frontend)* → drag-and-drop visual environment for creating AI/ML workflows and data pipelines.
+- *Business hub (Backend PaaS)* → heart of the cloud service: manages users, executions, versioning, and deployment.
+- *Execution environment (Cluster/Container)* → runs workflows on scalable nodes, on-demand or scheduled.
+- *Data Connectors layer* → modules for accessing external data sources.
+- *Integration layer* → interface with external languages ​​(or ML frameworks).
+- *Monitoring layer* → execution metrics, job status, logging, and error alerts.
 
 The service offers the following advantages:
+
+- *Reduced time to market* → analytical workflows and predictive models can be developed, tested, and put into production in a fraction of the time, improving responsiveness compared to competitors.
+- *Reduced IT infrastructure costs* → PaaS eliminates the need for dedicated servers, hardware maintenance, and customer-paid software updates.
+- *Democratization of AI and Data Science* → The low-code/no-code approach also allows non-technical professionals (analysts, managers) to participate in the construction and optimization of decision-making flows.
+- *Greater transparency and traceability of decisions* → each step of the analytical process is visible and documented in the workflow, increasing the reliability and explainability of automated decisions.
+- *Optimization of business performance* → AI pipelines improve forecasting, resource allocation, predictive maintenance, customer analytics, and other key areas, generating direct ROI.
+- *End-to-end automation of AI flows* → ability to schedule, orchestrate, and automate complete pipelines.
+- *Rapid prototyping and reusability* → workflows can be cloned, reused, or shared in centralized repositories to accelerate new projects or variants.
+- *Full MLOps support* → model lifecycle management (train, test, deploy, monitor), simplified versioning, and rollback.
+- *Automated updates and maintenance* → patch management, version updates, and library dependencies without interrupting active workflows.
+- *Reduced deployment complexity* → models and flows can be quickly deployed as microservices or REST APIs, eliminating the need for manual DevOps.
 
 ### Vector DB
 
+![Vector DB Service)](assets/images/extract/media/Vector.png)
+
 #### Services Description
 
-
+Based on a modern, open-source vector database technology (Lance DB) optimized for AI and machine learning, Leonardo's service enables scalable, high-performance storage, indexing, and search of vector data (embeddings), without having to manage the underlying infrastructure.  
+It offers persistent storage and efficient indexing of embeddings, enabling fast and scalable searches across large volumes of vector data.  
+From a business perspective, it enables semantic search applications, personalized recommendations, intelligent chatbots, and augmented retrieval systems (RAG).  
+It reduces infrastructure costs by unifying multimodal data management and simplifying AI/ML workflows. It increases development speed thanks to deployment flexibility.  
+It offers scalability and high performance to support production-level AI workloads with complex data flows.
 
 #### Features and Advantages
 
 The service offers the following main features:
 
+- *Unified repository for data and vectors* → the solution allows you to store not only embeddings (vectors) generated by AI models, but also the "original" data (text, images, audio, video) and associated metadata, all in the same environment.
+- *Multimodal support* → the solution is designed to work with data from different modalities: text, images, video, audio, point clouds, etc.
+- *Vector search* → embedding search functionality: given an embedding query, find the most similar vectors.
+- *Advanced vector indexing* → support for indexing algorithms that make searching large datasets efficient.
+- *Data versioning and high-performance columnar format* → LanceDB uses a columnar format called "Lance" (open-source), optimized for ML/vector workloads.
+-* SQL and analytics integration beyond vector* → Not just similarity search; LanceDB allows SQL/analytics queries on data (metadata, additional columns) in addition to vector operations.
+- *Flexible deployment* → serverless managed PaaS (LanceDB Cloud) for production without managing infrastructure.
 
 The main components of the service are:
 
-
+- *Data ingestion layer* → collects and prepares data from various sources (text, images, audio, video, logs, documents, corporate databases, etc.). FastAPI Framework → Modern, fast (high-performance) web framework for building APIs with Python, based on OpenAPI and JSON Schema standards.
+- *Vector storage layer* → efficiently stores vectors and related data.
+- *Indexing & Search engine* → enables vector search by similarity (nearest neighbors) and optimized indexing.
+- *Query & API layer* → exposes database functionality to developers and applications.
+- *Compute & Scaling layer* → manages compute resources, scalability, and service performance.
+- *Security & Compliance layer* → ensures data protection and regulatory compliance.
+- *Monitoring, logging & observability layer* → provides visibility into system behavior and performance.
+- *Developer & Management console* → web interface for administrators and developers for managing datasets and indexes, viewing embeddings and search results, configuring security and access policies, monitoring costs, plans, and usage metrics.
 
 The service offers the following advantages:
+
+- *Enhancement of unstructured information assets* → VectorDB allows you to transform this content into searchable and analyzable data thanks to semantic embeddings.
+Improved productivity, faster decisions, and reduced search time → by enabling semantic and contextual search, no longer based on keywords. Users can query the knowledge base with natural language.
+- *Enabling advanced AI applications* → a key component for solutions such as RAG, recommendation engines, and multimodal analysis, which facilitate integration with LLM models and generative AI tools.
+- *Reduced operating costs and increased efficiency* → no investment in hardware or personnel for database management. Optimization of search and document analysis processes.
+- *Accelerated time-to-market* → no need to manage infrastructure, configurations, or manual scaling, so developers can integrate semantic search quickly.
+- *Scalability and high performance* → Cloud-native architecture with vertical and horizontal autoscaling, ANN indexes (HNSW, IVF_PQ) that enable millisecond searches even on huge datasets.
+- *Easy management (fully managed PaaS)* → No need for provisioning, tuning, or software updates. Backup, replication, and high availability managed by the provider.
+- *Hybrid and multimodal query support* → combines vector search + structured filters (SQL). Manages text, image, audio, and video embeddings in a single data model.
+- *Reliability, security, and compliance* → end-to-end encryption, IAM access control, API tokens, audit logging. Secure management of sensitive data (embedding anonymization).
+- *Maintainability and continuous updates* → automatic updates of the LanceDB engine and indexing models. No downtime for patches or upgrades.
+
+## Virtual Desktop Infrastructure (VDI) Family
+
+Below is the list of services belonging to the Virtual Desktop Infrastructure (VDI) family:
+
+- VDI
+- VDI with GPU support
+
+### VDI
+
+![VDI Service)](assets/images/extract/media/VDI.png)
+
+#### Services Description
+
+Powered by Citrix solution, the Virtual Desktop Infrastructure (VDI) service allows users to access and manage virtual desktops hosted on centralized servers, providing a secure and customizable work environment accessible from any internet-connected device.  
+VDI (named or shared) with a predefined set of applications and dedicated storage space for each user.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Centralized remote access* → users access virtual desktops or applications from any location and device.
+- *Optimized user experience* → HDX (High Definition Experience) technology optimizes the user experience even under network conditions with latency or limited bandwidth
+- *Advanced security* → data remains in the data center, not on the user's device, through appropriate policies. Multi-factor authentication (MFA), single sign-on (SSO), traffic encryption, data isolation.
+- *Centralized management* → updates, patches, and policies distributed centrally from a single console (Citrix Studio/Director).
+- *Monitoring and diagnostics* → advanced performance monitoring and troubleshooting tools (Citrix Director, Citrix Analytics).
+
+The main components of the service are:
+
+- *Delivery Controller* → manages user authentication, load balancing, and resource assignment.
+- *Database* → a virtual apps or virtual desktops site uses three SQL Server databases (installed on a single DB Server in an HA configuration).
+- *Virtual Delivery Agent (VDA)* → installed on virtual desktops, allows the machine to register with the Controller, which in turn makes the virtual machine and the resources it hosts available to users.
+- *StoreFront* → portal through which users connect to access virtual apps or desktops.
+- *Receiver / Citrix Workspace App* → the client that runs on the user's device and allows access to the remote desktop/app.
+- *Studio* → you can manage the virtual desktops deployment using two management consoles: Web Studio (Web BASed) and Studio (Windows client)
+- *Director *→ dashboard that allows IT support and helpdesk teams to monitor the environment, resolve issues before they become system-critical and perform end-user support activities.
+- *License Server* → manages product licenses. It communicates with the Controller to manage licenses for each user session and with Studio to allocate license files.
+- *Hypervisor* → hosts the VMs that make up the infrastructure and virtual desktops.
+
+The service offers the following advantages:
+
+- *Reduced operating costs* → optimize operations through centralized management and save device costs through BYOD (Bring Your Own Device) support.
+- *Increased security* → data protection through appropriate policies.
+- *Increased productivity* → consistent and seamless user experience, regardless of the device used.
+- *Business continuity and disaster recovery* → always-on desktops.
+- *Centralized management *→ patches, updates, and policies are centrally applied.
+- *Scalability* → easily add/remove users and resources as needed.
+- *Cross-platform compatibility* → Windows, Linux, macOS, iOS, Android, browsers.
+
+
+### VDI with GPU support
+
+![VDI with GPU support Service)](assets/images/extract/media/VDI.png)
+
+#### Services Description
+
+It is a more advanced version of the previously described VDI service that supports graphics accelerator (GPU) management for additional graphics acceleration capabilities.
+
+#### Features and Advantages
+
+The service offers the same basic features as the previously described VDI service with the addition of GPU support capabilities.  
+VMs can have graphics acceleration features for users who require software such as CAD/CAM (e.g., AutoCAD, SolidWorks), 3D modeling (e.g., Blender, 3ds Max), GIS (e.g., ArcGIS), Scientific rendering and visualization, and video editing (e.g., Adobe Premiere, DaVinci Resolve). Examples of additional features include HDX 3D Pro, GPU virtualization (NVIDIA vGPU, AMD MxGPU), high-performance remote access, multi-monitor and 4K support, and bandwidth and latency optimization.  
+
+The service offers the same components as the previously described VDI service.
+
+The service offers the following advantages:
+
+- *Reduced hardware costs* → no need to purchase expensive graphics workstations for each user: GPU computing power is centralized in the cloud.
+- Scalability and flexibility → easily increase or decrease GPU/CPU resources based on seasonal or project-specific loads. Suitable for distributed and temporary teams (e.g., consultants, freelancers, partners).
+- *Business continuity and disaster recovery* → everything runs on a managed and resilient infrastructure. Automatic backups and failovers ensure business continuity even in the event of local failures.
+- *Improved productivity and remote access* → users can access 3D, CAD, or data science applications from any device, with the same performance as a local machine. Ideal for remote working and global collaboration.
+- *GPU acceleration* → support for graphics-intensive workloads (CAD, BIM, GIS, 3D rendering, simulations, AI/ML). Smooth performance thanks to technologies such as NVIDIA vGPU, AMD MxGPU, etc.
+- *Simplified management* → managed platform that reduces IT overhead (automated updates, patches, and provisioning). Directory integration, multifactor authentication, and granular access policies.
+- *User experience optimization* → advanced protocols reduce latency and optimize remote rendering. Adaptive streaming: Balanced graphics quality based on available bandwidth.
+- *Multi-cloud and hybrid-ready* → deploy virtual desktops across multiple cloud providers or in private data centers. Greater flexibility in managing costs and compliance.
+- *Monitoring and analytics* → integrated telemetry and performance monitoring tools optimize user experience and GPU resource usage. Capacity planning automation.
+- *Support for DevOps/CI-CD/A*I → GPU VDI environments can be integrated into DevOps workflows for testing graphics applications, 3D modeling, or training ML models.
+
+## Collaboration Family
+
+Below is the list of services belonging to the Collaboration family:
+
+- Instant Messaging
+
+### Instant Messaging
+
+![Instant Messaging Service)](assets/images/extract/media/IM.png)
+
+#### Services Description
+
+It is a messaging and collaboration platform based on the Mattermost solution that offers secure tools for team communication, file sharing, and integration with other applications, supporting productivity in distributed work environments.  
+It allows you to organize all team communications in one place via channels. In addition to standard messaging, channels support automation, slash commands, bot integrations, code snippets, and more.  
+Suitable for environments with high security, privacy, and control requirements. It supports multi-factor authentication, Active Directory, LDAP, SSO, and more.  
+The platform can be customized and extended by integrating it with the tools your team uses daily.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Playbooks* → playbooks allow you to orchestrate work across tools and teams. They are prescribed workflows that support specific digital operations scenarios.
+- *Audio calls* → it offers native audio calls on channels.
+- *Integrations and customizations* → support for slash commands, bots, and inbound and outbound webhooks; extensive ecosystem of plugins and integrations; extensive APIs for extending functionality or building custom applications.
+- *Accessibility* → cross-platform clients (web, desktop, mobile); Deployable behind firewalls/in private, air-gapped environments.
+- *Security, Privacy, and Governance* → support for: encryption (in transit, at rest); Access control (Single Sign-On MFA, granular roles and permissions); Governance, privacy, and compliance; Zero Trust policy.
+
+The main components of the service are:
+
+- *Backend server* → can use MySQL or PostgreSQL as a database) that hosts messages, users, and files.
+- *Storage for file attachments, images, etc.* → can be local or cloud-based (S3, MinIO, etc.).
+- *WebSocket channels* → for real-time message transmission.
+- *Configurable for scalability* → cluster support, high availability, deployment on Kubernetes, isolated networks.
+

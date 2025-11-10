@@ -13,7 +13,9 @@ Below is the list of services belonging to the Compute family:
 
 - Kubernetes Confidential Computing
 
-### Kubernetes Confidential Computing Service
+### Kubernetes Confidential Computing
+
+![Kubernetes Confidential Computing Service](assets/images/extract/media/K8Sprivate.png)
 
 #### Services Description
 

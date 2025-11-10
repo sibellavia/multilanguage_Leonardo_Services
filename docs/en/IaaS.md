@@ -18,6 +18,8 @@ Below is the list of services belonging to the Compute family:
 
 ### Pool Confidential Services
 
+![Pool Confidential Services](assets/images/extract/media/iaasprivate.png)
+
 #### Services Description
 
 These services enable the provision of Private virtual computing environments (IaaS), i.e., on a pool of physical resources, dedicated and isolated for each individual customer, based on the use of bare metal computing instances.  
