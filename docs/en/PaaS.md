@@ -8,12 +8,12 @@ The following table lists the services included in the Platform as a Service (Pa
 | Security                             | [Identity & Access Management Service](#IAM)|
 | Security                             | [Key Vault as a Service - Standard](#key-vault)                           |
 | Security                             | [End point protection](#endpoint)                                           |
-| Security                             | [Servizio di sicurezza e protezione avanzato per file e dati](#file-data)                                           |
-| Security                             | [Servizi di erogazione di Penetration Test automatizzati](#PT)                                           |
-| Security                             | [Servizio di mail security & ransomware protection](#mail)                                           |
+| Security                             | [Advanced security and protection service for files and data](#file-data)                                           |
+| Security                             | [Automated Penetration Testing Services](#PT)                                           |
+| Security                             | [Mail security & ransomware protection service](#mail)                                           |
 | Security                             | [DSPM (Data Security Posture Management)](#posture)                                           |
 | Security                             | [NGFW platform](#ngfw)                                           |
-| Security                             | [PAM (Privileged access management)](#PAM)                                           |
+| Security                             | [PAM (Privileged Access Management)](#PAM)                                           |
 | Security                             | [Perimeter Security Intelligence](#PSI)                                           |
 | Security                             | [Intrusion Prevention System (IPS)](#IPS)                                           |
 | Middleware                           | [PaaS API Management](#API)                                         |
@@ -122,13 +122,21 @@ Below is the list of services belonging to the Security family:
 
 - [Identity & Access Management Service](#IAM)
 - [Key Vault as a Service - Standard](#key-vault)
-- [SIEM As A Service](#SIEM)
+- [End point protection](#endpoint)
+- [Advanced security and protection service for files and data](#file-data)
+- [Automated Penetration Testing Services](#PT)
+- [Mail security & ransomware protection service](#mail)
+- [DSPM (Data Security Posture Management)](#posture)
+- [NGFW platform](#ngfw)
+- [PAM (Privileged Access Management)](#PAM)
+- [Perimeter Security Intelligence](#PSI)
+- [Intrusion Prevention System (IPS)](#IPS)
 
 <a id="IAM"></a>
 
 ### Identity & Access Management Service
 
-![Identity & Access Management Service](assets/images/extract/media/IaM.png)
+![Identity & Access Management Service Overview](assets/images/extract/media/IaM.png)
 
 #### Services Description
 
@@ -179,13 +187,13 @@ The service offers the following advantages:
 
 <a id="key-vault"></a>
 
-### Key Vault as a Service
+### Key Vault as a Service - Standard
 
-![Key Vault as a Service](assets/images/extract/media/KeyVault.png)
+![Key Vault as a service Overview](assets/images/extract/media/KeyVault.png)
 
 #### Services Description
 
-The service provides a secure cloud repository (Vault) for storing and managing credentials and passwords used by cloud applications without having to manually install and manage dedicated IaaS machines. 
+The service, based on Hashicorp Vault technology, provides a secure cloud repository (Vault) for storing and managing credentials and passwords used by cloud applications without having to manually install and manage dedicated IaaS machines. 
 The service consists of a software platform that enables centralized and automated management of encryption keys, secrets, and certificates, with access controlled by identity-based authentication and authorization methods.  
 It also allows organizations to significantly simplify key lifecycle management, ensuring centralized control while leveraging the native cryptographic capabilities of KMS providers.
 
@@ -199,7 +207,6 @@ The main features and functionalities of the service are:
 - *Leasing and Renewal* → Key Vault As A Service associates a lease with each key or secret managed, which will result in its automatic revocation upon expiration and which can be renewed by clients through the integrated APIs provided by the platform.
 - *Revocation* → Key Vault As A Service has integrated support for revoking keys and secrets, which can be revoked individually or in bulk (e.g., all keys of a specific user), for example in case of compromise.
 
-The service is provided using Hashicorp Vault technology. 
 The service offers high availability and geographic replication.  
 The main workflow of Key Vault as a Service consists of four phases:
 
@@ -216,11 +223,11 @@ The service offers the following advantages:
 - *Improved trust and reputation* → audit and traceability to demonstrate secure secret management to stakeholders or customers.
 - *Cryptographic and standardized compliance* → can be configured to use FIPS (Federal Information Processing Standards) validated cryptographic modules, ensuring that all encryption, signing, HMAC and key derivation operations comply with the standards.
 
-<a id="SIEM"></a>
+<a id="endpoint"></a>
 
-### SIEM As A Service
+### End point protection Service
 
-![SIEM As A Service](assets/images/extract/media/SIEM.png)
+![End point protection Service Overview](assets/images/extract/media/.png)
 
 #### Services Description
 
@@ -233,6 +240,172 @@ The main features and functionalities of the service are:
 The main components of the service are:
 
 The service offers the following advantages:
+
+
+
+<a id="file-data"></a>
+
+### Advanced security and protection service for files and data
+
+![Advanced security and protection service for files and data Overview](assets/images/extract/media/.png)
+
+#### Services Description
+
+
+
+
+#### Features and Advantages
+
+The main features and functionalities of the service are:
+
+The main components of the service are:
+
+The service offers the following advantages:
+
+
+
+<a id="PT"></a>
+
+### Automated Penetration Testing Services
+
+![Automated Penetration Testing Services Overview](assets/images/extract/media/.png)
+
+#### Services Description
+
+
+
+
+#### Features and Advantages
+
+The main features and functionalities of the service are:
+
+The main components of the service are:
+
+The service offers the following advantages:
+
+
+
+<a id="mail"></a>
+
+### Mail security & ransomware protection service
+
+![Mail security & ransomware protection service Overview](assets/images/extract/media/.png)
+
+#### Services Description
+
+
+
+
+#### Features and Advantages
+
+The main features and functionalities of the service are:
+
+The main components of the service are:
+
+The service offers the following advantages:
+
+
+<a id="posture"></a>
+
+### DSPM (Data Security Posture Management) Service
+
+![DSPM (Data Security Posture Management) Service Overview](assets/images/extract/media/.png)
+
+#### Services Description
+
+
+
+
+#### Features and Advantages
+
+The main features and functionalities of the service are:
+
+The main components of the service are:
+
+The service offers the following advantages:
+
+
+<a id="ngfw"></a>
+
+### NGFW platform
+
+![NGFW platform Overview](assets/images/extract/media/.png)
+
+#### Services Description
+
+
+
+
+#### Features and Advantages
+
+The main features and functionalities of the service are:
+
+The main components of the service are:
+
+The service offers the following advantages:
+
+
+
+<a id="PAM"></a>
+
+### PAM (Privileged Access Management) Service
+
+![PAM (Privileged Access Management) Service Overview](assets/images/extract/media/.png)
+
+#### Services Description
+
+
+
+
+#### Features and Advantages
+
+The main features and functionalities of the service are:
+
+The main components of the service are:
+
+The service offers the following advantages:
+
+
+<a id="PSI"></a>
+
+### Perimeter Security Intelligence Service
+
+![Perimeter Security Intelligence Service Overview](assets/images/extract/media/.png)
+
+#### Services Description
+
+
+
+
+#### Features and Advantages
+
+The main features and functionalities of the service are:
+
+The main components of the service are:
+
+The service offers the following advantages:
+
+
+<a id="IPS"></a>
+
+### Intrusion Prevention System (IPS) Service
+
+![Intrusion Prevention System (IPS) Service Overview](assets/images/extract/media/.png)
+
+#### Services Description
+
+
+
+
+#### Features and Advantages
+
+The main features and functionalities of the service are:
+
+The main components of the service are:
+
+The service offers the following advantages:
+
+
 
 ## Middleware Family
 
