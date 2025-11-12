@@ -4,32 +4,46 @@ The following table lists the services falling under the Infrastructure as a Ser
 
 | FAMILY  | LIST OF SERVICES                                                                                                    |
 | ------- | ------------------------------------------------------------------------------------------------------------------- |
-| Compute | [Private IaaS (Confidential)](#pool-confidential-services)|
-| Compute | [VMs IaaS (Confidential)](#VM)|
+| Compute | [Confidental private IaaS](#pool-confidential-services)|
+| Compute | [Shared-IaaS (VMs)](#VMs)|
 <figcaption>List of families and related IaaS services</figcaption>
 
 ## Compute Family
 
 Below is the list of services belonging to the Compute family:
 
-- [Private IaaS (Confidential)](#pool-confidential-services)
+- [Confidental private IaaS](#pool-confidential-services)
     - Pool Small
     - Pool Medium
     - Pool Large
     - Pool X-Large
-- [VMs IaaS (Confidential)](#VM)
+- [Shared-IaaS (VMs)](#VM)
+    - VM Small
+    - VM Medium
+    - VM Large
+    - VM X-Large
 
 <a id="pool-confidential-services"></a>
 
-### Private IaaS (Confidential)
+### Confidental private IaaS
 
-![Private IaaS (Confidential) Services](assets/images/extract/media/iaasprivate.png)
+![Confidental private IaaS architecture](assets/images/extract/media/iaasprivate.png)  
+
+![Confidental private IaaS administration using the Proxmox virtualizer](assets/images/extract/media/iaasprivate_02.png)
 
 #### Services Description
 
 These services enable the provision of Private virtual computing environments (IaaS), i.e., on a pool of physical resources, dedicated and isolated for each individual customer, based on the use of bare metal computing instances.  
 Data from physical resources is encrypted and kept secure throughout all phases of use (at rest, in transit, and in use), leveraging the Confidential Computing paradigm.  
-Depending on the pool of computing resources required for each individual Administration, the most suitable service from the four available types can be selected.
+The Private IaaS (Confidential) services are based on the use of the Proxmox virtualizer, which allows the provision of IaaS services with confidential computing capabilities.  
+Depending on the pool of computing resources required for each individual Organization, the most suitable service from the four available types can be selected:
+
+| Type                        | Contained Elements                                |
+| --------------------------- | ------------------------------------------------- |
+| Pool Small (Confidential)   | 3 Hosts (2xCPU 24 Core - 512 GB RAM - 32 TB SSD)  |
+| Pool Medium (Confidential)  | 6 Hosts (2xCPU 24 Core - 512 GB RAM - 32 TB SSD)  |
+| Pool Large (Confidential)   | 9 Hosts (2xCPU 24 Core - 512 GB RAM - 32 TB SSD)  |
+| Pool X-Large (Confidential) | 12 Hosts (2xCPU 24 Core - 512 GB RAM - 32 TB SSD) |
 
 #### Features and Advantages
 
@@ -40,12 +54,67 @@ They use advanced remote attestation systems to verify the correctness of the TE
 
 The services offer the following advantages:
 
-- *Data security and confidentiality in dedicated environments*.  
-- *Workload isolation* through advanced virtualization.
-- *Dedicated firewalls and network micro-segmentation*.
-- *Automated provisioning and rapid resource management*.
+- *Multi-Layer Security* → data security and confidentiality in dedicated environments. Workload isolation through advanced virtualization. Dedicated firewalls and network micro-segmentation
+- *Faster Time-to-Market* → automated provisioning and rapid resource management.
 - *Comprehensive control and centralized governance*: centralized monitoring and auditing for traceability.
+- *Business continuity* → built-in backup, snapshot, and high availability (HA) features ensure service continuity in case of hardware failures. Minimizes operational risk for critical applications.
 
-<a id="VM"></a>
+<a id="VMs"></a>
 
-### VMs IaaS (Confidential) Services
+### Shared-IaaS (VMs)
+
+![How to create a VM using Proxmox](assets/images/extract/media/VMs.png)  
+
+![How to visualize a VM using Proxmox](assets/images/extract/media/VMs_02.png)
+
+#### Services Description
+
+These services enable organizations or individuals to deploy and manage Virtual Machines (VMs) without the need to maintain their own physical servers. 
+They provide users with virtualized computing resources—such as CPU, memory, storage, and networking—hosted on a managed and shared physical infrastructure.  
+The services are implemented using the Proxmox virtualizer, with a customized version offering Confidential Computing capabilities. Each user operates in a logically isolated environment, sharing the underlying hardware with other tenants. Data from physical resources is encrypted and kept secure during all phases of use (at rest, in transit, and in use), leveraging the Confidential Computing paradigm.  
+Depending on the resource pool required by each individual organization, the most suitable service can be selected from the four available types:
+
+| Type       | Contained Elements |
+| ---------- | ------------------ |
+| VM Small   | 2 Vcpu 4 GB RAM    |
+| VM Medium  | 4 Vcpu 8 GB RAM    |
+| VM Large   | 8 Vcpu 16 GB RAM   |
+| VM X-Large | 16 Vcpu 32 GB RAM  |
+
+#### Features and Advantages
+
+The services offer the following features:
+
+- *High Availability (HA)* → automatic VM failover in case of node failure when HA is enabled.
+- *Live Migration* → VMs can be moved between nodes without downtime.
+- *Snapshots* → point-in-time copies of VM disks for quick rollback or testing.
+- *Backups* → scheduled full or incremental backups using Proxmox Backup Server integration.
+- *Templates* → predefined OS images (e.g., Ubuntu, Debian, CentOS, Windows Server) for rapid VM deployment.
+- *User Access* → secure web interface and console access (noVNC/SPICE).
+- *Monitoring* → real-time performance metrics and resource usage monitoring.
+- *Security and isolation* → tenant isolation using VLANs and hypervisor-level separation.
+- *Access Control* → role-based access control (RBAC) and optional LDAP/SSO integration.
+- *Firewall* → integrated per-VM and per-network firewall rules configurable by users.
+- *Data protection* → encrypted storage backends and secure backup transfer protocols.
+- *Audit logging* → comprehensive logging of user and system activities for compliance and troubleshooting.
+- *Provisioning* → fully automated via API or web interface.
+- *Resource scaling* → dynamic allocation of compute, storage, and network resources based on user-defined limits.
+
+The service architecture is built on a Proxmox cluster consisting of multiple physical nodes connected via a high-speed network.  
+Each node contributes CPU, memory, and storage resources to a shared resource pool managed by Proxmox VE.  
+The main components of the service are:
+
+- *Hypervisor* → Proxmox VE with KVM (for full virtualization) and LXC (for container virtualization).
+- *Cluster management* → centralized management via Proxmox Cluster Manager with quorum-based consistency.
+- *Storage backend* → shared storage using Ceph, ZFS, NFS, or iSCSI, supporting redundancy, scalability, and live migration.
+- *Networking* → virtual networking implemented through Linux bridges or VLAN tagging, with optional SDN integration for advanced network segmentation.
+- *Management interface* → Web-based GUI and REST API for VM lifecycle operations (creation, modification, deletion, migration, snapshot, backup, restore).
+
+The services offer the following advantages:
+
+- *Cost reduction* → no upfront investment in physical hardware, expensive hypervisor licenses, or datacenter infrastructure.
+- *Flexibility* → resources (CPU, RAM, storage) can be scaled up or down quickly according to business needs.
+- *Faster Time-to-Market* → virtual environments can be provisioned quickly. Ideal for testing, development, or rapid deployment of new services and applications. It reduces provisioning and approval times inside the organization.
+- *Capital and resource optimization* → unused resources are dynamically shared across tenants, maximizing infrastructure efficiency. Better capital utilization compared to underused dedicated environments.
+- *Business Continuity* → built-in backup, snapshot, and high availability (HA) features ensure service continuity in case of hardware failures. Minimizes operational risk for critical applications.
+- *Multi-Layer Security* → tenant isolation through VLANs, integrated firewalls, and hypervisor-level separation. Data encryption in transit and at rest, with centralized authentication (LDAP/SSO). Logging and auditing for full traceability of user actions.

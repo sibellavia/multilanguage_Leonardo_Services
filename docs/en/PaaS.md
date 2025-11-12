@@ -7,17 +7,29 @@ The following table lists the services included in the Platform as a Service (Pa
 | Compute                              | [Functions as a Service](#faas)                                |                                   
 | Security                             | [Identity & Access Management Service](#IAM)|
 | Security                             | [Key Vault as a Service - Standard](#key-vault)                           |
-| Security                             | [SIEM As A Service](#SIEM)                                           |
+| Security                             | [End point protection](#endpoint)                                           |
+| Security                             | [Servizio di sicurezza e protezione avanzato per file e dati](#file-data)                                           |
+| Security                             | [Servizi di erogazione di Penetration Test automatizzati](#PT)                                           |
+| Security                             | [Servizio di mail security & ransomware protection](#mail)                                           |
+| Security                             | [DSPM (Data Security Posture Management)](#posture)                                           |
+| Security                             | [NGFW platform](#ngfw)                                           |
+| Security                             | [PAM (Privileged access management)](#PAM)                                           |
+| Security                             | [Perimeter Security Intelligence](#PSI)                                           |
+| Security                             | [Intrusion Prevention System (IPS)](#IPS)                                           |
 | Middleware                           | [PaaS API Management](#API)                                         |
 | Middleware                           | [Jboss as a Service](#Jboss)                                          |
+| Middleware                           | [Red Hat Runtime Subscription](#RT-runtime)                                          |
 | Middleware                           | [Spring boot as a Service](#spring-boot)                                    |
 | Middleware                           | [PaaS Business Process as a Service](#BPM)                          |
 | Middleware                           | [PaaS CMS as a Service](#CMS)                                       |
 | Middleware                           | [PaaS ETL - Batch / Real Time Processing - 1 worker](#ETL)          |
+| Middleware                           | [Semantic Knowledge Search - 1 worker](#semantic-search)                            |
+ Data Protection                          | [Backup - PLATFORM](#backup)                            |
 | Infra & Ops Platform                 | [Multicloud Management Platform](#SCMP)                              |
 | Infra & Ops Platform                 | [Control Room as a Service](#control-room)                                   |
 | Infra & Ops Platform                 | [IT infrastructure Service Operations (Logging & Monitoring)](#ITops) |
 | Infra & Ops Platform                 | [PaaS Ticket Management Service](#ITSM)                              |
+| Infra & Ops Platform                 | [PaaS Servizio di Operations management](#operations)                              |
 | DevSecOps                            | [Configuration Manager](#config)                                       |
 | DevSecOps                            | [Test Automation](#test)                                             |
 | DevSecOps                            | [Quality Code Analysis](#quality)                                       |
@@ -32,22 +44,23 @@ The following table lists the services included in the Platform as a Service (Pa
 | Artificial Intelligence (AI)         | [Speech to Text](#speech-to-text)                                              |
 | Artificial Intelligence (AI)         | [PaaS - AI Audio & Video Analytics](#AI-audio-video)                           |
 | Artificial Intelligence (AI)         | [OCR](#AI-OCR)                                                          |
-| Artificial Intelligence (AI)         | [Text Analytics](#AI-text)                                              |
+| Artificial Intelligence (AI)         | [Text Analytics/NLP    ](#AI-text)                                              |
 | Artificial Intelligence (AI)         | [Translation](#AI-translation)                                                 |
 | Artificial Intelligence (AI)         | [AI Search - RAG](#AI-search)                                             |
 | Artificial Intelligence (AI)         | [PaaS - AI Platform](#AI-platform)                                          |
-| Artificial Intelligence (AI)         | [PaaS - Semantic Knowledge Search](#AI-semantic-search)                            |
 | Artificial Intelligence (AI)         | [AI SLM/LLM](#AI-SLM-LLM)                                                  |
 | Artificial Intelligence (AI)         | [AI workflow](#AI-workflow)                                                 |
 | Artificial Intelligence (AI)         | [AI Vector DB](#AI-vectorDB)                                                   |
 | Virtual Desktop Infrastructure (VDI) | [VDI](#VDI)                                                         |
 | Virtual Desktop Infrastructure (VDI) | [VDI with GPU support](#VDI-GPU)                                        |
 | Collaboration                        | [Instant Messaging](#messaging)                                           |
-| Database                             | [PaaS SQL PostgreSQL](#postgres)                                         |
-| Database                             | [PaaS SQL Server](#sql-server)                                             |
-| Database                             | [PaaS MongoDB](#mongoDB)                                                |
-| Database                             | [PaaS Redis](#redis)                                                  |
-| Database                             | [PaaS Graph DB](#graphDB)                                               |
+| Database                             | [PaaS SQL - PostgreSQL](#postgres)                                         |
+| Database                             | [PaaS SQL - MariaDB](#mariaDB)                                             |
+| Database                             | [PaaS SQL - MS SQL Server EE](#sqlserver)                                                |
+| Database                             | [PaaS SQL - MS SQL Server EE (BYOL)](#sqlserver-byol)                                                  |
+| Database                             | [PaaS GraphDB](#graphDB)                                               |
+| Database                             | [PaaS NoSQL - MongoDB](#mongoDB)                                               |
+| Database                             | [PaaS In Memory - Redis](#redis)                                               |
 | Network                              | [PaaS CDN (Content Delivery Network)](#CDN)                         |
 | Network                              | [PaaS Domain Name System (DNS)](#DNS)                               |
 | Network                              | [PaaS WAF (Web Application Firewall)](#WAF)                         |
@@ -211,7 +224,15 @@ The service offers the following advantages:
 
 #### Services Description
 
+
+
 #### Features and Advantages
+
+The main features and functionalities of the service are:
+
+The main components of the service are:
+
+The service offers the following advantages:
 
 ## Middleware Family
 
@@ -223,6 +244,7 @@ Below is the list of services belonging to the Middleware family:
 - [PaaS Business Process as a Service](#BPM)
 - [PaaS CMS as a Service](#CMS)
 - [PaaS ETL - Batch / Real Time Processing - 1 worker](#ETL)
+- [Semantic Knowledge Search - 1 Worker](#semantic-search)
 
 <a id="API"></a>
 ### PaaS API Management
@@ -460,6 +482,50 @@ The service offers the following advantages:
 - *Integration with cloud ecosystem* (data warehouse, data lake, BI, AI/ML).
 - *Guaranteed security and compliance* (encryption, access, audit logs).
 - *Integrated monitoring* → metrics, alerts, and centralized logging for ETL pipelines.
+
+<a id="semantic-search"></a>
+
+### Semantic Knowledge Search - 1 Worker
+
+![Semantic Knowledge Search Service](assets/images/extract/media/Semantic.png)
+
+#### Services Description
+
+A service developed by Leonardo that provides a ready-to-use platform that makes information contained within the information assets easily accessible, using a semantic search engine capable of interpreting natural language queries in different languages.  
+It considers the search context, word variations, and synonyms to find relevant results from a semantic database for a given domain based on a user's natural language query.  
+The service allows for the management of content in various formats (Word documents, PDFs, PowerPoint presentations, emails, images, etc.) through an upload service capable of inferring and processing the document type.  
+The tool is able to filter and select the most relevant information for the user through the use of an NLP (Natural Language Processing) model, also allowing complete navigation of the indexed document. The services are designed to ensure digital sovereignty through deployment on a secure national infrastructure, with a particular focus on latency and optimization of computational resources.  
+It allows users to enter feedback on individual results returned by the search engine, in order to take into account domain knowledge to better refine the results provided by the system.
+
+#### Features and Advantages
+
+The platform bases its semantic search methodology on a database of carefully selected internal information sources, as well as on feedback from system users.  
+This way, the results produced will prove significantly more effective, as the output of an IT tool will be combined with the assessments of domain experts.  
+The platform will allow users to:
+
+- Submit natural language queries in different languages.
+- Reduce information search times, which will no longer be based on manual consultation of documentation, but will instead benefit from the efficiency of AI
+- Optimize the tool and share the experiences of individual operators through the feedback system.
+
+The main components of the service are:
+
+- *Client App* → user-friendly frontend through which users can interact to submit questions in different languages, find documents relevant to the question, narrow the search field through relevant metadata, submit feedback, and index their documents by uploading one or more files.
+- *FastAPI Framework* → modern, fast (high-performance) web framework for creating APIs with Python, based on the OpenAPI and JSON Schema standards.
+- *Bidirectional Encoder Representations from Transformers* → pre-trained deep learning models that provide a foundation upon which to build custom versions to address a wide range of tasks. Examples include sentiment analysis, named entity recognition, text engagement (i.e., next sentence prediction), semantic role labeling, text classification, and coreference resolution.
+- *Apache Tika* → Software for data extraction, language identification, and content analysis. It can find and extract text and metadata from over a thousand file formats.
+- *OpenSearch* → A distributed search engine that provides extremely fast full-text search capabilities and high-performance indexing of all data types. Interaction with the search engine occurs via REST API technology.
+
+The service offers the following advantages:
+
+- *Faster and more informed decisions* → teams have easier access to corporate knowledge, reducing analysis and decision-making time.
+- *Better use of information assets* → implicit or distributed knowledge within corporate silos (documents, emails, databases, CRM, etc.) is made searchable and semantically linked, reducing the loss of know-how or information dispersion.
+- *Reduced operating costs* → PaaS eliminates the need to manage proprietary infrastructure for indexing, NLP, and data linking.
+- *Innovation and competitive advantag*e → differentiate products and services with a more intelligent user experience.
+- Accelerated time to market → PaaS services are ready to use and easily integrated via API, allowing for the rapid development of new knowledge-driven applications.
+- *Simplified scalability and management* → manage provisioning, updates, load balancing, and fault tolerance.
+- *Access to advanced AI/NLP technologies* → semantic engines based on embeddings, ontologies, graph search, and machine learning without having to implement them internally. - Continuous updates with the latest developments.
+- *Multi-source integration* → Semantic Knowledge Search PaaS allows you to connect structured and unstructured data from multiple sources and supports standard connectors (REST API).
+- *Managed security and compliance* → authentication, authorization, and encryption are integrated into the service.
 
 ## Infra & Ops Platform Family
 
@@ -1163,10 +1229,9 @@ Below is the list of services belonging to the Artificial Intelligence (AI) fami
 - [AI Audio & Video Analytics](#AI-audio-video)
 - [OCR](#AI-OCR)
 - [Text Analytics](#AI-text)
-- [Text Translation](#AI-translation)
+- [Translation](#AI-translation)
 - [AI Search - RAG](#AI-search)
 - [AI Platform](#AI-platform)
-- [Semantic Knowledge Search](#AI-semantic-search)
 - [AI SLM/LLM](#AI-SLM-LLM)
 - [AI workflow](#AI-workflow)
 - [Vector DB](#AI-vectorDB)
@@ -1519,50 +1584,6 @@ The service offers the following advantages:
 - *Integrated monitoring and logging* → training metrics, logs, and results are tracked to easily diagnose convergence or overfitting issues.
 - *Simplified deployment* → creating Docker images for model inference allows for simplified deployment to any target system.
 
-<a id="AI-semantic"></a>
-
-### Semantic Knowledge Search
-
-![Semantic Knowledge Search Service](assets/images/extract/media/Semantic.png)
-
-#### Services Description
-
-A service developed by Leonardo that provides a ready-to-use platform that makes information contained within the information assets easily accessible, using a semantic search engine capable of interpreting natural language queries in different languages.  
-It considers the search context, word variations, and synonyms to find relevant results from a semantic database for a given domain based on a user's natural language query.  
-The service allows for the management of content in various formats (Word documents, PDFs, PowerPoint presentations, emails, images, etc.) through an upload service capable of inferring and processing the document type.  
-The tool is able to filter and select the most relevant information for the user through the use of an NLP (Natural Language Processing) model, also allowing complete navigation of the indexed document. The services are designed to ensure digital sovereignty through deployment on a secure national infrastructure, with a particular focus on latency and optimization of computational resources.  
-It allows users to enter feedback on individual results returned by the search engine, in order to take into account domain knowledge to better refine the results provided by the system.
-
-#### Features and Advantages
-
-The platform bases its semantic search methodology on a database of carefully selected internal information sources, as well as on feedback from system users.  
-This way, the results produced will prove significantly more effective, as the output of an IT tool will be combined with the assessments of domain experts.  
-The platform will allow users to:
-
-- Submit natural language queries in different languages.
-- Reduce information search times, which will no longer be based on manual consultation of documentation, but will instead benefit from the efficiency of AI
-- Optimize the tool and share the experiences of individual operators through the feedback system.
-
-The main components of the service are:
-
-- *Client App* → user-friendly frontend through which users can interact to submit questions in different languages, find documents relevant to the question, narrow the search field through relevant metadata, submit feedback, and index their documents by uploading one or more files.
-- *FastAPI Framework* → modern, fast (high-performance) web framework for creating APIs with Python, based on the OpenAPI and JSON Schema standards.
-- *Bidirectional Encoder Representations from Transformers* → pre-trained deep learning models that provide a foundation upon which to build custom versions to address a wide range of tasks. Examples include sentiment analysis, named entity recognition, text engagement (i.e., next sentence prediction), semantic role labeling, text classification, and coreference resolution.
-- *Apache Tika* → Software for data extraction, language identification, and content analysis. It can find and extract text and metadata from over a thousand file formats.
-- *OpenSearch* → A distributed search engine that provides extremely fast full-text search capabilities and high-performance indexing of all data types. Interaction with the search engine occurs via REST API technology.
-
-The service offers the following advantages:
-
-- *Faster and more informed decisions* → teams have easier access to corporate knowledge, reducing analysis and decision-making time.
-- *Better use of information assets* → implicit or distributed knowledge within corporate silos (documents, emails, databases, CRM, etc.) is made searchable and semantically linked, reducing the loss of know-how or information dispersion.
-- *Reduced operating costs* → PaaS eliminates the need to manage proprietary infrastructure for indexing, NLP, and data linking.
-- *Innovation and competitive advantag*e → differentiate products and services with a more intelligent user experience.
-- Accelerated time to market → PaaS services are ready to use and easily integrated via API, allowing for the rapid development of new knowledge-driven applications.
-- *Simplified scalability and management* → manage provisioning, updates, load balancing, and fault tolerance.
-- *Access to advanced AI/NLP technologies* → semantic engines based on embeddings, ontologies, graph search, and machine learning without having to implement them internally. - Continuous updates with the latest developments.
-- *Multi-source integration* → Semantic Knowledge Search PaaS allows you to connect structured and unstructured data from multiple sources and supports standard connectors (REST API).
-- *Managed security and compliance* → authentication, authorization, and encryption are integrated into the service.
-
 <a id="AI-SLM-LLM"></a>
 
 ### AI SLM/LLM
@@ -1615,7 +1636,7 @@ The service offers the following advantages:
 
 ### AI workflow
 
-![AI workflow Service](assets/images/extract/media/AIworkflow.png)
+![AI workflow Service](assets/images/extract/media/AIworkflow.jpg)
 
 #### Services Description
 
@@ -1822,3 +1843,364 @@ The main components of the service are:
 - *WebSocket channels* → for real-time message transmission.
 - *Configurable for scalability* → cluster support, high availability, deployment on Kubernetes, isolated networks.
 
+The service offers the following advantages:
+
+- *Complete data control* → useful for regulated sectors (finance, public administration, healthcare).
+- *Reduced lock-in* → open source/source-available, no dependency on proprietary vendors.
+- *Compliance and governance* → audit trail, retention policy, exports for legal and regulatory controls
+- *Support for secure remote working* → mobile/desktop access with encryption and strong authentication.
+- *Adaptable to different sectors* (legal, manufacturing, public administration, tech) thanks to customization options.
+- *Extensive APIs and plugins* → extensive integration options with DevOps, CI/CD, ticketing, monitoring.
+- *Advanced security* → SSO (SAML, LDAP, OIDC), MFA, encryption in transit and at rest
+Scalability → clustering, load balancing, support for enterprise and mission-critical environments.
+
+## Database Family
+
+Below is the list of services belonging to the Database family:
+
+- [PaaS SQL - PostgreSQL](#postgres)
+- [PaaS SQL - MariaDB](#mariaDB)
+- [PaaS SQL - MS SQL Server EE](#sqlserver)
+- [PaaS SQL - MS SQL Server EE (BYOL)](#sqlserver-byol)
+- [PaaS GraphDB](#graphDB)
+- [PaaS NoSQL - MongoDB](#mongoDB)
+- [PaaS In Memory - Redis](#redis)
+
+<a id="postgres"></a>
+
+### PaaS SQL - PostgreSQL
+
+![PostgreSQL client interface](assets/images/extract/media/postgres.png)
+
+#### Services Description
+
+The PaaS SQL – PostgreSQL is a cloud-based managed platform that provides ready-to-use PostgreSQL database instances without requiring the user to install, configure, or maintain the underlying infrastructure.  
+In essence, it delivers PostgreSQL “as a service”, allowing developers and organizations to focus on application development and data management instead of database administration.  
+PostgreSQL in a highly available configuration is a reliable solution for organizations seeking an open source database with performance, security, and scalability. This service is ideal for applications that require reliability without the costs of commercial database solutions.  
+
+The service could be used to:
+
+- Host and manage relational databases in the cloud.
+- Store and query structured data efficiently.
+- Support applications that need high availability, scalability, and data integrity.
+- Simplify DevOps workflows by automating database management tasks.
+- Integrate easily with other cloud services (analytics, AI, APIs, etc.).
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Fully managed service* → semplify provisioning, configuration, patching, and upgrades.
+- *Scalability* → vertical and horizontal scaling of compute and storage resources as needed.
+- *High availability and reliability* → built-in replication, automatic failover, and multi-zone deployment options.
+- *Backup and recovery* → automated backups, point-in-time restore, and disaster recovery capabilities.
+- *Security and compliance* → data encryption (in transit and at rest), identity and access management (IAM), network isolation (VPC/Private Link), and compliance certifications (e.g., GDPR, ISO, SOC).
+- *Performance optimization* → query optimization, connection pooling, caching, and monitoring tools.
+- *Monitoring and alerting* → integration with dashboards and metrics (CPU, memory, I/O, query performance).
+*Integration and extensibility* → compatible with PostgreSQL extensions (e.g., PostGIS, pg_partman, pg_stat_statements). API and CLI tools for management and automation.
+
+The main components of the service are:
+
+- *Control Plane* → it is the part of the service that manages the lifecycle and orchestration of database instance. Composed by: API, provisioning, configuration, monitoring
+- *Data Plane*  → it is the layer where PostgreSQL instances actually run. Each instance can be isolated in a VM, container, or pod, depending on the implementation
+- *HA & Resilience* → it ensures that the service remains available even in the event of hardware or software failures. It implements replications, failovers and backups policies.
+- *Security layer* → it ensures data protection and access control for respecting of the protection & compliance policies: authN/AuthZ, encryption, firewalls, auditing
+- *Observability Layer* → It provides visibility and continuous management of the service, offrering monitoring & operations like metrics, logging, auto-patching.
+
+The service offers the following advantages:
+
+- *Cost Efficiency* → no hardware or infrastructure investment. Reduced operational costs: no need for DBA teams to handle maintenance, patching, or scaling manually.
+- *Faster Time-to-Market* → database instances can be provisioned quickly through a web interface or API. Ideal for rapid development, prototyping, and product launches. Reduces dependency on infrastructure provisioning cycles.
+- *Business agility and scalability* → elastic scaling of resources (CPU, RAM, storage) without downtime. Easily adapts to varying workloads and seasonal demand. Enables agile business models, including microservices and cloud-native architectures.
+- *Increased reliability and availability* → High Availability (HA) and automated failover mechanisms ensure continuous uptime. Built-in replication and backup policies protect against data loss. Improves business continuity and reduces downtime risk.
+- *Focus on Core Business* → the organization focuses on application development and innovation, not on database administration. Simplifies the technology stack and reduces management overhead.
+- *Compliance and Risk Reduction* → the service provider ensures security, patching, and compliance with standards. Reduces risk of configuration errors or unpatched vulnerabilities.
+- *Standardization and portability* → based on open-source PostgreSQL, ensuring compatibility and avoiding vendor lock-in. Databases can be exported or migrated easily to other PostgreSQL environments. Supports extensions and features like PostGIS, JSONB, and logical replication.
+
+<a id="mariaDB"></a>
+
+### PaaS SQL - MariaDB
+
+![MariaDB client interface](assets/images/extract/media/mariaDB.jpg)
+
+#### Services Description
+
+The PaaS SQL – MariaDB is a managed Database-as-a-Service (DBaaS) offering that provides fully managed MariaDB database instances in the cloud.  
+It abstracts away the complexity of infrastructure, deployment, and database administration, allowing users to focus on application development rather than operational maintenance.  
+The service handles provisioning, configuration, patching, backups, scaling, monitoring, and high availability of MariaDB databases.  
+The PaaS SQL – MariaDB service is designed to support:
+
+- Web applications and enterprise systems that require a relational SQL database.
+- Developers who need quick and consistent access to production-ready databases without managing servers.
+- Organizations aiming to reduce database maintenance overhead and improve performance, reliability, and security.
+
+Typical use cases:
+
+- Backend databases for web portals, CMS, ERP, CRM, or e-commerce systems.
+- Data storage for microservices or APIs.
+- Development and testing environments.
+- Data analytics and reporting using SQL queries.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Fully managed lifecycle* → automated provisioning, configuration, updates, and patching. Backups and restores scheduled and managed by the platform. Monitoring and alerting for performance and availability.
+- *High availability & reliability* → native MariaDB replication for redundancy. Automatic failover between primary and replica nodes in case of failure. Point-In-Time Recovery (PITR) for data protection. Backups stored on redundant storage systems.
+- *Scalability* → vertical scaling: increase CPU, memory, or storage capacity dynamically. Horizontal scaling: optional read replicas for load distribution. Elastic scaling with minimal downtime.
+- *Security* → data encryption at rest and in transit (SSL/TLS). Authentication and authorization with role-based access control. Network isolation via virtual private networks (VPC/VNet). Audit logging for security and compliance.
+- *Performance optimization* → built-in query optimization and caching. Configurable parameters (buffers, thread pools) based on service tiers. SSD-backed storage for low-latency I/O. Connection pooling and resource limits to prevent overload.
+- *Monitoring and integration* → real-time metrics and dashboards (CPU, I/O, connections, slow queries). Integration with external tools like Prometheus, Grafana, or APM systems. REST API and CLI for automation and DevOps pipelines.
+
+The PaaS SQL MariaDB service is organized into multiple logical layers, each responsible for specific functions within the system.
+
+- *Control plane (Management Layer)* → this layer manages the lifecycle and orchestration of MariaDB instances.
+- *Data Plane (Execution Layer)* → this layer hosts and executes the actual MariaDB database workloads.
+- *HA & resilience layer* → ensures fault tolerance and continuity of service.
+- *Security & Access layer* → provides protection, compliance, and controlled access.
+- *Observability & operations layer* → provides visibility, maintenance, and automation tools for both provider and customer.
+
+The service offers the following advantages:
+
+- *Cost efficiency* → no hardware or infrastructure investment. Reduced operational costs: no need for DBA teams to handle maintenance, patching, or scaling manually.
+- *Faster Time-to-Market* → database instances can be provisioned quickly through a web interface or API. Ideal for rapid development, prototyping, and product launches. Reduces dependency on infrastructure provisioning cycles.
+- *Business agility and scalability* → elastic scaling of resources (CPU, RAM, storage) without downtime. Easily adapts to varying workloads and seasonal demand. Enables agile business models, including microservices and cloud-native architectures.
+- *Increased reliability and availability* → High Availability (HA) and automated failover mechanisms ensure continuous uptime. Built-in replication and backup policies protect against data loss. Improves business continuity and reduces downtime risk.
+- *Focus on core business* → the organization focuses on application development and innovation, not on database administration. Simplifies the technology stack and reduces management overhead.
+- *Compliance and risk reduction* → the service provider ensures security, patching, and compliance with standards. Reduces risk of configuration errors or unpatched vulnerabilities.
+- *Standardization and portability* → based on open-source PostgreSQL, ensuring compatibility and avoiding vendor lock-in. Databases can be exported or migrated easily to other MariaDB environments.
+
+<a id="sqlserver"></a>
+
+### PaaS SQL - MS SQL Server EE
+
+![SQL Server EE client interface](assets/images/extract/media/sqlserver.png)
+
+#### Services Description
+
+The PaaS SQL – Microsoft SQL Server Enterprise Edition (EE) service is a fully managed relational database platform that delivers the capabilities of Microsoft SQL Server EE in a cloud-based, Platform-as-a-Service (PaaS) model.  
+It provides users with dedicated or shared SQL Server instances, managed and operated by the service provider, while abstracting away all infrastructure management tasks such as provisioning, patching, scaling, backup, and high availability.  
+The service offers enterprise-grade database performance, security, and resilience, optimized for mission-critical workloads and advanced analytics.  
+This service is designed to support enterprise and business-critical applications that require reliable, scalable, and high-performance SQL database functionality without the operational overhead of managing on-premises infrastructure. Typical use cases include:
+
+- Core enterprise systems (ERP, CRM, SCM).
+- Business intelligence (BI) and data warehousing workloads.
+- Transactional applications (OLTP) and mixed OLAP/OLTP environments.
+- Data integration and analytics pipelines using SQL Server Integration Services (SSIS) or Analysis Services (SSAS).
+- Applications requiring high availability, disaster recovery, and compliance assurance.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Fully managed service* → managing of provisioning, patching, configuration, version upgrades, monitoring, maintenance, and optimization. Integration with management portals and APIs for self-service database operations.
+- *High availability and disaster recovery *→ always on Availability Groups (AG) for real-time replication and automatic failover. Built-in geo-replication and multi-zone deployment for business continuity Point-In-Time Restore (PITR) from continuous transaction log backups.
+- *Scalability and elasticity* → vertical scaling: adjust compute, memory, and storage resources dynamically. Read replicas: enable workload offloading for reporting or analytics. Elastic pools for cost-effective management of multiple databases with variable load patterns.
+- *Enterprise performance and optimization* → advanced query optimization via Query Store, Adaptive Query Processing, and Columnstore Indexes. In-Memory OLTP and Buffer Pool Extension for high-performance transactions. SSD or NVMe-backed storage for low-latency I/O. Intelligent workload tuning and automatic statistics maintenance.
+- *Security and compliance* →  Transparent Data Encryption (TDE) and always encrypted. Integration with Active Directory (AD) and Azure AD for identity and role management. Row-Level Security, Dynamic Data Masking, and Auditing. Compliance with cyber security standards.
+- *Analytics and integration* → support for SQL Server Analysis Services (SSAS) for OLAP cubes and data modeling. SQL Server Integration Services (SSIS) for ETL and data movement. SQL Server Reporting Services (SSRS) for enterprise reporting. Integration with Power BI, Azure Synapse, and other analytics ecosystems.
+- *Monitoring and automation* → integrated dashboard and alerting system with real-time metrics on performance, connections, and query activity. Full API and CLI support for automation and DevOps integration. Logs and metrics exportable to external observability tools.
+
+The main components of the service are:
+
+- *Control plane (Management layer)* → it is responsible for orchestration, automation, and lifecycle management of SQL Server instances.  
+Key Components: Management API / Portal, Provisioning engine, Configuration manager, Monitoring & metrics collector, Billing & subscription manager.
+- *Data plane (Execution layer)* → it hosts the actual Microsoft SQL Server EE instances where user databases reside and operate.  
+Key Components: SQL Server instances, Storage subsystem, Networking layer, Backup and recovery service.
+- *High Availability & Resilience layer* → ensures the database service remains available and fault-tolerant.   
+Key Components: Always On Availability Groups (AG), Failover controller, Geo-replication manager, Backup orchestrator.
+- *Security & Access layer* → provides protection, compliance, and controlled access to data and administrative functions.  
+Key Components: Authentication & authorization (integration with AD/Azure AD, support for MFA), Encryption Services (TDE, SSL/TLS, and Always Encrypted for data protection), Network Security.
+- *Observability & Operations layer* → ensures visibility, performance optimization, and operational maintenance.  
+Key Components: Performance monitoring, Alerting & incident management, Auto-patching System, Maintenance scheduler, Logging system.
+
+The service offers the following advantages:
+
+- *Reduced Total Cost of Ownership (TCO)* → eliminates capital expenses for hardware, networking, and software licensing.
+- *Faster Time-to-Market* → databases can be provisioned quickly. Preconfigured and optimized SQL Server templates accelerate development and deployment cycles. Ideal for agile, DevOps, and CI/CD environments where rapid iteration is required.
+- *Enterprise-grade reliability and availability* → built on SQL Server Enterprise Edition features such as Always On Availability Groups and In-Memory OLTP. Ensures continuous service availability with automatic failover and disaster recovery. Meets strict SLA targets for uptime and data durability.
+- *Business agility and scalability* → scale compute, memory, and storage resources up or down without downtime. Supports variable workloads — from transactional processing to analytics — under a single service model. Allows businesses to expand globally through geo-replication and multi-region deployments.
+- *Focus on core business Value* → offloads infrastructure management and DBA operations to the service provider. Frees internal teams to focus on data strategy, analytics, and business intelligence. Accelerates digital transformation by integrating seamlessly with enterprise and cloud ecosystems (e.g., Power BI, Azure, SAP).
+- *Compliance and Governance* → enterprise-grade auditing, encryption, and access control meet global compliance standards. Provider-managed patching and updates reduce security and compliance risks. Supports fine-grained access policies and role-based authorization for regulated industries.
+
+<a id="sqlserver-byol"></a>
+
+### PaaS SQL - MS SQL Server EE (BYOL)
+
+![SQL Server EE client interface](assets/images/extract/media/sqlserver.png)
+
+#### Services Description
+
+This service allows organizations to utilize their own licenses for MS SQL Server Enterprise Edition, reducing licensing costs while benefiting from fully managed and optimized management in the cloud.  
+
+For all the details , please refer to the [PaaS SQL - MS SQL Server EE](#sqlserver).
+
+#### Features and Advantages
+
+For all the details , please refer to the [PaaS SQL - MS SQL Server EE](#sqlserver).
+
+<a id="graphDB"></a>
+
+### PaaS GraphDB
+
+![GraphDB client interface](assets/images/extract/media/graphDB.png)
+
+#### Services Description
+
+The PaaS Graph Database (GraphDB) service is a fully managed, cloud-based graph database platform designed to store, query, and analyze data based on complex relationships and interconnected structures.  
+Unlike traditional relational databases that rely on tables and joins, a GraphDB represents data as nodes (entities) and edges (relationships), allowing for efficient traversal and querying of complex networks — such as social connections, knowledge graphs, fraud detection systems, and recommendation engines.  
+As a Platform-as-a-Service (PaaS) offering, the GraphDB service automates all operational tasks, including provisioning, configuration, scaling, patching, backups, and monitoring, enabling developers and data scientists to focus solely on building graph-powered applications without managing the underlying infrastructure.  
+The PaaS is intended for organizations and developers that need to manage and query highly connected data with low latency and high flexibility.  
+It provides native graph storage and querying capabilities optimized for real-time relationship exploration, graph analytics, and pattern matching across large datasets. Common use cases include:
+
+- Social networks: modeling user interactions, followers, and communities.
+- Recommendation systems: deriving product, content, or connection suggestions based on relationships.
+- Fraud detection: identifying suspicious transaction patterns and entity links.
+- Knowledge graphs: semantic search, ontology management, and enterprise metadata modeling.
+- Network and IT operations: modeling dependencies and topology in complex infrastructures.
+- Master Data Management (MDM): representing relationships between people, organizations, and assets.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Fully managed service* → managing of provisioning, configuration, patching, and scaling of graph database clusters. Continuous monitoring and proactive maintenance. Built-in backup, restore, and snapshot management with defined retention policies.
+- *Native graph model support* → supports both property graphs (e.g., Neo4j-compatible) and RDF graphs (semantic web standards). Enables flexible schema or schema-less design, allowing dynamic evolution of data models. Optimized for deep traversal queries, shortest-path calculations, and pattern matching.
+- *High performance and scalability* → distributed architecture for horizontal scaling across multiple nodes.In-memory caching and optimized graph storage for high-speed traversals. Load balancing across query engines and replicas to ensure consistent performance. Low-latency graph query execution for complex relationship analysis.
+- *High availability and fault tolerance* → clustered deployment with data replication across nodes or availability zones. Automatic failover and leader election for continuous service operation. Configurable consistency levels for balancing performance and data safety. Backup and Point-In-Time Recovery (PITR) options.
+- *Advanced Querying and Analytics* → native support for graph query languages such as Cypher, Gremlin, SPARQL, or GraphQL extensions. Integration with graph analytics engines for algorithms like PageRank, community detection, and pathfinding. Full-text search and indexing capabilities for metadata and relationship attributes. Support for APIs and drivers in multiple languages (Python, Java, Node.js, Go).
+- *Security and compliance* → encryption of data at rest and in transit (TLS/SSL). Authentication and authorization via IAM integration, role-based access control (RBAC), and fine-grained permissions. Network isolation with private endpoints, firewall rules, and VPC/VNet integration. Audit logging, compliance with GDPR, ISO 27001, and SOC 2 standards.
+- *Integration and interoperability* → connectors and APIs for integration with data pipelines, ETL tools, and machine learning platforms. REST, GraphQL, or Bolt endpoints for application access. Integration with BI tools and data visualization frameworks for relationship exploration. Support for data federation and linking external data sources (SQL, NoSQL, RDF stores).
+
+The main components of the service are:
+
+*Control plane (Management and orchestration layer)* → this layer provides centralized control over the provisioning, configuration, and lifecycle management of GraphDB clusters.  
+Key Components: Management API / Portal; Provisioning engine for automates deployment of graph database clusters across compute nodes; Configuration manager; Metrics & monitoring collector; Billing & quota manager for tracks usage (storage, query operations, nodes) and enforces subscription limits.
+- *Data Plane (Execution layer)* → this layer hosts the actual graph databases and query processing engines that execute user workloads.  
+Key Components: Graph Database engine nodes for executing queries and maintain graph data structures, Storage layer; Query engine that interprets and executes graph query languages (Cypher, SPARQL, Gremlin); Replication layer that synchronizes data across nodes for high availability and consistency; Networking Layer for secure communication via private endpoints and load balancers.
+- *High availability and resilience layer* → ensures service continuity, fault tolerance, and disaster recovery.  
+Key Components: Cluster Manager for coordinating replication, partitioning, and failover across graph nodes; Backup & Recovery Manager that schedules automated backups and handles restoration processes; Failover controller; Geo-replication service that replicates graph data across regions or availability zones for disaster recovery.
+- *Security & Access layer* → responsible for user authentication, authorization, encryption, and compliance management.  
+Key Components: Identity and Access Management (IAM); Encryption services; Access control policies; Audit logging system
+- *Observability & Operations layer* → provides visibility, automation, and operational maintenance for both administrators and users.  
+Key Components: Monitoring system; Alerting & incident management; Logging Service; Auto-patching & Upgrades; Maintenance scheduler that orchestrates backup, cleanup, and optimization tasks.
+
+The service offers the following advantages:
+
+- *Accelerated Time-to-Value* → rapid deployment of fully managed GraphDB clusters without infrastructure setup. Developers can focus on building relationship-driven applications rather than managing database servers. Preconfigured environments and APIs shorten time-to-market for data-intensive projects.
+- *Reduced Total Cost of Ownership (TCO)* → eliminates hardware, networking, and software licensing costs. No need for in-house database administration or maintenance. Reduces hidden operational costs associated with upgrades, backups, and monitoring.
+- *Business agility and innovation* → enables rapid experimentation with data relationships, graph analytics, and knowledge models. Scales on demand to handle growth in connected datasets. Supports new business capabilities such as recommendation systems, fraud detection, and semantic search without large upfront investment.
+- *Improved decision-making and insight discovery* → provides a 360-degree view of data relationships across entities (customers, products, assets, etc.). Supports advanced analytics, predictive modeling, and data visualization. Helps uncover patterns, correlations, and dependencies that are invisible in traditional relational models.
+- *High reliability and continuity* → built-in redundancy and replication ensure continuous service availability. Automated backups, failover, and point-in-time recovery minimize downtime and data loss. Meets enterprise-grade SLAs for uptime and durability.
+- *Governance, security, and compliance* → managed security, encryption, and audit logging reduce compliance risks. Role-based access and data isolation protect sensitive relationships and metadata. Provider-managed patching and updates ensure continuous compliance with standards.
+
+<a id="mongoDB"></a>
+
+## PaaS NoSQL - MongoDB
+
+![MongoDB client interface](assets/images/extract/media/mongoDB.png)
+
+#### Services Description
+
+The PaaS NoSQL MongoDB service provides a fully managed, cloud-native document database platform designed to handle large volumes of unstructured and semi-structured data.  
+It enables organizations to deploy and operate MongoDB clusters without managing infrastructure, scaling, or administrative overhead.  
+Built on the MongoDB engine, the service offers high flexibility in data modeling, seamless horizontal scalability, and advanced features such as replication, sharding, automated backups, and high availability.  
+The service is designed to support modern, data-driven applications requiring high performance, flexibility, and scalability. It is particularly suited for:
+
+- Web and mobile applications that require dynamic schemas.
+- IoT and telemetry systems generating high-volume JSON data.
+- Real-time analytics and event processing.
+- Content management systems (CMS) and e-commerce platforms.
+- Big data pipelines and data lakes needing schema evolution and rapid ingestion.
+
+#### Features and Advantages
+
+The service offers the following main features:
+
+- *Fully managed environment* → managing of provisioning, configuration, and maintenance of MongoDB clusters. Continuous patching, upgrades, and resource optimization.Service managed via web console, CLI, or API for full lifecycle operations.
+- *Flexible data model* → document-oriented schema using JSON/BSON structures. Supports hierarchical and nested data with dynamic schema evolution. Allows storage of complex data without the rigidity of relational tables. Ideal for agile development and microservices architectures.
+- *High performance and scalability* → horizontal scaling through automatic sharding across multiple nodes. Vertical scaling by dynamically increasing compute and memory resources. Built-in read/write replication for high throughput and low latency. Intelligent indexing (single field, compound, geospatial, text, wildcard).
+- *High availability and resilience* → replication via Replica Sets for automatic failover and self-healing. Multi-zone deployment for fault tolerance and disaster recovery. Point-in-Time Recovery (PITR) and incremental backups ensure data integrity.
+- *Security and compliance* → encryption at rest and in transit.Role-Based Access Control (RBAC) and fine-grained permissions.Integration with enterprise Identity and Access Management (IAM) systems. Auditing, logging, and monitoring for compliance.
+- *Monitoring and observability* → real-time dashboards for performance, resource utilization, and query profiling. Automated alerts and anomaly detection for proactive issue resolution. Integration with observability tools (e.g., Prometheus, Grafana, ELK Stack).
+- *Developer tools and integration* → native support for MongoDB Query Language (MQL). APIs, SDKs, and drivers for major programming languages (Java, Python, Node.js, Go, etc.). Integration with CI/CD pipelines and Infrastructure-as-Code tools (Terraform, Ansible). Support for analytics and visualization via BI connectors and data APIs.
+- *Backup, restore, and disaster recovery* → scheduled and on-demand backups with retention policies.Point-in-time recovery to mitigate data loss from logical errors. Geo-redundant replication across regions for disaster recovery.
+
+The main components of the service are:
+
+- *Control plane* → manages the provisioning, orchestration, scaling, and lifecycle of MongoDB clusters. Handles user authentication, access control, and billing integration. Provides APIs and UI for tenant management, monitoring, and configuration.
+- *Data Plane* (MongoDB cluster layer) → comprises Replica Sets for high availability and Shards for distributed data storage. Each shard consists of multiple replica nodes (primary and secondaries). Mongos routers distribute queries intelligently across shards. Ensures horizontal scalability and automatic data balancing.
+- *Storage Layer* → based on high-performance SSD or NVMe storage. Supports data encryption, snapshotting, and incremental backup mechanisms. Abstracted via cloud block storage for elasticity and redundancy.
+- *Network and security layer* → implements network isolation via Virtual Private Cloud (VPC) or private endpoints. Firewall rules, IP whitelisting, and security groups restrict access. TLS-based encryption secures data in transit between components and clients.
+-* Management and monitoring layer* → provides observability, metrics collection, and alerting. Automated performance tuning and resource optimization. Integrates with logging and monitoring frameworks.
+- *Backup and disaster recovery layer* → handles snapshot-based backups, replication, and PITR mechanisms. Automated restore operations from cloud object storage. Supports cross-region replication for business continuity.
+
+The service offers the following advantages:
+
+- *Reduced Total Cost of Ownership (TCO)* → eliminates capital investments in servers, storage, and licenses. Shifts database management from internal teams to the provider’s managed service. Reduces operational costs through automation of scaling, patching, and backups.
+- *Faster Time-to-Market* → fully managed environment allows databases to be provisioned in minutes. Dynamic schema flexibility accelerates application development. Enables rapid prototyping and iteration, ideal for agile and DevOps workflows.
+- *High agility and flexibility* → schema-less document model adapts easily to evolving application requirements. Ideal for businesses managing heterogeneous or semi-structured data sources. Supports frequent data model changes without downtime or migration overhead.
+- *Business continuity and reliability* → enterprise-grade high availability with built-in replication and automatic failover.Continuous backups and geo-redundant disaster recovery ensure data resilience. Meets stringent SLAs for uptime and data durability.
+- *Scalability and growth enablement* → seamless horizontal scaling allows the service to handle growing data volumes and workloads. Supports global deployments with low latency through distributed clusters. Enables new data-intensive use cases (IoT, analytics, personalization) without redesigning architecture.
+- *Compliance and data governance* → managed patching, auditing, and encryption ensure continuous compliance. Data isolation and access control simplify adherence to european laws. Facilitates transparent governance with built-in monitoring and reporting tools.
+- *Focus on core business* → frees internal teams from database management and operational complexity. Allows developers to focus on innovation, application features, and user experience. Accelerates delivery of digital services and customer-facing applications.
+
+<a id="redis"></a>
+
+## PaaS In Memory- Redis
+
+![Redis client interface](assets/images/extract/media/redis.png)
+
+#### Services Description
+
+It is a PaaS DB based on Redis technology (Remote Dictionary Server) that exposes a high-performance in-memory database, primarily used as a cache and database for web and real-time applications.  
+Redis is a widely used database due to its flexibility and ability to handle a wide range of data types with low latency.  
+The service delivers sub-millisecond data access, advanced caching, session management, message streaming, and data persistence capabilities.  
+As a Platform-as-a-Service (PaaS) offering, it abstracts away the operational complexity of managing Redis clusters — including provisioning, scaling, patching, failover, and monitoring — while ensuring enterprise-grade reliability, security, and performance.  
+
+The PaaS Redis service is designed for applications that require extremely fast data access, real-time analytics, and low-latency transactions. Typical use cases include:
+
+- Application caching to reduce latency and offload backend databases.
+- Session storage for web and mobile applications.
+- Real-time analytics and leaderboards (e.g., gaming, ad tech, telemetry).
+- Message queues and event streaming for distributed systems.
+- Geospatial data processing and time-series data handling.
+- Rate limiting and token management in API gateways.
+
+#### Features and Advantages
+
+The main features of the Paas In Memory Redis are:
+
+- *In-memory* → data is stored in RAM, ensuring extremely fast access;
+- *Persistence* → supports data persistence on disk, preventing data loss in the event of a system reboot;
+- *Data type* → variety of data types, allowing for modeling different types of information;
+- *Pub/Sub *→ supports the publish/subscribe model for real-time communication between applications.
+- *Fully managed platform* → managing of provisioning, patching, scaling, and maintenance. High availability clusters with zero-downtime updates. Self-healing orchestration to ensure continuous service delivery. Management via API, CLI, or Web Console.
+- *High performance and low latency* → entire dataset stored in-memory for sub-millisecond access. Optimized for real-time operations requiring microsecond response times. Supports high throughput (millions of operations per second). Persistent storage optional for durability.
+- *Flexible data structures* → rich data model beyond simple key-value pairs: strings, hashes, lists, sets, sorted sets. Bitmaps, HyperLogLogs, Streams, and Geospatial Indexes. Ideal for complex operations such as counters, queues, and pub/sub messaging.
+- *High Availability and disaster recovery* → native Redis Sentinel or Cluster Mode for automatic failover and fault tolerance. Multi-AZ deployment to ensure continuous uptime. Backup and restore capabilities for data persistence and recovery. Optional geo-replication across regions for disaster recovery.
+- *Persistence options* → RDB (Redis Database Backup): Snapshot-based persistence for periodic backups. AOF (Append-Only File): Logs every operation for durability and recovery. Hybrid mode combining both mechanisms for balance between speed and reliability.
+- *Scalability and elasticity* → horizontal scaling through Redis Cluster sharding. Vertical scaling with dynamic memory and compute adjustments. Linear scalability for both read and write operations. Automatic rebalancing of data across nodes.
+- *Security and compliance* → encryption in transit (TLS) and encryption at rest. Role-Based Access Control (RBAC) and user authentication. Integration with Identity and Access Management (IAM) systems. Continuous auditing, logging, and compliance monitoring.
+- *Monitoring and observability* → real-time metrics on throughput, latency, and memory usage. Proactive alerts and anomaly detection. Integration with monitoring stacks (Prometheus, Grafana, ELK). Logging for audit trails and performance tuning.
+- *Developer Integration and APIs* → compatible with standard Redis clients and libraries. REST and gRPC APIs for automation and DevOps workflows. Integration with CI/CD pipelines and Infrastructure-as-Code tools (Terraform, Ansible). Supports Redis modules (e.g., RedisJSON, RediSearch, RedisGraph, RedisTimeSeries).
+
+
+The logical architecture of the PaaS Redis service consists of multiple layers designed for automation, scalability, and resilience.
+
+- *Control plane* → responsible for service orchestration, cluster provisioning, scaling, and lifecycle management. Manages authentication, authorization, metering, and billing. Provides APIs, CLI, and web-based UI for service management.
+- *Data Plane (Redis cluster layer)* → Core component that hosts user data in memory. Composed of multiple Redis instances organized as: Master nodes; Replica nodes; Implements sharding for horizontal scalability; Ensures high throughput and low latency for data operations.
+- *Storage and persistence layer* → provides optional durable storage for backup and disaster recovery. Utilizes RDB snapshots and AOF logs stored on encrypted block or object storage. Supports automated retention policies and scheduled backups.
+- *Networking and security layer* → virtual network isolation using VPC/VNet configurations. TLS-based encryption for client-to-server and inter-node communication. Security groups, IP whitelisting, and firewall rules for controlled access. Optional private endpoints for secure integration with internal systems.
+- *Monitoring and Management layer* → aggregates telemetry and performance metrics. Implements logging, tracing, and alerting via monitoring systems. Provides dashboards for capacity planning and SLA tracking.
+- *High availability and failover layer* → monitors node health and automatically triggers failover in case of node or zone failure. Uses Redis Sentinel or internal control mechanisms for cluster coordination. Supports synchronous or asynchronous replication for HA and DR.
+
+The service offers the following advantages:
+
+- *Reduced Total Cost of Ownership (TCO)* → no capital investment in hardware, software, or cluster management. Reduces operational overhead by automating deployment, scaling, and maintenance. Eliminates the need for specialized in-house Redis administration skills.
+- *Faster Time-to-Market* → instant provisioning of Redis clusters enables rapid development and testing. Ready-to-use configurations optimize caching and real-time processing use cases. Enables teams to integrate low-latency data layers into applications in minutes. Accelerates delivery of digital services requiring immediate responsiveness.
+- Improved application performance and user experience → sub-millisecond response times improve customer satisfaction and engagement. Reduces load on backend databases and APIs through caching and data offloading. Ensures consistent performance during traffic spikes or seasonal demand peaks.
+- *Business agility and scalability* → easily scales up or down to accommodate fluctuating workloads. Enables dynamic adaptation to new business requirements without architectural redesign. Supports real-time analytics and streaming for modern, data-intensive applications.
+- *Reliability and continuity* → built-in replication and failover mechanisms ensure continuous availability. Automated backups and geo-redundancy support robust disaster recovery. Meets enterprise-grade SLA commitments for uptime and data durability.
+- *Compliance and security* → provider-managed encryption, patching, and access control ensure compliance with data security standards. Role-based access and network isolation protect sensitive data in-memory and at rest. Reduces compliance risks through centralized governance and auditing tools.
+- *Focus on core business innovation* → frees developers and operations teams from managing infrastructure and cluster administration. Allows organizations to focus on value creation, product innovation, and user experience. Enables integration of Redis-based caching and real-time logic into cloud-native architectures effortlessly.

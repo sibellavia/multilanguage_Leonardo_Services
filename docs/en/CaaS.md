@@ -4,20 +4,20 @@ The following table lists the services included in the Container as a Service (C
 
 | FAMILY  | LIST OF SERVICES                  |
 | ------- | --------------------------------- |
-| Compute | [Kubernetes (Confidential)](#kubernetes)|
+| Compute | [Kubernetes confidential computing](#kubernetes)|
 <figcaption>List of families and related CaaS services</figcaption>
 
 ## Compute Family
 
 Below is the list of services belonging to the Compute family:
 
-- [Kubernetes (Confidential)](#kubernetes)
+- [Kubernetes confidential computing](#kubernetes)
 
 <a id="kubernetes"></a>
 
-### Kubernetes (Confidential) Service
+### Kubernetes confidential computing Service
 
-![Kubernetes (Confidential) Service](assets/images/extract/media/K8Sprivate.png)
+![Kubernetes confidential computing architecture](assets/images/extract/media/K8Sprivate.png)
 
 #### Services Description
 
