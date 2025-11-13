@@ -24,7 +24,7 @@ The following table lists the services included in the Platform as a Service (Pa
 | Middleware                           | [PaaS CMS as a Service](#CMS)                                       |
 | Middleware                           | [PaaS ETL - Batch / Real Time Processing - 1 worker](#ETL)          |
 | Middleware                           | [Semantic Knowledge Search - 1 worker](#semantic-search)                            |
- Data Protection                          | [Backup - PLATFORM](#backup)                            |
+|  Data Protection                          | [Backup - PLATFORM](#backup)                            |
 | Infra & Ops Platform                 | [Multicloud Management Platform](#SCMP)                              |
 | Infra & Ops Platform                 | [Control Room as a Service](#control-room)                                   |
 | Infra & Ops Platform                 | [IT infrastructure Service Operations (Logging & Monitoring)](#ITops) |
