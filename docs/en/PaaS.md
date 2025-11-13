@@ -227,8 +227,6 @@ The service offers the following advantages:
 
 ### Endpoint Protection Service
 
-![Endpoint Protection Service Overview](assets/images/extract/media/.png)
-
 #### Services Description
 
 The Endpoint protection service offers comprehensive protection for endpoint devices against malware, ransomware, and other threats, including antivirus, firewall, and application control capabilities.  
@@ -276,8 +274,6 @@ The service offers the following advantages:
 <a id="file-data"></a>
 
 ### Advanced security and protection service for files and data
-
-![Advanced security and protection service for files and data Overview](assets/images/extract/media/.png)
 
 #### Services Description
 
@@ -335,8 +331,6 @@ The service offers the following advantages:
 
 ### Automated Penetration Testing Services
 
-![Automated Penetration Testing Services Overview](assets/images/extract/media/.png)
-
 #### Services Description
 
 Automated Penetration Testing services enable the use of automated penetration tests to identify and remediate vulnerabilities in applications and networks, improving the organization's security posture.  
@@ -375,7 +369,7 @@ The main components of the service are:
 - *Analytics & correlation engine* → correlates raw scan results into consolidated findings, attack chains, false-positive reductions, risk scoring and trend analysis using ML/heuristics.
 - *Findings Database & evidence store* → secure, immutable storage for findings, raw evidence (logs, request/response captures, screenshots), and historical scan artifacts. Encryption-at-rest and access auditing for all stored evidence.
 - *API gateway & integration layer* → REST APIs, SDKs and webhooks for integration with CI/CD, ITSM, SIEM, SOAR and other toolchains. Rate limiting, authentication and permissioning for automated workflows.
-- *Reporting & compliance module *→ report generation engine that produces executive and technical reports, compliance mappings, remediation playbooks and re-test summaries.
+- *Reporting & compliance module* → report generation engine that produces executive and technical reports, compliance mappings, remediation playbooks and re-test summaries.
 - *Identity, Access & Key Management* → IAM integration (SAML, OAuth, OIDC) for user authentication and single sign-on. KMS for managing encryption keys used for evidence and credentials storage.
 - *Audit logging & monitoring* → central audit log capturing all user actions, job executions and administrative changes; integrates with SIEM for real-time monitoring and alerts.
 - *Tenant Isolation & Resource Governance* → logical separation of tenant data and scan resources, quota enforcement, billing metrics and metering.
@@ -384,127 +378,551 @@ The main components of the service are:
 
 The service offers the following advantages:
 
-
+- *Continuous security validation* → enables ongoing assessment of the organization’s security posture rather than relying solely on periodic, manual penetration tests. This supports a proactive rather than reactive security strategy.
+-*Reduced costs and resource optimization* → lowers operational costs by automating repetitive and time-consuming manual testing tasks, reducing dependency on external penetration testing teams.
+- *Faster time-to-remediation* → automated detection and prioritized reporting allow organizations to identify and fix vulnerabilities faster, minimizing exposure windows.
+Improved compliance and audit readiness → provides continuous documentation, evidence, and compliance mapping (e.g., ISO 27001, NIS2, PCI-DSS, OWASP Top 10), simplifying audits and compliance reporting.
+- *Risk reduction and business continuity* → identifies exploitable vulnerabilities before attackers do, reducing the likelihood of breaches and service disruptions.
+- *Scalability and flexibility* → the cloud-based PaaS architecture allows organizations to scale testing activities across multiple environments—applications, networks, and cloud workloads—without increasing infrastructure complexity.
+- *Consistent and repeatable testing* → ensures uniform methodologies and consistent results across different environments and timeframes, reducing human error and variation.
+- *Faster product release cycles* → integration with CI/CD pipelines enables security testing to be embedded in DevOps workflows, supporting faster, more secure software releases.
+- *Predictable cost model* → subscription-based pricing provides transparency and predictability compared to traditional per-engagement penetration testing models.
+- *Enhanced organizational reputation and trust* → demonstrates commitment to security best practices, strengthening trust among customers, partners, and regulators.
+- *Comprehensive, automated coverage* → covers multiple layers — network, application, API, container, and cloud — providing holistic visibility of vulnerabilities across complex hybrid environments.
+- *Advanced Vulnerability Detection and Exploitation Validation* → combines multiple testing engines (signature-based, behavioral, AI-driven) to identify, validate, and prioritize vulnerabilities based on exploitability and risk.
+- *Safe, Controlled Testing Environment* → built-in sandboxing and safety mechanisms ensure exploit attempts are isolated and non-disruptive to production systems.
+Orchestrated and Scalable Architecture → modular microservices and distributed scanner nodes support elastic scaling, parallel test execution, and high availability.
+- *Risk-Based Prioritization and Contextual Analysis* → correlates vulnerabilities with business context, CVSS scores, and asset criticality to generate actionable, prioritized remediation plans.
+- *Integration with DevSecOps and IT ecosystems* → provides APIs and native integrations with CI/CD, SIEM, SOAR, and ITSM tools, enabling seamless inclusion of automated testing into existing operational workflows.
+- *Automated re-testing and verification* → automatically re-tests vulnerabilities after remediation, confirming fix effectiveness and preventing regression issues.
+- *Centralized management and reporting* → unified management console with dashboards for test scheduling, result tracking, compliance summaries, and historical trend analysis.
+- *Continuous hreat Intelligence updates* → integrates updated CVE databases, exploit repositories, and threat intelligence feeds to ensure detection of the latest vulnerabilities.
+- *Comprehensive audit trails and evidence storage* → maintains immutable logs, scan evidence, and report archives for compliance, forensics, and governance requirements.
+Multi-Tenancy and Role-Based Access Control (RBAC) → securely supports multiple customers or departments with strict data segregation and fine-grained access permissions.
 
 <a id="mail"></a>
 
 ### Mail security & ransomware protection service
 
-![Mail security & ransomware protection service Overview](assets/images/extract/media/.png)
-
 #### Services Description
 
-
-
+The Mail Security & Ransomware Protection service offers advanced email protection against phishing, malware, and ransomware, using advanced analysis techniques and artificial intelligence to block threats before they reach end users.  
+The service aims to provide the customer with a mail security & ransomware protection platform to protect email communications from cyber threats such as phishing, malware, ransomware, and other targeted attacks.  
+The service must be integrated with the customer's email system and will implement filters to block spam, phishing, and emails containing malware or ransomware, as well as monitoring, email backup, rapid recovery, and reporting on scan results.
 
 #### Features and Advantages
 
-The main features and functionalities of the service are:
+The Mail Security & Ransomware Protection PaaS provides a comprehensive suite of features that address the entire e-mail threat lifecycle — prevention, detection, response, and recovery.
+
+- *Inbound & outbound filtering* → multi-layered scanning for inbound and outbound e-mail traffic. Detects and blocks spam, phishing, malware, ransomware, and spoofed messages before they reach the mailbox. Ensures outbound e-mail compliance by scanning for sensitive data or potential data leaks.
+- *Anti-phishing & impersonation defense* → detects spear-phishing and business e-mail compromise (BEC) attempts using AI-based identity and content analysis. Validates sender authenticity through SPF, DKIM, and DMARC enforcement. Identifies display-name spoofing, look-alike domains, and suspicious sender behaviors.
+- *Ransomware & malware protection* → advanced sandboxing and machine learning detect and quarantine attachments or URLs containing malicious payloads. Signature-less behavioral detection identifies new ransomware strains and polymorphic threats. URL rewriting and time-of-click protection prevent access to malicious links even after delivery.
+- *Spam & graymail filtering* → adaptive filtering based on user behavior and reputation scoring. Automatically categorizes marketing and bulk messages to reduce inbox clutter.
+*Data Loss Prevention (DLP)* → monitors outbound e-mails and attachments for sensitive content (PII, financial data, intellectual property). Enforces encryption or blocking policies when confidential data is detected.
+- *E-mail encryption* → end-to-end encryption of messages and attachments using S/MIME or TLS 1.3. Policy-based encryption to protect sensitive communications and ensure confidentiality and compliance.
+- *Attachment and URL sandboxing* → executes attachments and embedded URLs in isolated virtual sandboxes to detect zero-day exploits and malicious scripts.
+- *Threat intelligence integration* → continuous updates from global threat intelligence feeds and internal telemetry. Correlates indicators of compromise (IoCs) and emerging attack patterns to block new threats proactively.
+- *User awareness and training integration* → optional integration with phishing simulation and training modules to increase user resilience. Automated user feedback loops for reporting suspicious e-mails.
+- *E-mail continuity and archiving* → provides temporary failover e-mail access in case of service outage. Long-term encrypted e-mail archiving with indexing and eDiscovery capabilities.
+- *Incident response and quarantine management* → real-time monitoring and centralized quarantine for suspicious or blocked messages. Administrator tools for message release, investigation, and remediation.
+- *Reporting and Analytics* → dashboards for threat trends, blocked attacks, user behavior, and policy violations. Exportable reports for compliance, audit, and management review.
+- *API and SIEM/SOAR integration* → REST APIs and webhooks for integration with SOC platforms, SIEM systems, and SOAR workflows. Event streaming for threat correlation and centralized monitoring.
 
 The main components of the service are:
 
+- *E-mail security gateway* → core engine that manages inbound and outbound mail flow. Performs message routing, scanning, and enforcement of anti-spam, anti-malware, and DLP policies. Supports both SMTP relay and API-based integration with e-mail providers (e.g., Microsoft 365, Google Workspace).
+- *Threat detection engine* → multi-layer detection system combining static analysis, dynamic sandboxing, heuristics, and machine learning models. Analyzes message headers, attachments, URLs, and behavioral patterns for anomalies.
+- *Sandboxing and detonation cluster* → isolated virtual environments for executing suspicious attachments and URLs to observe malicious behaviors safely. Supports multiple OS and application profiles for realistic threat emulation.
+- *Threat intelligence and reputation database* → continuously updated repository of known malicious IPs, URLs, domains, and file hashes. Aggregates external threat feeds and internal telemetry for adaptive protection.
+- *Policy and compliance engine* → centralized configuration module that defines and enforces security, encryption, and DLP rules. Supports policy inheritance, exception handling, and multi-tenant configuration management.
+- *Encryption and Key Management Service (KMS)* → manages cryptographic keys for message and attachment encryption. Integrates with hardware security modules (HSMs) for secure key storage.
+- *Machine learning & analytics engine* → continuously refines detection accuracy using feedback from quarantines, false positives, and threat outcomes. Performs pattern recognition and anomaly detection across large volumes of e-mail metadata.
+- *Management and administration console* → Web-based dashboard for administrators to monitor e-mail flow, review quarantined items, and generate reports. Role-based access control (RBAC) for security and compliance officers, IT admins, and auditors.
+- *Logging, monitoring, and audit subsystem* → captures all system and user events for traceability and compliance. Integrates with external SIEM for real-time alerting and correlation.
+- *API and integration layer* → provides RESTful APIs and connectors for integration with ticketing systems, SIEM/SOAR platforms, and incident response tools.
+- *High availability and load balancer cluster* → ensures redundancy and failover for all e-mail filtering and delivery operations. Supports geo-redundant architecture for resilience and disaster recovery.
+- *Storage and archiving repository* → secure, encrypted storage for quarantined e-mails, archived messages, logs, and reports. Complies with data retention and privacy requirements (e.g., GDPR, ISO 27001).
+- *IAM and Access Management Integration* → supports SAML, OAuth, and OpenID Connect for single sign-on and centralized authentication. Enforces multi-factor authentication for administrative access.
+
 The service offers the following advantages:
 
+- *Reduced risk of business disruption* → prevents e-mail-based ransomware and phishing attacks that could lead to system downtime, data loss, and financial or reputational damage.
+- *Regulatory compliance and data protection* → ensures compliance with major data protection and cybersecurity frameworks (GDPR, ISO 27001, NIS2) through encryption, auditing, and DLP capabilities.
+- *Operational cost reduction* → delivered as a managed PaaS, eliminating the need for on-premise infrastructure, maintenance, and manual signature updates, while providing predictable subscription-based costs.
+- *Enhanced employee productivity* → reduces the volume of spam and malicious messages reaching users, allowing them to focus on legitimate communications without disruptions.
+- *Strengthened customer and partner trust* → protects outgoing communications and ensures authenticity and confidentiality, enhancing the organization’s professional image and credibility.
+- *Business continuity and e-mail resilience* → built-in continuity features ensure uninterrupted e-mail access even during attacks or service outages, maintaining business operations without downtime.
+- *Scalable and flexible service delivery* → the cloud-native architecture scales automatically with e-mail traffic and user growth, adapting to both SMB and enterprise environments.
+- *Accelerated security maturity* → enables organizations to adopt enterprise-grade e-mail protection rapidly, without requiring internal expertise or lengthy deployment cycles.
+- *Multi-Layered e-mail protection* → integrates anti-spam, anti-malware, sandboxing, encryption, and DLP technologies for complete e-mail security coverage.
+- *AI-powered threat detection* → utilizes artificial intelligence and behavioral analytics to detect sophisticated phishing and ransomware campaigns, including zero-day threats.
+- *Advanced sandboxing and time-of-click protection* → isolates suspicious attachments and URLs to prevent execution of malicious code, even after message delivery.
+- *Continuous Threat Intelligence Updates* → leverages global intelligence networks for real-time updates on emerging threats, ensuring immediate response to new ransomware variants.
+- *Centralized Policy Management* → a unified console allows administrators to configure and enforce organization-wide e-mail security policies, encryption rules, and compliance settings.
+- *Comprehensive logging and auditability* → provides detailed audit trails of all messages, policies, and administrative actions to support compliance and forensic analysis.
+- *Seamless integration with existing infrastructure* → compatible with major e-mail systems and integrates with SIEM, SOAR, and IAM solutions.
+- *Secure and encrypted communication* → supports S/MIME, TLS, and policy-based encryption to protect e-mails in transit and at rest, ensuring confidentiality and integrity.
+- *Automated incident response and quarantine management* → real-time monitoring and automated quarantining minimize manual intervention, while administrators can review, release, or delete messages from a centralized dashboard.
+- *High availability and redundancy* → deployed on resilient cloud infrastructure with geo-redundant architecture to guarantee uptime, fault tolerance, and disaster recovery capabilities.
+- *User Awareness Integration* → optional phishing simulation and user training modules strengthen human defenses and reduce the risk of social engineering attacks.
+- *Granular Role-Based Access Control (RBAC)* → ensures secure management operations by defining user roles for administrators, auditors, and compliance officers.
 
 <a id="posture"></a>
 
 ### DSPM (Data Security Posture Management) Service
 
-![DSPM (Data Security Posture Management) Service Overview](assets/images/extract/media/.png)
-
 #### Services Description
 
-
-
+The Data Security Posture Management service is designed to provide organizations with a tool to control how users use their data, with particular attention to sensitive and critical data.  
+The service enables full visibility into where sensitive data resides, who can access it, how it is used, and whether it is properly protected in accordance with security policies and compliance frameworks.  
+The service leverages new AI and machine learning technologies to automate data discovery and classification and identify operations that are at risk or not in line with the organization's configurable security policies.  By integrating automated data discovery, classification, risk assessment, and remediation, the DSPM PaaS empowers organizations to maintain a strong data security posture and prevent data breaches caused by misconfigurations, overexposure, or insider threats.  
+The service can be delivered across hybrid environments and consists of one or more integration components dedicated to the organization's perimeter and a central management and control console.
 
 #### Features and Advantages
 
-The main features and functionalities of the service are:
+The DSPM PaaS delivers end-to-end visibility and control over data security posture, leveraging automation, analytics, and AI to identify, assess, and mitigate risks across distributed data assets.
+
+- *Automated data discovery and classification* → continuously scans structured and unstructured data sources across on-premises, cloud, and SaaS environments. Identifies sensitive, regulated, or confidential data (e.g., PII, PHI, financial information, intellectual property). Uses pattern-based, AI, and machine learning techniques for accurate data classification. Supports integration with data lakes, databases, object storage, and file repositories (e.g., AWS S3, Azure Blob, Google Cloud Storage).
+- *Data inventory and mapping* → builds a real-time catalog of all data assets, including metadata, location, ownership, and sensitivity level. Visualizes data lineage and flow between systems, applications, and cloud environments.Tracks data copies, shadow data, and redundant repositories.
+- *Risk and exposure assessment* → detects misconfigurations, excessive permissions, open access, and unencrypted repositories. Quantifies data exposure risks by correlating access patterns, user roles, and data sensitivity. Prioritizes remediation based on impact, criticality, and compliance requirements.
+- *Policy-based security posture monitoring* → continuously evaluates compliance with internal and external policies (e.g., GDPR, ISO 27001, NIS2, HIPAA). Automatically alerts when data assets violate security baselines or retention policies. Enforces remediation actions through workflow automation or integration with security orchestration platforms.
+- *Access governance and entitlement analysis* → monitors who has access to sensitive data and how permissions are granted and used. Detects privilege escalation, dormant accounts, and cross-environment access anomalies. Integrates with IAM and CIEM systems to ensure least-privilege enforcement.
+- *Data encryption and protection validation* → validates encryption status, key management configurations, and data masking policies. Monitors compliance with encryption standards (AES-256, TLS 1.3, FIPS 140-2). Detects unencrypted or improperly protected data stores.
+- Compliance and audit reporting → provides automated compliance mapping and audit-ready reports for multiple frameworks. Generates dashboards and alerts for non-compliant data assets or policy violations. Supports export of reports for auditors, regulators, or data protection officers.
+- *Integration with Security Ecosystem* → connects with SIEM, SOAR, DLP, CSPM, and data protection tools for unified threat detection and response. Exposes APIs and webhooks for data exchange with existing governance and risk platforms. Enables closed-loop remediation workflows through orchestration.
+- *Anomaly detection and behavior analytics* → monitors data activity for unusual access or transfer patterns (e.g., data exfiltration or insider misuse). Leverages machine learning to detect deviations from normal usage baselines.Generates contextual risk scores for prioritized investigation.
+- *Automated remediation and policy enforcement* → supports policy-driven remediation actions (e.g., revoke access, encrypt data, quarantine repository). Provides guided recommendations for manual or automated corrections. Ensures continuous improvement of the organization’s data security posture.
 
 The main components of the service are:
 
+- *Data discovery and classification engine* → scans data repositories using agents, APIs, and network crawlers. Applies pattern recognition, ML-based classification, and contextual tagging. Supports both structured (SQL, NoSQL) and unstructured (documents, logs, storage) data sources.
+- *Data inventory and metadata repository* → centralized catalog storing data asset metadata, classification labels, and sensitivity scores. Enables search, visualization, and reporting through dashboards and APIs.Maintains historical versions for trend and change analysis.
+- *Risk and policy engine* → core analytical module evaluating data exposure and policy compliance. Correlates data sensitivity with configuration and access control data. Assigns risk levels and triggers automated alerts and remediation workflows.
+- *Access and entitlement analysis module* → integrates with IAM, CIEM, and directory services (LDAP, Azure AD, Okta). Maps user and service account permissions to data assets. Detects anomalies such as excessive privileges, orphaned accounts, and unauthorized access.
+- *Encryption and protection monitor* → monitors encryption status and validates data protection mechanisms. Interfaces with Key Management Services (KMS) and Hardware Security Modules (HSMs). Audits encryption configurations and compliance with cryptographic policies.
+- *Analytics and correlation layer* → processes data from sensors, logs, and discovery agents using big data analytics. Employs AI/ML models for pattern recognition, anomaly detection, and trend prediction. Correlates posture findings with external threat intelligence and user behavior data.
+- *Dashboard and reporting console* → Web-based UI providing visibility into data posture, risk levels, compliance status, and trends. Role-based access control for administrators, auditors, and compliance officers. Customizable reports and visual analytics for executive and technical stakeholders.
+- *Integration and API layer* → REST APIs and connectors for integration with external tools (SIEM, SOAR, CSPM, DLP, GRC). Supports event streaming and webhook-based notifications. Enables orchestration of automated remediation workflows.
+- *Data storage and retention subsystem* → secure, encrypted repositories for metadata, logs, and historical posture data. Ensures integrity and traceability for compliance and forensic analysis. Supports configurable data retention and anonymization policies.
+- *Identity and access management (IAM)* → provides authentication and authorization for all users and system components. Supports SAML, OAuth2.0, and multi-factor authentication. Enforces least-privilege access to DSPM management functions.
+- *Monitoring, logging, and audit framework* → collects telemetry and operational metrics across all components. Maintains immutable logs for audit and compliance. Integrates with SOC/SIEM for centralized visibility.
+
 The service offers the following advantages:
 
+- *Enhanced data visibility and control* → provides a unified view of all sensitive data across cloud, on-premise, and hybrid environments, allowing organizations to make informed, risk-based decisions.
+- *Regulatory compliance and governance* → simplifies adherence to key regulatory frameworks (GDPR, ISO 27001, NIS2, HIPAA) by mapping data to compliance requirements and generating audit-ready reports.
+- *Reduced risk of data breaches* → detects and mitigates misconfigurations, overexposed data, and excessive access privileges before they can be exploited by attackers or insiders.
+- *Improved business agility* → enables faster and safer adoption of cloud services by continuously monitoring data exposure and security compliance across environments.
+- *Operational cost efficiency* → delivered as a PaaS, eliminating the need for complex infrastructure or dedicated in-house data security resources, and reducing manual risk assessments through automation.
+- *Improved trust and reputation* → demonstrates commitment to data protection and compliance, reinforcing customer confidence and brand integrity.
+- *Data-driven decurity decision making* → provides actionable insights and prioritization of data risks, empowering leadership to allocate resources effectively.
+- *Accelerated compliance audits and reporting* → automates evidence collection and reporting, reducing time and effort needed to prepare for regulatory audits and certifications.
+- *Strategic risk reduction* → transforms data security from reactive to proactive, helping organizations anticipate vulnerabilities and maintain resilience against evolving threats.
+- *Comprehensive data discovery and classification* → continuously identifies and categorizes sensitive data across all storage types, ensuring that no critical information remains unmonitored or unprotected.
+- *Real-Time security posture assessment* → monitors configurations, permissions, and encryption status to maintain a dynamic, up-to-date view of data risk posture.
+Automated remediation and policy enforcement → executes automated corrective actions—such as revoking access or enforcing encryption—based on predefined security policies and workflows.
+- *AI-driven risk prioritization* → uses machine learning and analytics to correlate data sensitivity, user behavior, and configuration issues for intelligent risk scoring and prioritization.
+- *Cross-environment data protection* → delivers consistent posture visibility and policy enforcement across multi-cloud, hybrid, and on-premise environments.
+- *Integration with Enterprise security scosystem* → seamlessly integrates with SIEM, SOAR, IAM, CSPM, and DLP tools, enabling a unified security operations workflow.
+- *Continuous compliance validation* → continuously audits data repositories against regulatory and internal compliance standards, reducing the risk of non-compliance penalties.
+- *Centralized Management and Reporting* → provides a single console for visibility, analytics, and reporting, simplifying operational management for administrators and compliance officers.
+- *Granular access and entitlement analysis* → detects misaligned access privileges, unused credentials, and policy violations to enforce least-privilege principles.
+- *High scalability and availability* → cloud-native architecture ensures performance and resilience, scaling automatically with enterprise data growth and operational demand.
+- *Secure data governance lifecycle* → covers all phases of the data lifecycle—from discovery to deletion—ensuring ongoing compliance and protection throughout the process.
+- *Auditability and traceability* → maintains immutable logs and versioned posture data for forensic investigation and compliance verification.
 
 <a id="ngfw"></a>
 
 ### NGFW platform
 
-![NGFW platform Overview](assets/images/extract/media/.png)
-
 #### Services Description
 
-
-
+The Next-Generation Firewall (NGFW) service implements a firewall application system to manage inbound and outbound traffic flows.  
+The platform includes all the advanced features of a firewall with additional threat detection capabilities based on artificial intelligence and machine learning.  
+The device is also capable of analyzing the content of network packets, down to the application layer (deep packet inspection), and managing rules based on more than just ports and protocols.  
+The service delivers intelligent traffic inspection, application-aware control, intrusion prevention, and threat detection across cloud, on-premise, and hybrid infrastructures. Unlike traditional firewalls that rely solely on port and protocol filtering, the NGFW PaaS incorporates deep packet inspection (DPI), machine learning-based threat analysis, and context-aware security policies to identify and mitigate sophisticated attacks, including malware, ransomware, zero-day exploits, and data exfiltration attempts.
 
 #### Features and Advantages
 
 The main features and functionalities of the service are:
 
+- *Advanced traffic inspection* → performs Deep Packet Inspection (DPI) to analyze traffic beyond basic headers. Detects malicious payloads, encrypted threats, and unauthorized applications. Supports full SSL/TLS decryption and inspection with configurable privacy controls.
+- *Application awareness and control* → identifies and classifies network traffic by application, not just port or protocol. Enables granular policy enforcement (allow, block, limit, prioritize) based on application type, risk level, and user identity. Prevents the use of unauthorized or high-risk applications (e.g., P2P, anonymizers, unapproved SaaS).
+- *Intrusion prevention system (IPS)* → provides signature-based and behavior-based detection to prevent known and unknown exploits. Protects against buffer overflows, SQL injection, cross-site scripting, and command injection attacks. Continuously updated with global threat intelligence feeds.
+- *Threat intelligence and malware protection* → integrates with real-time Threat Intelligence Feeds to block malicious IPs, URLs, and domains. Detects and blocks command-and-control (C2) traffic and lateral movement.Employs machine learning to identify zero-day malware and ransomware indicators.
+- *User and identity awareness* → integrates with Identity and Access Management (IAM) and directory services. Enforces user-based policies and logs actions for compliance and audit. Enables role-based access control (RBAC) for network usage and policy management.
+- *Secure Web filtering and URL categorization* → filters web traffic by category (e.g., malware, phishing, adult, social media). Blocks or restricts access based on organization-defined policies. Protects users from malicious or compromised websites.
+- *Network segmentation and microsegmentation* → enables logical separation of networks and workloads using VLANs, VPNs, or SDN policies. Implements Zero Trust segmentation to minimize lateral movement of threats.Supports east-west traffic control within cloud and virtualized environments.
+- *Virtual Private Network (VPN) and secure remote access* → provides site-to-site and remote access VPN with AES-256 encryption. Supports IPsec, SSL, and hybrid VPN tunnels for secure communication. Integrates with multi-factor authentication (MFA) for secure user access.
+- *Sandboxing and threat emulation* → suspicious files and payloads are executed in isolated virtual sandboxes. Detects advanced malware and zero-day exploits through behavioral analysis. Feeds findings back into the threat intelligence ecosystem for continuous learning.
+- *Policy automation and orchestration* → centralized management of firewall rules, security policies, and compliance templates. Automates policy updates and synchronization across distributed environments. Provides versioning, rollback, and change tracking for policy lifecycle management.
+- *Logging, monitoring, and analytics* → real-time visibility into network traffic, user activity, and threat events. Integrated dashboards and customizable reports for compliance and auditing. Supports integration with SIEM/SOAR platforms for advanced analytics and incident response.
+- *High availability and scalability* → redundant architecture ensuring failover, session synchronization, and minimal downtime. Auto-scaling capabilities to handle fluctuating workloads and peak network demand. Supports multi-zone and multi-region deployment for resilience and disaster recovery.
+
 The main components of the service are:
+
+- *Firewall enforcement nodes* → core data-plane components responsible for packet inspection, policy enforcement, and threat prevention. Deployed in a scalable cluster across multiple cloud availability zones or on-premise gateways. Supports virtual, containerized, or hardware-accelerated form factors.
+- *Control and management plane* → provides centralized configuration, orchestration, and lifecycle management of all NGFW instances. Supports multi-tenant environments with granular administrative segmentation. Exposes APIs for automation, integration, and third-party control systems.
+- *Threat intelligence and analytics engine* → aggregates global threat intelligence feeds and correlates them with real-time traffic telemetry. Employs AI and behavioral analytics for anomaly detection and predictive threat modeling.Updates detection rules and security signatures dynamically across all nodes.
+- *Intrusion prevention and detection subsystem (IPS/IDS)* → continuously monitors inbound and outbound traffic for known exploits or attack patterns. Uses signature-based, heuristic, and behavioral analysis to identify advanced threats. Works in conjunction with sandboxing and threat emulation for extended detection.
+- *Policy and compliance engine* → stores and enforces security policies across the infrastructure. Supports custom rule sets, templates, and compliance mappings (e.g., ISO 27001, PCI-DSS, NIS2). Provides automated risk scoring and compliance auditing for configurations.
+- *Identity and access integration layer* → connects to corporate IAM and SSO platforms to apply identity-aware security policies. Enables per-user or per-role traffic control and logging. Supports MFA and federated authentication mechanisms.
+- *Sandboxing and threat emulation cluster* → dedicated virtualized environment for executing suspicious files and payloads. Detects unknown threats without impacting production systems. Integrates with global threat intelligence to enhance protection models.
+- *Logging, telemetry, and SIEM integration* → collects and normalizes network logs, flow records, and security events. Integrates with external SIEM systems for centralized visibility and correlation. Supports syslog, REST API, and streaming telemetry protocols.
+- *API gateway and orchestration layer* → enables integration with CSPM, SOAR, and automation platforms. Provides RESTful APIs and SDKs for policy management, provisioning, and analytics. Facilitates policy synchronization and automation in hybrid environments.
+- *High availability and load balancing layer* → distributes traffic across multiple enforcement nodes for optimized performance and reliability. Supports active-active and active-standby configurations. Includes automatic failover, state synchronization, and redundancy at all layers.
+- *Monitoring and visualization dashboard* → provides administrators with real-time visibility into network status, threats, and policy compliance. Features interactive analytics, risk scoring, and alert prioritization. Supports customizable widgets for security operations and compliance teams.
+- *Data storage and archiving subsystem* → secure storage for logs, events, and configuration snapshots. Encrypted repositories with configurable retention and audit capabilities. Supports integration with cloud object storage or on-prem archival systems.
 
 The service offers the following advantages:
 
-
+- *Enhanced cyber resilience* → provides continuous protection against advanced cyber threats, ensuring business continuity and minimizing the risk of network downtime, data loss, or reputational damage.
+- *Regulatory compliance and risk reduction* → simplifies compliance with major cybersecurity frameworks by enforcing standardized policies, secure configurations, and comprehensive audit logging.
+- *Operational efficiency and cost optimization* → delivered as a managed PaaS, the service eliminates the need for dedicated hardware, manual updates, and specialized maintenance, significantly reducing operational costs.
+- *Scalable and flexible network protection* → cloud-native design enables dynamic scaling according to traffic demand, ensuring consistent performance across hybrid and multi-cloud environments.
+- *Accelerated security modernization* → enables organizations to transition from legacy firewalls to a modern, intelligent, and centrally managed security platform without downtime or complex migrations.
+- *Improved Visibility and Governance* → consolidates monitoring and policy control across distributed environments into a single interface, empowering governance, risk, and compliance teams.
+- *Faster incident response* → automated detection and orchestration reduce the time to identify and mitigate attacks, minimizing business impact and resource overhead.
+- *Business continuity and resilience* → redundant and geo-distributed infrastructure ensures uninterrupted protection and service availability even during outages or attacks.
+Support for digital transformation initiatives → enables secure adoption of cloud services, remote access, and IoT solutions by integrating network security directly into cloud workflows.
+- *Comprehensive layered protection* → combines firewall, intrusion prevention, antivirus, web filtering, and sandboxing into a unified, multi-layered security stack.
+Application and user awareness → identifies and controls applications and users regardless of port, protocol, or encryption, ensuring contextual, identity-based access control.
+- *Deep Packet Inspection (DPI)* → examines every packet in real-time to detect encrypted or obfuscated threats, ensuring accurate threat identification and minimal false positives.
+- *AI-Driven threat detection and prevention* → uses artificial intelligence, behavioral analytics, and threat intelligence feeds to detect zero-day attacks, ransomware, and polymorphic malware.
+- *Centralized Policy Management* → provides unified control of security rules, compliance baselines, and configurations across all NGFW instances through a single management console.
+- *Real-Time analytics and reporting* → offers comprehensive visibility into traffic patterns, security events, and policy compliance, with exportable reports for auditing and SOC integration.
+- *High availability and elastic scalability* → implements active-active clustering, load balancing, and autoscaling to maintain performance and fault tolerance under varying network loads.
+- *Zero Trust and microsegmentation support* → enforces least-privilege access and segmentation at the application, user, and workload level to contain breaches and minimize lateral movement.
+- *Integration with security ecosystem* → seamlessly connects with SIEM, SOAR, CSPM, and IAM platforms for unified threat management, incident response, and automation workflows.
+- *Secure VPN and remote access* → delivers site-to-site and user-based VPN capabilities with strong encryption and MFA integration for secure remote connectivity.
+- *Automated policy enforcement and updates* → automatically distributes updated rules, signatures, and threat intelligence across all firewalls, ensuring continuous protection with minimal manual effort.
+- *Robust logging, monitoring, and auditability* → maintains detailed, immutable logs for compliance, forensics, and real-time incident response, ensuring full visibility and traceability.
+- *Support for multi-tenant and hybrid environments* → designed for organizations and service providers managing multiple clients or business units with logical separation and delegated administration.
 
 <a id="PAM"></a>
 
 ### PAM (Privileged Access Management) Service
 
-![PAM (Privileged Access Management) Service Overview](assets/images/extract/media/.png)
-
 #### Services Description
 
-
-
+The Privileged Access Management (PAM) service manages and protects privileged access to critical environments, including credential management, session control, and real-time monitoring.  
+PAM allows organizations to activate a privileged access management system. Its purpose is to act as a bridge between users (especially administrators) and the systems they manage, ensuring that administrative credentials are protected within a "vault" and hidden from the administrators themselves.  
+Furthermore, the system can rotate administrative credentials or deny access to an administrator on a per-profile basis.  
+Privileged accounts — such as system administrators, database managers, and DevOps automation services — represent a primary attack vector for cybercriminals. Compromise of these accounts can lead to severe data breaches, ransomware propagation, or full system takeover.  
+The PAM PaaS delivers identity-centric protection and governance for all privileged credentials, sessions, and activities across on-premises, cloud, and hybrid environments.
+It enforces the principle of least privilege, enables session monitoring and recording, and automates credential rotation, vaulting, and just-in-time access provisioning to minimize risk exposure.  
+Delivered as a managed PaaS, the service eliminates the complexity of deploying and maintaining traditional PAM infrastructure, providing organizations with continuous protection, compliance enforcement, and operational efficiency.
 
 #### Features and Advantages
 
-The main features and functionalities of the service are:
+The PAM PaaS provides a rich set of functionalities to secure and manage privileged accounts, credentials, and access sessions throughout their lifecycle.
+
+- *Centralized credential vaulting* → securely stores and manages privileged credentials (passwords, SSH keys, API tokens, certificates) in an encrypted vault. Eliminates hard-coded or shared credentials across systems. Provides strong encryption, multi-factor authentication, and access auditing.
+- *Automated password and key rotation* → enforces automatic, policy-driven rotation of privileged passwords and cryptographic keys.Integrates with directories, databases, network devices, and cloud services. Reduces exposure time in case of credential compromise.
+- *Just-in-Time (JIT) privilege elevation* → grants temporary, time-bound privileged access based on contextual approval workflows. Automatically revokes privileges after task completion. Minimizes standing privileges and insider threat exposure.
+- *Session management and monitoring* → records, monitors, and audits all privileged sessions (SSH, RDP, SQL, web consoles). Enables real-time session oversight and automated termination on policy violation. Provides full playback for forensic investigation and compliance.
+- *Multi-Factor Authentication (MFA) and adaptive access* → enforces MFA for all privileged access events. Supports adaptive authentication based on device, geolocation, and behavioral risk scoring. Integrates with corporate identity providers (Azure AD, LDAP, SAML, OIDC).
+- *Role-Based Access Control (RBAC)* → assigns privileges based on predefined roles, ensuring least-privilege enforcement. Supports fine-grained policies that define who can access what, when, and how. Facilitates separation of duties for compliance with ISO 27001 and NIS2.
+- *Command filtering and policy enforcement* → inspects and filters privileged commands during active sessions.Blocks or flags suspicious commands or administrative actions in real time. Supports custom rule sets aligned with compliance and internal security standards.
+- *Secure remote access gateway* → provides agentless, browser-based remote access to critical systems without exposing credentials. Supports RDP, SSH, and web management interfaces through encrypted tunnels. Logs all session activity for security and compliance.
+- *Integration with SIEM and SOAR platforms* → sends logs, events, and alerts to centralized SIEM/SOAR solutions. Enables automated incident response, anomaly detection, and correlation with threat data. Provides standardized APIs and connectors for integration.
+- *Privileged Account Discovery* → scans the environment to identify unmanaged privileged accounts, keys, and secrets. Assesses risk exposure and automates onboarding into the vault. Supports discovery across Active Directory, cloud platforms, databases, and containers.
+- *Audit, compliance, and reporting* → provides detailed reports on access requests, approvals, and session activity. Supports compliance with GDPR, ISO 27001, PCI-DSS, HIPAA, and NIS2 directives. Offers customizable dashboards and automated report scheduling.
+- *Threat analytics and anomaly detection* → leverages behavioral analytics to identify suspicious privileged user behavior. Detects deviations from normal activity patterns using AI and machine learning models. Generates alerts and can automatically revoke access on detected anomalies.
+- *API and DevOps integration* → provides RESTful APIs and SDKs for integrating PAM controls into CI/CD pipelines. Protects privileged secrets in DevOps environments (Jenkins, GitLab, Ansible). Enables machine identity management and service account governance.
 
 The main components of the service are:
 
+- *Credential vault (Secure storage layer)* → core repository for all privileged credentials, keys, and secrets. Implements AES-256 encryption, HSM integration, and strong key management. Enforces access via secure APIs and MFA-protected sessions.
+- *Access control and policy engine* → centralized component that enforces RBAC, access approval workflows, and least-privilege rules. Evaluates contextual access conditions (user role, time, device, risk score). Integrates with IAM and directory services for authentication and authorization.
+- *Session management and recording subsystem* → manages all privileged session connections, including RDP, SSH, and database access. Captures full video/audio/text logs of user sessions for replay and forensic analysis. Supports live session termination, keystroke logging, and behavioral analytics.
+- *Just-in-Time (JIT) access provisioning engine* → automates temporary privilege elevation for approved tasks. Integrates with ITSM systems for request/approval workflows. Ensures access expiration and automatic credential revocation.
+- *Discovery and onboarding module* → continuously scans infrastructure to locate unmanaged privileged accounts and secrets. Automatically imports discovered credentials into the vault. Generates visibility reports and risk scores for unprotected assets.
+- Multi-Factor Authentication and identity federation layer → connects with enterprise IAM systems for identity verification. Supports SSO, SAML 2.0, OIDC, and FIDO2 standards.Applies adaptive MFA policies based on context and risk posture.
+- *Analytics and threat detection engine* → aggregates PAM telemetry to detect abnormal privileged activity. Uses AI-based behavioral baselines for early threat detection. Feeds alerts and analytics to SIEM/SOAR systems for incident correlation.
+- *Secure remote access gateway* → provides proxy-based, credential-free access to internal systems. Prevents credential exposure during remote administration. Logs all actions for compliance and traceability.
+- *Integration and API gateway* → exposes APIs for integration with ITSM, SIEM, SOAR, DevOps, and IAM tools. Supports automation and policy synchronization across multi-cloud environments. Enables secure machine-to-machine communications.
+- *Logging and audit repository* → centralized collection point for all PAM events, access logs, and session data. Ensures immutability and time synchronization for forensic integrity. Supports long-term storage and secure archiving.
+- Web management console → provides administrators with a unified interface for configuration, policy management, and monitoring. Offers dashboards, risk indicators, and compliance views. Supports delegated administration and role-based visibility.
+- *High availability and scalability layer* → multi-zone deployment with redundant components to ensure continuous availability. Supports horizontal scaling for concurrent session and credential workloads. Implements backup, failover, and disaster recovery capabilities.
+
 The service offers the following advantages:
+
+- *Reduced risk of data dreaches and insider threats* → minimizes the attack surface by enforcing strict control and monitoring of privileged accounts, effectively reducing both external and insider threat vectors.
+- *Regulatory and compliance alignment* → simplifies adherence to key cybersecurity and privacy frameworks through standardized access policies, complete audit trails, and automated compliance reporting.
+- *Improved security governance and accountability* → centralizes management of all privileged identities and enforces policy consistency across business units, increasing accountability and transparency.
+- *Operational efficiency and cost savings* → delivered as a managed PaaS, it eliminates the need for on-premises infrastructure, manual credential management, and complex maintenance tasks, reducing operational overhead and total cost of ownership.
+- *Enhanced Business Continuity* → ensures uninterrupted access to critical systems while maintaining full security control, even during infrastructure failures or security incidents.
+- *Support for digital transformation and cloud adoption* → enables secure access to hybrid and multi-cloud environments, supporting DevOps pipelines, cloud-native workloads, and remote operations securely and efficiently.
+- *Increased organizational agility* → automated workflows and just-in-time access provisioning streamline operational processes and accelerate response to evolving business and security needs.
+- *Improved trust and peputation* → demonstrates strong security posture to clients, partners, and regulators by safeguarding the most sensitive access credentials and administrative activities.
+- *Comprehensive privileged access lifecycle management* → covers the full lifecycle of privileged credentials — discovery, vaulting, rotation, monitoring, and decommissioning — ensuring continuous protection.
+- *Centralized and secure credential vaulting* → uses enterprise-grade encryption and hardware security modules (HSMs) to protect privileged credentials and secrets from unauthorized disclosure.
+- *Automated password and key rotation* → reduces credential exposure by automatically rotating and updating passwords, API keys, and certificates according to customizable security policies.
+- *Just-in-Time (JIT) access control* → eliminates permanent administrative privileges by providing temporary, task-based elevated access, automatically revoked upon completion.
+Real-time session monitoring and recording → enables full visibility into privileged user actions, with live session control, playback, and forensic evidence for investigations.
+- *Command filtering and policy enforcement* → prevents misuse of administrative access by blocking unauthorized commands and enforcing predefined policy rules during active sessions.
+- *Integration with Enterprise identity and security systems* → seamlessly connects to IAM, SSO, SIEM, SOAR, and DevOps tools to ensure consistent access control and unified threat visibility.
+- *Behavioral analytics and anomaly detection* → uses machine learning models to detect suspicious or abnormal privileged activity, triggering automated alerts and responses.
+*Strong Authentication and Adaptive Security *→ implements MFA, context-based access control, and adaptive authentication to strengthen access security across all privileged sessions.
+- *Secure remote access gateway* → provides agentless, credential-free remote access to internal systems through encrypted channels, reducing the risk of credential theft.
+- *Scalable cloud-native architecture* → designed for elastic scaling to accommodate growth in users, systems, and sessions, ensuring consistent performance across large deployments.
+- *Continuous compliance and reporting* → generates automated reports and dashboards that meet audit and compliance requirements, ensuring continuous adherence to security policies.
+- *Multi-tenant and delegated administration support* → enables secure separation of administrative domains for different departments or customers, ideal for managed service providers or large organizations.
+- *Resilient and redundant infrastructure* → built on a high-availability architecture with geographic redundancy, automatic failover, and disaster recovery capabilities.
+Extensive API and Automation Capabilities → exposes APIs for integration with orchestration and ITSM systems, enabling policy automation, credential management, and incident response workflows.
 
 
 <a id="PSI"></a>
 
 ### Perimeter Security Intelligence Service
 
-![Perimeter Security Intelligence Service Overview](assets/images/extract/media/.png)
-
 #### Services Description
 
-
-
+The Perimeter Security Intelligence service offers in-depth analysis of network traffic and perimeter activity, identifying potential threats and vulnerabilities.  
+Using advanced data analysis techniques, the service provides a comprehensive and proactive view of an organization's perimeter security. The Perimeter Security Intelligence service is based on the integration of advanced intelligence capabilities with organizations' existing security systems.  
+The goal is to provide, through a threat information sharing and reputation assessment platform, reliable feeds and indicators of compromise to other security solutions so they can proactively block threats.
 
 #### Features and Advantages
 
 The main features and functionalities of the service are:
 
+- *Real-time perimeter monitoring* → continuously monitors network traffic at the organization’s edge for signs of malicious activity, intrusions, or policy violations. Provides deep inspection of packets and flow analysis to identify abnormal behaviors and potential attacks. Supports on-premises, cloud, and hybrid network topologies.
+- *Threat intelligence integration* → integrates with global and industry-specific threat intelligence feeds to detect known indicators of compromise (iocs). Correlates external threat data with internal events to prioritize risks and anticipate emerging attacks. Automatically updates protection rules and correlation signatures in real time.
+- *Intrusion Detection and Prevention (IDS/IPS)* → identifies and blocks unauthorized access attempts, exploit activity, and suspicious network traffic. Utilizes signature-based, heuristic, and behavior-based detection methods.Supports inline (prevention) and passive (detection) deployment modes.
+- *Network Behavior Analysis (NBA)* → uses machine learning to baseline normal network activity and detect anomalies, such as lateral movement or data exfiltration. Identifies zero-day attacks and insider threats based on deviation from established patterns. Generates risk scores and automated alerts for anomalous behaviors.
+- *Distributed Denial-of-Service (DDOS) protection* → detects and mitigates volumetric, protocol-based, and application-layer DDOS attacks. Utilizes traffic filtering, rate limiting, and intelligent rerouting techniques. Integrates with cloud-based scrubbing centers for high-volume mitigation.
+- *Security information correlation and event enrichment* → correlates perimeter data with logs from other security sources (firewalls, vpns, proxies, endpoints). Enriches events with contextual intelligence, user identity, and geolocation data. Provides high-fidelity alerts to reduce noise and false positives.
+- *Threat hunting and forensic analysis* → enables proactive investigation of perimeter events and indicators of compromise. Provides historical visibility through log retention and network flow archives. Supports automated forensic reconstruction of attack chains and lateral movement.
+- *Adaptive policy enforcement* → dynamically updates firewall, ids/ips, and web filtering rules based on threat intelligence and incident context. Supports automated response actions such as ip blocking, quarantine, or traffic redirection.Integrates with soar platforms for orchestration of complex response workflows.
+- *Perimeter access control and network segmentation* → controls external connections through context-aware policies and zero-trust segmentation principles. Limits communication between zones based on sensitivity, trust level, and risk posture. Integrates with identity-based access controls and vpn gateways.
+- *Security analytics and visualization* → provides centralized dashboards with real-time metrics on traffic volume, threats, and blocked activity. Supports drill-down analysis by ip, application, or geographic source. Enables customizable reports for soc teams and compliance auditors.
+- *Log management and retention* → collects and stores network and security logs in an encrypted, tamper-proof repository. Supports customizable retention policies for compliance and forensic analysis. Integrates with external siem and compliance monitoring tools.
+- *Automation and orchestration* → automates threat response and mitigation through integration with soar systems.Supports playbooks for recurring incidents and threat scenarios. Provides apis for custom integrations and policy automation.
+
 The main components of the service are:
+
+- *Data collection and sensor layer* → distributed sensors deployed at network perimeters, gateways, and cloud endpoints. Captures traffic flows, logs, and events for analysis. Supports netflow, sflow, pcap, and syslog formats.
+- *Threat detection and correlation engine* → core analysis engine that applies rules, signatures, and behavioral models to incoming data. Correlates events from multiple sensors to identify attack patterns and coordinated campaigns. Continuously updated via global threat intelligence feeds.
+- *Machine learning and analytics module* → performs behavioral baselining, anomaly detection, and predictive threat analysis. Identifies previously unseen threats using unsupervised learning algorithms. Generates risk scores and prioritizes alerts based on contextual relevance.
+- *Intrusion Detection and Prevention (IDS/IPS)* → inspects packets in real time to detect and block malicious payloads. Supports both inline blocking and passive detection deployments. Uses deep packet inspection (dpi) and heuristic analysis for zero-day detection.
+- *Threat intelligence aggregator* → collects, normalizes, and correlates threat data from multiple external sources (cert, isac, vendor feeds). Enriches internal security events with iocs, ip reputation, and malware signatures. Provides adaptive updates to detection and response rules.
+- *Security orchestration and response layer* → executes automated or manual response actions based on detected threats. Integrates with soar platforms to trigger remediation workflows. Supports playbooks for dynamic rule updates and containment strategies.
+- *Policy and configuration management* → centralized management of firewall, ids/ips, and access control policies. Supports versioning, approval workflows, and compliance validation. Ensures consistent policy enforcement across distributed environments.
+- *Visualization and reporting dashboard* → provides operational and executive-level views of perimeter activity, threat trends, and response metrics. Supports customizable widgets and dynamic filtering for soc teams. Offers preconfigured compliance and kpi dashboards.
+- *Log storage and archival repository* → encrypted storage for raw and processed perimeter security data. Provides full auditability and supports long-term retention requirements.Enables retrospective analysis for threat hunting and legal investigations.
+- *API and integration gateway* → facilitates interoperability with siem, soar, iam, and cspm platforms.Enables data exchange and automation through restful apis. Supports event forwarding, rule synchronization, and analytics export.
+- *High availability and scalability layer* → built with redundant components and auto-scaling mechanisms to ensure consistent performance. Supports multi-zone deployment with failover and disaster recovery capabilities. Automatically balances sensor workloads and analysis processing.
+- *Security governance and compliance module* → maps policies and controls to industry standards and frameworks. Monitors adherence to compliance baselines and provides deviation alerts. Generates reports aligned with ISO 27001, GDPR, and NIS2 requirements.
 
 The service offers the following advantages:
 
+- *Enhanced protection of business assets* → safeguards critical data and infrastructure from external cyber threats, reducing the likelihood of data breaches and financial loss. Provides continuous monitoring to ensure business continuity and operational resilience.
+- *Reduced total cost of ownership (TCO)* →  eliminates the need for on-premises perimeter security hardware and complex maintenance.
+- *Faster incident response and risk mitigation* → automates detection and mitigation processes to minimize downtime and reduce incident impact. Accelerates decision-making through real-time alerts, dashboards, and contextual threat analysis.
+- *Increased visibility and control* → provides a unified view of perimeter activity across hybrid and multi-cloud environments. Helps identify emerging risks and vulnerabilities before they impact business operations.
+- *Improved regulatory compliance* → supports compliance with industry standards such as ISO 27001, gdpr, and NIS2. Generates audit-ready reports and evidence of continuous monitoring and threat management.
+- *Operational efficiency and agility* → reduces manual tasks through automation and orchestration of security workflows.
+- *Scalability and flexibility* → adapts to the evolving perimeter of digital enterprises, supporting cloud, remote, and iot environments.
+- *Data-driven decision making* → transforms perimeter data into actionable intelligence, improving security strategy alignment with business priorities.Enhances situational awareness through analytics-driven insights and trend analysis.
 
 <a id="IPS"></a>
 
 ### Intrusion Prevention System (IPS) Service
 
-![Intrusion Prevention System (IPS) Service Overview](assets/images/extract/media/.png)
-
 #### Services Description
 
-
-
+The Intrusion Prevention System (IPS) service actively intercepts network traffic for patterns of malicious or abnormal behavior and automatically and proactively blocks such malicious traffic.  
+The Intrusion Prevention System (IPS) service not only detects but also prevents attacks in real time.  
+It uses attack signatures and behavioral analysis to identify and block known and unknown threats, protecting the IT infrastructure from potential compromise.
+Unlike an IDS, an IPS is integrated into the network architecture, at least for mission-critical network flows.
 
 #### Features and Advantages
 
 The main features and functionalities of the service are:
 
+- *Traffic inspection and analysis* → performs deep packet inspection (dpi) and protocol decoding for inbound, outbound, and east-west traffic. Applies signature-based rules (known attack patterns), anomaly/behavior analysis (baseline deviation), and policy enforcement. Supports real-time blocking of malicious connections and content.
+- *Signature and threat intelligence engine* → maintains an updated signature library for known exploits and malicious traffic patterns. Integrates external threat intelligence feeds to identify malicious ips, domains, c2 channels, and exploit kits.
+- *Anomaly and behavioral detection* → establishes baseline traffic behavior, then identifies deviations indicating potential threats (e.g., lateral movement, data exfiltration). Applies machine-learning or heuristic engines to supplement rule-based detection.
+- *Policy-driven prevention and inline blocking* → automates blocking, connection termination, or traffic modification (e.g., reset, drop) when threats are detected. Policy profiles are configurable by severity, traffic zone, protocol, application, and asset criticality.
+- *Encrypted traffic inspection* → supports ssl/tls decryption and re-inspection of encrypted traffic to uncover hidden threats.
+- *Zone and network segment enforcement* → inspects traffic crossing defined security zones (e.g., lan → dmz, cloud → on-prem) and enforces segmentation rules.
+- *Logging, alerting, and reporting*→ generates detailed logs of detected intrusions, blocked events, and session information. Provides dashboards and reports for monitoring detection/prevention performance, compliance, and trends.
+- *Automated remediation and integration* → integrates with soar and automation platforms to trigger containment workflows (e.g., block ip, quarantine host, notify soc). Provides api access and webhooks for external orchestration.
+- *Scalable deployment models* → supports virtualized or containerized enforcement points across cloud regions, hybrid sites, and branch networks. Auto-scales to ensure performance under high traffic loads and large session volumes.
+- *Continuous update and threat intelligence sync* → automatically delivers new signatures, behavioral models, and threat intelligence to all enforcement nodes to keep protection current.
+
 The main components of the service are:
 
+enforcement / data plane nodes
+
+high-performance inline sensors (virtual or hardware) that inspect and enforce traffic rules, perform dpi, session tracking, and blocking.
+
+deployed across zones (edge, cloud gateway, internal segment).
+
+2. control and management plane
+
+central management console for policy authoring, signature updates, performance monitoring, and enforcement node orchestration.
+
+supports multi-tenancy, role-based access, and delegated administration.
+
+3. signature and threat intelligence repository
+
+stores rule sets, malware and attack signatures, reputation data, ip/domain blacklists, and threat feed aggregations.
+
+regularly updated and distributed to enforcement nodes.
+
+4. behavioral analytics and anomaly detection engine
+
+performs baseline modeling of network and application traffic, detecting deviations and flagging suspicious activity.
+
+generates risk scores, correlates events, and triggers alerts or preventative actions.
+
+5. policy engine and configuration repository
+
+manages configuration of inspection zones, severity thresholds, blocking actions, traffic handling rules, and enforcement workflows.
+
+maintains versioning, audit history, and rollback capabilities.
+
+6. integration and api gateway
+
+exposes restful apis and webhooks for integration with siem, soar, orchestration, and other security tools.
+
+supports event export, automation triggers, and third-party tool connectivity.
+
+7. logging, monitoring, and reporting subsystem
+
+collects logs, alerts, session metadata, and traffic flows, storing them in a secure, indexed repository.
+
+provides dashboards, forensic search, export capabilities, and report generation.
+
+8. high availability and scalability infrastructure
+
+enforces cluster deployment, auto-scaling of enforcement nodes, geographic redundancy, and failover mechanisms.
+
+load-balances traffic across nodes to maintain performance and resilience.
+
+9. secure storage and archival layer
+
+provides encrypted storage for historical logs, session data, and evidence for forensic and compliance purposes.
+
+includes data retention policies, immutable logging, and audit trail support.
+
+10. encryption and decryption module
+
+handles ssl/tls decryption, re-inspection, and re-encryption of traffic to ensure visibility into encrypted streams.
+
+integrates with key management and certificate handling systems.
+
 The service offers the following advantages:
+
+proactive protection against cyber threats
+
+prevents network intrusions and exploits in real time, reducing the risk of data breaches and business disruption.
+
+continuously analyzes traffic to identify and stop attacks before they escalate.
+
+2. reduced operational costs
+
+eliminates the need for dedicated on-premises intrusion prevention appliances and complex management.
+
+delivered as a cloud-based paas with predictable subscription costs and minimal maintenance overhead.
+
+3. enhanced business continuity
+
+blocks disruptive and malicious traffic automatically, ensuring uninterrupted operations.
+
+minimizes downtime and revenue loss caused by security incidents.
+
+4. improved regulatory and compliance posture
+
+supports adherence to frameworks such as iso 27001, gdpr, and nis2.
+
+provides continuous monitoring, detailed logs, and auditable reports for compliance verification.
+
+5. centralized visibility and governance
+
+provides unified control and visibility over network traffic across cloud, hybrid, and on-premises environments.
+
+simplifies governance and policy enforcement from a single management interface.
+
+6. scalability and flexibility
+
+dynamically scales according to traffic load and business needs, adapting to cloud and hybrid deployments.
+
+supports integration with existing soc and siem platforms for extended visibility.
+
+7. reduced risk exposure and faster incident response
+
+accelerates threat response through automated blocking and integration with orchestration tools.
+
+shortens mean time to detect (mttd) and mean time to respond (mttr).
+
+8. improved security posture through continuous updates
+
+continuously updated with new signatures, threat intelligence, and behavioral models.
+
+ensures up-to-date protection against emerging and zero-day attacks.
+
+advanced detection and prevention capabilities
+
+combines signature-based, heuristic, and anomaly-based detection techniques for comprehensive threat coverage.
+
+uses deep packet inspection (dpi) for high-precision traffic analysis.
+
+2. real-time inline prevention
+
+automatically blocks malicious traffic inline without human intervention.
+
+prevents exploits, denial-of-service attempts, and command-and-control communications in real time.
+
+3. machine learning and behavioral analytics
+
+employs machine learning models to identify unknown and evolving threats.
+
+continuously refines detection accuracy through feedback and adaptive learning.
+
+4. seamless integration with existing infrastructure
+
+integrates easily with siem, soar, and soc systems for centralized monitoring and automated response.
+
+supports api-based integration for custom workflows and automation.
+
+5. high availability and redundancy
+
+designed for continuous uptime through clustering, failover, and auto-scaling mechanisms.
+
+ensures uninterrupted protection even during maintenance or component failure.
+
+6. centralized management and policy control
+
+allows administrators to define, deploy, and manage security policies across distributed environments from a single console.
+
+enables consistent enforcement across multi-cloud and hybrid architectures.
+
+7. encrypted traffic inspection
+
+supports ssl/tls decryption and inspection for comprehensive visibility into encrypted traffic streams.
+
+ensures full coverage against hidden or encrypted attacks.
+
+8. automation and orchestration capabilities
+
+supports automated remediation workflows for threat containment and isolation.
+
+reduces human workload and response time through integration with orchestration tools.
+
+9. compliance and audit readiness
+
+maintains detailed logging, reporting, and audit trails for compliance validation.
+
+generates customizable reports for regulators, auditors, and management.
+
+10. scalability and performance optimization
+
+automatically scales inspection capacity based on network traffic volume.
+
+optimized for low-latency processing and high throughput in dynamic network environments.
 
 
 
