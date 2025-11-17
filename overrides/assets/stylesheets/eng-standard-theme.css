@@ -113,7 +113,7 @@
     table {
         width: 100% !important;
         border-collapse: collapse !important;
-        margin: 20px auto !important; /* Centra la tabella orizzontalmente */
+        margin: 20px auto 0 auto !important; /* Centra la tabella orizzontalmente, rimuove margine inferiore */
     }
     
     /* Contenitore delle tabelle per centramento */
