@@ -53,12 +53,13 @@
     }
     
     figcaption {
-        color: #666;
+        color: var(--md-accent-fg-color) !important;
         text-align: center !important;
-        font-style: italic;
-        margin-top: 8px;
-        font-size: 0.9em;
-        display: block;
+        font-style: italic !important;
+        margin-top: 4px !important;
+        margin-bottom: 16px !important;
+        font-size: 0.9em !important;
+        display: block !important;
     }
     
     /* ===================================================
