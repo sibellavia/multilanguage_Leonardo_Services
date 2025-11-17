@@ -8,7 +8,7 @@ The following table lists the various families and their related services.
 | Compute | [Confidental private IaaS](IaaS.md#pool-confidential-services)          |
 | Compute | [Shared-IaaS (VMs)](IaaS.md#VMs)                 |
 | Compute | [Kubernetes confidential computing](CaaS.md#kubernetes)   |
-| Compute | [Functions as a Service](PaaS.md#faas)          |
+| Compute | [Functions as aService](PaaS.md#faas)          |
 <figcaption>List of services for the Compute family</figcaption>
 
 | FAMILY                               | LIST OF SERVICES                                            |
@@ -76,8 +76,8 @@ The following table lists the various families and their related services.
 | Artificial Intelligence (AI)         | [Speech to Text](PaaS.md#speech-to-text)                                              |
 | Artificial Intelligence (AI)         | [PaaS - AI Audio & Video Analytics](PaaS.md#AI-audio-video)                           |
 | Artificial Intelligence (AI)         | [OCR](PaaS.md#AI-OCR)                                                          |
-| Artificial Intelligence (AI)         | [Text Analytics/NLP    ](PaaS.md#AI-text)                                              |
-| Artificial Intelligence (AI)         | [TranslationPaaS.mdAI-translation)                                                 |
+| Artificial Intelligence (AI)         | [Text Analytics/NLP](PaaS.md#AI-text)                                              |
+| Artificial Intelligence (AI)         | [TranslationPaaS.mdAI-translation](PaaS.md#translation)                                                  |
 | Artificial Intelligence (AI)         | [AI Search - RAG](PaaS.md#AI-search)                                             |
 | Artificial Intelligence (AI)         | [PaaS - AI Platform](PaaS.md#AI-platform)                                          |
 | Artificial Intelligence (AI)         | [AI SLM/LLM](PaaS.md#AI-SLM-LLM)                                                  |
@@ -114,7 +114,6 @@ The following table lists the various families and their related services.
 | Networking                              | [Single public IP](PaaS.md#IP)                         |
 | Networking                              | [L7 Load Balancer (regional)](PaaS.md#L7)                                                    |
 | Networking                              | [Cloud interconnect Gold SW (10 Gbps max throughput)](PaaS.md#gold)                                                    |
-| Storage                              | [Block Storage (1000 GB) - High Density](PaaS.md#block-storage)                      |
 <figcaption>List of services for the Networking family</figcaption>
 
 | FAMILY                               | LIST OF SERVICES                                            |

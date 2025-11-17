@@ -17,7 +17,7 @@ Below is the list of services belonging to the Compute family:
     - Pool Medium
     - Pool Large
     - Pool X-Large
-- [Shared-IaaS (VMs)](#VM)
+- [Shared-IaaS (VMs)](#VMs)
     - VM Small
     - VM Medium
     - VM Large
@@ -38,12 +38,12 @@ Data from physical resources is encrypted and kept secure throughout all phases 
 The Private IaaS (Confidential) services are based on the use of the Proxmox virtualizer, which allows the provision of IaaS services with confidential computing capabilities.  
 Depending on the pool of computing resources required for each individual Organization, the most suitable service from the four available types can be selected:
 
-| Pool                   | Contained Elements                                |
+| Type                   | Contained Elements                                |
 | -----------------------| ------------------------------------------------- |
-| Small (Confidential)   | 3 Hosts (2xCPU 24 Core - 512 GB RAM - 32 TB SSD)  |
-| Medium (Confidential)  | 6 Hosts (2xCPU 24 Core - 512 GB RAM - 32 TB SSD)  |
-| Large (Confidential)   | 9 Hosts (2xCPU 24 Core - 512 GB RAM - 32 TB SSD)  |
-| X-Large (Confidential) | 12 Hosts (2xCPU 24 Core - 512 GB RAM - 32 TB SSD) |
+| Pool Small (Confidential)   | 3 Hosts (2xCPU 24 Core - 512 GB RAM - 32 TB SSD)  |
+| Pool Medium (Confidential)  | 6 Hosts (2xCPU 24 Core - 512 GB RAM - 32 TB SSD)  |
+| Pool Large (Confidential)   | 9 Hosts (2xCPU 24 Core - 512 GB RAM - 32 TB SSD)  |
+| Pool X-Large (Confidential) | 12 Hosts (2xCPU 24 Core - 512 GB RAM - 32 TB SSD) |
 <figcaption>List of elements for each private IaaS pool </figcaption>
 
 #### Features and Advantages
@@ -75,12 +75,12 @@ They provide users with virtualized computing resources—such as CPU, memory, s
 The services are implemented using the Proxmox virtualizer, with a customized version offering Confidential Computing capabilities. Each user operates in a logically isolated environment, sharing the underlying hardware with other tenants. Data from physical resources is encrypted and kept secure during all phases of use (at rest, in transit, and in use), leveraging the Confidential Computing paradigm.  
 Depending on the resource pool required by each individual organization, the most suitable service can be selected from the four available types:
 
-| Type       | Contained Elements |
+| Type        | Contained Elements |
 | ---------- | ------------------ |
-| VM Small   | 2 Vcpu 4 GB RAM    |
-| VM Medium  | 4 Vcpu 8 GB RAM    |
-| VM Large   | 8 Vcpu 16 GB RAM   |
-| VM X-Large | 16 Vcpu 32 GB RAM  |
+| VM Small (Confidential)  | 2 Vcpu 4 GB RAM    |
+| VM Medium (Confidential) | 4 Vcpu 8 GB RAM    |
+| VM Large (Confidential)  | 8 Vcpu 16 GB RAM   |
+| VM X-Large (Confidential)| 16 Vcpu 32 GB RAM  |
 <figcaption>List of elements for each VMs type </figcaption>
 
 #### Features and Advantages

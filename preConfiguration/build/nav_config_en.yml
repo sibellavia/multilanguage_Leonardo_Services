@@ -1,10 +1,11 @@
 nav:
-- Leonardo Services Overview: index.md
+- Overview: index.md
 - Infrastructure as a Service (IaaS) Category: IaaS.md
 - Container as a Service (CaaS) Category: CaaS.md
 - Platform as a Service (PaaS) Category: PaaS.md
-- Test Account: Test.md
-- Data Center: DC.md
-- Service Level Agreement (SLA): SLA.md
-- IT Service Management (ITSM): ITSM.md
+- Service Prices: Price.md
 - Service Provisioning: Provisioning.md
+- Service Management: ITSM.md
+- Test Account: Test.md
+- Data Center description: DC.md
+- Service Level Agreement (SLA): SLA.md

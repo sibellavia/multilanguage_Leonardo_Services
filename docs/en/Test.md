@@ -1,1 +1,36 @@
-# Test Account
+# Test Account request
+
+This section defines the process for provisioning test accounts requested by customers, ensuring delivery within 10 days from the date of a complete and validated request.  
+The process ensures that all customer requests for test accounts are handled in a controlled, timely, and secure manner. It includes request intake, validation, approval, provisioning, and delivery.
+
+## Request submission process
+
+Below you can view the sequence of the process for requesting a test account by an authorized user.
+
+1) The customer submits a request via email to the designated support address. The request have to include:
+
+    - Purpose of the test account
+    - Number of accounts required
+    - Specific access or roles needed
+    - Contact details of the requester
+
+2) The request is logged in the ticketing system upon receipt.
+
+3) The Service Desk reviews the request to ensure completeness and technical feasibility. If additional information is required, the customer is contacted. The 10-day SLA starts once the request is validated as complete.
+
+4) The Technical Team creates the test account(s) and applies:
+
+    - Minimum required permissions
+    - Applicable security policies
+    - Expiration settings (if required)
+
+    A functionality check is performed to confirm proper access.
+
+5) Within 10 business days, the customer receives an email including:
+
+    - Credentials or activation instructions
+    - Overview of assigned permissions
+    - Account validity period
+    - Contact information for support
+
+    The ticket is now then closed.

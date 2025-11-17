@@ -61,12 +61,13 @@ The following table lists the services included in the Platform as a Service (Pa
 | Database                             | [PaaS GraphDB](#graphDB)                                               |
 | Database                             | [PaaS NoSQL - MongoDB](#mongoDB)                                               |
 | Database                             | [PaaS In Memory - Redis](#redis)                                               |
-| Networking                              | [PaaS CDN (Content Delivery Network)](#CDN)                         |
-| Networking                              | [PaaS Domain Name System (DNS)](#DNS)                               |
-| Networking                              | [Single public IP](#IP)                         |
-| Networking                              | [L7 Load Balancer (regional)](#L7)                                                    |
-| Networking                              | [Cloud interconnect Gold SW (10 Gbps max throughput)](#gold)                                                    |
+| Networking                           | [PaaS CDN (Content Delivery Network)](#CDN)                         |
+| Networking                           | [PaaS Domain Name System (DNS)](#DNS)                               |
+| Networking                           | [Single public IP](#IP)                         |
+| Networking                           | [L7 Load Balancer (regional)](#L7)                                                    |
+| Networking                           | [Cloud interconnect Gold SW (10 Gbps max throughput)](#gold)                                                    |
 | Storage                              | [Block Storage (1000 GB) - High Density](#block-storage)                      |
+| Hybrid                               | [Edge Location](#egde)                      |
 <figcaption>List of families and related PaaS services</figcaption>
 
 ## Compute Family
@@ -1939,10 +1940,10 @@ Below is the list of services belonging to the Artificial Intelligence (AI) fami
 - [Speech to Text](#speech-to-text)
 - [AI Audio & Video Analytics](#AI-audio-video)
 - [OCR](#AI-OCR)
-- [Text Analytics](#AI-text)
+- [Text Analytics/NLP](#AI-text)
 - [Translation](#AI-translation)
 - [AI Search - RAG](#AI-search)
-- [AI Platform](#AI-platform)
+- [PaaS - AI Platform](#AI-platform)
 - [AI SLM/LLM](#AI-SLM-LLM)
 - [AI workflow](#AI-workflow)
 - [Vector DB](#AI-vectorDB)
@@ -2109,7 +2110,7 @@ The service offers the following advantages:
 
 <a id="AI-text"></a>
 
-### Text Analytics
+### Text Analytics/NLP
 
 ![Text Analytics Service](assets/images/extract/media/Text.png)
 
@@ -2157,7 +2158,7 @@ The service offers the following advantages:
 
 <a id="AI-translation"></a>
 
-### Text Translation
+### Translation
 
 ![Text Analytics Service](assets/images/extract/media/Translation.png)
 
@@ -2250,7 +2251,7 @@ The service offers the following advantages:
 
 <a id="AI-platform"></a>
 
-### AI Platform
+### Paas - AI Platform
 
 ![AI Platform Service](assets/images/extract/media/AIplatform.png)
 
@@ -2390,7 +2391,7 @@ The service offers the following advantages:
 
 <a id="AI-vectorDB"></a>
 
-### Vector DB
+### AI Vector DB
 
 ![Vector DB Service](assets/images/extract/media/Vector.png)
 
@@ -2807,7 +2808,7 @@ The service offers the following advantages:
 
 <a id="mongoDB"></a>
 
-## PaaS NoSQL - MongoDB
+### PaaS NoSQL - MongoDB
 
 ![MongoDB client interface](assets/images/extract/media/mongoDB.png)
 
@@ -2858,7 +2859,7 @@ The service offers the following advantages:
 
 <a id="redis"></a>
 
-## PaaS In Memory- Redis
+### PaaS In Memory- Redis
 
 ![Redis client interface](assets/images/extract/media/redis.png)
 
@@ -2882,7 +2883,7 @@ The PaaS Redis service is designed for applications that require extremely fast 
 
 The main features of the Paas In Memory Redis are:
 
-- *In-memory* → data is stored in RAM, ensuring extremely fast access;
+- *In-memory* → data is stored in RAM, ensurig extremely fast access;
 - *Persistence* → supports data persistence on disk, preventing data loss in the event of a system reboot;
 - *Data type* → variety of data types, allowing for modeling different types of information;
 - *Pub/Sub *→ supports the publish/subscribe model for real-time communication between applications.
@@ -2921,7 +2922,7 @@ The service offers the following advantages:
 Below is the list of services belonging to the Networking family:
 
 - [Paas CDN (Content Delivery Network)](#CDN)
-- [PaaS DNS (Domain Name System)](DNS)
+- [PaaS DNS (Domain Name System)](#DNS)
 - [Single public IP](#IP)
 - [L7 Load Balancer (regional)](#L7)
 - [Cloud interconnect Gold SW (10 Gbps max throughput)](#gold)
@@ -3213,3 +3214,47 @@ The service offers the following advantages:
 - *Enhanced data protection* → built-in replication, self-healing, and monitoring reduce risk of data loss.
 - *Simplified backup and recovery* → volume snapshots enable fast backup operations. Easy rollback to previous storage states.
 - *Enterprise-grade reliability* → Ceph’s distributed architecture provides continuous service availability and resilience.
+
+## Hybrid Family
+
+Below is the list of services belonging to the Hybrid family:
+
+- [Edge Location](#edge)
+
+<a id="edge"></a>
+
+### Edge Location Service
+
+#### Services Description
+
+The Edge Location Service provides a localized computing platform delivered across distributed edge locations, designed to offer low-latency processing, high availability, and centralized management.  
+Built on Proxmox Virtual Environment as the core virtualization layer and integrated with a Leonardo Secure Cloud Management Platform (SCMP) for orchestration, automation, and governance, the service enables customers to deploy, manage, and scale applications and workloads directly at the edge, close to the point of data generation or consumption.  
+The edge infrastructure operates as an extension of the corporate or hybrid cloud environment, maintaining consistent operational standards, security policies, and automation capabilities.
+
+#### Features and Advantages
+
+The main functional capabilities of the service are:
+
+- *Application Hosting* → execution of container-based or virtual machine–based applications. Support for real-time workloads, IoT scenarios, and local data processing. Automated provisioning of application environments via CMP orchestration.
+- Multi-tenant resource management → logical segmentation of resources for tenants or business units. Quota-based allocation of CPU, memory, storage, and network resources. Role-based access and differentiated permissions.
+- *Automation & orchestration* → automated provisioning of VMs, containers, and PaaS components. Standardized deployment workflows. Full lifecycle management of workloads (creation, update, decommissioning).
+- *Governance & security* → integration with Identity & Access Management (IAM) systems. Enforcement of compliance and security policies. Centralized logging, audit trail capabilities, and continuous monitoring
+-  *High availability & resilience* → Proxmox high-availability clustering with automated failover. Fault isolation and hardware resilience. Integrated backup and restore capabilities
+
+The Architectural components are: 
+
+- *Edge Compute Layer (Proxmox VE)* → KVM hypervisor and LXC container virtualization. Proxmox clusters with distributed resource management. Local or distributed storage (Ceph, ZFS, or shared storage systems). Virtual networking using bridges, VLANs, and SDN capabilities
+- *Secure Cloud Management Platform (SCMP)* → Central orchestration system managing all edge locations. Self-service portal for tenants and administrators. Policy engine for governance, permissions, and compliance enforcement. Monitoring, metering, and alerting functionalities. PIs for integration with external systems (CI/CD, ITSM, ERP)
+-* Networking & connectivity* → secure connectivity between edge locations and datacenters (VPN, SD-WAN, MPLS). Network segmentation via virtualization technologies. Support for public and private addressing of workloads
+- *Integration with enterprise systems* → integration with corporate authentication systems (LDAP, AD, SSO). Optional integration with Kubernetes for container-native workloads. Interoperability with public cloud platforms as part of a hybrid cloud model
+
+The service offers the following advantages:
+
+- *Reduced latency* → processing occurs closer to the data source, improving performance for IoT, analytics, and real-time applications.
+- *Operational continuity* → edge sites remain functional even in the event of connectivity loss to the central datacenter.
+- *Local data compliance* → data remains within specific geographic boundaries, enabling regulatory adherence.
+- *Accelerated innovation* → new services can be deployed rapidly across multiple sites using centralized orchestration.
+- *Unified management* → a single platform controls all edge and cloud resources. Lower operational costs through automation of provisioning and routine maintenance.
+- *Modular scalability* → the edge infrastructure can be expanded quickly with new nodes. Enhanced security through consistent policies and centralized logging.
+- *Architectural flexibility* → support for VM-based, containerized, and mixed workloads.
+- *Operational efficiency* → standardized processes for deployment, updates, and governance.
