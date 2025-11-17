@@ -121,6 +121,11 @@ The following table lists the various families and their related services.
 | Storage                              | [Block Storage (1000 GB) - High Density](PaaS.md#block-storage)                      |
 <figcaption>List of services for the Storage family</figcaption>
 
+| FAMILY                               | LIST OF SERVICES                                            |
+| ------------------------------------ | ----------------------------------------------------------- |
+| Hybrid                               | [Edge Location](PaaS.md#edge)                      |
+<figcaption>List of services for the Storage family</figcaption>
+
 From a logical-functional point of view, the Leonardo's services can be divided into three macro-categories:
 
 - [Infrastructure as a Service (IaaS)](IaaS.md)  
