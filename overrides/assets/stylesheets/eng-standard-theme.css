@@ -128,6 +128,8 @@
         display: flex !important;
         justify-content: center !important;
         width: 100% !important;
+        margin: 1.5em -.8rem 0.2em -.8rem !important; /* Più spazio sopra (1.5em), meno sotto (0.2em) */
+        
     }
     
     th, td {
