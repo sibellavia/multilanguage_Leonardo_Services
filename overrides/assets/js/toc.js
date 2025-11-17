@@ -61,8 +61,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Funzione per trasformare i link anchor da path/# a path/index.html#
+    function fixAnchorLinks() {
+        // Seleziona tutti i link nel documento
+        let allLinks = document.querySelectorAll('a[href]');
+        
+        allLinks.forEach(link => {
+            let href = link.getAttribute('href');
+            if (href) {
+                // Controlla se il link ha il pattern path/#anchor (ma non inizia con #)
+                let anchorMatch = href.match(/^([^#]+)\/#{1}(.+)$/);
+                if (anchorMatch) {
+                    let path = anchorMatch[1]; // La parte prima di /#
+                    let anchor = anchorMatch[2]; // La parte dopo #
+                    
+                    // Trasforma in path/index.html#anchor
+                    let newHref = path + '/index.html#' + anchor;
+                    link.setAttribute('href', newHref);
+                    console.log('Fixed anchor link:', href, '->', newHref);
+                }
+            }
+        });
+    }
 
     // Esegui le funzioni
     fixSidebarIndexLinks();
     fixLogoLink();
+    fixAnchorLinks();
 });
