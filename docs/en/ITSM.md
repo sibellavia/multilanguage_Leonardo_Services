@@ -17,6 +17,8 @@ The ITIL® framework has been used as a reference for delivering and improving s
 
 ## Process Steps
 
+This section lists the process sequences for customer support requests.
+
 1) **Ticket Intake**  
 Customer requests may be submitted via email.  
 Upon receipt, the Service Desk (or designated support function) performs:
@@ -48,18 +50,7 @@ Assignment criteria include:
 
 The resolver group assumes ownership of the ticket until resolution.
 
-4) **Assignment**  
-After classification, the ticket is routed to the appropriate resolver group (e.g., Infrastructure, Application Support, Network Operations, Security, Service Delivery).  
-Assignment criteria include:
-
-- Required technical expertise.
-- Workload distribution.
-- Escalation rules.
-- Operational hours and on-call availability.
-
-The resolver group assumes ownership of the ticket until resolution.
-
-5) **Investigation and Resolution**  
+4) **Investigation and Resolution**  
 The assigned team performs root-cause investigation, corrective actions, or fulfillment activities depending on the ticket type.  
 Typical activities include:
 
@@ -71,7 +62,7 @@ Typical activities include:
 
 Progress is continuously updated in the ticketing system.
 
-6) **Customer Communication**  
+5) **Customer Communication**  
 The customer is informed throughout the lifecycle of the ticket, including:
 
 - Acknowledgement of receipt
@@ -81,7 +72,7 @@ The customer is informed throughout the lifecycle of the ticket, including:
 
 Communication follows predefined templates and response-time commitments.
 
-7) **Ticket Closure**  
+6) **Ticket Closure**  
 A ticket is closed only when:
 
 - The solution has been delivered and validated.

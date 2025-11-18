@@ -2,7 +2,7 @@
 
 This section defines the terms, metrics, and service commitments applicable to the services offered and described.
 
-## Availability Calculation
+## Availability calculation
 
 The Uptime Annual Percentage of the services is determined as follows:
 

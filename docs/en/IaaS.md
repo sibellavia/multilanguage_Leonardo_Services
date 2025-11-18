@@ -1,10 +1,10 @@
 # Infrastructure as a Service (IaaS)
 
-The following table lists the services falling under the Infrastructure as a Service (IaaS) category.
+The following table lists the services included in the *Infrastructure as a Service (IaaS)* category.
 
 | FAMILY  | LIST OF SERVICES                                                                                                    |
 | ------- | ------------------------------------------------------------------------------------------------------------------- |
-| Compute | [Confidental private IaaS](#pool-confidential-services)|
+| Compute | [Confidental Private IaaS](#pool-confidential-services)|
 | Compute | [Shared-IaaS (VMs)](#VMs)|
 <figcaption>List of families and related IaaS services</figcaption>
 
@@ -12,7 +12,7 @@ The following table lists the services falling under the Infrastructure as a Ser
 
 Below is the list of services belonging to the Compute family:
 
-- [Confidental private IaaS](#pool-confidential-services)
+- [Confidental Private IaaS](#pool-confidential-services)
     - Pool Small
     - Pool Medium
     - Pool Large
@@ -25,11 +25,11 @@ Below is the list of services belonging to the Compute family:
 
 <a id="pool-confidential-services"></a>
 
-### Confidental private IaaS
+### Confidental Private IaaS
 
-![Confidental private IaaS architecture](assets/images/extract/media/iaasprivate.png)  
+![Confidental Private IaaS Architecture](assets/images/extract/media/iaasprivate.png)  
 
-![Confidental private IaaS administration using the Proxmox virtualizer](assets/images/extract/media/iaasprivate_02.png)
+![Administration of Confidental Private IaaS](assets/images/extract/media/iaas_admin.png)
 
 #### Services Description
 
@@ -64,9 +64,11 @@ The services offer the following advantages:
 
 ### Shared-IaaS (VMs)
 
-![How to create a VM using Proxmox](assets/images/extract/media/VMs.png)  
+![How to create a VM - Step 1](assets/images/extract/media/VM_create.png)  
 
-![How to visualize a VM using Proxmox](assets/images/extract/media/VMs_02.png)
+![How to create a VM - Steo 2](assets/images/extract/media/VM_create02.png)  
+
+![How to visualize a VM](assets/images/extract/media/VM_view.png)
 
 #### Services Description
 
