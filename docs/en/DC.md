@@ -24,11 +24,13 @@ Specifically, the following table shows the DC association for each region:
 Below are the distances between the DCs of each Region.
 
 Region A:
+
 - DC RM 1 - DC RM 2: approximate distance 30 km
 - DC RM 1 - DC RM 3: approximate distance 30 km
 - DC MR 2 - DC RM 3: approximate distance 15 km
 
 Region B:
+
 - DC MI 1 - DC MI 2: approximate distance 53 km
 - DC MI 1 - DC MI 3: approximate distance 54 km
 - DC MI 2 - DC MI 3: approximate distance 10 km
@@ -36,9 +38,12 @@ Region B:
 All data centers are equipped with all the necessary technical and technological infrastructure to guarantee the highest quality standards in terms of reliability, availability, and physical security. 
 
 The three AZs are interconnected via a proprietary backbone, which guarantees complete redundancy, negligible latency, and private connectivity, logically characterizing the Regions as a single virtual Data Center (Software Defined Data Center).  
+
 The Regions are also interconnected via the same proprietary, dedicated, and reserved backbone with IP/MPLS network transmission, enabling a flexible, software-defined logical network architecture, ensuring the mobility of application loads and the inherent high reliability of Cloud solutions.  
-Within an Availability Zone, workloads are transparently distributed, and the HA (High Availability) configuration enables infrastructure service continuity (Business Continuity) between the three Data Centers in the same Region.  
+Within an Availability Zone, workloads are transparently distributed, and the HA (High Availability) configuration enables infrastructure service continuity (Business Continuity) between the three Data Centers in the same Region. 
+
 Thanks to this basic configuration, the Cloud platform will also provide data distribution between the three zones of each Region. This configuration is possible thanks to the distribution of storage space (identified with the best Storage Array technologies available on the IT market) within the three AZs and, therefore, thanks to the continuous replication of data for the service chosen by each individual organization. Therefore, if an individual organization decides to leverage the full redundancy of its infrastructure (physical or virtual), it can leverage the Cloud platform's HA configuration and create DR/BC solutions.  
+
 The unique nature of the Cloud platform, thanks to the backbone interconnecting the three AZs that make up each Region, will enable synchronous and asynchronous data replication between the Storage Array systems that make up the Storage Tier. In this operational context, the individual organization will benefit from the Cloud platform's inherent ability to reactivate workloads within one of the three AZs or in a different Region. Restarting workloads protected by the activated DR/BC solution will therefore allow the individual organization to independently manage the restart of each application, based on its own DR or BC plans.
 
 ## Network description
@@ -48,7 +53,8 @@ The network is structured around three main components: Data Center Interconnect
 ### Data Center Interconnection (DCI)
 
 Interconnection between the Data Centers relies on a high-capacity transport infrastructure built to ensure minimal latency, fault tolerance, and uninterrupted service.  
-Key elements include:  
+Key elements include:
+
 - IP/MPLS backbone, fully redundant and optimized for reliable, resilient routing.
 - DWDM (Dense Wavelength Division Multiplexing) technology supporting high-capacity optical transmission with very low latency.
 - VLAN-based segmentation, ensuring logical isolation of traffic domains and multi-tenant environments for different Organizations.
@@ -60,10 +66,12 @@ The DCI enables operation in a multi-region configuration with three Availabilit
 
 The WAN provides secure, high-performance connectivity to external networks, supporting access to the services.  
 It includes:
+
 - Shared Internet connectivity, offering controlled access to the services.
 - Traffic profiling tools for bandwidth management, flow optimization, and congestion prevention.
 - IDS and APM systems, ensuring threat detection and performance monitoring.
-- Additional services, such as: 
+- Additional services, such as:
+
     - Dedicated line aggregation.
     - VPN connectivity.
     - Special-purpose links for data migration.
@@ -74,10 +82,12 @@ The WAN ensures each Organization has isolated, secure channels for interacting 
 ### Local Area Network (LAN) 
 
 The LAN infrastructure within each data center adopts a modular and redundant design with two possible configurations:
+
 - Shared network devices used and distributed across one or more DCs.
 - Dedicated devices, also deployable in single-site or dual-site mode.
 
 The LAN is designed to ensure:
+
 - High availability
 - Strong segmentation of customer environments
 - Horizontal scalability
@@ -92,6 +102,7 @@ This section lists the general characteristics and technical specifications of t
 
 The architecture is designed to meet high standards for security, resilience, and sustainability, aligned with TIER III certifications and current regulatory requirements.  
 The Data Centers are selected and designed to reduce environmental and external risks:
+
 - Located in seismic zones classified as zone ≥3.
 - Sited away from coasts, major rivers, and heavily trafficked areas.
 - Positioned near metropolitan zones while maintaining low risk.
@@ -108,6 +119,7 @@ This section lists the technical specifications for each Data Center.
 ##### DC RM 1 (Rome)
 
 **General specifications**
+
 - Total surface area: 10.730 m² 
 - Data hall surface area: 3.120 m² 
 - Number of independent data rooms: 6 
@@ -116,6 +128,7 @@ This section lists the technical specifications for each Data Center.
 - Secure location in terms of hydro-geological risks
 
 **Building** 
+
 - Height of the data hall: 3,5 m 
 - Height of upper plenum: 1,4 m 
 - Height of lower plenum:  1,95 m 
@@ -126,6 +139,7 @@ This section lists the technical specifications for each Data Center.
 - Double loading bay
 
 **Certifications and compliance** 
+
 - ANSI/TIA 942-C-2024 Rating 4 (formerly Tier 4)
 - ISO 9001 - Quality of services offered
 - ISO 14001 - Environmental management system 
@@ -136,21 +150,26 @@ This section lists the technical specifications for each Data Center.
 - ISO 20000-1 - IT services management
 
 **Services** 
+
 - Colocation solutions: rack portions; dedicated racks; cage; dedicated rooms 
 - Power per rack: from 14 kW for standard configuration up to 40 kW for a customized project 
 - IT power individual room: 1 MW (powered by 2 redundant modules)
+
     - Remote hands
     - Shared warehouses, or dedicated to individual customers
     - Shared offices, or dedicated to individual customers
 
 **Connectivity** 
+
 - Point of entrance: 6 
 - Entrance Room: 2 
 - Main Distribution Area (MDA): 2 
+
     - Carrier neutral data center
     - Provision of managed connectivity
 
 **Energy** 
+
 - Total power: 6 MW IT 2N (redundant) 
 - UPS redundancy: 2N+1 
 - UPS type: double conversion static 
@@ -161,12 +180,14 @@ This section lists the technical specifications for each Data Center.
 - Full load run time: 24h in emergency conditions,  48h in standard conditions, refill within 12h
 
 **Cooling** 
+
 - Cooling type: Chilled water  - water to air system 
 - Normal mode: air/water chiller to indirect free cooling 
 - Chiller redundancy: 2N 
 - CRAH redundancy: 2N
 
 **Security** 
+
 - CCTV
 - 24/7/365 security
 - Separate parking for employees/visitors
@@ -179,9 +200,11 @@ This section lists the technical specifications for each Data Center.
 - Building Management System (BMS)
 
 **Fire prevention system** 
+
 - Air exchange: 2vol/h 
 - Extinguishing system: inert gas  Extinguishing gas: IG-541 
 - Redundancy of extinguishing cylinders: 2N 
+
     - Highly sensitive smoke detection system
     - Underfloor liquid loss detection system
     - Fire detection and extinguishing system in each single module
@@ -190,37 +213,45 @@ This section lists the technical specifications for each Data Center.
 ##### DC RM 2 (Acilia-Rome)
 
 **General specifications**
+
 - Total surface area: 8.000 m²
 - Powered by two separate medium-voltage lines, each coming from distinct ACEA substations, ensuring electrical redundance
 
 **Certifications and compliance** 
+
 - Certified at Tier IV level, the highest standard for redundancy and uptime
 - It holds ANSI/TIA-942 Rating 4 for facility design
 - Management and operations standards include:
+
     - ISO 50001 (energy management) 
     - ISO 14001 (environmental management) 
     - ISO 27001 (information security) 
     - ISO 20000-1 (IT service management) and ISO 22301 (business continuity) 
     - ISO 9001 (quality management) 
+
 - The facility adheres to the European Data Center Code of Conduct for energy efficiency.
 
 **Connectivity** 
+
 - It uses dual-ring fiber connectivity via two distinct Points of Entry (POEs), connecting to an optical backbone through POPs both located in Rome. 
 - The internal campus distribution ensures physically separate fiber paths between POEs and the meet-me rooms / data halls. 
 - The three AZs in Region A are interconnected via DWDM (Dense Wavelength Division Multiplexing) links, at high capacity, with a proprietary backbone for redundancy and low-latency.
 
 **Energy** 
+
 - It is powered with 100% renewable energy, aligning with TIM’s sustainability targets. 
 - An onsite photovoltaic installation providing up to 75,000 W (75 kW) capacity. 
 - Energy management systems are real-time: the infrastructure monitors electrical and thermal parameters to drive predictive maintenance and efficiency optimizations.
 
 **Cooling** 
+
 - The cooling architecture uses air delivered via raised floor systems, with return air collected in alternating ceiling plenums. 
 - It includes free-cooling, using external air when conditions allow, to reduce the energy used by mechanical refrigeration. 
 - Geothermal heat exchangers (ground-based dispersers) are used for heat rejection from chillers when needed. 
 - A Building Management System (BMS) monitors temperature, humidity, and airflow to optimize when and how cooling is deployed
 
 **Security** 
+
 - External and internal fencing, with anti-climb perimeter protection. 
 - Armed security guard presence. 
 - Video surveillance (CCTV) throughout the site. 
@@ -232,6 +263,7 @@ This section lists the technical specifications for each Data Center.
 - The facility complies with the PSN’s Technical Security Measures (MTMS), which define guidelines for logical segmentation, risk management, and protection
 
 **Fire prevention system** 
+
 - The Data Center is equipped with Very Early Smoke Detection Apparatus (VESDA) or similarly sensitive smoke detection systems to detect fire in its early stages
 - The fire suppression uses 3M Novec 1230 as the extinguishing agent: it's electrically non-conductive, volume-expanding, and designed to absorb heat to inhibit the combustion reaction. 
 - The fire suppression system has redundancy to provide 2N (fully redundant) coverage and ensure reliability in case of activation
@@ -239,46 +271,57 @@ This section lists the technical specifications for each Data Center.
 ##### DC RM 3 (Pomezia-Rome)
 
 **General specifications**
+
 - The campus comprises a total area of ~51.000 m², with 13 system-rooms and 6 telecom rooms
 
 **Building** 
+
 - The PISP building within Pomezia is elevated and built with a 0.9 m raised floor, offering enhanced protection in case of flooding
 - Power is provided via two separate 20 kV medium-voltage lines from an ACEA substation, giving high reliability and redundancy
 - The primary electrical distribution is designed with redundancy: primary distribution uses an N+1 logic, while secondary distribution is a+b (or N+1) with dual radial path
 
 **Certifications and compliance** 
+
 - The data center meets Uptime Institute Tier III standard
 - It has ANSI/TIA-942 Rating 3 certification for facility design
 - The system is compliant with multiple ISO standards: ISO 50001 (energy management), ISO 14001 (environmental management), ISO 9001 (quality), ISO 27001 (information security), ISO 22301 (business continuity)
 
 **Services** 
+
 - The Pomezia site supports a full suite of cloud services for public administrations, including:
+
     - IaaS (shared and dedicated) 
     - PaaS, container-based services (CaaS), and data protection (backup, disaster recovery) solutions
     - Managed hosting and housing options
+
 - Operational governance ensurs data sovereignty, process control, and strong operational security
 
 **Connectivity** 
+
 - Connected via a dual-fiber ring: two independent paths link it to main ISP'score network via the POPs both located in Rome
 - The internal campus network ensures physically separate fiber routes between Points of Entry (POEs), meet-me rooms, and system rooms for redundancy
 
 **Energy** 
+
 - The electrical supply uses redundant medium-voltage (20 kV) lines, ensuring high availability
 - It uses two diesel generators plus two DRUPS (UPS + generator combo) for backup power
 - Fuel storage: there are two 15,000-litre double-walled diesel tanks with leak detection, strictly for emergency use
 - It aims for sustainability: adhere to green energy standards.
 
 **Cooling** 
+
 - The cooling system is built with dual-loop refrigerant circulation (two independent loops) to remove heat efficiently across the campus
 - On the rooftop, there are redundant chillers (N+1), ensuring that if one fails, thermal rejection can continue without service interruption
 - Inside the system rooms, there are approximately 120 air-conditioning units to manage local heat load
 
 **Security** 
+
 - Physical security is multilayered: perimeter protection, intrusion detection, surveillance, and access control
 - Access to sensitive rooms is controlled through security airlocks (“mantraps”) and requires badge-based authentication
 - Cybersecurity is managed through a Security Operation Center (SOC), with continuous monitoring, threat detection, and incident response
 
 **Fire prevention system** 
+
 - The security manual (MTMS) mandates very early smoke detection systems to detect fire risk promptly
 - Fire suppression likely uses inert, clean agents suitable for data centers, to avoid damaging sensitive IT gear
 - The fire protection architecture is designed with redundancy, according to high-availability and resilience standards
@@ -288,6 +331,7 @@ This section lists the technical specifications for each Data Center.
 ##### DC MI 1 (Aruba)
 
 **General specifications**
+
 - Total surface area: 17.600 m2 
 - Data hall surface area: 8.050 m2  
 - Number of independent data rooms: 10
@@ -295,16 +339,19 @@ This section lists the technical specifications for each Data Center.
 - Secure location in terms of hydro-geological risks
 
 **Building** 
+
 - Height of the data hall: 3,5 m 
 - Height of upper plenum: 2,5 m 
 - Height of lower plenum: 2 m 
 - Load capacity of the floating floor : 2.000kg/m²(distributed load) 1.000 kg/m² (concentrated load in one place) 
 - External firewalls: REI 240 
 - Internal firewalls: REI 120
+
     - Double insulation with defrost system 
     - Double loading bay
 
 **Certifications and compliance** 
+
 - ANSI/TIA 942-B-2017 Rating 4 (formerly Tier 4)
 - GO - Guarantee of Energy Origin
 - Code of Conduct for Data Center Energy Efficiency 
@@ -318,23 +365,28 @@ This section lists the technical specifications for each Data Center.
 - ISO/IEC 27035 – Managing security incidents and events
 
 **Services** 
+
 - Colocation solutions: rack portions; dedicated racks; cage; dedicated rooms 
 - Power per rack: up to 40kW 
 - IT power individual room: 1.5 MW (powered by 2 redundant modules)
+
     - 24h Smart hands
     - 24h Remote hands&eyes
     - Shared warehouses, or dedicated to individual clients
     - Shared offices, or dedicated to individual clients
 
 **Connectivity** 
+
 - Point of entrance: 4 
 - Entrance Room: 2 
 - Main Distribution Area (MDA): 2
+
     - Carrier neutral data center
     - Provision of managed connectivity
     - Dual transmission system to Milan Internet eXchange (MIX)
 
 **Energy** 
+
 - Connection points to utilities: 2 
 - Total power: 12 MW IT 2N (redundant) 
 - UPS redundancy: 2N+1 
@@ -346,6 +398,7 @@ This section lists the technical specifications for each Data Center.
 - Full load run time: 26h in emergency conditions, 52h in standard conditions
 
 **Cooling** 
+
 - Cooling type: Chilled water - - water to water - water to air system 
 - Normal mode: Ground water cooling system 
 - Redundancy of heat exchangers: 2N 
@@ -354,6 +407,7 @@ This section lists the technical specifications for each Data Center.
 - CRAH redundancy: 2N
 
 **Security** 
+
 - CCTV
 - 24/7/365 security
 - Separate parking for employees/visitors
@@ -366,6 +420,7 @@ This section lists the technical specifications for each Data Center.
 - Building Management System (BMS)
 
 **Fire prevention system** 
+
 - Air replacement: 2vol/h 
 - Extinguishing system: inert gas 
 - Extinguishing gas: IG-541 
@@ -379,11 +434,13 @@ This section lists the technical specifications for each Data Center.
 ##### DC MI 2 (Basiglio-Milan)
 
 **General specifications**
+
 - Colocation Space: 2.380 m². 
 - Global uptime average of >99,999%
 - Energy: covered by 100% renewable energy
 
 **Building** 
+
 - Building type: 4-floor concrete structure
 - Floor type: Raised floor
 - Floor load capacity: 1.500 kg/m² 
@@ -431,35 +488,43 @@ Digital Infrastructure Services:
 - Network Edge
 
 **Connectivity** 
+
 - Access to 30+ carriers across the Milan metro ecosystem 
 - Direct peering through Equinix Internet Exchange™. 
 - Direct connectivity via Equinix Fabric® to distributed digital infrastructure
 - Access to MIX, TOP-IX and other interconnections at Via Caldera, Milan
 
 **Energy** 
+
 - Utility feeders: 1 × 3 MVA electrical feed
 - PS configuration: N+N
 - UPS redundancy: N+1
 - Standby power configuration:
+
     - 2 × 1,900 kVA diesel generators (mechanical load)
     - 4 × 1,400 kVA diesel generators (IT load)
+
 - Standby power redundancy: N+N. 
 - Power density: 1.0–7.0 kVA per cabinet
 
 **Cooling** 
+
 - Cooling configuration: Chilled water system
 - Cooling redundancy: N+1
 
 **Security** 
 
 Physical Security:
+
 - Mantrap entry
 - Proximity access card + PIN
 
 Human Security:
+
 - 24/7 on-site security officers
 
 Electronic Security:
+
 - PIN and card readers
 - Optional biometric readers for customer cages
 - CCTV with 7-day video retention
@@ -468,12 +533,14 @@ Electronic Security:
 **Fire prevention system** 
 
 Detection:
+
 - VESDA
 - HSSD (High Sensitivity Smoke Detection)
 - Visual and audio alarms
 - Double-knock activation
 
 Suppression agents:
+
 - Novec
 - FM200
 - Argon
@@ -481,6 +548,7 @@ Suppression agents:
 ##### DC MI 3 (Siziano-Milan)
 
 **General specifications**
+
 - The campus in Siziano (PV) hosts all hosting and cloud infrastructure used by CoreTech
 - Designed according to Tier IV multi-tenant data center standards offering unmatched connectivity
 - Located within a 100.000 m² campus, hosting Italy’s largest and most advanced data center
@@ -489,18 +557,22 @@ Suppression agents:
 - Highly focused on energy efficiency, using advanced cooling and climatization technologies.
 
 **Building** 
+
 - Constructed according to NTC anti-seismic regulations (D.M. 14/01/2008)
 - Double roof resistant to winds up to 280 km/h
 - Intumescent-coated metal structure for fire resistance
 - Perimeter walls of the technical area built to REI120 standards 
 - Flood-mitigation measures:
+
     - 3 m-high perimeter wall, waterproofed up to 1,5 m
     - Building elevation +1 m above primary urban level
     - Rain-water balance basin for extreme weather events
 - No water pipes inside the DC (air-based cooling)
+
 - Infrastructure benefits from 218 patented technologies (granted or pending)
 
 **Certifications and compliance** 
+
 - ISO 9001:2015 – Quality Management
 - ISO 14001:2015 – Environmental Management
 - OHSAS 18001 – Health & Safety Management
@@ -509,23 +581,29 @@ Suppression agents:
 - ANSI/TIA-942-B:2017 – Rating 4 (Tier IV)
 
 **Services** 
+
 - All hosting and cloud services by CoreTech rely on SUPERNAP Italia datacenter infrastructure
 - Full 24/7 monitoring of electrical, cooling, fire protection, perimeter security, and IP network systems
 
 **Connectivity** 
+
 - 100 fiber pairs with diversified routes in multi-carrier configuration provide connectivity to each data hall
 - All structured cabling (fiber, copper, electrical) runs through dedicated overhead trays
 
 **Energy** 
+
 - Campus powered by a redundant 132 kV high-voltage line, supporting up to 40 MW at full capacity 
 - Tri-redundant UPS system ensuring 100% availability
 - Electrical system engineered for Tier IV “system + system” (2N+1) requirements
+
     - Two completely independent electrical systems
     - Each capable of supporting the full facility load
     - Includes independent UPS, Bypass Modules, PDUs, RPPs
+
 - Racks receive dual power feeds (Feed A + Feed B), each from separate electrical systems.
 
 **Cooling** 
+
 - Cooling system based on modular AHUs (Air Handling Units)
 - Utilizes indirect evaporative cooling, with air-to-air heat exchangers cooled by external water systems
 - Designed to achieve PUE < 1.4 (estimated)
@@ -534,18 +612,22 @@ Suppression agents:
 **Security** 
 
 Physical Security:
+
 - Multilevel badge + numeric code access control
 - 24/7/365 security personnel and anti-intrusion systems. 
 - CCTV video surveillance with digital archiving (privacy-compliant)
 
 Data Hall Security:
+
 - 4 data halls (expandable to 6), up to 1,056 racks per hall 
 - Racks organized into T-SCIF islands (Thermal Separate Compartment in Facility)
+
     - Complete separation of hot and cold airflows
     - Cage-protected
     - Maximizes density and thermal efficien
 
 **Fire prevention system** 
+
 - Intumescent paint on metal structures
 - REI120 fire-resistant perimeter walls around technical areas 
 - Part of the electrical and environmental risk-mitigation strategy includes fire-resistant compartmentalization
