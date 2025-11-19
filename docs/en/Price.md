@@ -9,6 +9,7 @@ For each service, you can choose from three alternative purchase options:
 - *Three-year Reserved Subscription* with upfront payment upon activation and testing of the service.
 
 {:.col-4-60}
+
 | Family | Service | Metric (unit of measurement) | Metric (unit value) | Monthly Subscription | Annual Reserved Subscription | Three-year Reserved Subscription |
 | ------ | ------- | ---------------------------- | ------------------- | -------------------- | ---------------------------- | -------------------------------- |
 | Compute | [Pool Small (Confidential)](IaaS.md#pool-confidential-services)| Hosts number| 3 Host Number (2x 24 Core CPU - 512 GB RAM - 32 TB SSD)| 21.586,03 €| 233.129,08 €| 621.677,54 €|
@@ -24,6 +25,7 @@ For each service, you can choose from three alternative purchase options:
 <figcaption>Price list of the Compute Family Services</figcaption>
 
 {:.col-3-60}
+
 | Family | Service | Metric (unit of measurement) | Metric (unit value) | Monthly Subscription | Annual Reserved Subscription | Three-year Reserved Subscription |
 | ------ | ------- | ---------------------------- | ------------------- | -------------------- | ---------------------------- | -------------------------------- |
 | Security | [Identity & Access Management (IAM) Service](PaaS.md#IAM)| Users| 100 users| 454,59 €| 4.909,58 €| 13.092,20 €|
@@ -40,6 +42,7 @@ For each service, you can choose from three alternative purchase options:
 <figcaption>Price list of the Security Family Services</figcaption>
 
 {:.col-4-40}
+
 | Family | Service | Metric (unit of measurement) | Metric (unit value) | Monthly Subscription | Annual Reserved Subscription | Three-year Reserved Subscription |
 | ------ | ------- | ---------------------------- | ------------------- | -------------------- | ---------------------------- | -------------------------------- |
 | Middleware | [PaaS API Management](PaaS.md#API)| Request| 500M API request| 24.900,56 €| 268.926,08 €| 717.136,23 €|
@@ -53,6 +56,7 @@ For each service, you can choose from three alternative purchase options:
 <figcaption>Price list of the Middleware Family Services</figcaption>
 
 {:.col-3-60}
+
 | Family | Service | Metric (unit of measurement) | Metric (unit value) | Monthly Subscription | Annual Reserved Subscription | Three-year Reserved Subscription |
 | ------ | ------- | ---------------------------- | ------------------- | -------------------- | ---------------------------- | -------------------------------- |
 | Data Protection | [Backup - PLATFORM](PaaS.md#backup)| TB| 1| 30,52 €| 329,62 €| 879,00 €|
