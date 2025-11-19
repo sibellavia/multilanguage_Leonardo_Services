@@ -1,4 +1,4 @@
-site_name: 'Documentazione Super Progetto'
+site_name: 'Leonardo Services Documentation'
 docs_dir: '../../docs/it'                           # Where to find the markdown files
 site_dir: '../../generated/it'                           # Where to put the HTML files
 
@@ -14,7 +14,8 @@ theme:
     - search.suggest
 extra_css:
   - assets/stylesheets/eng-standard-theme.css                   # CSS is shared by all languages
-  - assets/stylesheets/fabric.min.css 
+  - assets/stylesheets/fabric.min.css
+  - assets/stylesheets/table.css                   # CSS is shared by all languages 
   - assets/stylesheets/toc.css 
   - assets/stylesheets/language-switcher.css                    # Language switcher styles
 
@@ -26,7 +27,7 @@ plugins:
   - search:
       lang: it                       # Set language for search
   - render_swagger:
-      css: personalization/swagger-ui.css           # Correctly indented plugin config
+      css: swagger-ui.css           # Correctly indented plugin config
   - print-site:
       add_to_navigation: false
       print_page_title: 'Stampa'
@@ -43,10 +44,9 @@ plugins:
       enabled: true
 
 nav:
-- Home: index.md
-- Sviluppatori: developers.md
-- Amministrazione: Administration.md
-- PDF: ../pdf/SCMP_SUM_it.pdf
+- "<span class='ms-Icon ms-Icon--SecondaryNav'></span> Shared Features": developers.md
+- "<span class='ms-Icon ms-Icon--ViewDashboard'></span> Amministrazione": Administration.md
+- "<span class='ms-Icon ms-Icon--AddToShoppingList'></span> PDF": SCMP_SUM_it.pdf
 
 
 markdown_extensions:

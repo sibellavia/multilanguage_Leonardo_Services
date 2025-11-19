@@ -1,4 +1,4 @@
-site_name: 'Super Project Documentation (EN)'
+site_name: 'Leonardo Services Documentation'
 docs_dir: '../../docs/en'                           # Where to find the markdown files
 site_dir: '../../generated/en'                           # Where to put the HTML files
 
@@ -14,7 +14,8 @@ theme:
     - search.suggest
 extra_css:
   - assets/stylesheets/eng-standard-theme.css                   # CSS is shared by all languages
-  - assets/stylesheets/fabric.min.css 
+  - assets/stylesheets/fabric.min.css
+  - assets/stylesheets/table.css                   # CSS is shared by all languages 
   - assets/stylesheets/toc.css 
   - assets/stylesheets/language-switcher.css                    # Language switcher styles
 
@@ -26,7 +27,7 @@ plugins:
   - search:
       lang: en                       # Set language for search
   - render_swagger:
-      css: personalization/swagger-ui.css           # Correctly indented plugin config
+      css: swagger-ui.css           # Correctly indented plugin config
   - print-site:
       add_to_navigation: false
       print_page_title: 'Stampa'
@@ -43,11 +44,17 @@ plugins:
       enabled: true
 
 nav:
-- Home: index.md
-- Developers: developers.md
-- Administration: Administration.md
-- PDF: ../pdf/SCMP_SUM_en.pdf
-
+- Services Overview: index.md
+- Infrastructure as a Service (IaaS) Category: IaaS.md
+- Container as a Service (CaaS) Category: CaaS.md
+- Platform as a Service (PaaS) Category: PaaS.md
+- Hybrid Edge Category: Hybrid.md
+- Price List: Price.md
+- Service Provisioning: Provisioning.md
+- Service Management: ITSM.md
+- Test Account Management: Test.md
+- Data Center Description: DC.md
+- Service Level Agreement (SLA): SLA.md
 
 markdown_extensions:
   - markdown_captions
