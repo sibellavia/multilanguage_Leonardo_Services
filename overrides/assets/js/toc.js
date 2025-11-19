@@ -91,8 +91,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Funzione per rimuovere overflow-x dai wrapper delle tabelle
+    function removeTableOverflow() {
+        let scrollWraps = document.querySelectorAll('.md-typeset__scrollwrap');
+        
+        scrollWraps.forEach(wrap => {
+            // Rimuove overflow-x: auto quando è sullo schermo
+            wrap.style.overflowX = 'visible';
+            console.log('Removed overflow-x from table wrapper');
+        });
+    }
+
     // Esegui le funzioni
     fixSidebarIndexLinks();
     fixLogoLink();
     fixAnchorLinks();
+    removeTableOverflow();
 });
