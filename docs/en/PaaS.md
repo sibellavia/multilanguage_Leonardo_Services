@@ -1,10 +1,10 @@
 # Platform as a Service (PaaS)
 
-The following table lists the services included in the Platform as a Service (PaaS) category.
+The following table lists the services included in the *Platform as a Service (PaaS)* category.
 
 | FAMILY                               | LIST OF SERVICES                                            |
 | ------------------------------------ | ----------------------------------------------------------- |
-| Compute                              | [Functions as a Service](#faas)                                |                                   
+| Compute                              | [Functions As A Service (FAAS)](#faas)                                |                                   
 | Security                             | [Identity & Access Management (IAM) Service](#IAM)|
 | Security                             | [Key Vault as a Service - Standard](#key-vault)                           |
 | Security                             | [Endpoint Protection](#endpoint)                                           |
@@ -67,20 +67,19 @@ The following table lists the services included in the Platform as a Service (Pa
 | Networking                           | [L7 Load Balancer (regional)](#L7)                                                    |
 | Networking                           | [Cloud interconnect Gold SW (10 Gbps max throughput)](#gold)                                                    |
 | Storage                              | [Block Storage (1000 GB) - High Density](#block-storage)                      |
-| Hybrid                               | [Edge Location](#egde)                      |
 <figcaption>List of families and related PaaS services</figcaption>
 
 ## Compute Family
 
 Below is the list of services belonging to the Compute family:
 
-- [Functions as a Service](#faas)
+- [Functions As a Service (FAAS)](#faas)
 
 <a id="faas"></a>
 
 ### Functions as a Service
 
-![Functions as a Service](assets/images/extract/media/FaaS.png)
+![Functions As a Service (FAAS) Interface](assets/images/extract/media/FaaS.png)
 
 #### Services Description
 
@@ -106,6 +105,8 @@ The service goes beyond simply providing an execution engine; it also offers a c
 - The solution enables organizations to adopt a modern and flexible model, reducing operational complexity and benefiting from a standardized and easily accessible service.
 
 The service is delivered through Apache OpenServerless, an open-source, cloud-agnostic serverless platform based on Apache OpenWhisk as a Function-as-a-Service (FaaS) engine.
+
+The service is offered with the following metrics: *100 VCPUs*.
 
 The service offers the following advantages:
 
@@ -138,7 +139,7 @@ Below is the list of services belonging to the Security family:
 
 ### Identity & Access Management (IAM) Service
 
-![Identity & Access Management Service (IAM) Overview](assets/images/extract/media/IaM.png)
+![Identity & Access Management Service (IAM) Overview](assets/images/extract/media/IAM.png)
 
 #### Services Description
 
@@ -179,6 +180,8 @@ The main features and functionalities of the service are:
     - REST API for automated user, role, and client management.
     - SPI (Service Provider Interfaces) for extending authentication, validation, or provisioning capabilities.
     - Ability to implement custom authenticators or connect to external systems.
+    
+The service is offered with the following unit metric: *100 users*.
 
 The service offers the following advantages:
 
@@ -217,6 +220,8 @@ The main workflow of Key Vault as a Service consists of four phases:
 - *Authorization* → The client is then associated with the Key Vault as a Service security policy, which consists of a set of rules that define which API endpoints a user, machine, or application is allowed or denied access to with its token.
 - *Access* → Key Vault as a Service then grants access to keys and encryption features, secrets, and certificates.
 
+The service is offered with the following unit metric: *50 clients*.
+
 The service offers the following advantages:
 
 - *Risk reduction* → thanks to automatic key rotation and secret lifecycle management, it increases the protection of sensitive data, simplifies regulatory compliance and reduces the risk of human errors.
@@ -229,6 +234,7 @@ The service offers the following advantages:
 
 ### Endpoint Protection Service
 
+![Endpoint Protection Service Overview](assets/images/extract/media/endpoint.png)
 
 #### Services Description
 
@@ -261,6 +267,8 @@ The main components of the service are:
 *Event correlation and logging module* → collects and analyzes security events from all endpoints, correlating data to detect anomalies and trigger automated responses when threats are identified.
 *Integration and API layer* → enables interoperability with other PSN security services (such as SIEM, SOC, or IAM systems) for advanced monitoring, alerting, and orchestration.
 
+The service is offered with the following unit metric: *100 endpoints*.
+
 The service offers the following advantages:
 
 - *Comprehensive, multi-Layered protection* → combines antivirus, anti-malware, firewall, web protection, and application control for complete endpoint security coverage.
@@ -278,6 +286,7 @@ The service offers the following advantages:
 
 ### Advanced security and protection service for files and data
 
+![Advanced security and protection service for files and data Overview](assets/images/extract/media/advanced.png)
 
 #### Services Description
 
@@ -313,6 +322,8 @@ The main components of the service are:
 - *Audit and compliance dashboard* → centralized reporting and visualization layer offering real-time insights, audit trails, and compliance metrics. Supports customizable dashboards for administrators and compliance officers.
 - *Backup and recovery module* → manages encrypted backups, replication, and restoration of critical data with integrity verification mechanisms.
 
+The service is offered with the following unit metric: *Data quantity (GB/day)*.
+
 The service offers the following advantages:
 
 - *Regulatory compliance and data governance *→ ensures alignment with major data protection regulations (GDPR, ISO 27001, NIS2) through built-in auditing, encryption, and access control mechanisms.
@@ -335,6 +346,7 @@ The service offers the following advantages:
 
 ### Automated Penetration Testing Services
 
+![Automated Penetration Testing Services Overview](assets/images/extract/media/PT.png)
 
 #### Services Description
 
@@ -381,6 +393,8 @@ The main components of the service are:
 - *Policy & safety engine* → central ruleset enforcing legal constraints, safe-hours, impact thresholds, throttling and auto-pause on anomalous behavior.
 - *Storage & Backup* → durable object storage for artifacts and backups; retention and purge policies configurable per tenant and per compliance requirements.
 
+The service is offered with the following unit metric: *500 Targets (IP/URL)*.
+
 The service offers the following advantages:
 
 - *Continuous security validation* → enables ongoing assessment of the organization’s security posture rather than relying solely on periodic, manual penetration tests. This supports a proactive rather than reactive security strategy.
@@ -407,8 +421,9 @@ Multi-Tenancy and Role-Based Access Control (RBAC) → securely supports multipl
 
 <a id="mail"></a>
 
-### Mail security & ransomware protection service
+### Mail security & ransomware protection Service
 
+![Mail security & ransomware protection Service Overview](assets/images/extract/media/mail.png)
 
 #### Services Description
 
@@ -450,6 +465,8 @@ The main components of the service are:
 - *Storage and archiving repository* → secure, encrypted storage for quarantined e-mails, archived messages, logs, and reports. Complies with data retention and privacy requirements (e.g., GDPR, ISO 27001).
 - *IAM and Access Management Integration* → supports SAML, OAuth, and OpenID Connect for single sign-on and centralized authentication. Enforces multi-factor authentication for administrative access.
 
+The service is offered with the following unit metric: *100 mailboxes*.
+
 The service offers the following advantages:
 
 - *Reduced risk of business disruption* → prevents e-mail-based ransomware and phishing attacks that could lead to system downtime, data loss, and financial or reputational damage.
@@ -477,6 +494,7 @@ The service offers the following advantages:
 
 ### DSPM (Data Security Posture Management) Service
 
+![DSPM (Data Security Posture Management) Service Overview](assets/images/extract/media/posture.png)
 
 #### Services Description
 
@@ -514,6 +532,8 @@ The main components of the service are:
 - *Identity and access management (IAM)* → provides authentication and authorization for all users and system components. Supports SAML, OAuth2.0, and multi-factor authentication. Enforces least-privilege access to DSPM management functions.
 - *Monitoring, logging, and audit framework* → collects telemetry and operational metrics across all components. Maintains immutable logs for audit and compliance. Integrates with SOC/SIEM for centralized visibility.
 
+The service is offered with the following unit metric: *100 users*.
+
 The service offers the following advantages:
 
 - *Enhanced data visibility and control* → provides a unified view of all sensitive data across cloud, on-premise, and hybrid environments, allowing organizations to make informed, risk-based decisions.
@@ -541,6 +561,8 @@ Automated remediation and policy enforcement → executes automated corrective a
 <a id="ngfw"></a>
 
 ### NGFW platform
+
+![NGFW platform Overview](assets/images/extract/media/firewall.png)
 
 #### Services Description
 
@@ -581,6 +603,8 @@ The main components of the service are:
 - *Monitoring and visualization dashboard* → provides administrators with real-time visibility into network status, threats, and policy compliance. Features interactive analytics, risk scoring, and alert prioritization. Supports customizable widgets for security operations and compliance teams.
 - *Data storage and archiving subsystem* → secure storage for logs, events, and configuration snapshots. Encrypted repositories with configurable retention and audit capabilities. Supports integration with cloud object storage or on-prem archival systems.
 
+The service is offered with the following unit metric: *1 Gbps of Throughput*.
+
 The service offers the following advantages:
 
 - *Enhanced cyber resilience* → provides continuous protection against advanced cyber threats, ensuring business continuity and minimizing the risk of network downtime, data loss, or reputational damage.
@@ -610,6 +634,7 @@ Application and user awareness → identifies and controls applications and user
 
 ### PAM (Privileged Access Management) Service
 
+![PAM (Privileged Access Management) Service Overview](assets/images/extract/media/ssh.png)
 
 #### Services Description
 
@@ -654,6 +679,8 @@ The main components of the service are:
 - Web management console → provides administrators with a unified interface for configuration, policy management, and monitoring. Offers dashboards, risk indicators, and compliance views. Supports delegated administration and role-based visibility.
 - *High availability and scalability layer* → multi-zone deployment with redundant components to ensure continuous availability. Supports horizontal scaling for concurrent session and credential workloads. Implements backup, failover, and disaster recovery capabilities.
 
+The service is offered with the following unit metric: *10 administrative users managed by the Platform*.
+
 The service offers the following advantages:
 
 - *Reduced risk of data dreaches and insider threats* → minimizes the attack surface by enforcing strict control and monitoring of privileged accounts, effectively reducing both external and insider threat vectors.
@@ -685,6 +712,7 @@ Extensive API and Automation Capabilities → exposes APIs for integration with 
 
 ### Perimeter Security Intelligence Service
 
+![Perimeter Security Intelligence Service Overview](assets/images/extract/media/alert.png)
 
 #### Services Description
 
@@ -724,6 +752,8 @@ The main components of the service are:
 - *High availability and scalability layer* → built with redundant components and auto-scaling mechanisms to ensure consistent performance. Supports multi-zone deployment with failover and disaster recovery capabilities. Automatically balances sensor workloads and analysis processing.
 - *Security governance and compliance module* → maps policies and controls to industry standards and frameworks. Monitors adherence to compliance baselines and provides deviation alerts. Generates reports aligned with ISO 27001, GDPR, and NIS2 requirements.
 
+The service is offered with the following unit metric: *6 Target integrations in perimeter (e.g. FW)*.
+
 The service offers the following advantages:
 
 - *Enhanced protection of business assets* → safeguards critical data and infrastructure from external cyber threats, reducing the likelihood of data breaches and financial loss. Provides continuous monitoring to ensure business continuity and operational resilience.
@@ -739,6 +769,7 @@ The service offers the following advantages:
 
 ### Intrusion Prevention System (IPS) Service
 
+![Intrusion Prevention System (IPS) Service Overview](assets/images/extract/media/IPS.png)
 
 #### Services Description
 
@@ -752,7 +783,7 @@ Unlike an IDS, an IPS is integrated into the network architecture, at least for 
 The main features and functionalities of the service are:
 
 - *Traffic inspection and analysis* → performs deep packet inspection (dpi) and protocol decoding for inbound, outbound, and east-west traffic. Applies signature-based rules (known attack patterns), anomaly/behavior analysis (baseline deviation), and policy enforcement. Supports real-time blocking of malicious connections and content.
-- *Signature and threat intelligence engine* → maintains an updated signature library for known exploits and malicious traffic patterns. Integrates external threat intelligence feeds to identify malicious ips, domains, c2 channels, and exploit kits.
+- *Signature and threat intelligence engine* → maintains an updated signature library for known exploits and malicious traffic patterns. Integrates external threat intelligence feeds to identify malicious ips, domains, C2 channels, and exploit kits.
 - *Anomaly and behavioral detection* → establishes baseline traffic behavior, then identifies deviations indicating potential threats (e.g., lateral movement, data exfiltration). Applies machine-learning or heuristic engines to supplement rule-based detection.
 - *Policy-driven prevention and inline blocking* → automates blocking, connection termination, or traffic modification (e.g., reset, drop) when threats are detected. Policy profiles are configurable by severity, traffic zone, protocol, application, and asset criticality.
 - *Encrypted traffic inspection* → supports ssl/tls decryption and re-inspection of encrypted traffic to uncover hidden threats.
@@ -774,6 +805,8 @@ The main components of the service are:
 - *High availability and scalability infrastructure* → cluster deployment, auto-scaling of enforcement nodes, geographic redundancy, and failover mechanisms. Load-balances traffic across nodes to maintain performance and resilience.
 - *Secure storage and archival layer* → provides encrypted storage for historical logs, session data, and evidence for forensic and compliance purposes. It is includes data retention policies, immutable logging, and audit trail support.
 - *Encryption and decryption module* → handles ssl/tls decryption, re-inspection, and re-encryption of traffic to ensure visibility into encrypted streams. Integrates with key management and certificate handling systems.
+
+The service is offered with the following unit metric: *1 Gbps of Throughput*.
 
 The service offers the following advantages:
 
@@ -841,6 +874,8 @@ The architecture, based on Kong technology, is divided into several key componen
 - *Integrations* → supports integrations with development tools, CI/CD, monitoring systems, and project management platforms, allowing Kong to be incorporated into existing enterprise workflows.
 - *Security and Authentication* → offers advanced security options, including multi-factor authentication, support for enterprise protocols (OIDC, SAML, LDAP), and granular access control, ensuring data protection and compliance with corporate standards.
 
+The service is offered for a *unit size of 500 MB of API requests*.
+
 The service offers the following advantages:
 
 - *Reduced time to market* → APIs can be published and managed quickly without building the infrastructure from scratch.
@@ -879,6 +914,10 @@ The architectural components of the service are as follows:
 - *Database* → integrates with relational and NoSQL databases via configurable datasources, used by applications for data persistence.
 - *Security and Authentication* → offers an advanced security subsystem for authentication, authorization, encryption, and auditing. It supports authentication via LDAP, Kerberos, SSO, and integration with external identity providers, ensuring secure access that complies with corporate standards.
 
+The service is sized per node. Each node consists of:
+- 4 VCPUs
+- 8 GB of RAM
+
 The service offers the following advantages:
 
 - *Reduced time to market* → application lifecycle automation, centralized management, and easy integration with DevOps pipelines reduce development and release times, accelerating response to market needs.
@@ -891,7 +930,7 @@ The service offers the following advantages:
 
 ### Red Hat Runtime Subscription Service
 
-![Red Hat Runtime Subscription Service](assets/images/extract/media/.png)
+![Red Hat Runtime Subscription Service](assets/images/extract/media/runtime.png)
 
 #### Services Description
 
@@ -922,6 +961,8 @@ The architectural components of the service are as follows:
 - *Control plane* → It manages: deployment configurations, runtime policies, scaling rules, patch rollout, integration with CI/CD pipelines
 - *Data plane* → It executes application workloads: microservices, transactional applications, messaging and event-driven systems, data grids and caching services, Optimized for high throughput and low latency.
 - *Monitoring & logging layer* → centralized metrics and log collection. Health monitoring of runtimes and containers/instances. Alerting and diagnostics tools.
+
+The service is sized for single subscriptions.
 
 The service offers the following advantages:
 
@@ -969,6 +1010,8 @@ The solution is based on the following architectural layers:
 - *Application layer* (Spring Boot Runtime) → Spring Boot runs within a container; supports Actuator endpoints for health checks and metrics; exposes HTTP/REST APIs on predefined and configurable ports
 - *Management layer and PaaS services* → web dashboard or CLI to manage applications, versions, and resources. REST API for automation (deployment, scale, logs, metrics). Integration with external logging and monitoring systems.
 
+The service is sized for single containers. Each container has 16 GB of storage.
+
 The service offers the following advantages:
 
 - *Reduced time to market* → Deployment automation and simplified environment management allow applications to be brought into production more quickly.
@@ -1006,8 +1049,10 @@ The service, based on IBM technology, is organized into the following integrated
 - *Process Designer* → Visual process modeling tool.
 - *Process Center* → Centralized repository and collaborative environment, allows you to manage multiple versions of processes, reuse common components, and collaborate across multiple teams.
 - *Process Server* → Process execution engine. Manages both human and automated tasks.
-- Process Portal → User portal for receiving, executing, or approving tasks.
+- *Process Portal* → User portal for receiving, executing, or approving tasks.
 - *Performance Data Warehouse (PDW)* → Performance collection and analysis system, stores process execution data and enables historical analysis and real-time monitoring.
+
+The service is sized for each 8 cores.
 
 The service offers the following advantages:
 
@@ -1041,6 +1086,8 @@ The main features and functionalities of the service are:
 - *Flexibility and scalability* → adaptability based on needs.
 - *Open Source and Community* → collaboration with the online community.
 - *Accessibility* → tools to improve readability, contrast, keyboard navigation, and compliance with accessibility standards for users with disabilities.
+
+The service is offered for license unit. Each license consists of 1000 users.
 
 The service offers the following advantages:
 
@@ -1083,6 +1130,8 @@ The main architectural components of the service are as follows:
 - *JupyterLab* → Interactive notebook-based development environment designed primarily for working with data, scientific calculations, and machine learning. It supports writing and executing interactive code in languages ​​such as Python, R, or Julia.
 - *NodeRed* → Visual, low-code development environment for creating applications that connect devices, web services, APIs, and systems.
 
+The service is offered per node/worker.
+
 The service offers the following advantages:
 
 - *Support for data-driven strategies, faster and more informed decisions* → centralized data for service customization (e.g., real-time analytics for marketing, IoT, e-commerce, etc.) and ready-to-use pipelines without complex development. 
@@ -1124,6 +1173,8 @@ The main components of the service are:
 - *Apache Tika* → Software for data extraction, language identification, and content analysis. It can find and extract text and metadata from over a thousand file formats.
 - *OpenSearch* → A distributed search engine that provides extremely fast full-text search capabilities and high-performance indexing of all data types. Interaction with the search engine occurs via REST API technology.
 
+Each unit consists of a 26-core 2.70 Ghz physical processor with a 1:2 virtualization ratio - SSD disk.
+
 The service offers the following advantages:
 
 - *Faster and more informed decisions* → teams have easier access to corporate knowledge, reducing analysis and decision-making time.
@@ -1146,11 +1197,11 @@ Below is the list of services belonging to Data Protection family:
 
 ### Backup - PLATFORM Service
 
-![Backup - PLATFORM Service](assets/images/extract/media/.png)
+![Backup - PLATFORM Service](assets/images/extract/media/backup.png)
 
 #### Services Description
 
-The PaaS Backup (VIM-based solution) is a fully managed platform service that provides automated, secure, and reliable data protection for virtual machines, cloud workloads, and application data.  
+The PaaS Backup (Veeam-based solution) is a fully managed platform service that provides automated, secure, and reliable data protection for virtual machines, cloud workloads, and application data.  
 The service ensures consistent backups, rapid restores, and long-term retention without requiring customers to deploy or maintain backup servers, storage repositories, or complex scheduling policies.  
 The solution is designed for enterprise-grade data protection, offering backup automation, disaster recovery enablement, policy-based lifecycle management, and secure multi-tenant separation within cloud environments.
 
@@ -1176,6 +1227,8 @@ The main components of the service are:
 - *Data plane* → responsible for: VM snapshot creation, data extraction and compression, transport - *Security & compliance layer* → encryption in transit and at rest. Tenant isolation at storage and management layers. Compliance with data protection standards (GDPR, ISO, etc.).
 - *Observability & alerting layer* → real-time monitoring of backup/restore jobs. Alerts on job failures, capacity issues, and SLA violations. Audit logs for operations and access tracking.
 
+The service is offered for single TB sizing.
+
 The service offers the following advantages:
 
 - *Reliable and consistent data protection* → ensures all virtual machines and data are continuously protected. Reduces risk of data loss and improves operational resilience. 
@@ -1188,7 +1241,6 @@ The service offers the following advantages:
 - *Unified protection across hybrid environments* → protects both cloud and on-prem workloads (if extended). Supports modernization and migration scenarios.
 - *Reduced operational overhead* → provider manages infrastructure, maintenance, patching, and upgrades. IT teams focus on core applications instead of backup operations.
 - *Business continuity enablement* → integrates with replication and DR features. Supports failover during incidents or migrations.
-
 
 ## Infra & Ops Platform Family
 
@@ -1237,6 +1289,10 @@ The main components are:
 - Persistence Layer → NoSQL database (MongoDB) used by the RM to store normalized data retrieved from the respective ABS submodules.
 - Integration and Communication Layer → facilitates and orchestrates asynchronous information communication between the ABS and RM modules of the system; allows the ABS submodules to interact with the various APIs of the respective CSPs and external systems
 - Security and Authentication Layer → access management and encryption of sensitive data from provider systems.
+
+The service is sized and offered based on volumes:
+- less than €1.000.000,00 in annual managed resource expenditure for Cloud resources. 
+- every 5120 GB of managed RAM for on-premise or hybrid resources.
 
 The service offers the following advantages:
 
@@ -1296,7 +1352,7 @@ The service offers the following advantages:
 
 ### IT infrastructure Service Operations (Logging & Monitoring)
 
-![IT infrastructure Service Operations (Logging & Monitoring)](assets/images/extract/media/ITSO.png)
+![IT infrastructure Service Operations (Logging & Monitoring) interface](assets/images/extract/media/ITops.png)
 
 #### Services Description
 
@@ -1321,7 +1377,13 @@ The main components of the service are:
 - *Dynatrace Cluster* → receives, stores, and processes data from OneAgents, applies analysis and correlation algorithms, ensures scalability, and provides APIs and integration tools (ITSM, CI/CD, DevOps tools).
 - *Davis AI* → AI engine for real-time anomaly analysis, automatic root cause analysis, capacity and performance forecasting, and reduced false positive alerts.
 - *Dynatrace Web UI / Mobile App / API* → interfaces for user interaction, providing: dashboards. Customizable; topological views (Smartscape); dynamic dependency maps between hosts, services, and applications; access via REST API and SDK for integration with DevOps pipelines, ITSM, and automation tools.
-- *Extensions and Integrations* → connect Dynatrace to third-party services and tools
+- *Extensions and Integrations* → connect Dynatrace to third-party services and tools.
+
+The service is offered per package. Each package consists of 80 infra hosts with:
+- an average of 32 GB RAM
+- 20 apps with an average of 64 GB RAM
+- 3 million trx
+- standard support
 
 The service offers the following advantages:
 
@@ -1370,6 +1432,8 @@ The main components of the service are:
 - *Integration / API / Data providers*: the platform supports integration with Active Directory/Azure AD, external databases, REST API, SOAP, flat files, and SQL for reading/writing.
 - *Flexible deployment*: it can be delivered on-premise, in a public cloud, a private cloud, or a hybrid ("Cloud your way") to adapt to compliance, scalability, and geographic requirements.
 
+The service is offered for a number of Service Desk operators. Each subscription is for 50 operators.
+
 The service offers the following advantages:
 
 - *Reduced operating costs* → thanks to process automation and a reduction in manual tasks, fewer repetitive interventions and a lower cost per ticket.
@@ -1383,7 +1447,7 @@ Increased support team productivity → thanks to workflow automation, the use o
 
 ### PaaS Operations Management
 
-![PaaS Operations Management](assets/images/extract/media/Ticket.png)
+![PaaS Operations Management Overview](assets/images/extract/media/operations.png)
 
 #### Services Description
 
@@ -1414,6 +1478,8 @@ The main components of the service are:
 - *Data plane* → collects telemetry from monitored systems. Processes events, evaluates triggers, and generates alerts. Streams metrics to dashboards and correlation modules.
 - Visualization & reporting layer → provides dashboards, SLA reports, historical charts, and heatmaps. UI tailored for NOC operations and technical teams.
 - *Security & multitenancy* → segregated monitoring domains per tenant or project. Secure role-based access controls (RBAC). Encrypted communication between monitoring agents and servers.
+
+The service is offered and sized for every 25 simultaneous users.
 
 The service offers the following advantages:
 
@@ -1468,6 +1534,8 @@ The service uses an agentless architecture and YAML-based playbooks to define, d
 - *Inventory and Credential Store* → defines target systems (servers, VMs, containers, network devices, cloud services). Securely manages access credentials for each target or environment.
 *APIs and Integrations* → RESTful API for integration with external monitoring, ticketing, or orchestration systems.
 
+The service is offered and sized in units of 25 nodes each.
+
 The service offers the following advantages:
 
 - *Reduced operating costs* → automating repetitive and manual tasks reduces the time spent on system management and maintenance.
@@ -1514,6 +1582,8 @@ The main components of the service are:
 - *Robotic Test Execution* → UiPath robots become "digital testers," running tests autonomously.
 - *Testing Robots* → Specialized test execution robots; support testing frameworks such as NUnit, MSTest, and Junit.
 - *Insights *→ Manages the creation of dashboards for monitoring various testing processes; allows you to calculate the return on investment of initiatives.
+
+The service is sized and offered per user units. Each unit is consists of: 1 tester, 10 automation users and 5 robots.
 
 The service offers the following advantages:
 
@@ -1562,6 +1632,8 @@ The main components of the service are:
 - *Security and Governance* → Authentication via LDAP, Active Directory, SAML, and OAuth. Granular roles (Admin, Project Admin, Developer, and Viewer).
 - *Web portal* → browser-accessible user interface that allows developers, QA, team leaders, and analysts to view detailed project metrics and quality indicators, consult and manage Quality Gates, and view aggregated dashboards and reports at the project portfolio level. The portal is secure, multi-user, and configurable via granular roles and permissions.
 
+The service is offered per unit of line of codes. Each unit consists of 1 million lines of codes.
+
 The service offers the following advantages:
 
 - *Lower risk of bugs in production and reduced maintenance costs* → more reliable and stable software, cleaner and more maintainable code.
@@ -1602,6 +1674,8 @@ The main components of the service are:
 - *CI/CD Engine GitLab Runner* → a service responsible for executing CI/CD jobs defined within pipelines, automating build, test, and deployment processes.
 - *Artifact registry* → a module dedicated to managing and archiving artifacts generated during CI/CD pipelines, such as packages, container images, and libraries. It ensures traceability, security, and reuse of software components.
 - *Test Management* → a component that supports the structured management of testing activities, enabling the planning, execution, and monitoring of test cases to ensure software quality throughout the development lifecycle.
+
+The service is offered per user unit. Each unit consists of 100 users.
 
 The service offers the following advantages:
 
@@ -1645,6 +1719,8 @@ At a logical level, the architecture is divided into the following main componen
 - *Database for storing collected data* → data acquired from external systems is stored in a centralized database, which is then processed and normalized to support efficient metrics processing, interactive consultation, and dashboard generation.
 - *Integration via REST API* → the service interacts with external platforms through standard APIs, enabling continuous data collection.
 - *Messaging broker* → the service uses a Kafka-based messaging system to ensure decoupling between modules, support high event loads, and facilitate horizontal scalability.
+
+The service is sized and offered per project unit. Each unit consists of 10 projects included.
 
 The service offers the following advantages:
 
@@ -1693,6 +1769,8 @@ The overall architecture is based on containers orchestrated by a resource manag
 Resource management and container orchestration are based on the Red Hat Openshift platform.  
 To meet the most stringent security requirements, data encryption is implemented using keys stored on HSM devices. This will be made possible by interfacing with the KMS module common to all PaaS services.
 
+The service is sized and offered per storage unit. Each unit contains 1 TB.
+
 The service offers the following advantages:
 
 - *Compliance and governance* → supports versioning, auditing, encryption (AES-256), and integration with identity management systems.
@@ -1734,6 +1812,8 @@ The main components of the service are:
 - *Cloudera Machine Learning (CML)* → a machine learning workflow solution that supports the entire data science lifecycle, designed to use containers for efficient data engineering and machine learning tasks.
 - *Data Catalog* → it offers a centralized and scalable way to democratize data access across the entire Data Lakehouse.
 Management Console → provides a single interface to support the operation of users, environments, and analytical services that support each Data Lakehouse.
+
+The service is sized and offered per storage unit. Each unit contains 1 TB.
 
 The service offers the following advantages:
 
@@ -1789,6 +1869,8 @@ The main components of the service are:
 - *Dataflows* → they allow you to create and manage ETL (Extract, Transform, Load) data pipelines directly within Power BI. These dataflows support the integration and transformation of data from numerous sources to create consolidated data models.
 - *Desktop* → it is the client application used for creating reports and data models. Available for Windows, it allows users to connect to numerous data sources, run queries, and create advanced visualizations.
 
+The service is sized and offered per user unit. Each unit consists of 50 users.
+
 The service offers the following advantages:
 
 - *Faster and better decisions* → real-time or near-real-time access to data, intuitive visualizations, and drill-down into information, enabling more informed decisions.
@@ -1832,6 +1914,8 @@ The main architectural components of the service are as follows:
 - *JupyterLab* → Interactive notebook-based development environment designed primarily for working with data, scientific calculations, and machine learning. It supports writing and executing interactive code in languages ​​such as Python, R, or Julia.
 - *NodeRed* → Visual, low-code development environment for creating applications that connect devices, web services, APIs, and systems.
 
+The service is sized and offered per worker. Each worker consists of an Apache Spark cluster on a 26-core 2.70 GHz physical processor with a 1:2 virtualization ratio.
+
 The service offers the following advantages:
 
 - *Support for data-driven strategies, faster and more informed decisions* → centralized data for service customization (e.g., real-time analytics for marketing, IoT, e-commerce, etc.) and ready-to-use pipelines without complex development. 
@@ -1873,7 +1957,9 @@ The main components of the service are:
 - *Partitions* → topics can be divided into a series of order queues called partitions. 
 - *Persistence* → server clusters that durably maintain records/messages as they are published. 
 - *Producers* → defines which topic/partition a given record/message should be published to. 
-- *Consumers* → entities that process records/messages
+- *Consumers* → entities that process records/messages.
+
+The service is sized and offered per worker. Each worker consists of an Apache Kafka cluster on a 26-core 2.70 GHz physical processor with a 1:2 virtualization ratio.
 
 The service offers the following advantages:
 
@@ -1918,6 +2004,8 @@ This tool allows you to verify changes made to data within the catalog over time
 Data integration within DataHub occurs primarily in two ways:
 - PUSH → automatically within third-party applications such as Airflow, Apache Spark, Great Expectations, etc.
 - PULL → manually by the developer prior to loading the data into the data lake via dedicated REST APIs.
+
+The service is sized and offered for a single license.
 
 The service offers the following advantages:
 
@@ -1984,6 +2072,8 @@ The main components of the service are:
 - *Storage and logging* → stores results, metadata, and logs for auditing and analysis. 
 - *Integration layer (API / SDK)* → interface for external apps, dashboards, or AI pipelines.
 
+The service is sized and offered per GPU. Each GPU consists of one NVIDIA H100 partition.
+
 The service offers the following advantages:
 
 - *Reduced operating costs* → automate the transcription of audio, meetings, interviews, and minutes without requiring dedicated staff.
@@ -2030,6 +2120,8 @@ The AI ​​Video Analytics solution is primarily composed of the following too
     - Object detector: recognizes and locates people and objects within a given frame by extracting metadata containing classification and spatial location
     - Spacial counter: an extension of the Object Detector model, it can also process a single-shot counting for each object class for each frame
     - Object counter: capable of both locating people and objects and obtaining a count of the detected objects.
+
+The Audio and Video analytics services are sized and offered for single streams. Each audio/video stream consists of 24 x 365G.
 
 The service offers the following advantages:
 
@@ -2097,6 +2189,10 @@ The main components of the Azure Vision AI-based service are:
 - *Storage and Temporary Pipeline* → During processing, images are temporarily stored. The results are then returned as JSON output or saved to defined resources (e.g., Data Lake, DB, or Cognitive Search).
 - *Integration and Automation* → The results can be sent or processed for document workflows, full-text indexing and search, data analysis and Big Data, archiving, notifications, or vertical applications.
 
+The service is offered using two alternative technologies:
+- *Tesseract* → container-based sizing. Each container consists of 16 GB of RAM.
+- *Microsoft* → page-based sizing. Each page is of 96M.
+
 The service offers the following advantages:
 
 - *Lower document management costs* → fewer staff dedicated to data entry and fewer errors that generate correction costs or disputes.
@@ -2146,6 +2242,8 @@ Model creation workflow:
 4. *Modeling & Evaluation* → the heart of the pipeline, where models are applied and evaluated using various approaches (heuristics, ML, Deep Learning, etc.) to comprehensively measure model performance from both a technical and practical perspective.  
 5. *Deployment* → marks the transition of the developed model from the development environment to a production environment, followed by continuous monitoring and adaptation to ensure lasting performance and relevance.
 
+The service is sized per Inference unit and per page inferences, respectively 60M and 1,2M per page.
+
 The service offers the following advantages:
 
 - *Better understanding for users and service consumers* → analyzes feedback, reviews, chats, and surveys to extract sentiment.
@@ -2168,6 +2266,7 @@ Multilingual translation service using AI-based machine translation (NMT) techno
 The service draws inspiration from the human brain not only for its neural structure, but also for its ability to adapt, learn from new experiences, and interact with users.  
 The result is a so-called human-in-the-loop approach, a cycle in which machine and human continuously support each other, providing exceptional translation quality and process efficiency that surpasses previous approaches.  
 The service can be offered in two ways:
+
 - Solution developed by Leonardo.
 - Solution developed by Azure.
 
@@ -2187,6 +2286,9 @@ The main components of the service are:
 - *AI NMT Engine* → proprietary neural engine based on Transformer networks (similar to GPT) for contextual translations.
 - *Custom Translator* → portal + API for training models with custom datasets.
 - *Document translation API* → service dedicated to batch file translation (integration with Blob Storage).
+
+In case of Leonardo's service, it is sized per GPU unit. Each unit consists of two NVIDIA H100 GPUs.  
+In case of Azure's service, it is sized per characters and clients units. Each characters unit consists of 4,8 milions; each client unit consists of 10 clients.
 
 The service offers the following advantages:
 
@@ -2236,6 +2338,8 @@ AI Search is composed of three layers:
 - *Analysis layer* → responsible for all processing, analysis, and generation of answers to user queries. It includes the Retriever and the Generator, responsible for retrieving the most relevant information and creating coherent and personalized responses, respectively.
 - *User layer* → interface through which the user interacts directly with the service, offering the ability to query the knowledge base, view answers with referenced sources, manage documents, and provide feedback.
 
+The service is sized per GPU unit. Each unit consists of one NVIDIA H100 GPU.  
+
 The service offers the following advantages:
 
 - *Access to up-to-date knowledge* → answers always based on the most recent internal and external documents.
@@ -2284,6 +2388,8 @@ The solution is primarily composed of the following custom tools:
 
 - *Model Serving* → facilitates the deployment of ML models at scale in production environments through the creation of Docker images.
 
+The service is sized per worker. Each worker consists of a Spark/Tensorflow/Keras/scikit 26-core physics processor 2.70 Ghz virtualization ratio 1:2 - Nvidia A100 dedicated.
+
 The service offers the following advantages:
 
 - *Reduced initial and operational costs* → there is no need to invest in hardware infrastructure (GPU, cluster, server, storage, etc.), thus reducing maintenance, upgrade, and security costs.
@@ -2330,6 +2436,11 @@ Both services feature a modular architecture designed to ensure scalability, flo
 - *Model pool management* → maintains a set of validated and pre-configured models, selectable by the customer. Only one model is active per tenant at any time.
 - *Platform layer* → provides cross-functional support services and includes: Resource Management & Scaling: Dynamic allocation of computational resources (CPU, GPU, RAM, storage), load-based auto-scaling, and service lifecycle management.
 
+The services are sized per GPU unit:
+
+- for AI SLM service each unit consists of 1 partition NVIDIA H100 GPU.
+- for AI SLM service each unit consists of 3 NVIDIA H100 GPUs.
+
 The service offers the following advantages:
 
 - *Technological accessibility* → access to no-code Generative AI technology solutions.
@@ -2375,6 +2486,8 @@ The main components of the service are:
 - *Data Connectors layer* → modules for accessing external data sources.
 - *Integration layer* → interface with external languages ​​(or ML frameworks).
 - *Monitoring layer* → execution metrics, job status, logging, and error alerts.
+
+The service is sized per Users and vCore per unit, respectively 10 users and 8 vCores per unit.
 
 The service offers the following advantages:
 
@@ -2425,6 +2538,8 @@ The main components of the service are:
 - *Security & Compliance layer* → ensures data protection and regulatory compliance.
 - *Monitoring, logging & observability layer* → provides visibility into system behavior and performance.
 - *Developer & Management console* → web interface for administrators and developers for managing datasets and indexes, viewing embeddings and search results, configuring security and access policies, monitoring costs, plans, and usage metrics.
+
+The service is sized for unit queries. Each query consists of 120 QPS queries per second.
 
 The service offers the following advantages:
 
@@ -2479,6 +2594,8 @@ The main components of the service are:
 - *License Server* → manages product licenses. It communicates with the Controller to manage licenses for each user session and with Studio to allocate license files.
 - *Hypervisor* → hosts the VMs that make up the infrastructure and virtual desktops.
 
+The service is offered with the following unit metric: *250 concurrent users (8VCPUs, 16GB RAM, 256 GB of Storage)*.
+
 The service offers the following advantages:
 
 - *Reduced operating costs* → optimize operations through centralized management and save device costs through BYOD (Bring Your Own Device) support.
@@ -2505,6 +2622,8 @@ The service offers the same basic features as the previously described VDI servi
 VMs can have graphics acceleration features for users who require software such as CAD/CAM (e.g., AutoCAD, SolidWorks), 3D modeling (e.g., Blender, 3ds Max), GIS (e.g., ArcGIS), Scientific rendering and visualization, and video editing (e.g., Adobe Premiere, DaVinci Resolve). Examples of additional features include HDX 3D Pro, GPU virtualization (NVIDIA vGPU, AMD MxGPU), high-performance remote access, multi-monitor and 4K support, and bandwidth and latency optimization.  
 
 The service offers the same components as the previously described VDI service.
+
+The service is offered with the following unit metric: *250 concurrent users (8VCPUs, 16GB RAM, 256 GB of Storage)*.
 
 The service offers the following advantages:
 
@@ -2554,6 +2673,8 @@ The main components of the service are:
 - *Storage for file attachments, images, etc.* → can be local or cloud-based (S3, MinIO, etc.).
 - *WebSocket channels* → for real-time message transmission.
 - *Configurable for scalability* → cluster support, high availability, deployment on Kubernetes, isolated networks.
+
+The service is offered with the following unit metric: *1000 users*.
 
 The service offers the following advantages:
 
@@ -2619,6 +2740,12 @@ The main components of the service are:
 - *Security layer* → it ensures data protection and access control for respecting of the protection & compliance policies: authN/AuthZ, encryption, firewalls, auditing
 - *Observability Layer* → It provides visibility and continuous management of the service, offrering monitoring & operations like metrics, logging, auto-patching.
 
+The service is offered per DB instance. Each instance consists of: 
+
+- 4 vCPUs
+- 16 GB of RAM
+- 500 GB of Storage (with replication).
+
 The service offers the following advantages:
 
 - *Cost Efficiency* → no hardware or infrastructure investment. Reduced operational costs: no need for DBA teams to handle maintenance, patching, or scaling manually.
@@ -2671,6 +2798,12 @@ The PaaS SQL MariaDB service is organized into multiple logical layers, each res
 - *HA & resilience layer* → ensures fault tolerance and continuity of service.
 - *Security & Access layer* → provides protection, compliance, and controlled access.
 - *Observability & operations layer* → provides visibility, maintenance, and automation tools for both provider and customer.
+
+The service is offered per DB instance. Each instance consists of: 
+
+- 4 vCPUs
+- 16 GB of RAM
+- 500 GB of Storage (with replication).
 
 The service offers the following advantages:
 
@@ -2726,6 +2859,12 @@ Key Components: Authentication & authorization (integration with AD/Azure AD, su
 - *Observability & Operations layer* → ensures visibility, performance optimization, and operational maintenance.  
 Key Components: Performance monitoring, Alerting & incident management, Auto-patching System, Maintenance scheduler, Logging system.
 
+The service is offered per DB instance. Each instance consists of: 
+
+- 8 vCPUs
+- 16 GB of RAM
+- 500 GB of Storage
+
 The service offers the following advantages:
 
 - *Reduced Total Cost of Ownership (TCO)* → eliminates capital expenses for hardware, networking, and software licensing.
@@ -2750,6 +2889,12 @@ For all the details , please refer to the [PaaS SQL - MS SQL Server EE](#sqlserv
 #### Features and Advantages
 
 For all the details , please refer to the [PaaS SQL - MS SQL Server EE](#sqlserver).
+
+The service is offered per DB instance. Each instance consists of: 
+
+- 8 vCPUs
+- 16 GB of RAM
+- 500 GB of Storage
 
 <a id="graphDB"></a>
 
@@ -2796,6 +2941,12 @@ Key Components: Cluster Manager for coordinating replication, partitioning, and 
 Key Components: Identity and Access Management (IAM); Encryption services; Access control policies; Audit logging system
 - *Observability & Operations layer* → provides visibility, automation, and operational maintenance for both administrators and users.  
 Key Components: Monitoring system; Alerting & incident management; Logging Service; Auto-patching & Upgrades; Maintenance scheduler that orchestrates backup, cleanup, and optimization tasks.
+
+The service is offered per DB instance. Each instance consists of: 
+
+- 4 vCPUs
+- 16 GB of RAM
+- 500 GB of Storage
 
 The service offers the following advantages:
 
@@ -2846,6 +2997,12 @@ The main components of the service are:
 - *Network and security layer* → implements network isolation via Virtual Private Cloud (VPC) or private endpoints. Firewall rules, IP whitelisting, and security groups restrict access. TLS-based encryption secures data in transit between components and clients.
 -* Management and monitoring layer* → provides observability, metrics collection, and alerting. Automated performance tuning and resource optimization. Integrates with logging and monitoring frameworks.
 - *Backup and disaster recovery layer* → handles snapshot-based backups, replication, and PITR mechanisms. Automated restore operations from cloud object storage. Supports cross-region replication for business continuity.
+
+The service is offered per DB instance. Each instance consists of: 
+
+- 4 vCPUs
+- 16 GB of RAM
+- 500 GB of Storage
 
 The service offers the following advantages:
 
@@ -2907,6 +3064,12 @@ The logical architecture of the PaaS Redis service consists of multiple layers d
 - *Monitoring and Management layer* → aggregates telemetry and performance metrics. Implements logging, tracing, and alerting via monitoring systems. Provides dashboards for capacity planning and SLA tracking.
 - *High availability and failover layer* → monitors node health and automatically triggers failover in case of node or zone failure. Uses Redis Sentinel or internal control mechanisms for cluster coordination. Supports synchronous or asynchronous replication for HA and DR.
 
+The service is offered per DB instance. Each instance consists of: 
+
+- 4 vCPUs
+- 16 GB of RAM
+- 500 GB of Storage
+
 The service offers the following advantages:
 
 - *Reduced Total Cost of Ownership (TCO)* → no capital investment in hardware, software, or cluster management. Reduces operational overhead by automating deployment, scaling, and maintenance. Eliminates the need for specialized in-house Redis administration skills.
@@ -2930,6 +3093,8 @@ Below is the list of services belonging to the Networking family:
 <a id="CDN"></a>
 
 ### PaaS CDN (Content Delivery Network)
+
+![PaaS CDN (Content Delivery Network) interface](assets/images/extract/media/CDN.png)
 
 #### Services Description
 
@@ -2962,6 +3127,8 @@ The main components of the service are:
 - *Control plane* → the logical management console of the CDN. It handles: APIs and configuration interfaces, certificate management, rule distribution to all PoPs, deployment orchestration, global configuration synchronization. The Control Plane does not handle user traffic.
 - *Monitoring & analytics layer* → It is includes: real-time metrics, distributed logging, anomaly detection, dashboards and analysis tools. Architecturally independent for scalability.
 
+The service is offered with the following unit metric: *10 Gbps of throughput (inbound & Outbound)*.
+
 The service offers the following advantages:
 
 - *Improved performance and lower latency* → content is delivered from edge nodes close to end users. Faster page loads, reduced round-trip time, better user experience. Enhanced performance for both static assets and dynamic/API responses.
@@ -2978,6 +3145,8 @@ The service offers the following advantages:
 <a id="DNS"></a>
 
 ### PaaS DNS (Domain Name System)
+
+![PaaS DNS (Domain Name System) interface](assets/images/extract/media/DNS.png)
 
 #### Services Description
 
@@ -3011,6 +3180,8 @@ The main components of the service are:
 - *Control plane* → the centralized management system used by administrators and APIs. Responsible for: creating and modifying DNS zones, propagating configurations globall, certificate and key management (for DNSSEC), authentication, RBAC, and access governance. Does not participate in DNS query resolution.
 - *Monitoring & analytics layer* → it's includes: real-time logs, query analytics, performance metrics. 
 - *Threat detection indicators* → operates independently from the data plane for scalability and reliability.
+
+The service is offered for each DNS Instance unit. 
 
 The service offers the following advantages:
 
@@ -3055,6 +3226,8 @@ The main components of the service are:
 - *Data plane* → distributed packet-processing nodes handle the real traffic. Designed for high throughput, low latency, and multi-zone resilience. Built to ensure performance even under heavy load.
 - *Integration with DNS and load balancers* → the public IP can be connected to: DNS A/AAAA records, cloud load balancers, reverse proxies. Enables scalable and flexible application publishing.
 
+The service is offered *per number of public IP addresses*.
+
 The service offers the following advantages:
 
 - *Simplified internet exposure* → easily expose VMs, applications, or services to the public Internet. No need to configure routers, gateways, or complex network infrastructure.
@@ -3070,6 +3243,8 @@ The service offers the following advantages:
 <a id="L7"></a>
 
 ### L7 Load Balancer (regional) Service
+
+![L7 Load Balancer (regional) Service Overview](assets/images/extract/media/L7.png)
 
 #### Services Description
  
@@ -3100,6 +3275,8 @@ The main components of the service are:
 - *Data plane* → processes all HTTP/HTTPS requests. Terminates TLS, applies routing logic, executes WAF rules. Ensures high throughput and low latency.
 - *Health check and failover engine* → continuously monitors backend endpoints. Maintains a dynamic view of backend availability. Ensures failover rules are applied in real time.
 - *Logging & analytics layer* → collects request logs, WAF events, metrics, and anomalies. Provides dashboards and monitoring tools. Works independently from the data plane to ensure performance.
+
+The service is offered *per each balancer instance*.
 
 The service offers the following advantages:
 
@@ -3150,6 +3327,8 @@ The main components of the service are:
 - *Data plane* → handles the actual traffic flow with: guaranteed QoS, deterministic routing, optimized latency paths. Decoupled from monitoring and control tasks.
 - *Monitoring & observability layer* → aggregates telemetry from gateways and SDN controllers. Provides dashboards and alerting for performance and reliability.
 
+The service is offered with the following unit metric: *10 Gbps of throughput*.
+
 The service offers the following advantages:
 
 - *Enhanced security* → private connection avoids exposure to the public Internet. Supports encrypted tunnels and isolated routing domains.
@@ -3172,6 +3351,8 @@ Below is the list of services belonging to the Storage family:
 <a id="block-storage"></a>
 
 ### Block Storage (1000 GB) - High Density Service
+
+![Block Storage (1000 GB) - High Density Service interface](assets/images/extract/media/storage.png)
 
 #### Services Description
 
@@ -3202,6 +3383,8 @@ The main components of the service are:
 - *Monitoring and observability* → continuous monitoring of: storage utilization, disk health, replication status, I/O performance. Automated alerts ensure proactive issue resolution.
 - *Security and isolation* → tenant isolation at storage pool and access level. Encrypted communication between Ceph and Proxmox nodes. Optional disk encryption at rest depending on policy.
 
+The service is offered with the following metrics: *1000 GB for each unit*.
+
 The service offers the following advantages:
 
 - *High capacity at optimized cost* → designed for workloads needing large data volume without paying for premium performance tiers.
@@ -3214,47 +3397,3 @@ The service offers the following advantages:
 - *Enhanced data protection* → built-in replication, self-healing, and monitoring reduce risk of data loss.
 - *Simplified backup and recovery* → volume snapshots enable fast backup operations. Easy rollback to previous storage states.
 - *Enterprise-grade reliability* → Ceph’s distributed architecture provides continuous service availability and resilience.
-
-## Hybrid Family
-
-Below is the list of services belonging to the Hybrid family:
-
-- [Edge Location](#edge)
-
-<a id="edge"></a>
-
-### Edge Location Service
-
-#### Services Description
-
-The Edge Location Service provides a localized computing platform delivered across distributed edge locations, designed to offer low-latency processing, high availability, and centralized management.  
-Built on Proxmox Virtual Environment as the core virtualization layer and integrated with a Leonardo Secure Cloud Management Platform (SCMP) for orchestration, automation, and governance, the service enables customers to deploy, manage, and scale applications and workloads directly at the edge, close to the point of data generation or consumption.  
-The edge infrastructure operates as an extension of the corporate or hybrid cloud environment, maintaining consistent operational standards, security policies, and automation capabilities.
-
-#### Features and Advantages
-
-The main functional capabilities of the service are:
-
-- *Application Hosting* → execution of container-based or virtual machine–based applications. Support for real-time workloads, IoT scenarios, and local data processing. Automated provisioning of application environments via CMP orchestration.
-- Multi-tenant resource management → logical segmentation of resources for tenants or business units. Quota-based allocation of CPU, memory, storage, and network resources. Role-based access and differentiated permissions.
-- *Automation & orchestration* → automated provisioning of VMs, containers, and PaaS components. Standardized deployment workflows. Full lifecycle management of workloads (creation, update, decommissioning).
-- *Governance & security* → integration with Identity & Access Management (IAM) systems. Enforcement of compliance and security policies. Centralized logging, audit trail capabilities, and continuous monitoring
--  *High availability & resilience* → Proxmox high-availability clustering with automated failover. Fault isolation and hardware resilience. Integrated backup and restore capabilities
-
-The Architectural components are: 
-
-- *Edge Compute Layer (Proxmox VE)* → KVM hypervisor and LXC container virtualization. Proxmox clusters with distributed resource management. Local or distributed storage (Ceph, ZFS, or shared storage systems). Virtual networking using bridges, VLANs, and SDN capabilities
-- *Secure Cloud Management Platform (SCMP)* → Central orchestration system managing all edge locations. Self-service portal for tenants and administrators. Policy engine for governance, permissions, and compliance enforcement. Monitoring, metering, and alerting functionalities. PIs for integration with external systems (CI/CD, ITSM, ERP)
--* Networking & connectivity* → secure connectivity between edge locations and datacenters (VPN, SD-WAN, MPLS). Network segmentation via virtualization technologies. Support for public and private addressing of workloads
-- *Integration with enterprise systems* → integration with corporate authentication systems (LDAP, AD, SSO). Optional integration with Kubernetes for container-native workloads. Interoperability with public cloud platforms as part of a hybrid cloud model
-
-The service offers the following advantages:
-
-- *Reduced latency* → processing occurs closer to the data source, improving performance for IoT, analytics, and real-time applications.
-- *Operational continuity* → edge sites remain functional even in the event of connectivity loss to the central datacenter.
-- *Local data compliance* → data remains within specific geographic boundaries, enabling regulatory adherence.
-- *Accelerated innovation* → new services can be deployed rapidly across multiple sites using centralized orchestration.
-- *Unified management* → a single platform controls all edge and cloud resources. Lower operational costs through automation of provisioning and routine maintenance.
-- *Modular scalability* → the edge infrastructure can be expanded quickly with new nodes. Enhanced security through consistent policies and centralized logging.
-- *Architectural flexibility* → support for VM-based, containerized, and mixed workloads.
-- *Operational efficiency* → standardized processes for deployment, updates, and governance.

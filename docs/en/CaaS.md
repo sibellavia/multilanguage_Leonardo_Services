@@ -1,23 +1,23 @@
 # Container as a Service (CaaS)
 
-The following table lists the services included in the Container as a Service (CaaS) category.
+The following table lists the services included in the *Container as a Service (CaaS)* category.
 
 | FAMILY  | LIST OF SERVICES                  |
 | ------- | --------------------------------- |
-| Compute | [Kubernetes confidential computing](#kubernetes)|
+| Compute | [Kubernetes Confidential Computing](#kubernetes)|
 <figcaption>List of families and related CaaS services</figcaption>
 
 ## Compute Family
 
 Below is the list of services belonging to the Compute family:
 
-- [Kubernetes confidential computing](#kubernetes)
+- [Kubernetes Confidential Computing](#kubernetes)
 
 <a id="kubernetes"></a>
 
-### Kubernetes confidential computing Service
+### Kubernetes Confidential Computing Service
 
-![Kubernetes confidential computing architecture](assets/images/extract/media/K8Sprivate.png)
+![Kubernetes Confidential Computing Overview](assets/images/extract/media/K8S.png)
 
 #### Services Description
 
@@ -37,6 +37,9 @@ Features included:
 - *Secure enclaves* → Enforces isolation and encryption, ensuring that only authorized parties can access data.
 - *Trusted execution environments (TEEs)* → Adds a secure computing environment, protecting data from external threats.
 - As a managed Kubernetes solution, the customer does not have to worry about managing the infrastructure and its complexity, as the infrastructure layer is managed by Leonardo throughout the service lifecycle.
+
+The service is offered with the following metrics: *15 nodes with 8 GB RAM for each unit*.
+
 
 The service offers the following advantages:
 

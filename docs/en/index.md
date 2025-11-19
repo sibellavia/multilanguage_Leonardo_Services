@@ -5,15 +5,15 @@ The following table lists the various families and their related services.
 
 | FAMILY  | LIST OF SERVICES                 |
 | ------- | --------------------------------- |
-| Compute | [Confidental private IaaS](IaaS.md#pool-confidential-services)          |
+| Compute | [Confidental Private IaaS](IaaS.md#pool-confidential-services)          |
 | Compute | [Shared-IaaS (VMs)](IaaS.md#VMs)                 |
-| Compute | [Kubernetes confidential computing](CaaS.md#kubernetes)   |
-| Compute | [Functions as aService](PaaS.md#faas)          |
+| Compute | [Kubernetes Confidential Computing](CaaS.md#kubernetes)   |
+| Compute | [Functions As A Service (FAAS)](PaaS.md#faas)          |
 <figcaption>List of services for the Compute family</figcaption>
 
 | FAMILY                               | LIST OF SERVICES                                            |
 | ------------------------------------ | -----------------------------------------------------------| 
-|Security                             | [Identity & Access Management (IAM) Service](#IAM)|
+|Security                             | [Identity & Access Management (IAM) Service](PaaS.md#IAM)|
 | Security                             | [Key Vault as a Service - Standard](PaaS.md#key-vault)                           |
 | Security                             | [Endpoint Protection](PaaS.md#endpoint)                                           |
 | Security                             | [Advanced security and protection service for files and data](PaaS.md#file-data)                                           |

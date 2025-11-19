@@ -1,17 +1,17 @@
-# Leonardo Data Centers
+# Data Centers Description
 
 ## General architecture
 
 The Cloud Services described in the appropriate categories are hosted within 6 Data Centers distributed across Italy, set up in a dual-Region configuration (3 DCs + 3 DCs), each redundant with a pair of high-reliability Availability Zones. The data centers are equipped with all the necessary plant and technological infrastructure to ensure the highest quality standards in terms of reliability, availability, and physical security. 
 
-
+![Data Center Architecture and Interconnection](assets/images/extract/media/DC.png)  
 
 The infrastructure configuration is fully redundant thanks to the division of each of the two Regions (North and South, hundreds of kilometers apart) into dual-AZs (Availability Zones), i.e., a pair of Data Centers in business continuity configuration, separated by several dozen kilometers as the crow flies.
 Specifically, the two AZs are interconnected thanks to a proprietary backbone that guarantees complete redundancy, negligible latency, and private connectivity, logically characterizing the pair as a single virtual Data Center (Software Defined Data Center).  
 The Regions are also interconnected via the same proprietary backbone and a network layer that enables a flexible, software-defined logical network architecture, ensuring the mobility of application loads and the inherent high reliability of Cloud solutions.  
 Within an Availability Zone, workloads are distributed transparently, and the HA (High Availability) configuration enables infrastructure service continuity (Business Continuity) between the two data centers in the same Region.  
-In fact, thanks to this basic configuration, the Cloud platform will also provide data distribution across the two zones of each Region. This configuration is possible thanks to the distribution of storage space (identified with the best Storage Array technologies available on the IT market) within the two AZs and, therefore, thanks to the continuous data replication of the service chosen by each individual organization. Thus, if an individual organization decides to leverage the full redundancy of its infrastructure (whether physical or virtual), it can leverage the Cloud platform's HA configuration and build DR/BC solutions.  
-The Cloud platform's unique nature, thanks to the proprietary backbone interconnecting the two AZs constituting each Region, will enable synchronous and asynchronous data replication between the Storage Array systems constituting the Storage Layer. In this operational context, the individual organization will benefit from the Cloud platform's intrinsic ability to reactivate workloads within one of the two AZs or in a different Region. The restart of workloads protected by the activated DR/BC solution will then allow the individual organization to independently manage the restart of each application, according to its own DR or BC plans.
+In fact, thanks to this basic configuration, the Cloud platform will also provide data distribution across the three zones of each Region. This configuration is possible thanks to the distribution of storage space (identified with the best Storage Array technologies available on the IT market) within the three AZs and, therefore, thanks to the continuous data replication of the service chosen by each individual organization. Thus, if an individual organization decides to leverage the full redundancy of its infrastructure (whether physical or virtual), it can leverage the Cloud platform's HA configuration and build DR/BC solutions.  
+The Cloud platform's unique nature, thanks to the proprietary backbone interconnecting the three AZs constituting each Region, will enable synchronous and asynchronous data replication between the Storage Array systems constituting the Storage Layer. In this operational context, the individual organization will benefit from the Cloud platform's intrinsic ability to reactivate workloads within one of the three AZs or in a different Region. The restart of workloads protected by the activated DR/BC solution will then allow the individual organization to independently manage the restart of each application, according to its own DR or BC plans.
 
 ## Network description
 
