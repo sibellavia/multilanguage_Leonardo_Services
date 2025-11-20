@@ -15,7 +15,7 @@ Each phase includes defined roles, expected outputs, and quality criteria.
 Leonardo's methodology for delivering and supporting its services is inspired by ITIL®.
 The ITIL® framework has been used as a reference for delivering and improving services, particularly in the areas of Service Operation and Service Transition.
 
-## Process Steps
+## Process steps
 
 This section lists the process sequences for customer support requests.
 
@@ -82,7 +82,7 @@ A ticket is closed only when:
 
 Quality controls ensure closure accuracy and SLA compliance.
 
-## Escalation Management
+## Escalation management
 
 Escalations ensure that prolonged or high-impact issues receive timely attention.  
 They include:
@@ -92,7 +92,7 @@ They include:
 - Vendor escalation for third-party system dependencies.
 - Escalation paths and thresholds are predefined within the support framework.
 
-##  Monitoring and Quality Assurance
+##  Monitoring and quality assurance
 
 Performance of the Ticket Management Process is monitored through KPIs such as:
 
@@ -104,14 +104,103 @@ Performance of the Ticket Management Process is monitored through KPIs such as:
 
 Periodic reviews identify improvement opportunities and ensure adherence to service standards.
 
-##  Roles and Responsibilities
+##  Roles and responsibilities process
 
-This table lists the roles and their responsibilities.
+This section defines the roles, responsibilities, and operational boundaries for managing cloud services in accordance with a Shared Responsibility Model.  
+The goal is to establish a clear framework that enables the secure, compliant, and efficient adoption of cloud services within the organization.  
+The principles described here apply to all services offered and described in this documentation.
 
-| Role                 | Responsibilities                                               |
-| -------------------- | -------------------------------------------------------------- |
-| Service Desk         | Ticket intake, initial diagnosis, communication, routing       |
-| Resolver Groups      | Investigation and resolution, technical updates                |
-| Service Manager      | SLA monitoring, escalation oversight, process governance       |
-| Customer             | Providing required information, validating resolution          |
-| Vendor/Third Parties | Supporting resolution of components under their responsibility |
+Cloud security is a joint commitment between Leonardo, as a cloud service provider, and the organization, as a customer.  
+Leonardo is responsible for cloud security, including physical infrastructure, network control layers, and platform services.  
+The organization is responsible for cloud security, including data protection, identity and access management, workload configuration, and governance.  
+
+The distribution of responsibilities varies depending on the service model. As the organization adopts higher-level services (from IaaS to PaaS), Leonardo assumes a greater share of operational responsibility, while the organization retains responsibility for data, identity, and access governance.
+
+###  Organizational roles
+
+To ensure effective management of shared responsibilities, the following internal roles are established:
+
+*A) Platform/Cloud team*
+
+Dedicated to the design, implementation, and management of the core cloud infrastructure.  
+- Implements shared technical controls, including network configurations, platform security baselines, and monitoring frameworks.
+- Ennsures that Cloud environments comply with the organization's policies and technical standards.
+
+*B) Workload/Application team*
+
+Owns the design, security, and operation of specific workloads hosted in the cloud.  
+- Manages application configurations, secure coding practices, updates, and lifecycle management.
+- Ensures appropriate data classification, protection, retention, and deletion practices.
+
+*C) Security and compliance team*
+
+Defines organizational security policies, standards, and regulatory controls.
+
+- Conducts risk assessments and oversees compliance across cloud deployments.
+- Implements identity and access management policies, encryption standards, and mandatory security controls.
+
+*D) Governance and risk management*
+
+Maintains the cloud governance framework, including the shared responsibility matrix.
+
+- Ensures that cloud operations remain aligned with legal, regulatory, and organizational requirements.
+- Coordinates reviews and audits to validate compliance and role execution.
+
+*E) Operations and incident response team*
+
+Provides monitoring and operational support for cloud environments and deployed workloads.
+
+- Manages incident response procedures, including triage, remediation, and coordination with Microsoft where required.
+- Ensures proper execution of change management policies.
+
+###  Responsibility matrix
+
+A responsibility matrix is ​​maintained to explicitly document which responsibilities fall to Leonardo, which to the organization, and which are shared.  
+The matrix includes, but is not limited to, the following domains:
+
+- Data protection and classification
+- Identity and access management
+- Security monitoring and threat detection
+- Network and host security
+- Application configuration and secure development
+- Backup, restore, and recovery
+- Compliance, auditing, and reporting
+
+This matrix is reviewed regularly and updated whenever service models, technologies, or organizational structures change.
+
+###  Operational processes
+
+The organization adopts a shared management operating model.
+The Platform Team provides standardized and secure environments and security barriers; the Workload Teams manage their solutions within these constraints.
+The Security and Governance Teams define mandatory controls and oversee compliance.
+
+Identity governance remains the organization's responsibility.
+The principles of least privilege, role-based access control (RBAC), and secure authentication must be implemented.
+Microsoft provides the identity platform, while the organization manages users, groups, and access permissions.
+
+The Workload Teams are responsible for ensuring the correct data classification and implementing the necessary protections, such as encryption, retention controls, and deletion policies.
+
+The Platform Team provides the technical capabilities for encryption, secure storage, and backup.
+
+Monitoring activities are shared:
+
+- Leonardo monitors the security of the underlying cloud platform.
+- The organization monitors workload behavior, user activity, configuration changes, and potential threats using security tools and logs.
+
+Incident responsibilities are divided by domain:
+
+- Cloud infrastructure-related incidents may involve Leonardo.
+- Incidents involving data, identities, workloads, or configurations fall within the responsibility of internal teams.  
+A coordinated response plan ensures that escalation paths, communication channels, and reporting requirements are clearly defined.
+
+All changes to cloud resources must comply with the organization's change control procedures.
+Platform-level changes require coordination with the platform team; workload-level changes must be approved by the application teams, while remaining aligned with established Security and Governance policies.
+
+This framework is reviewed on a periodic basis to ensure continued relevance.  
+Updates may be required when:
+
+- new cloud services are introduced,
+- organizational roles evolve,
+- regulatory obligations change, or lessons learned from audits and incidents highlight areas for improvement.
+
+Continuous improvement is essential to maintaining a secure and well-governed cloud environment.

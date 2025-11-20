@@ -6,40 +6,36 @@ The Cloud Services described in the relevant categories are hosted within 6 Data
 
 ![Data Center Architecture and Interconnection](assets/images/extract/media/DC.png)  
 
-The infrastructure configuration is completely redundant thanks to the division of each of the two Regions, hundreds of kilometers apart.  
+The infrastructure configuration is completely redundant thanks to the division of each of the two regions. The regions are more than 400 km apart.  
 Each Region consists of three Availability Zones (AZs), that is three Data Centers configured for business continuity, separated as the crow flies by tens of kilometers.
 
 Specifically, the following table shows the DC association for each region:
 
 | Region   | List of DCs |
 | -------- | ----------- |
-| Region A | RM 1        |
-| Region A | RM 2        |
-| Region A | RM 3        |
-| Region B | MI 1        |
-| Region B | MI 2        |
-| Region B | MI 3        |
+| Region A | RM 1 (Rome)        |
+| Region A | RM 2 (Acilia-Rome)        |
+| Region A | RM 3 (Pomezia-Rome)       |
+| Region B | MI 1 (Bergamo)       |
+| Region B | MI 2 (Basiglio-Milan)       |
+| Region B | MI 3 (Siziano-Milan)       |
 <figcaption>Nomenclature of DCs for each Region</figcaption>
 
-Below are the distances between the DCs of each Region.
+Below are the distances between each Region and between the DCs of each Region.
 
-Region A:
-
-- DC RM 1 - DC RM 2: approximate distance 30 km
-- DC RM 1 - DC RM 3: approximate distance 30 km
-- DC MR 2 - DC RM 3: approximate distance 15 km
-
-Region B:
-
-- DC MI 1 - DC MI 2: approximate distance 53 km
-- DC MI 1 - DC MI 3: approximate distance 54 km
-- DC MI 2 - DC MI 3: approximate distance 10 km
+- Region A - Region B: distance more than 400 km
+- RM 1 - RM 2: approximate distance 30 km
+- RM 1 - RM 3: approximate distance 30 km
+- RM 2 - RM 3: approximate distance 15 km
+- MI 1 - MI 2: approximate distance 53 km
+- MI 1 - MI 3: approximate distance 54 km
+- MI 2 - MI 3: approximate distance 10 km
 
 All data centers are equipped with all the necessary technical and technological infrastructure to guarantee the highest quality standards in terms of reliability, availability, and physical security. 
 
-The three AZs are interconnected via a proprietary backbone, which guarantees complete redundancy, negligible latency, and private connectivity, logically characterizing the Regions as a single virtual Data Center (Software Defined Data Center).  
+The three AZs are interconnected via a dedicated backbone, which guarantees complete redundancy, negligible latency, and private connectivity, logically characterizing the Regions as a single virtual Data Center (Software Defined Data Center).  
 
-The Regions are also interconnected via the same proprietary, dedicated, and reserved backbone with IP/MPLS network transmission, enabling a flexible, software-defined logical network architecture, ensuring the mobility of application loads and the inherent high reliability of Cloud solutions.  
+The Regions are also interconnected via the same dedicated and reserved backbone with IP/MPLS network transmission, enabling a flexible, software-defined logical network architecture, ensuring the mobility of application loads and the inherent high reliability of Cloud solutions.  
 Within an Availability Zone, workloads are transparently distributed, and the HA (High Availability) configuration enables infrastructure service continuity (Business Continuity) between the three Data Centers in the same Region. 
 
 Thanks to this basic configuration, the Cloud platform will also provide data distribution between the three zones of each Region. This configuration is possible thanks to the distribution of storage space (identified with the best Storage Array technologies available on the IT market) within the three AZs and, therefore, thanks to the continuous replication of data for the service chosen by each individual organization. Therefore, if an individual organization decides to leverage the full redundancy of its infrastructure (physical or virtual), it can leverage the Cloud platform's HA configuration and create DR/BC solutions.  
@@ -148,16 +144,6 @@ This section lists the technical specifications for each Data Center.
 - ISO 45001- Workplace health and safety management system
 - ISO 22301 - Business Continuity management system
 - ISO 20000-1 - IT services management
-
-**Services** 
-
-- Colocation solutions: rack portions; dedicated racks; cage; dedicated rooms 
-- Power per rack: from 14 kW for standard configuration up to 40 kW for a customized project 
-- IT power individual room: 1 MW (powered by 2 redundant modules)
-
-    - Remote hands
-    - Shared warehouses, or dedicated to individual customers
-    - Shared offices, or dedicated to individual customers
 
 **Connectivity** 
 
@@ -286,16 +272,6 @@ This section lists the technical specifications for each Data Center.
 - It has ANSI/TIA-942 Rating 3 certification for facility design
 - The system is compliant with multiple ISO standards: ISO 50001 (energy management), ISO 14001 (environmental management), ISO 9001 (quality), ISO 27001 (information security), ISO 22301 (business continuity)
 
-**Services** 
-
-- The Pomezia site supports a full suite of cloud services for public administrations, including:
-
-    - IaaS (shared and dedicated) 
-    - PaaS, container-based services (CaaS), and data protection (backup, disaster recovery) solutions
-    - Managed hosting and housing options
-
-- Operational governance ensurs data sovereignty, process control, and strong operational security
-
 **Connectivity** 
 
 - Connected via a dual-fiber ring: two independent paths link it to main ISP'score network via the POPs both located in Rome
@@ -363,17 +339,6 @@ This section lists the technical specifications for each Data Center.
 - ISO/IEC 27017 – Cloud security controls
 - ISO/IEC 27018 – Managing personal data on the Cloud
 - ISO/IEC 27035 – Managing security incidents and events
-
-**Services** 
-
-- Colocation solutions: rack portions; dedicated racks; cage; dedicated rooms 
-- Power per rack: up to 40kW 
-- IT power individual room: 1.5 MW (powered by 2 redundant modules)
-
-    - 24h Smart hands
-    - 24h Remote hands&eyes
-    - Shared warehouses, or dedicated to individual clients
-    - Shared offices, or dedicated to individual clients
 
 **Connectivity** 
 
@@ -464,28 +429,6 @@ Other Certifications:
 - SOC 1 Type II
 - SOC 2 Type II
 - EU Code of Conduct
-
-**Services** 
-
-Data Center Services:
-- Private Cage
-- Secure Cabinet
-- Smart Hands®
-- Equinix Flex Space®
-- Equinix Smart Build
-- Antenna services
-
-Interconnection Services:
-- Equinix Fabric®
-- Fabric Cloud Router
-- Equinix Precision Time®
-- Equinix Internet Exchange®
-- Equinix Internet Access
-- Metro Connect®
-- Cross Connects
-
-Digital Infrastructure Services:
-- Network Edge
 
 **Connectivity** 
 
@@ -579,11 +522,6 @@ Suppression agents:
 - ISO 27001:2013 – Information Security Management
 - ISO 50001:2011 – Energy Management
 - ANSI/TIA-942-B:2017 – Rating 4 (Tier IV)
-
-**Services** 
-
-- All hosting and cloud services by CoreTech rely on SUPERNAP Italia datacenter infrastructure
-- Full 24/7 monitoring of electrical, cooling, fire protection, perimeter security, and IP network systems
 
 **Connectivity** 
 

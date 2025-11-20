@@ -1,23 +1,23 @@
-# Hybrid Edge
+# Hybrid Services
 
-The following table lists the services included in the *Hybrid Edge* category.
+The following table lists the services included in the *Hybrid* category.
 
 | FAMILY  | LIST OF SERVICES                                                                                                    |
 | ------- | ------------------------------------------------------------------------------------------------------------------- |
-| Hybrid Edge | [Edge Location](#edge)|
-<figcaption>List of families and related Hybrid Edge services</figcaption>
+| Hybrid | [Edge Location - Pool Small (Confidential)](#edge)|
+<figcaption>List of families and related Hybrid services</figcaption>
 
-## Hybrid Edge Family
+## Hybrid Family
 
 Below is the list of services belonging to the Hybrid Edge family:
 
-- [Edge Location](#edge)
+- [Edge Location - Pool Small (Confidential](#edge)
 
 <a id="edge"></a>
 
-### Edge Location Service
+### Edge Location - Pool Small (Confidential)
 
-![Edge Location Service Overview](assets/images/extract/media/edge.png)
+![Edge Location - Pool Small (Confidential) Overview](assets/images/extract/media/edge.png)
 
 #### Services Description
 

@@ -34,7 +34,6 @@ The following table lists the various families and their related services.
 | Middleware                           | [Spring boot as a Service](PaaS.md#spring-boot)                                    |
 | Middleware                           | [PaaS Business Process as a Service](PaaS.md#BPM)                          |
 | Middleware                           | [PaaS CMS as a Service](PaaS.md#CMS)                                       |
-| Middleware                           | [PaaS ETL - Batch / Real Time Processing - 1 worker](PaaS.md#ETL)          |
 | Middleware                           | [Semantic Knowledge Search - 1 worker](PaaS.md#semantic-search)                            |
 <figcaption>List of services for the Middleware family</figcaption>
 
@@ -66,7 +65,7 @@ The following table lists the various families and their related services.
 | Big Data                             | [Data Lake - 1TB](PaaS.md#datalake)                                             |
 | Big Data                             | [Data Lakehouse](PaaS.md#datalakehouse)                                              |
 | Big Data                             | [Business Intelligence Platform](PaaS.md#BI)                              |
-| Big Data                             | [Batch/Real time Processing - 1 Worker](PaaS.md#processing)                       |
+| Big Data                             | [PaaS ETL Batch/Real time Processing - 1 Worker](PaaS.md#processing)                       |
 | Big Data                             | [Event Message - 1 Worker](PaaS.md#event-message)                                    |
 | Big Data                             | [Data Governance](PaaS.md#governance)                                             |
 <figcaption>List of services for the Big Data family</figcaption>
@@ -119,11 +118,12 @@ The following table lists the various families and their related services.
 | FAMILY                               | LIST OF SERVICES                                            |
 | ------------------------------------ | ----------------------------------------------------------- |
 | Storage                              | [Block Storage (1000 GB) - High Density](PaaS.md#block-storage)                      |
+| Storage                              | [Archive Storage (1000 GB)](PaaS.md#archive-storage)                      |
 <figcaption>List of services for the Storage family</figcaption>
 
 | FAMILY                               | LIST OF SERVICES                                            |
 | ------------------------------------ | ----------------------------------------------------------- |
-| Hybrid                               | [Edge Location](PaaS.md#edge)                      |
+| Hybrid                               | [Edge Location - Pool Small (Confidential)](Hybrid.md#edge)                      |
 <figcaption>List of services for the Hybrid family</figcaption>
 
 From a logical-functional point of view, the Leonardo's services can be divided into three macro-categories:

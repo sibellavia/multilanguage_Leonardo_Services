@@ -1,12 +1,12 @@
 nav:
 - Services Overview: index.md
-- Infrastructure as a Service (IaaS) Category: IaaS.md
-- Container as a Service (CaaS) Category: CaaS.md
-- Platform as a Service (PaaS) Category: PaaS.md
-- Hybrid Edge Category: Hybrid.md
+- Infrastructure as a Service (IaaS): IaaS.md
+- Container as a Service (CaaS): CaaS.md
+- Platform as a Service (PaaS): PaaS.md
+- Hybrid Services: Hybrid.md
+- Data Center Description: DC.md
 - Price List: Price.md
 - Service Provisioning: Provisioning.md
 - Service Management: ITSM.md
-- Test Account Management: Test.md
-- Data Center Description: DC.md
 - Service Level Agreement (SLA): SLA.md
+- Test Account Management: Test.md
