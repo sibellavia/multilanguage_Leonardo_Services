@@ -426,3 +426,58 @@ FOOTER - NASCONDE "MADE WITH MKDOCS"
 .md-footer-meta__inner a[href*="mkdocs"] {
     display: none !important;
 }
+
+/* ===================================================
+MODALITÀ FULLSCREEN
+=================================================== */
+/* Stili per la modalità a schermo intero */
+.fullscreen-mode .md-sidebar--primary,
+.fullscreen-mode .md-sidebar--secondary {
+    display: none !important;
+}
+
+.fullscreen-mode .md-main__inner {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 20px !important;
+}
+
+.fullscreen-mode .md-content {
+    max-width: 100% !important;
+    margin: 0 !important;
+    border: none !important;
+    padding: 20px !important;
+}
+
+.fullscreen-mode .md-content__inner {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+/* Migliora la leggibilità in fullscreen con larghezza ottimale */
+.fullscreen-mode .md-typeset {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    line-height: 1.7 !important;
+    font-size: 16px !important;
+}
+
+/* Transizioni smooth per il passaggio a fullscreen */
+.md-sidebar--primary,
+.md-sidebar--secondary,
+.md-main__inner,
+.md-content {
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Stili per il pulsante fullscreen */
+#fullscreen-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Indica visivamente quando si è in modalità fullscreen */
+.fullscreen-mode #fullscreen-toggle {
+    background-color: rgba(255, 171, 102, 0.2) !important;
+    color: var(--md-accent-fg-color) !important;
+}

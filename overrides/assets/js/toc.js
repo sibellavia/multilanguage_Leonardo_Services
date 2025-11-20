@@ -102,9 +102,93 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Funzione per creare il pulsante fullscreen
+    function createFullscreenButton() {
+        // Verifica se il pulsante esiste già
+        if (document.getElementById('fullscreen-toggle')) return;
+        
+        // Cerca il container dei pulsanti del header (dove c'è il language switcher)
+        let headerActions = document.querySelector('.md-header__option');
+        if (!headerActions) {
+            // Fallback: cerca altri possibili container
+            headerActions = document.querySelector('.md-header__inner');
+        }
+        
+        if (headerActions) {
+            // Crea il pulsante fullscreen
+            const fullscreenBtn = document.createElement('button');
+            fullscreenBtn.id = 'fullscreen-toggle';
+            fullscreenBtn.className = 'md-header__button';
+            fullscreenBtn.title = 'Modalità schermo intero';
+            fullscreenBtn.innerHTML = '⛶';
+            fullscreenBtn.style.cssText = `
+                background: transparent;
+                border: none;
+                color: inherit;
+                font-size: 18px;
+                cursor: pointer;
+                padding: 8px;
+                margin-left: 8px;
+                border-radius: 4px;
+                transition: background-color 0.2s;
+            `;
+            
+            // Aggiungi hover effect
+            fullscreenBtn.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+            });
+            
+            fullscreenBtn.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = 'transparent';
+            });
+            
+            // Aggiungi event listener per toggle fullscreen
+            fullscreenBtn.addEventListener('click', toggleFullscreenMode);
+            
+            // Inserisci il pulsante nel header
+            headerActions.appendChild(fullscreenBtn);
+            
+            console.log('Fullscreen button created and added to header');
+        } else {
+            console.warn('Header container not found for fullscreen button');
+        }
+    }
+
+    // Funzione per attivare/disattivare la modalità fullscreen
+    function toggleFullscreenMode() {
+        const body = document.body;
+        const button = document.getElementById('fullscreen-toggle');
+        const isFullscreen = body.classList.contains('fullscreen-mode');
+        
+        if (isFullscreen) {
+            // Esci dalla modalità fullscreen
+            body.classList.remove('fullscreen-mode');
+            button.innerHTML = '⛶';
+            button.title = 'Modalità schermo intero';
+            console.log('Exited fullscreen mode');
+        } else {
+            // Entra in modalità fullscreen
+            body.classList.add('fullscreen-mode');
+            button.innerHTML = '⛷';
+            button.title = 'Esci da schermo intero';
+            console.log('Entered fullscreen mode');
+        }
+    }
+
+    // Aggiungi listener per ESC key per uscire da fullscreen
+    function setupFullscreenEscapeKey() {
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && document.body.classList.contains('fullscreen-mode')) {
+                toggleFullscreenMode();
+            }
+        });
+    }
+
     // Esegui le funzioni
     fixSidebarIndexLinks();
     fixLogoLink();
     fixAnchorLinks();
     removeTableOverflow();
+    createFullscreenButton();
+    setupFullscreenEscapeKey();
 });
