@@ -22,7 +22,6 @@ The following table lists the services included in the *Platform as a Service (P
 | Middleware                           | [Spring boot as a Service](#spring-boot)                                    |
 | Middleware                           | [PaaS Business Process as a Service](#BPM)                          |
 | Middleware                           | [PaaS CMS as a Service](#CMS)                                       |
-| Middleware                           | [PaaS ETL - Batch / Real Time Processing - 1 worker](#ETL)          |
 | Middleware                           | [Semantic Knowledge Search - 1 worker](#semantic-search)                            |
 |  Data Protection                          | [Backup - PLATFORM](#backup)                            |
 | Infra & Ops Platform                 | [Multicloud Management Platform](#SCMP)                              |
@@ -38,7 +37,7 @@ The following table lists the services included in the *Platform as a Service (P
 | Big Data                             | [Data Lake - 1TB](#datalake)                                             |
 | Big Data                             | [Data Lakehouse](#datalakehouse)                                              |
 | Big Data                             | [Business Intelligence Platform](#BI)                              |
-| Big Data                             | [Batch/Real time Processing - 1 Worker](#processing)                       |
+| Big Data                             | [PaaS ETL Batch/Real time Processing - 1 Worker](#processing)                       |
 | Big Data                             | [Event Message - 1 Worker](#event-message)                                    |
 | Big Data                             | [Data Governance](#governance)                                             |
 | Artificial Intelligence (AI)         | [Speech to Text](#speech-to-text)                                              |
@@ -67,6 +66,7 @@ The following table lists the services included in the *Platform as a Service (P
 | Networking                           | [L7 Load Balancer (regional)](#L7)                                                    |
 | Networking                           | [Cloud interconnect Gold SW (10 Gbps max throughput)](#gold)                                                    |
 | Storage                              | [Block Storage (1000 GB) - High Density](#block-storage)                      |
+| Storage                              | [Archive Storage (1000 GB)](#archive-storage)                      | 
 <figcaption>List of families and related PaaS services</figcaption>
 
 ## Compute Family
@@ -1100,47 +1100,6 @@ The service offers the following advantages:
 - *Native integration with cloud services* (CRM, analytics, AI, CDN).
 - *Front-end/back-end separation* → freedom to use modern frameworks (React, Vue, Angular, etc.).
 
-<a id="ETL"></a>
-
-### PaaS ETL - Batch / Real Time Processing
-
-![PaaS ETL - Batch / Real Time Processing](assets/images/extract/media/ETL.png)
-
-#### Services Description
-
-It is a platform that provides a set of tools for processing, integrating, quality-checking, and preparing data from heterogeneous sources stored in the Data Lake, both in real time and in batch mode.  
-It offers a user-friendly graphical interface for designing and implementing data integration workflows using a visual approach, following the ETL (Extract – Transform – Load) approach. This reduces the complexity of data integration and allows users to focus on business logic rather than programming code.  
-It supports a wide range of data sources, including relational databases, files, web applications, cloud, web services, and more. This makes it extremely flexible for data integration in a variety of contexts.  
-It also offers data quality management tools, allowing users to clean, standardize, and enrich their data to ensure its accuracy and reliability.
-
-#### Features and Advantages
-
-The main features and functionalities of the service are:
-
-- *Heterogeneous and large-scale data processing* → It supports a large number of data sources in batch and streaming mode (for example, datasets stored on HDFS, S3, ADLS Gen2, and GCS in CSV, Parquet, Avro, and other formats, as well as RDBMS via JDBC or all popular NoSQL, Apache Kafka, and more).
-- *It is natively integrated* with the Data Lake and Batch/Real-Time Processing PaaS of the Big Data family.
-- *It allows to implement complex data pipelines* → leveraging the parallel and distributed computing capacity provided by a Spark cluster.
-- *It provides an interactive mode* to debug flows and explore data easily and intuitively.
-- *It guarantees the maximum scalability* necessary to meet the needs of organizations of any size, from small businesses to large enterprises.
-
-The main architectural components of the service are as follows:
-
-- *Visual ETL Architecture* → provides various blocks that allow you to visually design an ETL, ELT, and ELL pipeline. It allows you to read, write, and modify data from different sources, interfacing with the Data Lake and Monitoring module, and can use the Processing module for data-intensive processing.
-- *Apache Spark* → Open-source parallel processing framework that supports in-memory processing to improve the performance of applications that analyze Big Data.
-- *JupyterLab* → Interactive notebook-based development environment designed primarily for working with data, scientific calculations, and machine learning. It supports writing and executing interactive code in languages ​​such as Python, R, or Julia.
-- *NodeRed* → Visual, low-code development environment for creating applications that connect devices, web services, APIs, and systems.
-
-The service is offered per node/worker.
-
-The service offers the following advantages:
-
-- *Support for data-driven strategies, faster and more informed decisions* → centralized data for service customization (e.g., real-time analytics for marketing, IoT, e-commerce, etc.) and ready-to-use pipelines without complex development. 
-- *Greater focus on core business* → development and IT teams do not have to worry about technical maintenance, as it is managed.
--* Reduced operating costs and service scalability* → no infrastructure to manage; support for large data volumes (batch) or continuous flows (streaming); automation of extraction, transformation, and loading processes with real-time scheduling or triggers; same framework for historical data and real-time flows.
-- *Integration with cloud ecosystem* (data warehouse, data lake, BI, AI/ML).
-- *Guaranteed security and compliance* (encryption, access, audit logs).
-- *Integrated monitoring* → metrics, alerts, and centralized logging for ETL pipelines.
-
 <a id="semantic-search"></a>
 
 ### Semantic Knowledge Search - 1 Worker
@@ -1898,9 +1857,9 @@ Infrastructure scalability and flexibility.
 
 <a id="processing"></a>
 
-### Batch/Real time Processing - 1 Worker
+### PaaS ETL - Batch/Real time Processing - 1 Worker
 
-![Batch/Real time Processing Service](assets/images/extract/media/Processing.png)
+![PaaS ETL - Batch/Real time Processing](assets/images/extract/media/Processing.png)
 
 ##### Services Description
 
@@ -3359,6 +3318,7 @@ The service offers the following advantages:
 Below is the list of services belonging to the Storage family:
 
 - [Block Storage (1000 GB) - High Density](#block-storage)
+- [Archive Storage (1000 GB)](#archive-storage)
 
 <a id="block-storage"></a>
 
@@ -3473,3 +3433,16 @@ Disaster Recovery (DR) ensures service continuity, data integrity and rapid rest
         - Data is synchronized back (reverse RBD mirroring)
         - Primary Ceph cluster is reintroduced into production
         - Normal operations resume
+
+<a id="archive-storage"></a>
+
+### Archive Storage (1000 GB) Service
+
+![Archive Storage (1000 GB) Service interface](assets/images/extract/media/storage.png)
+
+#### Services Description
+
+
+
+#### Features and Advantages
+

@@ -46,8 +46,7 @@ For each service, you can choose from three alternative purchase options:
 | Middleware | [Spring boot as a Service](PaaS.md#spring-boot)| GB| 16 GB container| 651,62 €| 7.037,54 €| 18.766,76 €|
 | Middleware | [PaaS Business Process as a Service](PaaS.md#BPM)| Core| 8 core| 12.755,33 €| 137.757,60 €| 367.353,61 €|
 | Middleware | [PaaS CMS as a Service](PaaS.md#CMS)| Users| 1000 | 5.722,14 €| 61.799,09 €| 164.797,57 €|
-| Middleware | [PaaS ETL - Batch / Real Time Processing - 1 worker](PaaS.md#ETL)| Worker node| 1| 16.816,32 €|  181.616,26 €|  484.310,02 €|
-| Middleware | [Semantic Knowledge Search - 1 worker](PaaS.md#semantic-search)| Worker node| 1| 244,06 €| 2.635,81 €| 7.028,84 €|
+| Middleware | [Semantic Knowledge Search - 1 worker](PaaS.md#semantic-search)| Worker node| 26-core 2.70 GHz processor, 1:2 virtualization ratio - SSD disk per worker| 244,06 €| 2.635,81 €| 7.028,84 €|
 <figcaption>Price list of the Middleware Family Services</figcaption>
 
 | Family | Service | Metric (unit of measurement) | Metric (unit value) | Monthly Subscription | Annual Reserved Subscription | Three-year Reserved Subscription |
@@ -76,9 +75,9 @@ For each service, you can choose from three alternative purchase options:
 | ------ | ------- | ---------------------------- | ------------------- | -------------------- | ---------------------------- | -------------------------------- |
 | Big Data | [Data Lake - 1TB](PaaS.md#datalake)| TB|1 TB| 25,83 €| 279,00 €| 744,00 €|
 | Big Data | [Business Intelligence Platform](PaaS.md#BI)| Users| 50 users| 8.365,83 €| 90.351,00 €| 240.936,01 €|
-| Big Data | [Batch/Real time Processing - 1 Worker](PaaS.md#processing)| Worker| Apache Spark on a 26-core 2.70 GHz physical processor with a 1:2 virtualization ratio| 608,48 €| 6.571,54 €| 17.524,11 €|
+| Big Data | [PaaS ETL Batch/Real time Processing - 1 Worker](PaaS.md#processing)| Worker| Apache Spark on a 26-core 2.70 GHz physical processor with a 1:2 virtualization ratio| 608,48 €| 6.571,54 €| 17.524,11 €|
 | Big Data | [Event Message - 1 Worker](PaaS.md#event-message)| Worker| Apache Kafka on a 26-core 2.70 GHz physical processor with a 1:2 virtualization ratio| 291,29 €| 3.145,95 €| 8.389,20 €|
-| Big Data| [[Data Governance](PaaS.md#governance)| | | 461,45 €| 4.983,68 €| 13.289,82 €|
+| Big Data| [Data Governance](PaaS.md#governance)| User| 10 users| 461,45 €| 4.983,68 €| 13.289,82 €|
 <figcaption>Price list of the Big Data Family Services</figcaption>
 
 | Family | Service | Metric (unit of measurement) | Metric (unit value) | Monthly Subscription | Annual Reserved Subscription | Three-year Reserved Subscription |
@@ -132,9 +131,10 @@ For each service, you can choose from three alternative purchase options:
 | Family | Service | Metric (unit of measurement) | Metric (unit value) | Monthly Subscription | Annual Reserved Subscription | Three-year Reserved Subscription |
 | ------ | ------- | ---------------------------- | ------------------- | -------------------- | ---------------------------- | -------------------------------- |
 | Storage | [Block Storage (1000 GB) - High Density](PaaS.md#block-storage)| 1000 GB| 1| 107,24 €| 1.158,24 €| 3.088,65 €|
+| Storage | [Archive Storage (1000 GB)](PaaS.md#archive-storage)| 1000 GB| 1| 96,52 €| 1.042,42 €| 2.779,78 €|
 <figcaption>Price list of the Storage Services</figcaption>
 
 | Family | Service | Metric (unit of measurement) | Metric (unit value) | Monthly Subscription | Annual Reserved Subscription | Three-year Reserved Subscription |
 | ------ | ------- | ---------------------------- | ------------------- | -------------------- | ---------------------------- | -------------------------------- |
-| Hybrid | [Edge Location](PaaS.md#edge)| | | | | |
+| Hybrid | [Edge Location - Pool Small (Confidential)](Hybrid.md#edge)| Host number| 3 Hosts (2x 24 Core CPU - 512 GB RAM - 32 TB SSD| 21.586,03 €| 233.129,08 €| € 621.677,54|
 <figcaption>Price list of the Hybrid Services</figcaption>

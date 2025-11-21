@@ -1,23 +1,23 @@
-# Hybrid Edge
+# Hybrid Services
 
-The following table lists the services included in the *Hybrid Edge* category.
+The following table lists the services included in the *Hybrid* category.
 
 | FAMILY  | LIST OF SERVICES                                                                                                    |
 | ------- | ------------------------------------------------------------------------------------------------------------------- |
-| Hybrid Edge | [Edge Location](#edge)|
-<figcaption>List of families and related Hybrid Edge services</figcaption>
+| Hybrid | [Edge Location - Pool Small (Confidential)](#edge)|
+<figcaption>List of families and related Hybrid services</figcaption>
 
-## Hybrid Edge Family
+## Hybrid Family
 
 Below is the list of services belonging to the Hybrid Edge family:
 
-- [Edge Location](#edge)
+- [Edge Location - Pool Small (Confidential](#edge)
 
 <a id="edge"></a>
 
-### Edge Location Service
+### Edge Location - Pool Small (Confidential)
 
-![Edge Location Service Overview](assets/images/extract/media/edge.png)
+![Edge Location - Pool Small (Confidential) Overview](assets/images/extract/media/edge.png)
 
 #### Services Description
 
@@ -41,6 +41,8 @@ The Architectural components are:
 - *Secure Cloud Management Platform (SCMP)* → Central orchestration system managing all edge locations. Self-service portal for tenants and administrators. Policy engine for governance, permissions, and compliance enforcement. Monitoring, metering, and alerting functionalities. PIs for integration with external systems (CI/CD, ITSM, ERP)
 -* Networking & connectivity* → secure connectivity between edge locations and datacenters (VPN, SD-WAN, MPLS). Network segmentation via virtualization technologies. Support for public and private addressing of workloads
 - *Integration with enterprise systems* → integration with corporate authentication systems (LDAP, AD, SSO). Optional integration with Kubernetes for container-native workloads. Interoperability with public cloud platforms as part of a hybrid cloud model.
+
+The service is sized in host unit. A single unit is composed by 3 Hosts, with the following settings: 2x 24 Core CPU - 512 GB RAM - 32 TB SSD.
 
 The service offers the following advantages:
 
