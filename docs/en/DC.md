@@ -26,7 +26,7 @@ Specifically, the following table shows the DC association for each region:
 
 Below are the distances between each Region and between the DCs of each Region.
 
-- Region A - Region B: distance more than 200 km
+- Region A - Region B: distance more than 100 km
 - Region A - Region C: distance more than 400 km
 - Region B - Region C: distance more than 500 km
 

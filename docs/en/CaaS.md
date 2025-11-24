@@ -21,11 +21,10 @@ Below is the list of services belonging to the Compute family:
 
 #### Services Description
 
-This service provides a platform for orchestrating private and secure containers, designed to manage containerized applications in highly regulated environments or with confidentiality requirements.  
-It offers a secure and controlled Kubernetes environment where security is a key aspect of the solution.  
-The operating system on which the solution is based is hardened to minimize the attack surface and potential vulnerabilities.  
-The solution's architectural components utilize mechanisms that ensure data security, including during communication (via encryption mechanisms applied by default to communications between platform components) and for data stored within the platform itself.
-The platform can be customized to adapt to the specific needs of each organization, ensuring integration with existing enterprise systems and applications.
+This service provides an automated Kubernetes platform for orchestrating private and secure containers, designed to manage containerized applications in highly regulated environments or with confidentiality requirements.  
+The platform ensures automation of node scaling, monitoring, and high availability management, without requiring any operational activities on the customer's part.  
+The cluster capacity can be increased or decreased through automated scaling mechanisms based on predefined node block increments, in line with the proposed SKU sizing.  
+This approach ensures architectural consistency, predictable performance, and alignment with the design constraints of the underlying infrastructure.
 
 #### Features and Advantages
 
@@ -38,8 +37,24 @@ Features included:
 - *Trusted execution environments (TEEs)* → Adds a secure computing environment, protecting data from external threats.
 - As a managed Kubernetes solution, the customer does not have to worry about managing the infrastructure and its complexity, as the infrastructure layer is managed by Leonardo throughout the service lifecycle.
 
-The service is offered with the following metrics: *15 nodes with 8 GB RAM for each unit*.
+The service includes a comprehensive set of security tools and services designed to ensure the secure usage of containers running on the Managed Service for Containers.  
+It implements a multilayered infrastructure security model that safeguards the entire container lifecycle—from image creation to runtime execution—ensuring platform integrity, operational compliance, and consistent protection of containerized workloads. 
 
+Platform security:
+
+- Real-time security monitoring and vulnerability scanning are implemented through the use of StackRox, providing continuous assessment of container images and runtime workloads. The platform enables automated detection of CVEs, policy violations, and security threats ensuring a secure, compliant, and monitored environment without operational intervention.
+- Host-level malware and virus detection to secure container nodes with EDR provided by Bitdefender
+- Kernel-level hardening and enforcement of mandatory security profiles to isolate workloads (by design)
+
+Access Security:
+
+- Identity-based access controls (RBAC) and integration with centralized identity management systems.
+
+Compliance, Monitoring, and Auditing:
+
+- Centralized logging and security-related events are forwarded directly to the SOC team SIEM, enabling correlation, alerting, and continuous security monitoring.
+
+The service is offered with the following metrics: *15 nodes with 8 GB RAM for each unit*.
 
 The service offers the following advantages:
 

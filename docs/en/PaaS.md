@@ -66,7 +66,7 @@ The following table lists the services included in the *Platform as a Service (P
 | Networking                           | [L7 Load Balancer (regional)](#L7)                                                    |
 | Networking                           | [Cloud interconnect Gold SW (10 Gbps max throughput)](#gold)                                                    |
 | Storage                              | [Block Storage (1000 GB) - High Density](#block-storage)                      |
-| Storage                              | [Archive Storage (1000 GB)](#archive-storage)                      | 
+| Storage                              | [Archive Storage (1000 GB)](#archive-storage)                      |                    
 <figcaption>List of families and related PaaS services</figcaption>
 
 ## Compute Family
@@ -1303,7 +1303,7 @@ The service offers the following advantages:
 - *Compliance and governance* → Compliance with regulations on safety, civil protection, the environment, or infrastructure management. Complete audit trail and traceability of decisions and interventions.
 - *Integrated and real-time monitoring* → Integration of heterogeneous sources, centralized visualization in static or dynamic maps, automatic notifications and configurable alerts for anomalies or critical events.
 - *Efficient operational coordination* → can enable multi-agency collaboration (e.g., law enforcement, civil defense, utility companies, etc.) and create standardized procedures for event management.
-- *Shorter problem resolution time *→ thanks to the details provided (tracing, distributed diagnosis, code, database, and network visibility).
+- *Shorter problem resolution time* → thanks to the details provided (tracing, distributed diagnosis, code, database, and network visibility).
 - *Automation and artificial intelligence* → automatic recognition of patterns or anomalies (e.g., through video analytics or generative AI), automatic generation of intervention or escalation plans, improving forecasting and response capabilities over time.
 - *Traceability and reporting* → complete recording of events, decisions, and actions taken.
 
@@ -1315,30 +1315,43 @@ The service offers the following advantages:
 
 #### Services Description
 
-This is an Application Performance Monitoring (APM) service that monitors and controls infrastructure performance supporting applications (e.g., latency, errors, service availability) and workloads deployed in the PSN cloud environment.  
+This is an Application Performance Monitoring (APM) service that monitors and controls infrastructure performance supporting applications (e.g., latency, errors, service availability) and workloads deployed in the Cloud environment.  
 It provides centralized collection and analysis across various infrastructure elements: Servers and VMs, Containers and orchestrators, Cloud providers, and Network.  
 It provides AI-based analytics to prevent and resolve issues before they impact users.
 
 #### Features and Advantages
 
+The Log & Audit service built on OpenTelemetry provides a unified and vendor-neutral way to collect, process, and export observability data. Its core capabilities include:
+
 The service offers the following main features:
 
-- *Full-stack observability* → connects detected infrastructure metrics with application metrics. For example, if an app slows down, Dynatrace shows whether the cause is a code, database, container, or network issue.
-- *AI-based analysis (Davis AI)* → the Davis AI engine automatically analyzes data, detects anomalies, and identifies the root cause, reducing noise (fewer unnecessary alerts) to only relevant events. Predictions on resource saturation and future performance (capacity planning).
-- *Real-time monitoring* → Interactive and customizable dashboards. Automatic topology mapping (service map) showing how applications and services are connected to the underlying infrastructure resources.
-- *Automation and remediation* → integration with cloud providers (AWS, Azure, GCP, OCI), orchestrators (Kubernetes, OpenShift, VMware Tanzu), DevOps tools (Jenkins, Ansible, Terraform, GitOps), and ITSM/ticketing (ServiceNow, Jira). Ability to automate corrective actions, such as scaling containers, restarting services, and applying patches.
-- *Multi-cloud and hybrid support* → supports brownfield environments (existing) without requiring code changes.
+- *Log collection & aggregation* → vaptures application logs, system logs, and security-relevant audit trails. Supports structured logging for consistent and machine-readable data.
+
+- *Audit trail generation* → tracks user actions, configuration changes, and security-sensitive operations. Ensures immutability and integrity through standardized data formats and export pipelines.
+
+- *Distributed tracing* → enables end-to-end traceability across microservices. Helps correlate logs, metrics, and traces for full-context auditability.
+
+- *Metrics and performance data* → collects operational and performance metrics (CPU, memory, network, API latency). Correlates metrics with logs and traces for accurate diagnostics.
+
+- *Policy-driven data processing* → allows filtering, sampling, redaction, and enrichment through OpenTelemetry Collectors. Ensures sensitive information is processed according to compliance policies.
+
+- *Multi-destination export* → exports data to SIEM platforms, log analytics tools, data lakes, or object storage. Supports Elasticsearch, Splunk, Loki, BigQuery, and more.
 
 The main components of the service are:
 
-- *OneAgent* → installed software agent for automatic metric collection (CPU, RAM, I/O, network, storage), end-to-end transaction tracing between services, log and runtime event capture, process monitoring, and automatic dependency detection.
-- *ActiveGate* → manages secure communication between OneAgent and the Dynatrace platform for data compression and encryption, reducing network load in distributed environments, and integration with cloud environments (AWS, Azure, GCP) and external APIs.
-- *Dynatrace Cluster* → receives, stores, and processes data from OneAgents, applies analysis and correlation algorithms, ensures scalability, and provides APIs and integration tools (ITSM, CI/CD, DevOps tools).
-- *Davis AI* → AI engine for real-time anomaly analysis, automatic root cause analysis, capacity and performance forecasting, and reduced false positive alerts.
-- *Dynatrace Web UI / Mobile App / API* → interfaces for user interaction, providing: dashboards. Customizable; topological views (Smartscape); dynamic dependency maps between hosts, services, and applications; access via REST API and SDK for integration with DevOps pipelines, ITSM, and automation tools.
-- *Extensions and Integrations* → connect Dynatrace to third-party services and tools.
+- *Instrumentation Layer* → applications and services instrumented using OpenTelemetry SDKs and auto-instrumentation agents. Generates logs, metrics, and traces in a standardized OTLP format.
+
+- *OpenTelemetry collector* → central component responsible for: receiving data (logs, metrics, traces); processing/enriching it; exporting it to one or more backends.  
+Can run as: a sidecar in Kubernetes, a daemonset on each node, a centralized collector cluster
+
+- *Export & storage layer* → observability and security data is sent to: log storage (Elasticsearch, Loki, Cloud logging platforms); SIEM systems (Elastic SIEM, Splunk, Azure Sentinel); Audit archives (S3, GCS, object storage)
+
+- *Visualization & analytics* → dashboards and visual tools such as: Grafana, Kibana, OpenSearch Dashboards, SIEM dashboards
+
+- Support centralized log analysis, auditing, forensics, and compliance reporting.
 
 The service is offered per package. Each package consists of 80 infra hosts with:
+
 - an average of 32 GB RAM
 - 20 apps with an average of 64 GB RAM
 - 3 million trx
@@ -1346,17 +1359,23 @@ The service is offered per package. Each package consists of 80 infra hosts with
 
 The service offers the following advantages:
 
-- *Reduced operating costs* → thanks to automation and the ability to prevent outages
-Improved user experience → user session monitoring, frontend/backend performance analysis, and continuous optimization.
-- *Increased productivity for development, operations, and DevOps teams* → thanks to clear insights, automatic root cause analysis, and less time spent diagnosing problems.
-- *Improved decision-making for management* → visibility into application KPIs, business metrics, and customer impact, enabling more targeted investments.
-- *Support for sustainability goals* → measurement and optimization of cloud resource usage, reducing infrastructure waste.
-- *Full-stack observability* → metrics, traces, logs, user sessions; Correlation between frontend/backend/infrastructure components.
-- *Automatic detection of dependencies and dynamic topologies* (services, hosts, containers, microservices) through automatic discovery.
-- *Shorter time to resolution* → thanks to the details provided (tracing, distributed diagnosis, code, database, network visibility).
-- *Continuous infrastructure monitoring*
-- *Built-in governance and security capabilities* → policies, vulnerability visibility, runtime monitoring, compliance.
-- *Scalability and high availability* → resilient infrastructure, automatic failovers, and multi-zone deployment in secure clouds to ensure always-on reliability.
+- *Improved security & compliance* → centralized audit trails simplify compliance with standards (ISO 27001, SOC2, GDPR). Enhanced visibility into user actions and critical events reduces risk.
+
+- *Reduced vendors Lock-in* → OpenTelemetry is vendor-neutral, enabling freedom to switch backends without re-instrumenting code.
+
+- *Better decision-making* → unified observability data supports data-driven product and business insights. Helps organizations identify usage patterns, performance bottlenecks, and customer-impacting issues.
+
+- *Cost optimization* → policy-driven sampling and data routing help reduce storage and licensing costs. Ability to send different data types to cost-efficient storage tiers.
+
+- *Unified observability pipeline* → Single consistent pipeline for logs, metrics, and traces reduces operational complexity.
+
+- *Improved troubleshooting* → correlation of logs, metrics, and traces dramatically speeds up root cause analysis. Reduces MTTR (Mean Time To Repair).
+
+- *Scalability & flexibility* → the OpenTelemetry Collector can be scaled horizontally to handle high data volumes. Supports multi-cloud and hybrid architectures natively.
+
+- *Standardization across teams* → developers, SREs, and security teams use a common telemetry standard. Simplifies onboarding and reduces friction in cross-team operations.
+
+- *Extensibility* → pluggable components allow integration with new tools or pipelines without redesigning the system.
 
 <a id="ITSM"></a>
 
@@ -3442,7 +3461,56 @@ Disaster Recovery (DR) ensures service continuity, data integrity and rapid rest
 
 #### Services Description
 
-
+The service provides a scalable, low-cost, long-retention storage environment designed for infrequently accessed data. It is built on Proxmox Virtual Environment (PVE) with Ceph as the underlying distributed storage layer. The service enables organizations to store large volumes of archival datasets—such as logs, backups, compliance records, media assets, or scientific data—while ensuring durability, fault tolerance, and controlled retrieval performance.
 
 #### Features and Advantages
 
+The main features of the service are:
+
+- Long-term data retention with policies tailored for infrequently accessed objects or files
+- Distributed, reliable storage through Ceph’s replication or erasure coding.
+- Scalable capacity expansion by adding nodes or OSDs without service interruption.
+- Multi-protocol access via CephFS, RBD, or S3-compatible gateways, depending on deployment.
+- Automated data placement and self-healing mechanisms inherent to Ceph.
+- Role-based access control and integration with existing identity systems (via Proxmox and optional gateways).
+- Monitoring and lifecycle management through Proxmox’s UI and Ceph dashboards.
+- Optional tiering by combining faster Ceph pools with lower-cost archival pools.
+
+The main components of the service are:
+
+- Proxmox VE Cluster: Management layer for nodes, resources, authentication, and integration with Ceph; offers UI, automation tools, and API endpoints.
+- Ceph Cluster:
+    - OSD Nodes: Storage servers providing replicated or erasure-coded archival pools.
+    - MON/MGR Nodes: Ceph Monitors and Managers responsible for cluster coordination, state tracking, and health management.
+    - CephFS / RBD / RGW: Optional access interfaces to expose archival storage as a filesystem, block device, or S3-compatible object store.
+- Networking Layer: High-bandwidth, redundant network for internal Ceph traffic (public and cluster networks) to ensure consistency and performance.
+- Monitoring and Logging Tools: Proxmox and Ceph dashboards, Prometheus, and alerting integrations.
+
+Cost-efficient retention: Lower TCO for storing large datasets compared to high-performance primary storage.
+
+High durability and fault tolerance: Data is protected through Ceph replication or erasure coding, reducing risk of data loss.
+
+Horizontal scalability: Capacity and performance can grow incrementally without downtime, supporting evolving storage needs.
+
+Vendor independence: Based on open technologies, minimizing lock-in and enabling custom tailoring.
+
+Operational simplicity: Unified management from Proxmox with integrated monitoring, lifecycle management, and automation.
+
+Flexible access models: Filesystem, block, or object interfaces allow integration with backup systems, archival workflows, and data management tools.
+
+Resilience and self-healing: Ceph automatically redistributes and recovers data in case of disk or node failures, reducing administrative overhead.
+
+Compliance support: Suitable for long-term preservation and regulatory retention requirements.
+
+The service is offered with the following metrics: *1000 GB for each unit*.
+
+The service offers the following advantages:
+
+- Cost-efficient retention: Lower TCO for storing large datasets compared to high-performance primary storage.
+- High durability and fault tolerance: Data is protected through Ceph replication or erasure coding, reducing risk of data loss.
+- Horizontal scalability: Capacity and performance can grow incrementally without downtime, supporting evolving storage needs.
+- Vendor independence: Based on open technologies, minimizing lock-in and enabling custom tailoring.
+- Operational simplicity: Unified management from Proxmox with integrated monitoring, lifecycle management, and automation.
+- Flexible access models: Filesystem, block, or object interfaces allow integration with backup systems, archival workflows, and data management tools.
+- Resilience and self-healing: Ceph automatically redistributes and recovers data in case of disk or node failures, reducing administrative overhead.
+- Compliance support: Suitable for long-term preservation and regulatory retention requirements.

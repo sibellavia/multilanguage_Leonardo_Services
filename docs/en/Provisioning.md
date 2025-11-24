@@ -1,26 +1,18 @@
 # Service Provisioning
 
-Provisioning is one of the most important functionalities of SCMP. Through these modules, it is possible to allocate runtime assets within the providers managed by SCMP.
+In this section you can find information about the provisioning of the services offered, depending on their type.
 
-To use this functionality, relations must be defined within the SCMP.
+## Creation of Provisionings
 
-This constraint was made available to bind certain characteristics to provisioning; for example, the VM size is not selectable during provisioning but is among the predefined characteristics by administrators within the catalog.
+### Provisioning of "Physical Resources"
 
-![Access to "Provisioning"](assets/images/extract/media/image6.png)
-
-### Creation of Provisionings
-
-#### Provisioning of "Physical Resources"
-
-Using the tabs in the provisioning functionality, it is possible to view the lists of provisionable resources within the SCMP, such as Virtual Machines, Storage, and Kubernetes.
-
-To view elements within the result lists, it is necessary that a relation exists in the SCMP catalog with the catalog resource of the provider to be provisioned.
-
-The functionalities available for these elements are identical; only the parameters to be entered in the creation steps change.
+Generally, service provisioning is done through the Leonardo Security Cloud Management Platform console.  
+Using the tabs in the console's provisioning functionality, you can view lists of provisionable resources, such as Virtual Machines, Storage, and Kubernetes.  
+The features available for these items are identical; only the parameters entered during creation differ.
 
 ![Tabs for resource creation](assets/images/extract/media/image290.png)
 
-##### Virtual Machines
+### Provisioning of Virtual Machines
 
 To start provisioning a resource, click on the corresponding row to view the page containing step 1 of provisioning creation. In this step, it is necessary to select, using the dropdown on the left, the "target" subsystem where the resources are to be provisioned. Once selected, an information mirror will be displayed on the right indicating the characteristics of the resource that will be provisioned. To continue, click the "Next" button at the bottom right to go to step 2 "Config" page.
 
@@ -45,7 +37,7 @@ Finally, if you click the "Apply" button, the forecast is saved, and the user is
 
 ![List of provisionings performed](assets/images/extract/media/image295.png)
 
-#### Provisioning of "Services"
+### Provisioning of "Services"
 
 To access the services page, click on the tab that depicts a shelf located in the top menu. After doing this, you will find yourself on the "Service" page.
 
@@ -61,7 +53,7 @@ On the page, a list of components called "Card" is displayed. Each card refers t
 
 Depending on the type of service selected, the steps for provisioning change; these will be analyzed in detail below.
 
-##### "Standard" Services
+### "Standard" Services
 
 Click the "Subscribe" button corresponding to a "standard" service. The user will be redirected to step 1 of the service creation page, and all instantiable versions of the service by SCMP will be displayed. In particular, various blocks will be shown, each with a list of configurations:
 
@@ -89,7 +81,7 @@ The dashboard page will open with the list of all subscribed services and their 
 
 ![Dashboard with the list of all subscribed services and their relative statuses](assets/images/extract/media/image300.png)
 
-##### "Custom" Services
+### "Custom" Services
 
 Click the "Subscribe" button corresponding to a "custom" service. The user will be redirected to step 1 of the service creation page where the subsystem can be selected, in which to perform the provisioning, from the dropdown in the center of the page.
 
@@ -115,25 +107,7 @@ Specifically, the newly provisioned service will have a "Running" status in yell
 
 ![Dashboard with the list of all subscribed services and their relative statuses](assets/images/extract/media/image300.png)
 
-##### "Azure Pipeline" Services
-
-Click the "Subscribe" button corresponding to an "Azure Pipeline" service. The user will be redirected to step 1 of the service creation page. From the dropdown in the center of the page, select the "Branch" of the pipeline to execute.
-
-![Provisioning of an "Azure pipeline" service](assets/images/extract/media/image302.png)
-
-By selecting the branch, the page updates to proceed to step 2 of service creation.
-
-In this step 2, it will be necessary to fill out the form with the configuration parameters retrieved directly from the Pipeline that will be executed.
-
-![Configuration of an "Azure pipeline" service](assets/images/extract/media/image303.png)
-
-After completing all the form fields, click "Launch" to send the pipeline start request. The dashboard page will open with the list of all subscribed services and their relative statuses.
-
-Specifically, the newly provisioned service will have a "Running" status in yellow, and subsequently, depending on the result, the status will also be updated to "Completed" in green or "Error" in red.
-
-![Dashboard with the list of all subscribed services and their relative statuses](assets/images/extract/media/image300.png)
-
-##### "PaaS" and "AI Services"
+### "PaaS" and "AI Services"
 
 Click the "Subscribe" button corresponding to a "PaaS" service. The user will be redirected to step 1 of the service creation page where it will be necessary to fill out the form with the specific configuration parameters of the selected service.
 
@@ -147,32 +121,7 @@ Specifically, the newly provisioned service will have a "Running" status in yell
 
 ![Dashboard with the list of all subscribed services and their relative statuses](assets/images/extract/media/image300.png)
 
-##### "HELM" Services
-
-Click the "Subscribe" button corresponding to a "HELM" service. The user will be redirected to step 1 of the service creation page where it will be necessary to select the cluster on which to perform the provisioning.
-
-![Cluster selection](assets/images/extract/media/image305.png)
-
-Fill out the form with the specific configuration parameters of the selected service. Also, add the "values.yaml" file at the bottom, which contains all the configuration parameters necessary for the service.
-
-![Configuration of "HELM" parameters](assets/images/extract/media/image306.png)
-
-After completing all the form fields, click "Launch".
-
-The dashboard page will open with the list of all subscribed services and their relative statuses.
-
-Specifically, the newly provisioned service will have a "Running" status in yellow, and subsequently, depending on the result, the status will also be updated to "Completed" in green or "Error" in red.
-
-![Dashboard with the list of all subscribed services and their relative statuses](assets/images/extract/media/image300.png)
-
-##### "Immutable" HELM Services
-
-If the "immutable" flag was selected for the HELM service during creation, the user is not given the option to view and modify the service information, thus allowing for a "one-Click" installation.
-Once "subscribe" is selected, the system automatically begins provisioning and returns the user to the dashboard page to monitor the results.
-
-![Dashboard with the list of all subscribed services and their relative statuses](assets/images/extract/media/image300.png)
-
-#### Modification of a performed provisioning
+### Modification of a performed provisioning
 
 For a provisioning that has been carried out and has failed, it is possible to modify it.
 
